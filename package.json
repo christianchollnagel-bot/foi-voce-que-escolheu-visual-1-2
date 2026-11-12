@@ -12,6 +12,7 @@
     "test:rotas": "node tests/rotas.cjs",
     "test:pwa": "node tests/pwa.cjs",
     "test:paginas": "node tests/paginas.cjs",
+    "test:paginacao-mobile": "node tests/paginacao-mobile.cjs",
     "test:fluxos": "node tests/fluxos-paginados.cjs",
     "test:introducao": "node tests/introducao.cjs",
     "test:mobile": "node tests/mobile.cjs",

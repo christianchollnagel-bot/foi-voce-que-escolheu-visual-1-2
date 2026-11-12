@@ -3590,11 +3590,11 @@ const resources = [
   ],
   [
     "paginas.css",
-    "d897eef47a6df67155123124f28dff59126a86c681fb3ecb1aeb364de404fded"
+    "52cc930f1ea452800f5125c46715a875167798289f1253d8b7cf29bdee35be12"
   ],
   [
     "paginas.js",
-    "4b9db3fdf096b24421c9da1917f101145af1b30d153fcbbab7f80b7d46b56835"
+    "2f8c7398e68c8df38633906a2a40480674128565b29b462f50a40037cf5a4dea"
   ],
   [
     "portaria.js",
@@ -3614,7 +3614,7 @@ const resources = [
   ],
   [
     "style.css",
-    "755d7362acbb0c213d33b16fae58a1b4fab64a06545b3ac2bbb6561e4d1ca8ab"
+    "260306afab4c2f9dfc500816f72ed85e28620e88f322b240684b1c05de58b855"
   ],
   [
     "tintas.js",
@@ -3626,7 +3626,7 @@ const resources = [
   ]
 ];
 const prefix = 'fvqe-v1|' + self.registration.scope + '|';
-const cacheName = prefix + 'fb3e413689e30056e97165ef5d82a289849d85d12c1d2f695de6244e87c42cc4';
+const cacheName = prefix + '896a74290f262dbcfa24885778c8d695ebc1cf85217f073843d9627e855b73d7';
 const root = new URL(self.registration.scope);
 const urls = new Map(resources.map(([path, hash]) => [new URL(path, root).href, hash]));
 

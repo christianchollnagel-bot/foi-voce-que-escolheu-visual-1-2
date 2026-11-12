@@ -1,0 +1,93 @@
+{
+  "report": [
+    {
+      "engine": "webkit",
+      "width": 393,
+      "height": 724,
+      "screen": "base",
+      "pages": 5,
+      "controls": 27
+    },
+    {
+      "engine": "webkit",
+      "width": 393,
+      "height": 640,
+      "screen": "base",
+      "pages": 7,
+      "controls": 27
+    },
+    {
+      "engine": "webkit",
+      "width": 360,
+      "height": 640,
+      "screen": "base",
+      "pages": 7,
+      "controls": 27
+    },
+    {
+      "engine": "webkit",
+      "width": 844,
+      "height": 390,
+      "screen": "base",
+      "pages": 8,
+      "controls": 27
+    },
+    {
+      "engine": "webkit",
+      "width": 899,
+      "height": 668,
+      "screen": "base",
+      "pages": 5,
+      "controls": 27
+    },
+    {
+      "engine": "webkit",
+      "recovery": true
+    },
+    {
+      "engine": "chromium",
+      "width": 393,
+      "height": 724,
+      "screen": "base",
+      "pages": 5,
+      "controls": 27
+    },
+    {
+      "engine": "chromium",
+      "width": 393,
+      "height": 640,
+      "screen": "base",
+      "pages": 8,
+      "controls": 27
+    },
+    {
+      "engine": "chromium",
+      "width": 360,
+      "height": 640,
+      "screen": "base",
+      "pages": 8,
+      "controls": 27
+    },
+    {
+      "engine": "chromium",
+      "width": 844,
+      "height": 390,
+      "screen": "base",
+      "pages": 8,
+      "controls": 27
+    },
+    {
+      "engine": "chromium",
+      "width": 899,
+      "height": 668,
+      "screen": "base",
+      "pages": 6,
+      "controls": 27
+    },
+    {
+      "engine": "chromium",
+      "recovery": true
+    }
+  ],
+  "limits": "Simulação Chrome/WebKit no Windows; não é um teste físico de iPhone/Android."
+}

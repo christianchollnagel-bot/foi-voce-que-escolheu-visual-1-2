@@ -4486,13 +4486,13 @@
   },
   {
     "file": "paginas.css",
-    "sha256": "d897eef47a6df67155123124f28dff59126a86c681fb3ecb1aeb364de404fded",
-    "bytes": 8059
+    "sha256": "52cc930f1ea452800f5125c46715a875167798289f1253d8b7cf29bdee35be12",
+    "bytes": 8098
   },
   {
     "file": "paginas.js",
-    "sha256": "4b9db3fdf096b24421c9da1917f101145af1b30d153fcbbab7f80b7d46b56835",
-    "bytes": 5064
+    "sha256": "2f8c7398e68c8df38633906a2a40480674128565b29b462f50a40037cf5a4dea",
+    "bytes": 5750
   },
   {
     "file": "portaria.js",
@@ -4516,12 +4516,12 @@
   },
   {
     "file": "style.css",
-    "sha256": "755d7362acbb0c213d33b16fae58a1b4fab64a06545b3ac2bbb6561e4d1ca8ab",
-    "bytes": 17635
+    "sha256": "260306afab4c2f9dfc500816f72ed85e28620e88f322b240684b1c05de58b855",
+    "bytes": 17555
   },
   {
     "file": "sw.js",
-    "sha256": "0fd6b5a9f9ae4e806c54be6371502ede66c9a2bff1989b61beac3340f6cee689",
+    "sha256": "5c6b9bd8d588eadbee061314bba0462e7626e3a316360d641bb6a024e1492e93",
     "bytes": 111817
   },
   {

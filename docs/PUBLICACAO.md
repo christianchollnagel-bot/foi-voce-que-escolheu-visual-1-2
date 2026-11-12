@@ -22,7 +22,7 @@ O cache instala o conjunto completo conferindo seus hashes antes de ativar. Atua
 
 Não troque de origem esperando que `localStorage` acompanhe a mudança. Atualizar o mesmo site conserva o armazenamento; a migração de formato é responsabilidade do jogo. Limpar dados do site apaga também o progresso.
 
-O site atual é https://thunderous-eclair-21ac61.netlify.app/, atualizado pela branch `codex/atualizacao-completa`. A configuração de visibilidade não foi alterada.
+O site atual é https://foivocequeescolheu.netlify.app/, atualizado pela branch `codex/atualizacao-completa`. O painel do Netlify confirmou o vínculo com este repositório. O endereço anterior `thunderous-eclair-21ac61.netlify.app` deixou de responder. A configuração de visibilidade não foi alterada.
 
 Na conferência de produção em 12/11/2026, o Netlify acrescentou ao HTML um comentário da hospedagem e um script de identificação pública. A verificação do service worker reconhece exclusivamente esses dois trechos conhecidos em `index.html`, em origens `.netlify.app`, antes de comparar o SHA-256 com a fonte. Todo o conteúdo do jogo continua verificado; o cache guarda a resposta original com a identificação do provedor. Marcação desconhecida ou alteração em código permanece rejeitada. O identificador do cache inclui também o código do service worker, para que uma correção de instalação não reutilize o cache da versão anterior. Teste específico: `node tests/integridade-host.cjs`.
 

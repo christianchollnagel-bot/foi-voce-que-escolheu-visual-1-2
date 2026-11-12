@@ -26,6 +26,18 @@ Paleta, tipografia e contornos seguem o jogo existente. Não há nova faixa, voz
 
 ## Evidências
 
+### Correção da paginação mobile após a captura do usuário
+
+A captura recebida mostrou o catálogo de personagens cortado, contador `1 / 1` e os dois botões desativados. O cálculo anterior dependia de `height:100%` dentro de flex e somente de `scrollWidth`. A composição agora recebe a altura disponível em pixels; o total considera também os retângulos dos fragmentos renderizados. Uma medida momentaneamente vazia não é usada para repaginar. As regras antigas de `overflow:auto` da moldura e do catálogo foram removidas da folha base.
+
+Também foi reproduzido um erro de arredondamento: em janela 899×668, a área de leitura tinha 347,75 px e `clientWidth` devolvia 348. A diferença acumulada entre colunas deixava “Pular personalização” inacessível no Chrome. O deslocamento agora conserva a largura fracionária obtida do retângulo real.
+
+`tests/paginacao-mobile.cjs` confere Anterior/Próxima com toques, seleção do último retrato e confirmação em cinco tamanhos, nos dois motores. Injeta separadamente altura indefinida e largura de rolagem incompleta para verificar a recuperação do estado semelhante à captura. Essa injeção não é uma reprodução física do erro no telefone. A suíte também reduz a janela visual para 615,625 px e simula retorno à página. `tests/paginas.cjs` passou a procurar qualquer região interna que exija rolagem, além de conferir texto e controles alcançáveis.
+
+A exigência de dimensão definida para a composição sequencial é descrita pela [especificação CSS Multicol](https://www.w3.org/TR/css-multicol-1/). A causa exata no aparelho da captura continua sem inspeção remota; os testes executam Chrome e WebKit no Windows. A revisão anterior dos botões validou eventos, mas não comprovava esse comportamento de layout no telefone.
+
+Nesta revisão passaram os cinco tamanhos e a recuperação de medições em ambos os motores, as 240 combinações de layout de `tests/mobile.cjs`, os fluxos de `tests/fluxos-paginados.cjs` e a introdução de `tests/introducao.cjs`. As verificações incluem texto ampliado, orientação deitada, áreas seguras simuladas, transporte, edição de campos e salvamento.
+
 - `tests/paginas.cjs`: 120 combinações de telas, tamanhos 320×568, 390×844, 844×390 e 1440×900, com fontes normal/ampliada. Verifica texto verticalmente íntegro, acesso a todos os controles por páginas e roda do mouse sem mover o documento/moldura. Até 14 páginas nas telas testadas, incluindo texto ampliado em paisagem com espaço reservado à identificação do host.
 - `tests/fluxos-paginados.cjs`: percurso, consultas, recibo, histórico, atos expandidos, foco do crachá, janela reduzida durante edição, rotação, transporte em fonte ampliada, reset/cancelamento e persistência.
 - `tests/introducao.cjs`: as três cenas nos quatro tamanhos e duas fontes; pausa, redução de movimento, duração real de aproximadamente 15 s, conclusão automática, replay, pular e persistência.

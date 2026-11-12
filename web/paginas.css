@@ -15,7 +15,7 @@ body.hosted-netlify .desk,body.hosted-netlify #stage{height:calc(var(--app-heigh
 #stage>.band,#stage>.sound-bar,#stage>.foot,#stage>.page-nav,#storage-status{flex:none}
 #stage>.sound-bar{position:static}
 .page-viewport{flex:1 1 0;min-height:0;margin:12px;overflow:clip;position:relative;outline:none}
-#stage .inside{height:100%;padding:0;display:block;column-count:1;column-fill:auto;column-gap:24px;transform:translateX(var(--page-offset,0px));overflow:visible}
+#stage .inside{height:var(--page-height,1px);width:100%;flex:none;padding:0;display:block;column-count:1;column-fill:auto;column-gap:24px;transform:translateX(var(--page-offset,0px));overflow:visible}
 #stage .inside>.kicker{margin-bottom:.55em}
 #stage .inside>h1{margin-bottom:.35em;line-height:1.15;break-after:avoid}
 #stage .bookbody,#stage .cd,#stage .audio-settings,#stage .actions{display:block}

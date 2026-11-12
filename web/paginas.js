@@ -48,9 +48,20 @@ window.GamePages=(()=>{
     const focused=flow.contains(document.activeElement)?document.activeElement:null;
     const moving=stage.querySelector('fvqe-transporte');
     const keep=anchor||(moving?.running?moving.querySelector('.cargo-play'):focused);anchor=null;
-    stage.style.setProperty('--page-height',viewport.clientHeight+'px');
-    step=viewport.clientWidth+gap;
-    total=Math.max(1,Math.ceil((flow.scrollWidth+gap-2)/step));
+    // A altura percentual de um filho de flex pode ser indefinida durante a
+    // composição mobile. Sem altura definida, as colunas viram um bloco vertical.
+    const box=viewport.getBoundingClientRect(),height=Math.floor(box.height),width=box.width;
+    if(height<1||width<1)return;
+    stage.style.setProperty('--page-height',height+'px');
+    flow.style.height=height+'px';
+    step=width+gap;
+    // Alguns motores não incluem todas as colunas em scrollWidth. Medir também
+    // os fragmentos impede que "1 / 1" esconda conteúdo ainda fora da janela.
+    const range=document.createRange();range.selectNodeContents(flow);
+    const left=flow.getBoundingClientRect().left;
+    let extent=flow.scrollWidth;
+    for(const rect of range.getClientRects())extent=Math.max(extent,rect.right-left);
+    total=Math.max(1,Math.ceil((extent+gap-2)/step));
     if(keep?.isConnected)page=locate(keep);
     apply();
   }

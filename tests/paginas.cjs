@@ -17,10 +17,12 @@ async function inspect(page,label,{wheel=true}={}){
   const controls=[...flow.querySelectorAll('button,input,select,summary')].filter(el=>{
    if(el.checkVisibility?.({visibilityProperty:true})===false)return false;const closed=el.closest('details:not([open])');return !closed||closed.querySelector('summary')?.contains(el);
   });controls.forEach((el,i)=>el.dataset.auditId=String(i));
-  return {screen:stage.dataset.screen,pages:Number(stage.dataset.pages),clipped,expected:controls.map(el=>({id:el.dataset.auditId,text:el.textContent.trim().slice(0,60)})),root:[document.documentElement.scrollWidth,document.documentElement.scrollHeight],viewport:[innerWidth,innerHeight],stageOverflow:stage.scrollHeight-stage.clientHeight};
+  const scrolling=[...stage.querySelectorAll('*')].filter(el=>{const s=getComputedStyle(el);return (/auto|scroll/.test(s.overflowY)&&el.scrollHeight>el.clientHeight+1)||(/auto|scroll/.test(s.overflowX)&&el.scrollWidth>el.clientWidth+1)}).map(el=>el.className);
+  return {screen:stage.dataset.screen,pages:Number(stage.dataset.pages),clipped,scrolling,expected:controls.map(el=>({id:el.dataset.auditId,text:el.textContent.trim().slice(0,60)})),root:[document.documentElement.scrollWidth,document.documentElement.scrollHeight],viewport:[innerWidth,innerHeight],stageOverflow:stage.scrollHeight-stage.clientHeight};
  });
  assert.ok(findings.root[0]<=findings.viewport[0]&&findings.root[1]<=findings.viewport[1],label+': documento excede a janela');
  assert.equal(findings.stageOverflow,0,label+': moldura excede a janela');
+ assert.deepEqual(findings.scrolling,[],label+': conteúdo exige rolagem interna');
  assert.deepEqual(findings.clipped,[],label+': texto cortado');
  const seen=new Set();
  while(await page.locator('[data-page=previous]').isEnabled()){await page.locator('[data-page=previous]').click();await settle(page);}
