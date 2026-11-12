@@ -6,15 +6,16 @@ Foram encontrados dois problemas de usabilidade no código: música excessivamen
 
 Correções:
 
-- Botão **Ativar e testar som** no topo das telas. Ele liga música/efeitos, recupera o volume padrão caso estivesse em zero e toca uma mensagem de teste, sem alterar decisões ou progresso.
+- Botão **Desativar som / Ativar som** logo abaixo de **ARQUIVO DAS ESCOLHAS**, fixo no topo da área do jogo durante a rolagem. Substitui o antigo **Ativar e testar som**, sem alterar decisões ou progresso.
+- Som ligado por padrão; a primeira interação com o jogo inicia a reprodução. O modo mudo escolhido pela pessoa fica salvo, preservando volume e controles individuais. Ativar recupera volume zero e habilita os dois canais se ambos estavam desmarcados.
 - Status visível de reprodução, pausa, som desligado, bloqueio pelo navegador ou falha no carregamento. Não se afirma que o alto-falante do aparelho está emitindo som.
 - Ativação por clique/toque concluído ou teclado; canais de música e efeito reutilizados entre telas.
-- Prévia disponível também nas configurações, sem retomar a música pausada daquela tela.
+- Configurações, acessibilidade e pausa mantêm a música pausada. O botão não toca mais uma prévia; controla o som geral. Desligá-lo como primeira interação não dispara nenhum áudio.
 - WAV normalizados a pico 0,8 e mixagem menos atenuada. Mesmas composições, sem novos samples. O acompanhamento fica aproximadamente 12,5–15,4 dB acima da configuração anterior no volume padrão; continua reduzido durante efeitos.
-- O botão de áudio não passa pelo bloqueio de duplo clique das decisões narrativas. Repetir o teste reutiliza o canal, sem empilhar reproduções.
+- O botão de áudio não passa pelo bloqueio de duplo clique das decisões narrativas. Alternar rapidamente reutiliza os canais, sem empilhar reproduções.
 - Volume responde enquanto o controle é movimentado. Preferências continuam persistentes; nenhuma mudança de formato de salvamento.
 
-Verificação: `node tests/audio.cjs`, em Chrome com política restrita de autoplay, por mouse e emulação de toque. Confirmados reprodução real com `currentTime` avançando, canais reutilizados, mute/volume persistidos, restauração após bloqueio simulado, aviso de falha simulada, preservação do estado narrativo e layout de 320 px. WAV verificados sem clipping. Evidência em `docs/evidencias/audio-correcao.json`. Regressão dos motores também passou.
+Verificação atual: `node tests/audio.cjs`, em Chrome com política restrita de autoplay, por mouse, emulação de toque, Enter e Espaço. Confirmados início na primeira ação do jogo sem botão de áudio, reprodução real com `currentTime` avançando, canais reutilizados, modo mudo persistido, recuperação do volume zero, preferências individuais preservadas, compatibilidade com salvamento anterior, restauração após bloqueio simulado, aviso de falha simulada, preservação do estado narrativo e botão visível durante rolagem em 320 px. Evidência em `docs/evidencias/audio-controle.json`. A verificação anterior de normalização e ausência de clipping permanece em `docs/evidencias/audio-correcao.json`; os WAV não foram alterados nesta troca de controle. Regressão dos motores também passou.
 
 Não houve escuta humana nem teste de alto-falante/volume do sistema em telefone físico. Não confundir teste de reprodução no navegador com confirmação da saída física de som.
 

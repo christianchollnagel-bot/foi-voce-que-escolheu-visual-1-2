@@ -8,7 +8,7 @@
   let shift=null,shiftSequence=0;
   const gameScreens=['entrada','escolha','consequencia','desfecho','vinculo','transporte'];
   let world=Continuidade.fresh(),saveBlocked=false,restoreMenu=false;
-  const audioDefaults={music:true,effects:true,volume:.55,haptics:'results'};
+  const audioDefaults={muted:false,music:true,effects:true,volume:.55,haptics:'results'};
   let sound={...audioDefaults};
   const cadernoScreens=['universo','capitulos','historico','revisao','resumo','transicao','documento'];
   const expressionLabels=Object.fromEntries(Object.entries(Atelier.cues).map(([k,v])=>[k,v[0]]));
@@ -70,7 +70,7 @@
     if(raw){
       const d=JSON.parse(raw);
       if(![1,2].includes(d?.version))throw Error('formato desconhecido');
-      if(d.version===2){if(!d.world||!Array.isArray(d.world.log)||!Array.isArray(d.world.rumors)||['facts','knowledge','relations','favors','promises'].some(k=>!d.world[k]||typeof d.world[k]!=='object'||Array.isArray(d.world[k])))throw Error('memória inválida');world=d.world;sound={...audioDefaults,music:d.sound?.music!==false,effects:d.sound?.effects!==false,volume:Number.isFinite(d.sound?.volume)?Math.max(0,Math.min(1,d.sound.volume)):.55,haptics:['off','results','all'].includes(d.sound?.haptics)?d.sound.haptics:'results'};}
+      if(d.version===2){if(!d.world||!Array.isArray(d.world.log)||!Array.isArray(d.world.rumors)||['facts','knowledge','relations','favors','promises'].some(k=>!d.world[k]||typeof d.world[k]!=='object'||Array.isArray(d.world[k])))throw Error('memória inválida');world=d.world;sound={...audioDefaults,muted:d.sound?.muted===true,music:d.sound?.music!==false,effects:d.sound?.effects!==false,volume:Number.isFinite(d.sound?.volume)?Math.max(0,Math.min(1,d.sound.volume)):.55,haptics:['off','results','all'].includes(d.sound?.haptics)?d.sound.haptics:'results'};}
       restoreMenu=true;
       if(d.intro && [0,1,2].includes(d.intro.page) && ['menu','ajuda','entrega','turno'].includes(d.intro.target))intro=d.intro;
       profile=cleanProfile(d.profile);draft=cleanProfile(d.draft||profile);
@@ -214,7 +214,7 @@
   function fileTab(label,detail){
     return '<div class="file-tab">'+glyph('historico')+'<span>'+esc(label)+'</span><b>'+esc(detail)+'</b></div>';
   }
-  function soundControl(){return '<div class="sound-bar"><button type="button" data-action="sound-enable">Ativar e testar som</button><small id="audio-status" role="status">'+esc(Feedback.status())+'</small></div>';}
+  function soundControl(){return '<div class="sound-bar"><button id="sound-toggle" type="button" data-action="sound-toggle" aria-describedby="audio-status">'+(!sound.muted&&sound.volume>0&&(sound.music||sound.effects)?'Desativar som':'Ativar som')+'</button><small id="audio-status" role="status">'+esc(Feedback.status())+'</small></div>';}
   function present(kicker,heading,html='',actions=[],tag='EDIÇÃO DE CAMPO'){
     const old=$('stage');currentActions=actions;
     const prior=old.querySelector('.portrait.actor img')?.cloneNode?.();
@@ -467,10 +467,12 @@
   function handle(e){
     const b=e.target.closest('button[data-action]');if(!b)return;
     const a=b.dataset.action,v=b.dataset.value;
-    if(a==='sound-enable'){
-      sound={...sound,music:true,effects:true,volume:sound.volume>0?sound.volume:.55};
-      Feedback.configure(sound);Feedback.preview();
-      document.querySelectorAll('[data-sound="music"],[data-sound="effects"]').forEach(el=>el.checked=true);
+    if(a==='sound-toggle'){
+      const enable=!Feedback.enabled();
+      sound.muted=!enable;
+      if(enable){if(!sound.music&&!sound.effects){sound.music=true;sound.effects=true;}if(sound.volume===0)sound.volume=audioDefaults.volume;}
+      Feedback.configure(sound);if(enable)Feedback.unlock();
+      document.querySelectorAll('[data-sound="music"],[data-sound="effects"]').forEach(el=>el.checked=sound[el.dataset.sound]);
       const volume=document.querySelector('[data-sound="volume"]');if(volume)volume.value=sound.volume;
       save();return;
     }

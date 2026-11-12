@@ -2,7 +2,7 @@
 const resources = [
   [
     "app.js",
-    "c806f70037c1bc3eb12f6d9d6e69c1bb83f78e83b76ffd70919048c1eba92d64"
+    "7bc8c18d8ca9323447ba24065e461023205b923b55cd72a075e79136b4df2a6d"
   ],
   [
     "assets/avatares/01-alegria.webp",
@@ -3490,7 +3490,7 @@ const resources = [
   ],
   [
     "atualizacao.css",
-    "f9206cfc436c5bdd56a7e5f13b9f81174a2be2d294e7d4de532053f24d1d1b93"
+    "ec3fa3a4877843704f32ad2ee815a5c99013b9b3d667581ca4c41489422d2261"
   ],
   [
     "audio/agora-explica.wav",
@@ -3550,7 +3550,7 @@ const resources = [
   ],
   [
     "feedback.js",
-    "81c2f44335458df4ad6998a5bbdbc0137751528cbe327aa93ea5a87fe6e751be"
+    "f1e424e069f6336d0f22257528eff3d30a230b20fc621afa249733e05aabccb3"
   ],
   [
     "folhas.js",
@@ -3614,7 +3614,7 @@ const resources = [
   ]
 ];
 const prefix = 'fvqe-v1|' + self.registration.scope + '|';
-const cacheName = prefix + '94d98c8e48656f6966830fdf7b05728298d366fbbf45956177f51d02e4477efd';
+const cacheName = prefix + '09873e637626d311516da9373d77cdb81c6b0ea3e56c9cffb93c46dc96a587e1';
 const root = new URL(self.registration.scope);
 const urls = new Map(resources.map(([path, hash]) => [new URL(path, root).href, hash]));
 

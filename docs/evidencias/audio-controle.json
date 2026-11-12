@@ -1,0 +1,50 @@
+{
+  "checks": [
+    "Som ligado por padrão; primeira ação do jogo inicia música sem botão de áudio",
+    "Música e efeito reproduzem com relógio avançando em clique e toque",
+    "Ativar/desativar interrompe ambos os canais sem alterar a narrativa",
+    "Mudo persiste ao recarregar; configurações individuais são preservadas",
+    "Recupera volume zero e canais desmarcados ao ativar",
+    "Pausa e retomada usam os mesmos dois canais",
+    "Controle permanece visível na rolagem e cabe em 320 px",
+    "Bloqueio de autoplay e falha de mídia informados; recuperação funciona",
+    "Salvamento anterior compatível; primeira ação de desligar não toca áudio",
+    "Botão funciona com Enter e Espaço"
+  ],
+  "devices": [
+    {
+      "touch": false,
+      "initial": [
+        {
+          "loop": true,
+          "time": 0.405457,
+          "volume": 0.099,
+          "src": "audio/turno-comecou.wav"
+        },
+        {
+          "loop": false,
+          "time": 0.103602,
+          "volume": 0.49500000000000005,
+          "src": "audio/mensagem.wav"
+        }
+      ]
+    },
+    {
+      "touch": true,
+      "initial": [
+        {
+          "loop": true,
+          "time": 0.385488,
+          "volume": 0.099,
+          "src": "audio/turno-comecou.wav"
+        },
+        {
+          "loop": false,
+          "time": 0.106856,
+          "volume": 0.49500000000000005,
+          "src": "audio/mensagem.wav"
+        }
+      ]
+    }
+  ]
+}

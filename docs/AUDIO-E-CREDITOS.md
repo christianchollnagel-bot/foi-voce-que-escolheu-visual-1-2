@@ -25,7 +25,7 @@ Os sons de resultado já contêm o contato do carimbo; não é tocado outro cari
 
 `audio-medicoes.json` registra duração, pico, RMS e diferença entre as amostras de emenda. Foram verificados arquivos não vazios, decodificação, ausência de clipping e emendas numéricas. Não houve avaliação auditiva humana nem teste de alto-falante de celular; não se afirma que a qualidade percebida foi aprovada por escuta.
 
-Na correção de som, os mesmos arquivos foram normalizados a pico 0,8, a atenuação da música foi reduzida e foi acrescentada uma prévia explícita. `CORRECAO-SOM.md` e `evidencias/audio-correcao.json` registram os novos testes de reprodução, bloqueio e recuperação.
+Na correção de som, os mesmos arquivos foram normalizados a pico 0,8 e a atenuação da música foi reduzida. O controle do topo agora alterna **Desativar som / Ativar som**, com áudio ligado por padrão e reprodução a partir da primeira interação. O modo mudo persiste e preserva as preferências individuais de música/efeitos e volume. `CORRECAO-SOM.md`, `evidencias/audio-correcao.json` e `evidencias/audio-controle.json` registram os testes de reprodução, controle, bloqueio e recuperação.
 
 ## Vibração
 

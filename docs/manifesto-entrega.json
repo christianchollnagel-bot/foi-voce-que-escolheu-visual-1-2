@@ -1,8 +1,8 @@
 [
   {
     "file": "app.js",
-    "sha256": "c806f70037c1bc3eb12f6d9d6e69c1bb83f78e83b76ffd70919048c1eba92d64",
-    "bytes": 54033
+    "sha256": "7bc8c18d8ca9323447ba24065e461023205b923b55cd72a075e79136b4df2a6d",
+    "bytes": 54348
   },
   {
     "file": "assets/avatares/01-alegria.webp",
@@ -4361,8 +4361,8 @@
   },
   {
     "file": "atualizacao.css",
-    "sha256": "f9206cfc436c5bdd56a7e5f13b9f81174a2be2d294e7d4de532053f24d1d1b93",
-    "bytes": 1490
+    "sha256": "ec3fa3a4877843704f32ad2ee815a5c99013b9b3d667581ca4c41489422d2261",
+    "bytes": 1595
   },
   {
     "file": "audio/agora-explica.wav",
@@ -4436,8 +4436,8 @@
   },
   {
     "file": "feedback.js",
-    "sha256": "81c2f44335458df4ad6998a5bbdbc0137751528cbe327aa93ea5a87fe6e751be",
-    "bytes": 4234
+    "sha256": "f1e424e069f6336d0f22257528eff3d30a230b20fc621afa249733e05aabccb3",
+    "bytes": 4682
   },
   {
     "file": "folhas.js",
@@ -4506,7 +4506,7 @@
   },
   {
     "file": "sw.js",
-    "sha256": "a639018daf9157a32a9dbd083334f735ebc768dc65c5b06f6c6194e6da0ffc63",
+    "sha256": "916c8b2ec12fffd1d9d86f5638ec6f68d290e0e0f87732a6a4db35f17126e31c",
     "bytes": 110630
   },
   {
