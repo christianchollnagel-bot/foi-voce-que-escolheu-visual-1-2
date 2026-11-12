@@ -1,3 +1,4 @@
+const {click,reach}=require('./paginas-helper.cjs');
 const {chromium}=require('playwright'),assert=require('node:assert/strict'),fs=require('node:fs');
 const base=process.env.GAME_URL||'http://localhost:4176';
 async function main(){
@@ -9,7 +10,7 @@ async function main(){
    await c.addInitScript(()=>{window.audioAudit=[];window.forceAudioFailure='';window.audioPlayCalls=0;const Original=window.Audio;window.Audio=function(src){const a=new Original(src),play=a.play.bind(a);a.play=()=>{audioPlayCalls++;return forceAudioFailure?Promise.reject(new DOMException('Falha simulada',forceAudioFailure)):play();};audioAudit.push(a);return a;}});
    const p=await c.newPage(),errors=[];p.setDefaultTimeout(15000);p.on('pageerror',e=>errors.push(e.message));
    await p.goto(base+'/?teste=1');await p.waitForFunction(()=>window.FVQE);
-   const press=async name=>{const el=p.getByRole('button',{name,exact:true});if(touch)await el.tap();else await el.click();};
+   const press=async name=>{const el=await reach(p,p.getByRole('button',{name,exact:true,includeHidden:true}));if(touch)await el.tap();else await el.click();};
    const audible=()=>p.waitForFunction(()=>audioAudit.some(a=>a.loop&&!a.paused&&a.volume>0&&a.currentTime>.2));
    const silent=async()=>assert.equal(await p.evaluate(()=>audioAudit.every(a=>a.paused)),true);
    const narrative=()=>p.evaluate(()=>{const {sound,...rest}=FVQE.estado();return rest;});
@@ -29,14 +30,14 @@ async function main(){
    assert.equal(await p.evaluate(()=>FVQE.estado().sound.muted),true);await silent();
    await press('Ativar som');await audible();
    await p.evaluate(()=>FVQE.abrir('config'));await silent();
-   await p.locator('[data-sound="music"]').uncheck();
+   await (await reach(p,p.locator('[data-sound="music"]'))).uncheck();
    await press('Desativar som');await press('Ativar som');
    assert.equal(await p.evaluate(()=>FVQE.estado().sound.music),false,'liga/desliga preserva a escolha de música');
    assert.equal(await p.evaluate(()=>FVQE.estado().sound.effects),true);await silent();
-   await p.locator('[data-sound="effects"]').uncheck();await press('Ativar som');
+   await (await reach(p,p.locator('[data-sound="effects"]'))).uncheck();await press('Ativar som');
    assert.equal(await p.locator('[data-sound="music"]').isChecked(),true);
    assert.equal(await p.locator('[data-sound="effects"]').isChecked(),true);
-   await p.locator('[data-sound="volume"]').fill('0');await press('Ativar som');
+   await (await reach(p,p.locator('[data-sound="volume"]'))).fill('0');await press('Ativar som');
    assert.equal(await p.evaluate(()=>FVQE.estado().sound.volume),.55);await silent();
    await p.evaluate(()=>FVQE.iniciar(0));await audible();
    await p.evaluate(()=>{Feedback.cancel();Feedback.fire('message')});
@@ -71,7 +72,7 @@ async function main(){
    await p.getByRole('button',{name:'Desativar som',exact:true}).focus();await p.keyboard.press('Space');await silent();
    assert.deepEqual(errors,[]);await c.close();
   }
-  report.checks=['Som ligado por padrão; primeira ação do jogo inicia música sem botão de áudio','Música e efeito reproduzem com relógio avançando em clique e toque','Ativar/desativar interrompe ambos os canais sem alterar a narrativa','Mudo persiste ao recarregar; configurações individuais são preservadas','Recupera volume zero e canais desmarcados ao ativar','Pausa e retomada usam os mesmos dois canais','As quatro trilhas carregam, completam a emenda do loop e retomam após troca de contexto','Controle permanece visível na rolagem e cabe em 320 px','Bloqueio de autoplay e falha de mídia informados; recuperação funciona','Salvamento anterior compatível; primeira ação de desligar não toca áudio','Botão funciona com Enter e Espaço'];
+  report.checks=['Som ligado por padrão; primeira ação do jogo inicia música sem botão de áudio','Música e efeito reproduzem com relógio avançando em clique e toque','Ativar/desativar interrompe ambos os canais sem alterar a narrativa','Mudo persiste ao recarregar; configurações individuais são preservadas','Recupera volume zero e canais desmarcados ao ativar','Pausa e retomada usam os mesmos dois canais','As quatro trilhas carregam, completam a emenda do loop e retomam após troca de contexto','Controle permanece visível na navegação por páginas e cabe em 320 px','Bloqueio de autoplay e falha de mídia informados; recuperação funciona','Salvamento anterior compatível; primeira ação de desligar não toca áudio','Botão funciona com Enter e Espaço'];
   fs.writeFileSync('tests/resultados/audio.json',JSON.stringify(report,null,2));console.log(JSON.stringify(report,null,2));
  }finally{await b.close();}
 }

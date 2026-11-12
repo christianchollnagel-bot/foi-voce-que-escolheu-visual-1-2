@@ -29,12 +29,13 @@
   ];
   const chapterNames=['I · O balcão','II · Uma casa para trinta e oito','III · A entrega'];
   let screen='abertura',profile={...initialProfile},draft={...initialProfile},prefs={large:false,contrast:false,motion:false},session=null,book=[],shownExpression='neutro',configReturn='menu',avatarReturn='universo',sessionNotice='',lastPhysicalAction=-Infinity,lastPoint=null;
+  let introSeen=false;
   let intro={page:0,origin:'menu',target:'menu',id:0};
   let currentActions=[];
   const clock=()=>performance.timeOrigin+performance.now();
   const clone=o=>JSON.parse(JSON.stringify(o));
   const rehearsal=window.FVQE_ENSAIO===true||new URLSearchParams(location.search).get('ensaio')==='1';
-  const saved=()=>({version:2,world,sound,screen,profile,draft,prefs,session,book,shift,shiftSequence,shownExpression,configReturn,avatarReturn,intro});
+  const saved=()=>({version:2,world,sound,screen,profile,draft,prefs,session,book,shift,shiftSequence,shownExpression,configReturn,avatarReturn,intro,introSeen});
   function cleanProfile(p){
     return Object.fromEntries(Object.entries(initialProfile).map(([k,defaultValue])=>[k,typeof p?.[k]==='string'?p[k].slice(0,k==='pronouns'?32:48):defaultValue]));
   }
@@ -71,7 +72,7 @@
       const d=JSON.parse(raw);
       if(![1,2].includes(d?.version))throw Error('formato desconhecido');
       if(d.version===2){if(!d.world||!Array.isArray(d.world.log)||!Array.isArray(d.world.rumors)||['facts','knowledge','relations','favors','promises'].some(k=>!d.world[k]||typeof d.world[k]!=='object'||Array.isArray(d.world[k])))throw Error('memória inválida');world=d.world;sound={...audioDefaults,muted:d.sound?.muted===true,music:d.sound?.music!==false,effects:d.sound?.effects!==false,volume:Number.isFinite(d.sound?.volume)?Math.max(0,Math.min(1,d.sound.volume)):.55,haptics:['off','results','all'].includes(d.sound?.haptics)?d.sound.haptics:'results'};}
-      restoreMenu=true;
+      restoreMenu=true;introSeen=d.introSeen===true;
       if(d.intro && [0,1,2].includes(d.intro.page) && ['menu','ajuda','entrega','turno'].includes(d.intro.target))intro=d.intro;
       profile=cleanProfile(d.profile);draft=cleanProfile(d.draft||profile);
       for(const key of Object.keys(prefs))prefs[key]=d.prefs?.[key]===true;
@@ -219,7 +220,7 @@
     const old=$('stage');currentActions=actions;
     const prior=old.querySelector('.portrait.actor img')?.cloneNode?.();
     const pauseButton=session&&!['desfecho','pausa','continuar','config','acessibilidade'].includes(screen)&&gameScreens.includes(screen)?dataBtn('Ⅱ Pausa','open','pausa'):'';
-    old.innerHTML='<header class="band"><span>ARQUIVO DAS ESCOLHAS</span>'+ (pauseButton||'<span>FVQE / 26</span>')+'</header>'+soundControl()+'<div class="inside"><div class="kicker">'+esc(kicker)+'</div><h1 tabindex="-1">'+esc(heading)+'</h1><div class="bookbody">'+html+'</div><nav class="actions" aria-label="Ações da tela">'+(screen==='escolha'?'<h2 class="decision-label">Sua decisão</h2>':'')+actions.map((a,i)=>'<button type="button" data-action="item" data-value="'+i+'" class="'+esc(a.style||(i===0?'primary':''))+'"'+(a.choice==null?'':' data-choice="'+a.choice+'"')+'>'+((a.choice==null)?'':'<b aria-hidden="true">'+String(i+1).padStart(2,'0')+'</b>')+esc(a.label)+'</button>').join('')+'</nav></div><footer class="foot"><span>'+esc(tag)+'</span><span class="bars" aria-hidden="true"></span></footer><small id="storage-status" role="status" hidden></small>';
+    old.innerHTML='<header class="band"><span>ARQUIVO DAS ESCOLHAS</span>'+ (pauseButton||'<span>FVQE / 26</span>')+'</header>'+soundControl()+'<section class="page-viewport" tabindex="-1" aria-label="Conteúdo da tela"><div class="inside"><div class="kicker">'+esc(kicker)+'</div><h1 tabindex="-1">'+esc(heading)+'</h1><div class="bookbody">'+html+'</div><nav class="actions" aria-label="Ações da tela">'+(screen==='escolha'?'<h2 class="decision-label">Sua decisão</h2>':'')+actions.map((a,i)=>'<button type="button" data-action="item" data-value="'+i+'" class="'+esc(a.style||(i===0?'primary':''))+'"'+(a.choice==null?'':' data-choice="'+a.choice+'"')+'>'+((a.choice==null)?'':'<b aria-hidden="true">'+String(i+1).padStart(2,'0')+'</b>')+esc(a.label)+'</button>').join('')+'</nav></div></section><nav class="page-nav" aria-label="Páginas desta tela"><button type="button" data-page="previous">← Anterior</button><output id="page-count" aria-live="polite">1 / 1</output><button type="button" data-page="next">Próxima →</button></nav><footer class="foot"><span>'+esc(tag)+'</span><span class="bars" aria-hidden="true"></span></footer><small id="storage-status" role="status" hidden></small>';
     window.RevelarRetratos?.(old);
     const arriving=old.querySelector('.portrait.actor');
     if(prior && arriving?.firstElementChild && prior.src!==arriving.firstElementChild.src && !prefs.motion && !matchMedia('(prefers-reduced-motion: reduce)').matches){
@@ -233,16 +234,18 @@
     $('rightRail').innerHTML='<small class="binder">'+(active?'FOLHA DE SERVIÇO':'CIRCULAÇÃO INTERNA')+'</small>'+icon(active?n:9)+'<hr><b>'+esc(active?chapter(n):'Caderno do entregador')+'</b><p>'+esc(active?goal(n):'A encomenda muda de mãos. Você decide o que vai pro papel.')+'</p>'+(active?dataBtn('Consultar histórico','open','historico'):'');
     $('rightRail').querySelectorAll('button').forEach(b=>b.className='rail-link');
     $('stage').setAttribute('data-screen',screen);
-    Feedback.configure(sound);Feedback.context(['pausa','config','acessibilidade'].includes(screen)?'paused':screen==='turnofim'?'ending':screen==='vinculo'&&Continuidade.scenes[session?.bridges?.[session.bridgeIndex]]?.requires?'confusion':session&&gameScreens.includes(screen)?'route':'opening');save();
+    Feedback.configure(sound);Feedback.context(['pausa','config','acessibilidade'].includes(screen)?'paused':screen==='turnofim'?'ending':screen==='vinculo'&&Continuidade.scenes[session?.bridges?.[session.bridgeIndex]]?.requires?'confusion':session&&gameScreens.includes(screen)?'route':'opening');save();GamePages.mount(old);
   }
   function open(id){if(screen==='transporte'&&id!==screen)Feedback.cancel();if(id==='menu')intro.credit=false;if(id==='config'&&screen!=='acessibilidade')configReturn=screen==='pausa'?'pausa':'menu';if(id==='acessibilidade'&&screen!=='config')configReturn=session?'pausa':'menu';screen=id;draw()}
   function introduce(target,id=0){
+    if(introSeen&&target!=='menu'){intro={page:0,origin:screen,target,id};finishIntro();return;}
     if(intro.credit && target==='entrega'){start(id);return}
     if(intro.credit && target==='turno'){startShift();return}
     intro={page:0,origin:screen,target,id};
     open('prologo');
   }
   function finishIntro(){
+    introSeen=true;
     intro.credit=intro.target==='ajuda';
     if(intro.target==='entrega'){start(intro.id);return}
     if(intro.target==='turno'){startShift();return}
@@ -253,11 +256,7 @@
     intro.page--;draw();
   }
   function introView(){
-    const n=intro.page,f=Prologo.frames[n];
-    present('Prólogo · '+(n+1)+' / 3',f.title,Prologo.illustration(n)+para(f.text),[
-      opt('Avançar',()=>{if(n===2)finishIntro();else{intro.page++;draw()}}),
-      opt('Voltar',introBack,'subtle'),opt('Pular introdução',finishIntro,'subtle')
-    ],'PORTO DO CEDRO');
+    present('Como jogar · 15 segundos','Seu primeiro turno','<fvqe-introducao></fvqe-introducao>',[]);
   }
   function profileStart(from){avatarReturn=from;draft={...profile};shownExpression='neutro';open('base')}
   function start(id,inShift=false){
@@ -397,9 +396,9 @@
         present('Antes de entrar','Aviso de conteúdo',coverPlate()+para('A história trata de remoção de moradores, perda de moradia, exposição pública e constrangimento. Há pressão no trabalho e humor sobre a burocracia.')+'<p class="note">O projeto foi pensado para quem tem 18 anos ou mais. Ainda não há classificação indicativa oficial.</p>',[act('Entendi · ir para o menu','menu')]);break;
       case 'menu':
         present('Arquivo · recepção','Caderno do entregador',coverPlate()+para('Você pega a encomenda com uma pessoa e entrega pra outra. Às vezes vai uma promessa junto. Essa não vem na etiqueta.'),
-          [...(session?[act('Continuar partida','continuar')]:[]),opt('Nova partida',newGame),...(saveBlocked?[opt('Exportar progresso preservado',exportSave)]:[]),act('Ver capítulos e atos','capitulos'),opt('Personalizar meu crachá',()=>profileStart('menu'),'subtle'),act('Configurações','config','subtle'),act('Créditos','creditos','subtle'),opt('Rever introdução',()=>introduce('menu'),'subtle')]);break;
+          [...(session?[act('Continuar partida','continuar')]:[]),opt('Nova partida',newGame),opt('Resetar jogo',()=>newGame(true),'subtle'),...(saveBlocked?[opt('Exportar progresso preservado',exportSave)]:[]),act('Ver capítulos e atos','capitulos'),opt('Personalizar meu crachá',()=>profileStart('menu'),'subtle'),act('Configurações','config','subtle'),act('Créditos','creditos','subtle'),opt('Rever introdução',()=>introduce('menu'),'subtle')]);break;
       case 'ajuda':
-        present('Guia rápido','Como se joga',coverPlate()+'<ol><li>Leia o pedido. O que a pessoa está esperando?</li><li>Escolha o que fazer. Repare em quem viu.</li><li>Abra o recibo pra ver o que chegou. Dá pra passar vergonha e ainda assim ganhar.</li></ol>'+para('Leia no seu ritmo. As escolhas não têm prazo.'),[opt('Montar meu crachá',()=>profileStart('universo')),act(Object.keys(initialProfile).some(k=>profile[k]!==initialProfile[k])?'Usar meu crachá atual':'Começar com o crachá padrão','universo'),act('Voltar ao menu','menu','subtle')]);break;
+        present('Primeiro turno','Prepare seu crachá',coverPlate()+para('Use o crachá padrão ou personalize seu entregador. Depois, escolha a primeira entrega.'),[opt('Montar meu crachá',()=>profileStart('universo')),act(Object.keys(initialProfile).some(k=>profile[k]!==initialProfile[k])?'Usar meu crachá atual':'Começar com o crachá padrão','universo'),act('Voltar ao menu','menu','subtle')]);break;
       case 'expressoes':
         present('Crachá · prova de impressão','Vinte expressões',avatar(draft,shownExpression)+'<div class="chips">'+Object.entries(expressionLabels).map(([key,label])=>dataBtn(label,'expr',key,key===shownExpression)).join('')+'</div>',[act('Voltar ao crachá','previa')]);break;
       case 'continuar':
@@ -440,10 +439,11 @@
     }
   }
   function exportSave(){try{const raw=localStorage.getItem(storageKey)||sessionStorage.getItem(storageKey)||'';const link=document.createElement('a');link.href=URL.createObjectURL(new Blob([raw],{type:'application/json'}));link.download='progresso-preservado.json';link.click();setTimeout(()=>URL.revokeObjectURL(link.href),1000)}catch{sessionNotice='O navegador não permitiu acessar o registro.';draw()}}
-  function newGame(){
-    if((session||book.length||saveBlocked)&&!confirm('Nova partida substitui o progresso, as escolhas e o crachá. Suas configurações ficam. Quer começar de novo?'))return;
+  function newGame(reset=false){
+    if((reset||session||book.length||saveBlocked)&&!confirm(reset?'Resetar o jogo apaga a partida, os recibos, as escolhas e o crachá deste navegador. Som e acessibilidade serão mantidos. Esta ação não pode ser desfeita. Quer resetar?':'Nova partida substitui o progresso, as escolhas e o crachá. Suas configurações ficam. Quer começar de novo?'))return;
     if(saveBlocked){try{const raw=localStorage.getItem(storageKey);if(raw)localStorage.setItem(storageKey+'-recuperacao-'+Date.now(),raw)}catch{sessionNotice='Não foi possível preservar o registro. Exporte-o antes de tentar novamente.';draw();return;}}
-    saveBlocked=false;sessionNotice='';world=Continuidade.fresh();session=null;book=[];shift=null;shiftSequence=0;profile={...initialProfile};draft={...profile};introduce('ajuda');
+    Feedback.cancel();saveBlocked=false;sessionNotice='';world=Continuidade.fresh();session=null;book=[];shift=null;shiftSequence=0;profile={...initialProfile};draft={...profile};shownExpression='neutro';introSeen=false;intro={page:0,origin:'menu',target:'menu',id:0};configReturn='menu';avatarReturn='universo';
+    if(reset)open('menu');else introduce('ajuda');
   }
   function settingsHtml(){return '<div class="audio-settings"><label><span>Música</span><input type="checkbox" data-sound="music" '+(sound.music?'checked':'')+'></label><label><span>Efeitos sonoros</span><input type="checkbox" data-sound="effects" '+(sound.effects?'checked':'')+'></label><label>Volume<input type="range" min="0" max="1" step=".05" value="'+sound.volume+'" data-sound="volume"></label><label>Vibração<select data-sound="haptics">'+[['off','Desligada'],['results','Somente resultados'],['all','Todos os efeitos']].map(([k,l])=>'<option value="'+k+'" '+(sound.haptics===k?'selected':'')+'>'+l+'</option>').join('')+'</select></label></div>';}
   function memoriesHtml(){return '<h2>O que ficou pelo caminho</h2>'+world.log.slice(-8).map(e=>para(e.reaction)).join('')+'<h3>Combinados</h3>'+para(Object.entries(world.promises).map(([k,v])=>({sigilo:'Discrição com a carta',comida:'Voltar para comer',referencia:'Referência de Inês',canhoto:'Canhoto do rapaz',marmitas:'Pedido de marmitas',copia:'Cópia para o vizinho'}[k]||'Combinado')+': '+v).join(' · ')||'Nenhuma promessa registrada.')+para(Object.entries(world.favors).map(([k,v])=>(Atelier.cast[k]||k)+': favor '+v).join(' · ')||'Nenhum favor pendente.');}
@@ -488,12 +488,7 @@
     }
     if(a==='start-case'){introduce('entrega',Number(v));return}
     if(a.startsWith('set-')){
-      const stage=$('stage'), grid=stage.querySelector('.portrait-grid');
-      const scroll=stage.scrollTop, gridScroll=grid?.scrollTop||0;
       draft[a.slice(4)]=v;draw();
-      stage.scrollTop=scroll;
-      const nextGrid=stage.querySelector('.portrait-grid');
-      if(nextGrid)nextGrid.scrollTop=gridScroll;
       focusControl(a,v);return;
     }
     if(a==='expr'){shownExpression=v;draw();focusControl(a,v);return}
@@ -501,7 +496,7 @@
   }
   function focusControl(action,value){
     const buttons=$('stage').querySelectorAll('button[data-action]');
-    for(const b of buttons)if(b.dataset.action===action&&b.dataset.value===value){b.focus({preventScroll:true});break}
+    for(const b of buttons)if(b.dataset.action===action&&b.dataset.value===value){GamePages.reveal(b);b.focus({preventScroll:true});break}
   }
   function back(){
     if(screen==='abertura')return;
@@ -516,6 +511,7 @@
     if(screen==='revisao'){open('historico');return}
     open('menu');
   }
+  document.addEventListener('intro-complete',()=>{if(screen==='prologo')finishIntro();});
   document.addEventListener('click',handle);
   document.addEventListener('input',e=>{if(e.target.dataset.sound==='volume'){sound.volume=Number(e.target.value);Feedback.configure(sound);}if(e.target.id==='playername')draft.name=e.target.value.trimStart().slice(0,48);if(e.target.id==='pronouns')draft.pronouns=e.target.value.trimStart().slice(0,32);save()});
   document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!e.repeat){e.preventDefault();back()}if(e.repeat&&['Enter',' '].includes(e.key)&&e.target.closest('button'))e.preventDefault()});

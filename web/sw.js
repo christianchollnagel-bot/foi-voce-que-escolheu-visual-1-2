@@ -2,7 +2,7 @@
 const resources = [
   [
     "app.js",
-    "7bc8c18d8ca9323447ba24065e461023205b923b55cd72a075e79136b4df2a6d"
+    "1d39fd3e2647ccb2099fde4a947c3c7c13eb5ee33f80ac8a896f56919b0ed2fd"
   ],
   [
     "assets/avatares/01-alegria.webp",
@@ -3490,7 +3490,7 @@ const resources = [
   ],
   [
     "atualizacao.css",
-    "ec3fa3a4877843704f32ad2ee815a5c99013b9b3d667581ca4c41489422d2261"
+    "1f3e2f2069479f27108b76dc9bb1aa1af9c784c5ff016860a20399dd2fdd6fac"
   ],
   [
     "audio/agora-explica.wav",
@@ -3570,7 +3570,11 @@ const resources = [
   ],
   [
     "index.html",
-    "4606662c01464470540c1aa65a6e5b6c37db96438198809d5daf616b4afc9e05"
+    "f9a456e997fb1cd6445fad8e4d8cc48c40781e62edd759e57bc0874512aadb43"
+  ],
+  [
+    "introducao.js",
+    "9c6f13603f20fb1d82869fbd9978390e119dc36aea43e240ceae1b31de987ced"
   ],
   [
     "manifest.webmanifest",
@@ -3583,6 +3587,14 @@ const resources = [
   [
     "observacoes.js",
     "0755382969d0f8fa63fad28e7e79305c8ce695e45f1eeb0e9ad8fa2aadd8e18b"
+  ],
+  [
+    "paginas.css",
+    "a5d749b35e0a5621bb83b47b334fe89ea5b659d82ea21d4c69bcc0d5630866d9"
+  ],
+  [
+    "paginas.js",
+    "dade8a7f675a49eb185679413fc413fa3c302c875002821bcc0d2ab0fd450bb2"
   ],
   [
     "portaria.js",
@@ -3610,11 +3622,11 @@ const resources = [
   ],
   [
     "transporte.js",
-    "819004a8fcc9a6a2ae412a6e231d25f001032199edb2eeb05da42555586c6bcd"
+    "9560ba200704e9352692df7e86069b61e33e40fa1d129a414f26dfbcd433c07c"
   ]
 ];
 const prefix = 'fvqe-v1|' + self.registration.scope + '|';
-const cacheName = prefix + 'aab135c6cdc79a828c7bd79dc3dbfbff4d75a72712eaec392f8d649d79d8d1db';
+const cacheName = prefix + 'e73ea7632aca5c48e3951244dfc2e7b260fbf4752991159a84e4e0d00d0b2fc2';
 const root = new URL(self.registration.scope);
 const urls = new Map(resources.map(([path, hash]) => [new URL(path, root).href, hash]));
 

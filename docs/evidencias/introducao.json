@@ -1,0 +1,9 @@
+{
+  "out": [
+    "Três cenas legíveis, controles acessíveis, quatro tamanhos de janela e fonte normal/ampliada",
+    "Reduzir movimento mantém as ilustrações estáticas e as explicações disponíveis",
+    "Animação completa avança automaticamente após 15040 ms, sem incluir pausa",
+    "Rever, pular, pausa ao perder foco e preferência persistente verificados"
+  ],
+  "errors": []
+}

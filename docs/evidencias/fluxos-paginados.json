@@ -1,0 +1,11 @@
+{
+  "out": [
+    "Percurso completo, consultas, recibo e paginação sem mutar a partida",
+    "Histórico, consultas e três atos expandidos com todos os controles acessíveis",
+    "Seleção de avatar preserva foco e página",
+    "Janela reduzida durante edição e troca de orientação preservam o texto",
+    "Transporte com teclado, pausa, retomada e controles juntos em tela estreita/deitada e fonte ampliada",
+    "Resetar jogo confirma, cancelamento preserva estado, reset persiste e mantém preferências/dados alheios"
+  ],
+  "errors": []
+}

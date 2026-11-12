@@ -1,8 +1,8 @@
 [
   {
     "file": "app.js",
-    "sha256": "7bc8c18d8ca9323447ba24065e461023205b923b55cd72a075e79136b4df2a6d",
-    "bytes": 54348
+    "sha256": "1d39fd3e2647ccb2099fde4a947c3c7c13eb5ee33f80ac8a896f56919b0ed2fd",
+    "bytes": 54762
   },
   {
     "file": "assets/avatares/01-alegria.webp",
@@ -4361,8 +4361,8 @@
   },
   {
     "file": "atualizacao.css",
-    "sha256": "ec3fa3a4877843704f32ad2ee815a5c99013b9b3d667581ca4c41489422d2261",
-    "bytes": 1595
+    "sha256": "1f3e2f2069479f27108b76dc9bb1aa1af9c784c5ff016860a20399dd2fdd6fac",
+    "bytes": 1585
   },
   {
     "file": "audio/agora-explica.wav",
@@ -4461,8 +4461,13 @@
   },
   {
     "file": "index.html",
-    "sha256": "4606662c01464470540c1aa65a6e5b6c37db96438198809d5daf616b4afc9e05",
-    "bytes": 1458
+    "sha256": "f9a456e997fb1cd6445fad8e4d8cc48c40781e62edd759e57bc0874512aadb43",
+    "bytes": 1557
+  },
+  {
+    "file": "introducao.js",
+    "sha256": "9c6f13603f20fb1d82869fbd9978390e119dc36aea43e240ceae1b31de987ced",
+    "bytes": 6575
   },
   {
     "file": "manifest.webmanifest",
@@ -4478,6 +4483,16 @@
     "file": "observacoes.js",
     "sha256": "0755382969d0f8fa63fad28e7e79305c8ce695e45f1eeb0e9ad8fa2aadd8e18b",
     "bytes": 8842
+  },
+  {
+    "file": "paginas.css",
+    "sha256": "a5d749b35e0a5621bb83b47b334fe89ea5b659d82ea21d4c69bcc0d5630866d9",
+    "bytes": 6660
+  },
+  {
+    "file": "paginas.js",
+    "sha256": "dade8a7f675a49eb185679413fc413fa3c302c875002821bcc0d2ab0fd450bb2",
+    "bytes": 4445
   },
   {
     "file": "portaria.js",
@@ -4506,8 +4521,8 @@
   },
   {
     "file": "sw.js",
-    "sha256": "3da4c3a74da5155233afbb39a5eee9fd4313ac31f749a29a414957a6724c9531",
-    "bytes": 110630
+    "sha256": "98e638b1aa4b9b0b63f1d8c80fca074378484569fb0b6bcf93362e01a8e73122",
+    "bytes": 110928
   },
   {
     "file": "tintas.js",
@@ -4516,8 +4531,8 @@
   },
   {
     "file": "transporte.js",
-    "sha256": "819004a8fcc9a6a2ae412a6e231d25f001032199edb2eeb05da42555586c6bcd",
-    "bytes": 6084
+    "sha256": "9560ba200704e9352692df7e86069b61e33e40fa1d129a414f26dfbcd433c07c",
+    "bytes": 6751
   },
   {
     "file": "_headers",

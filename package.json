@@ -10,6 +10,9 @@
     "test:browser": "node tests/navegador.cjs",
     "test:robustez": "node tests/robustez.cjs",
     "test:rotas": "node tests/rotas.cjs",
-    "test:pwa": "node tests/pwa.cjs"
+    "test:pwa": "node tests/pwa.cjs",
+    "test:paginas": "node tests/paginas.cjs",
+    "test:fluxos": "node tests/fluxos-paginados.cjs",
+    "test:introducao": "node tests/introducao.cjs"
   }
 }
