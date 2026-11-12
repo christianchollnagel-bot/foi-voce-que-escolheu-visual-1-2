@@ -12,6 +12,8 @@ class Transporte extends HTMLElement {
     document.addEventListener('keydown',e=>{if(this.running&&!/^(INPUT|SELECT|TEXTAREA)$/.test(e.target.tagName)&&['ArrowLeft','ArrowRight'].includes(e.key)){e.preventDefault();this.controlInput=e.key==='ArrowLeft'?-1:1}},{signal});
     document.addEventListener('keyup',e=>{if(['ArrowLeft','ArrowRight'].includes(e.key))this.controlInput=0},{signal});
     document.addEventListener('visibilitychange',()=>{if(document.hidden)this.pause()},{signal});window.addEventListener('blur',()=>this.pause(),{signal});
+    const rotate=()=>{this.pause();this.baseline=null;this.tilt=0;};
+    screen.orientation?.addEventListener?.('change',rotate,{signal});window.addEventListener('orientationchange',rotate,{signal});
     this.frame=now=>{if(!this.running)return;const dt=Math.min((now-this.last)/1000,.05);this.last=now;this.elapsed+=dt;
       const force=this.strategy==='junto'?.56:this.strategy==='dividir'?.27:.18;
       const input=this.controlInput||this.tilt;this.v+=(Math.sin(this.elapsed*2.3)*force+input*1.8-this.x*.42-this.v*1.6)*dt;this.x+=this.v*dt;
@@ -32,7 +34,16 @@ class Transporte extends HTMLElement {
     catch{status.textContent='Acesso não autorizado. Os botões e as setas continuam funcionando.';return;}
     if(!this.isConnected)return;this.baseline=null;this.samples=0;this.sensorController?.abort();this.sensorController=new AbortController();clearTimeout(this.sensorTimer);
     status.textContent='Segure o celular numa posição confortável. Aguardando movimento…';
-    window.addEventListener('deviceorientation',e=>{if(!Number.isFinite(e.gamma))return;this.samples++;if(this.baseline===null)this.baseline=e.gamma;const angle=Math.max(-1,Math.min(1,(e.gamma-this.baseline)/20));this.tilt=this.tilt*.8+(Math.abs(angle)<.08?0:angle)*.2;if(this.samples===1)status.textContent='Inclinação ativa. Incline suavemente; o botão permite recalibrar.';},{signal:this.sensorController.signal});
+    window.addEventListener('deviceorientation',e=>{
+      if(document.hidden)return;
+      const rotation=((screen.orientation?.angle??window.orientation??0)%360+360)%360;
+      const value=rotation===90?e.beta:rotation===270?-e.beta:rotation===180?-e.gamma:e.gamma;
+      if((rotation%180===90&&!Number.isFinite(e.beta))||(rotation%180===0&&!Number.isFinite(e.gamma)))return;
+      this.samples++;if(this.baseline===null)this.baseline=value;
+      const delta=(value-this.baseline+540)%360-180,angle=Math.max(-1,Math.min(1,delta/20));
+      this.tilt=this.tilt*.8+(Math.abs(angle)<.08?0:angle)*.2;
+      if(this.samples===1)status.textContent='Inclinação ativa. Incline suavemente; o botão permite recalibrar.';
+    },{signal:this.sensorController.signal});
     this.sensorTimer=setTimeout(()=>{if(!this.samples){status.textContent='O sensor não respondeu. Use os botões ou as setas.';this.sensorController.abort();}},2500);
   }
   disconnectedCallback(){cancelAnimationFrame(this.raf);clearTimeout(this.sensorTimer);this.controller?.abort();this.sensorController?.abort();Feedback.cancel();}

@@ -7,7 +7,7 @@
   const shifts=[[0,4,8],[1,5,9],[2,6,10],[3,7,11]];
   let shift=null,shiftSequence=0;
   const gameScreens=['entrada','escolha','consequencia','desfecho','vinculo','transporte'];
-  let world=Continuidade.fresh(),saveBlocked=false,restoreMenu=false;
+  let world=Continuidade.fresh(),saveBlocked=false,restoreMenu=false,saveTimer=0;
   const audioDefaults={muted:false,music:true,effects:true,volume:.55,haptics:'results'};
   let sound={...audioDefaults};
   const cadernoScreens=['universo','capitulos','historico','revisao','resumo','transicao','documento'];
@@ -95,6 +95,7 @@
     screen='menu';session=null;saveBlocked=true;sessionNotice='Não foi possível ler o progresso anterior. Ele foi preservado. Você pode exportá-lo antes de confirmar uma nova partida.';
   }
   function save(){
+    clearTimeout(saveTimer);
     if(rehearsal)return;
     try{if(!saveBlocked){localStorage.setItem(storageKey,JSON.stringify(saved()));sessionNotice='';}}
     catch{sessionNotice='O navegador ficou sem espaço ou não conseguiu salvar. A partida continua nesta página. Se você atualizar, pode perder o progresso.'}
@@ -445,7 +446,7 @@
     Feedback.cancel();saveBlocked=false;sessionNotice='';world=Continuidade.fresh();session=null;book=[];shift=null;shiftSequence=0;profile={...initialProfile};draft={...profile};shownExpression='neutro';introSeen=false;intro={page:0,origin:'menu',target:'menu',id:0};configReturn='menu';avatarReturn='universo';
     if(reset)open('menu');else introduce('ajuda');
   }
-  function settingsHtml(){return '<div class="audio-settings"><label><span>Música</span><input type="checkbox" data-sound="music" '+(sound.music?'checked':'')+'></label><label><span>Efeitos sonoros</span><input type="checkbox" data-sound="effects" '+(sound.effects?'checked':'')+'></label><label>Volume<input type="range" min="0" max="1" step=".05" value="'+sound.volume+'" data-sound="volume"></label><label>Vibração<select data-sound="haptics">'+[['off','Desligada'],['results','Somente resultados'],['all','Todos os efeitos']].map(([k,l])=>'<option value="'+k+'" '+(sound.haptics===k?'selected':'')+'>'+l+'</option>').join('')+'</select></label></div>';}
+  function settingsHtml(){return '<div class="audio-settings"><label><span>Música</span><input type="checkbox" data-sound="music" '+(sound.music?'checked':'')+'></label><label><span>Efeitos sonoros</span><input type="checkbox" data-sound="effects" '+(sound.effects?'checked':'')+'></label><label>Volume<input type="range" min="0" max="1" step=".05" value="'+sound.volume+'" data-sound="volume"></label><label>Vibração<select data-sound="haptics" '+(typeof navigator.vibrate==='function'?'':'disabled aria-describedby="haptic-support"')+'>'+[['off','Desligada'],['results','Somente resultados'],['all','Todos os efeitos']].map(([k,l])=>'<option value="'+k+'" '+(sound.haptics===k?'selected':'')+'>'+l+'</option>').join('')+'</select></label>'+(typeof navigator.vibrate==='function'?'':'<p id="haptic-support">Vibração indisponível neste navegador. Os avisos visuais e sonoros continuam disponíveis.</p>')+'</div>';}
   function memoriesHtml(){return '<h2>O que ficou pelo caminho</h2>'+world.log.slice(-8).map(e=>para(e.reaction)).join('')+'<h3>Combinados</h3>'+para(Object.entries(world.promises).map(([k,v])=>({sigilo:'Discrição com a carta',comida:'Voltar para comer',referencia:'Referência de Inês',canhoto:'Canhoto do rapaz',marmitas:'Pedido de marmitas',copia:'Cópia para o vizinho'}[k]||'Combinado')+': '+v).join(' · ')||'Nenhuma promessa registrada.')+para(Object.entries(world.favors).map(([k,v])=>(Atelier.cast[k]||k)+': favor '+v).join(' · ')||'Nenhum favor pendente.');}
   function beginTransport(){if(session.bridgeReturn==='consequencia'){session.bridgeReturn='escolha';phase('consequencia');return;}if([2,8,9].includes(cn())&&!session.cargo){phase('transporte');return;}phase('escolha');}
   function bridgeView(){
@@ -513,7 +514,7 @@
   }
   document.addEventListener('intro-complete',()=>{if(screen==='prologo')finishIntro();});
   document.addEventListener('click',handle);
-  document.addEventListener('input',e=>{if(e.target.dataset.sound==='volume'){sound.volume=Number(e.target.value);Feedback.configure(sound);}if(e.target.id==='playername')draft.name=e.target.value.trimStart().slice(0,48);if(e.target.id==='pronouns')draft.pronouns=e.target.value.trimStart().slice(0,32);save()});
+  document.addEventListener('input',e=>{if(e.target.dataset.sound==='volume'){sound.volume=Number(e.target.value);Feedback.configure(sound);}if(e.target.id==='playername')draft.name=e.target.value.trimStart().slice(0,48);if(e.target.id==='pronouns')draft.pronouns=e.target.value.trimStart().slice(0,32);clearTimeout(saveTimer);saveTimer=setTimeout(save,150)});
   document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!e.repeat){e.preventDefault();back()}if(e.repeat&&['Enter',' '].includes(e.key)&&e.target.closest('button'))e.preventDefault()});
   // Uma entrada sentinela permite que Voltar pause no navegador. No menu, Voltar sai da página.
   try{
@@ -521,6 +522,7 @@
     addEventListener('popstate',()=>{if(screen==='menu'||screen==='abertura')return;history.pushState({fvqeGuard:true},'',location.href);back()});
   }catch{/* Alguns navegadores restringem history para file://. Esc e Pausa continuam disponíveis. */}
   addEventListener('pagehide',save);
+  document.addEventListener('visibilitychange',()=>{if(document.hidden)save();});
   if(rehearsal||new URLSearchParams(location.search).get('teste')==='1')window.FVQE=Object.freeze({
     abrir:open,iniciar:start,escolher:choose,avancar:advance,nova:newGame,turno:startShift,proxima:nextShift,estado:()=>clone(saved()),
     perfil(p){profile={...initialProfile,...p};draft={...profile};draw()},

@@ -11,6 +11,7 @@ class Introducao extends HTMLElement {
   </svg></div><div class="film-caption" aria-live="polite"><h2></h2><p></p></div><div class="film-timeline" aria-hidden="true"><span></span></div><div class="film-controls"><button type="button" data-film="pause">Pausar animação</button><span class="film-time" aria-label="Duração: 15 segundos">15 s</span><button type="button" data-film="skip">Pular introdução</button></div>`;
   this.addEventListener('click',e=>{if(e.target.dataset.film==='skip')this.finish();if(e.target.dataset.film==='pause')this.toggle();},{signal});
   document.addEventListener('visibilitychange',()=>{if(document.hidden)this.pause();},{signal});window.addEventListener('blur',()=>this.pause(),{signal});
+  this.parts=Object.fromEntries(['film-envelope','film-token','film-stamp','film-memory','film-time'].map(name=>[name,this.querySelector('.'+name)]));this.progress=this.querySelector('.film-timeline span');
   this.last=performance.now();this.paint();
   this.tick=now=>{if(!this.running)return;this.elapsed=Math.min(15000,this.elapsed+Math.max(0,now-this.last));this.last=now;this.paint();if(this.elapsed>=15000){this.finish();return;}this.raf=requestAnimationFrame(this.tick);};
   this.raf=requestAnimationFrame(this.tick);
@@ -20,13 +21,13 @@ class Introducao extends HTMLElement {
   if(scene!==this.scene){this.scene=scene;this.querySelectorAll('[data-scene]').forEach((g,i)=>g.style.display=i===scene?'':'none');const copy=[['Receba e entenda o pedido','Você é o entregador. Leia o pedido e observe os detalhes.'],['Pergunte. Depois, escolha.','Os botões decidem seu caminho. Nas cargas, use as setas ou incline o celular.'],['Cada escolha deixa uma marca','Abra o recibo: pessoas lembram do que você fez. O progresso é salvo automaticamente.']][scene];this.querySelector('h2').textContent=copy[0];this.querySelector('.film-caption p').textContent=copy[1];}
   const reduced=document.body.classList.contains('motion-off')||matchMedia('(prefers-reduced-motion: reduce)').matches;
   const u=reduced?.65:Math.min(1,t*1.5),smooth=u*u*(3-2*u);
-  this.querySelector('.film-envelope').setAttribute('transform',`translate(${180+280*smooth} ${238-38*Math.sin(smooth*Math.PI)}) rotate(${-8+16*smooth})`);
+  if(scene===0)this.parts['film-envelope'].setAttribute('transform',`translate(${180+280*smooth} ${238-38*Math.sin(smooth*Math.PI)}) rotate(${-8+16*smooth})`);
   const v=reduced?.8:Math.min(1,t*1.4),x=v<.4?80+125*v/.4:205+210*(v-.4)/.6,y=v<.4?200:200-100*(v-.4)/.6;
-  this.querySelector('.film-token').setAttribute('transform',`translate(${x} ${y})`);
-  this.querySelector('.film-stamp').setAttribute('opacity',reduced?1:Math.min(1,t*4));
-  this.querySelector('.film-memory').setAttribute('transform',`translate(0 ${reduced?0:Math.max(0,1-t*2)*45})`);
-  this.querySelector('.film-timeline span').style.width=(this.elapsed/150)+'%';
-  const remaining=Math.ceil((15000-this.elapsed)/1000)+' s',clock=this.querySelector('.film-time');if(clock.textContent!==remaining)clock.textContent=remaining;
+  if(scene===1)this.parts['film-token'].setAttribute('transform',`translate(${x} ${y})`);
+  if(scene===2)this.parts['film-stamp'].setAttribute('opacity',reduced?1:Math.min(1,t*4));
+  if(scene===2)this.parts['film-memory'].setAttribute('transform',`translate(0 ${reduced?0:Math.max(0,1-t*2)*45})`);
+  this.progress.style.transform='scaleX('+(this.elapsed/15000)+')';
+  const remaining=Math.ceil((15000-this.elapsed)/1000)+' s',clock=this.parts['film-time'];if(clock.textContent!==remaining)clock.textContent=remaining;
  }
  pause(){if(!this.running)return;this.running=false;cancelAnimationFrame(this.raf);this.querySelector('[data-film=pause]').textContent='Retomar animação';}
  toggle(){if(this.running){this.pause();return;}this.running=true;this.last=performance.now();this.querySelector('[data-film=pause]').textContent='Pausar animação';this.raf=requestAnimationFrame(this.tick);}

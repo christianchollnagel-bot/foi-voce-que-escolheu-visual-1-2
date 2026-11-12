@@ -1,7 +1,14 @@
 /* Conteúdo paginado dentro da janela; a leitura não depende de rolagem. */
+:root{--safe-top:env(safe-area-inset-top,0px);--safe-right:env(safe-area-inset-right,0px);--safe-bottom:env(safe-area-inset-bottom,0px);--safe-left:env(safe-area-inset-left,0px)}
 html,body{width:100%;height:100%;min-height:0;overflow:hidden;overscroll-behavior:none}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{position:fixed;inset:0}
+button,input,select{touch-action:manipulation}
+button{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
 .desk{height:var(--app-height,100dvh);min-height:0;max-height:var(--app-height,100dvh);width:100%;overflow:clip}
+.desk{position:relative;top:var(--app-top,0px)}
 #stage{height:var(--app-height,100dvh);max-height:var(--app-height,100dvh);overflow:clip;min-height:0}
+#stage{padding:var(--safe-top) var(--safe-right) var(--safe-bottom) var(--safe-left)}
 /* Espaço para a identificação pública do host, sem cobrir os controles do jogo. */
 body.hosted-netlify .desk,body.hosted-netlify #stage{height:calc(var(--app-height,100dvh) - 48px);max-height:calc(var(--app-height,100dvh) - 48px)}
 .rail{min-width:0}
@@ -20,6 +27,7 @@ body.hosted-netlify .desk,body.hosted-netlify #stage{height:calc(var(--app-heigh
 #stage .actions>.decision-label{break-after:avoid;margin-bottom:.45em}
 #stage .audio-settings>label,#stage .field{display:block;margin:0 0 .8em;break-inside:avoid}
 #stage .audio-settings input[type=range],#stage .audio-settings select,#stage .field input{display:block;width:100%;max-width:100%;margin:.35em 0 0;min-height:44px}
+#stage input,#stage select{font-size:max(16px,1em)}
 #stage .audio-settings input[type=checkbox]{width:24px;height:24px;vertical-align:middle;margin:8px}
 #stage .chips{display:block}
 #stage .chips button{display:inline-block;vertical-align:top;max-width:calc(100% - 6px);margin:3px;break-inside:avoid}
@@ -62,6 +70,7 @@ body.hosted-netlify .desk,body.hosted-netlify #stage{height:calc(var(--app-heigh
 body.editing-small #stage>.band,body.editing-small #stage>.sound-bar,body.editing-small #stage>.foot{display:none}
 body.editing-small .page-viewport{margin:8px 12px}
 @media(max-height:520px) and (orientation:landscape){#stage .cargo{padding:4px}#stage .cargo-track{height:42px;margin:3px 0}#stage .cargo-box{top:0;font-size:32px}#stage .cargo-status{font-size:.85em;line-height:1.2;margin:3px 0}#stage .cargo-buttons button{padding:6px}}
+@media(max-height:520px) and (orientation:landscape){#stage .plate figcaption{padding:.4em;gap:.15em}#stage .plate figcaption strong{line-height:1.15}#stage .plate .folio{font-size:1.2em;line-height:1.25}#stage .plate figcaption .portrait{width:34px;height:34px}}
 /* O filme ocupa a janela inteira de leitura, com controles sempre visíveis. */
 #stage[data-screen=prologo] .inside{display:flex;flex-direction:column;transform:none;column-count:auto;gap:0}
 #stage[data-screen=prologo] .inside>.kicker,#stage[data-screen=prologo] .inside>h1,#stage[data-screen=prologo] .actions,#stage[data-screen=prologo]>.page-nav{display:none}
@@ -74,7 +83,7 @@ fvqe-introducao{height:100%;display:flex;flex-direction:column;gap:10px}
 .film-caption h2{font-size:1.4em;margin-bottom:.35em}
 .film-caption p{font-size:1em}
 .film-timeline{height:6px;background:#1a1d2220;flex:none}
-.film-timeline span{display:block;height:100%;background:var(--ultra);width:0}
+.film-timeline span{display:block;height:100%;background:var(--ultra);transform:scaleX(0);transform-origin:left}
 .film-controls{display:flex;align-items:center;gap:8px;flex:none}
 .film-controls button{min-height:44px;flex:1;font:700 .8rem/1.15 var(--sans);padding:8px}
 .film-time{font:700 .75rem var(--mono);min-width:30px;text-align:center}

@@ -2,7 +2,7 @@
 const resources = [
   [
     "app.js",
-    "1d39fd3e2647ccb2099fde4a947c3c7c13eb5ee33f80ac8a896f56919b0ed2fd"
+    "a90977b1f0fa1a269be7c807180e98ef7a165a1d9c1f676b6f11a7435fee43fd"
   ],
   [
     "assets/avatares/01-alegria.webp",
@@ -3550,7 +3550,7 @@ const resources = [
   ],
   [
     "feedback.js",
-    "f1e424e069f6336d0f22257528eff3d30a230b20fc621afa249733e05aabccb3"
+    "a31c899372daca486e52011e7c86c9934fb2504545f041679f4b358fbb050769"
   ],
   [
     "folhas.js",
@@ -3570,11 +3570,11 @@ const resources = [
   ],
   [
     "index.html",
-    "f9a456e997fb1cd6445fad8e4d8cc48c40781e62edd759e57bc0874512aadb43"
+    "f44838e9cb2863b3e8b6345392bde430d71f3bb6e280e5df20a7d46f69dc7cb7"
   ],
   [
     "introducao.js",
-    "9c6f13603f20fb1d82869fbd9978390e119dc36aea43e240ceae1b31de987ced"
+    "a5cf87fc8d71aefeab00e993a99cc0886914c33da5aead502083d6e4605d3c39"
   ],
   [
     "manifest.webmanifest",
@@ -3590,11 +3590,11 @@ const resources = [
   ],
   [
     "paginas.css",
-    "75103cad72c1fe6596b99a8496bc8d3ede0d2636ef565ca5e990a82160d6dcef"
+    "d897eef47a6df67155123124f28dff59126a86c681fb3ecb1aeb364de404fded"
   ],
   [
     "paginas.js",
-    "9b1f96c01ff69e91fd4a200ef7abf27996ec5ea3ea350321b7ae780f32a73eb0"
+    "4b9db3fdf096b24421c9da1917f101145af1b30d153fcbbab7f80b7d46b56835"
   ],
   [
     "portaria.js",
@@ -3606,7 +3606,7 @@ const resources = [
   ],
   [
     "pwa.js",
-    "3170d98d00e70cacd2d3b4920c0e9163cdcaa3fa9883d28041089f2e0fcb5df5"
+    "dc0d5e39cbdde33191d0ecfaf1c9b17dd723efbba30ca2c9779bddbb31d75105"
   ],
   [
     "rotulos-v1.js",
@@ -3622,11 +3622,11 @@ const resources = [
   ],
   [
     "transporte.js",
-    "9560ba200704e9352692df7e86069b61e33e40fa1d129a414f26dfbcd433c07c"
+    "cbae0126fe9b7d92ad926208384b0225f617c2663ce3c6e0a2c4d96943e433b6"
   ]
 ];
 const prefix = 'fvqe-v1|' + self.registration.scope + '|';
-const cacheName = prefix + 'a83e94934d7cdcf21a077aaf93b9e85e657d2ec28f1c5ab41b8eeefc81289a05';
+const cacheName = prefix + '4aa5cba4da9dbab6dad947b58aa2a79812ca9f602c44db7c1183d18047ac26ed';
 const root = new URL(self.registration.scope);
 const urls = new Map(resources.map(([path, hash]) => [new URL(path, root).href, hash]));
 

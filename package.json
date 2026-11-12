@@ -13,6 +13,9 @@
     "test:pwa": "node tests/pwa.cjs",
     "test:paginas": "node tests/paginas.cjs",
     "test:fluxos": "node tests/fluxos-paginados.cjs",
-    "test:introducao": "node tests/introducao.cjs"
+    "test:introducao": "node tests/introducao.cjs",
+    "test:mobile": "node tests/mobile.cjs",
+    "test:audio-mobile": "node tests/audio-mobile.cjs",
+    "test:offline-webkit": "node tests/offline-webkit.cjs"
   }
 }

@@ -4,9 +4,14 @@ window.GamePages=(()=>{
   const gap=24,originalTab=new WeakMap();
   const controls='button,input,select,textarea,a[href],summary,[tabindex]';
   function updateViewport(){
-    const height=Math.round(window.visualViewport?.height||innerHeight);
+    const visual=window.visualViewport;
+    // O zoom é do leitor: não repaginar enquanto ele amplia a página.
+    if(visual?.scale>1.01)return;
+    const height=Math.round(visual?.height||innerHeight);
+    const editing=/^(INPUT|TEXTAREA)$/.test(document.activeElement?.tagName);
     document.documentElement.style.setProperty('--app-height',height+'px');
-    document.body.classList.toggle('editing-small',height<450&&/^(INPUT|TEXTAREA)$/.test(document.activeElement?.tagName));
+    document.documentElement.style.setProperty('--app-top',(editing?Math.max(0,visual?.offsetTop||0):0)+'px');
+    document.body.classList.toggle('editing-small',height<450&&editing);
   }
   function rectangles(el){return [...el.getClientRects()];}
   function visible(el){
@@ -60,11 +65,13 @@ window.GamePages=(()=>{
     root.querySelector('[data-page=previous]').onclick=()=>turn(-1);
     root.querySelector('[data-page=next]').onclick=()=>turn(1);
     observer=new ResizeObserver(schedule);observer.observe(viewport);
-    mutations=new MutationObserver(schedule);mutations.observe(flow,{subtree:true,childList:true,characterData:true,attributes:true,attributeFilter:['hidden','open']});
+    mutations=new MutationObserver(records=>{if(records.some(r=>!(r.target.nodeType===1?r.target:r.target.parentElement)?.closest('.film-time,.cargo-status')))schedule();});mutations.observe(flow,{subtree:true,childList:true,characterData:true,attributes:true,attributeFilter:['hidden','open']});
     refresh();document.fonts?.ready.then(schedule);
     for(const img of flow.querySelectorAll('img'))if(!img.complete)img.addEventListener('load',schedule,{once:true});
   }
   window.addEventListener('resize',schedule);window.visualViewport?.addEventListener('resize',schedule);
+  window.visualViewport?.addEventListener('scroll',schedule,{passive:true});
+  window.addEventListener('pageshow',schedule);
   document.addEventListener('focusin',schedule);document.addEventListener('focusout',schedule);
   document.addEventListener('toggle',e=>{if(flow?.contains(e.target))schedule();},true);
   document.addEventListener('keydown',e=>{

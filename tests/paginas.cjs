@@ -1,7 +1,7 @@
 const {chromium}=require('playwright'),assert=require('node:assert/strict'),fs=require('node:fs');
 const {settle,reach,click}=require('./paginas-helper.cjs');
 const base=process.env.GAME_URL||'http://localhost:4180';
-async function inspect(page,label){
+async function inspect(page,label,{wheel=true}={}){
  await settle(page);
  const findings=await page.evaluate(()=>{
   const stage=document.getElementById('stage'),view=stage.querySelector('.page-viewport'),flow=stage.querySelector('.inside'),box=view.getBoundingClientRect();
@@ -26,7 +26,7 @@ async function inspect(page,label){
  while(await page.locator('[data-page=previous]').isEnabled()){await page.locator('[data-page=previous]').click();await settle(page);}
  for(let i=0;i<150;i++){
   for(const id of await page.locator('[data-audit-id]').evaluateAll(elements=>elements.filter(el=>!el.inert).map(el=>el.dataset.auditId)))seen.add(id);
-  await page.mouse.wheel(0,700);await settle(page);
+  if(wheel)await page.mouse.wheel(0,700);await settle(page);
   assert.equal(await page.evaluate(()=>scrollY+document.getElementById('stage').scrollTop+document.querySelector('.page-viewport').scrollTop),0,label+': roda do mouse rolou a tela');
   if(await page.locator('[data-page=next]').isEnabled()){await page.locator('[data-page=next]').click();await settle(page);}else break;
  }

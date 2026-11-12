@@ -1,0 +1,6 @@
+{
+  "volumeReadOnly": "simulado",
+  "mixer": "dois ganhos reais de Web Audio; volume, redução sob efeito e mudo verificados",
+  "lifecycle": "suspende ao ocultar e retoma no gesto, sem duplicar canais",
+  "errors": []
+}

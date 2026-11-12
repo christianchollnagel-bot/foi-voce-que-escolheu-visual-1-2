@@ -1,0 +1,26 @@
+{
+  "results": [
+    "Nova partida via interface e capítulo 1 concluído",
+    "Discrição retorna com ajuda real no capítulo 5",
+    "Capítulo 0 acessível e concluído",
+    "Capítulo 1 acessível e concluído",
+    "Capítulo 2 acessível e concluído",
+    "Capítulo 3 acessível e concluído",
+    "Capítulo 4 acessível e concluído",
+    "Capítulo 5 acessível e concluído",
+    "Capítulo 6 acessível e concluído",
+    "Capítulo 7 acessível e concluído",
+    "Capítulo 8 acessível e concluído",
+    "Capítulo 9 acessível e concluído",
+    "Capítulo 10 acessível e concluído",
+    "Capítulo 11 acessível e concluído",
+    "Capítulo 12 acessível e concluído",
+    "Rota de fofoca difere da rota discreta",
+    "Novo contexto restaura histórico, consequências e configurações sem duplicar recibos",
+    "Cancelar Nova partida preserva o progresso",
+    "Configurações sem rolagem horizontal em 320, 390 e 1440 px",
+    "Este runtime não expõe Web Audio; reprodução HTML é verificada em tests/mobile.cjs"
+  ],
+  "audio": null,
+  "errors": []
+}

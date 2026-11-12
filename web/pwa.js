@@ -1,5 +1,5 @@
 // A janela independente reserva a moldura do Windows antes de dimensionar a área do jogo.
-if (matchMedia('(display-mode: standalone)').matches) {
+if (matchMedia('(display-mode: standalone)').matches && matchMedia('(pointer: fine)').matches) {
   addEventListener('load', () => {
     const molduraX = Math.max(0, outerWidth - innerWidth);
     const molduraY = Math.max(0, outerHeight - innerHeight);

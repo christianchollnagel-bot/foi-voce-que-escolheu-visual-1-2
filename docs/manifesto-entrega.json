@@ -1,8 +1,8 @@
 [
   {
     "file": "app.js",
-    "sha256": "1d39fd3e2647ccb2099fde4a947c3c7c13eb5ee33f80ac8a896f56919b0ed2fd",
-    "bytes": 54762
+    "sha256": "a90977b1f0fa1a269be7c807180e98ef7a165a1d9c1f676b6f11a7435fee43fd",
+    "bytes": 55194
   },
   {
     "file": "assets/avatares/01-alegria.webp",
@@ -4436,8 +4436,8 @@
   },
   {
     "file": "feedback.js",
-    "sha256": "f1e424e069f6336d0f22257528eff3d30a230b20fc621afa249733e05aabccb3",
-    "bytes": 4682
+    "sha256": "a31c899372daca486e52011e7c86c9934fb2504545f041679f4b358fbb050769",
+    "bytes": 6284
   },
   {
     "file": "folhas.js",
@@ -4461,13 +4461,13 @@
   },
   {
     "file": "index.html",
-    "sha256": "f9a456e997fb1cd6445fad8e4d8cc48c40781e62edd759e57bc0874512aadb43",
-    "bytes": 1557
+    "sha256": "f44838e9cb2863b3e8b6345392bde430d71f3bb6e280e5df20a7d46f69dc7cb7",
+    "bytes": 1613
   },
   {
     "file": "introducao.js",
-    "sha256": "9c6f13603f20fb1d82869fbd9978390e119dc36aea43e240ceae1b31de987ced",
-    "bytes": 6575
+    "sha256": "a5cf87fc8d71aefeab00e993a99cc0886914c33da5aead502083d6e4605d3c39",
+    "bytes": 6777
   },
   {
     "file": "manifest.webmanifest",
@@ -4486,13 +4486,13 @@
   },
   {
     "file": "paginas.css",
-    "sha256": "75103cad72c1fe6596b99a8496bc8d3ede0d2636ef565ca5e990a82160d6dcef",
-    "bytes": 7185
+    "sha256": "d897eef47a6df67155123124f28dff59126a86c681fb3ecb1aeb364de404fded",
+    "bytes": 8059
   },
   {
     "file": "paginas.js",
-    "sha256": "9b1f96c01ff69e91fd4a200ef7abf27996ec5ea3ea350321b7ae780f32a73eb0",
-    "bytes": 4540
+    "sha256": "4b9db3fdf096b24421c9da1917f101145af1b30d153fcbbab7f80b7d46b56835",
+    "bytes": 5064
   },
   {
     "file": "portaria.js",
@@ -4506,8 +4506,8 @@
   },
   {
     "file": "pwa.js",
-    "sha256": "3170d98d00e70cacd2d3b4920c0e9163cdcaa3fa9883d28041089f2e0fcb5df5",
-    "bytes": 3191
+    "sha256": "dc0d5e39cbdde33191d0ecfaf1c9b17dd723efbba30ca2c9779bddbb31d75105",
+    "bytes": 3169
   },
   {
     "file": "rotulos-v1.js",
@@ -4521,7 +4521,7 @@
   },
   {
     "file": "sw.js",
-    "sha256": "4db94f7c2463c1078bf9fb301df45ca147bb705a388a51ea2e9cf2193f4687fa",
+    "sha256": "35f11da647ee3036bddf08ad4eed06b91e434bf83ca8b0fceda4217e37c44fac",
     "bytes": 111817
   },
   {
@@ -4531,8 +4531,8 @@
   },
   {
     "file": "transporte.js",
-    "sha256": "9560ba200704e9352692df7e86069b61e33e40fa1d129a414f26dfbcd433c07c",
-    "bytes": 6751
+    "sha256": "cbae0126fe9b7d92ad926208384b0225f617c2663ce3c6e0a2c4d96943e433b6",
+    "bytes": 7293
   },
   {
     "file": "_headers",

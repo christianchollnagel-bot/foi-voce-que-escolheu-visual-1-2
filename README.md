@@ -41,3 +41,5 @@ O script `scripts/integrar.cjs` registra a transformação inicial da base e **n
 Consulte `docs/PUBLICACAO.md`, `docs/CONSEQUENCIAS.md`, `docs/AUDIO-E-CREDITOS.md`, `docs/VERIFICACAO.md` e `docs/DEMONSTRACAO.md`. Os documentos HTML antigos em `Entrega/` são evidências históricas da Visual 1.2; não descrevem esta atualização nem entram no pacote publicado. A consolidação aprovada foi preservada sem alterações. O mapa final da jornada permanece uma etapa posterior.
 
 A atualização de navegação, reset e animação está documentada em docs/NAVEGACAO-E-INTRODUCAO.md. Testes específicos: node tests/paginas.cjs, node tests/fluxos-paginados.cjs e node tests/introducao.cjs (servidor local na porta 4180 ou variável GAME_URL).
+
+Compatibilidade com Chrome/Android e Safari/iOS: consulte docs/COMPATIBILIDADE-MOBILE.md. A atualização respeita áreas seguras, teclado e zoom, mantém controles alternativos aos sensores e informa quando a vibração não está disponível.
