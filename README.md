@@ -22,6 +22,8 @@ No transporte, escolha a estratégia e use as setas, os botões de toque ou **At
 
 Configurações permitem controlar música, efeitos, volume, vibração, texto ampliado, contraste e redução de movimento. Tab, Enter e Esc permitem navegar. Áudio e vibração não são necessários para compreender os resultados.
 
+A trilha usa **eletrônica com groove brasileiro a 112 BPM**: baixo sincopado, bumbo encorpado, palmas, shaker e tamborim sintetizados, em quatro variações para abertura, entregas, cobrança e fim do turno. O tema do jogo permanece reconhecível. Arranjo, fontes e verificação em `docs/BATIDA-ELETRONICA.md`.
+
 O som vem ligado por padrão e começa na primeira interação com o jogo, como **Abrir o arquivo**, respeitando a permissão de reprodução do navegador. Logo abaixo de **ARQUIVO DAS ESCOLHAS**, o botão **Desativar som / Ativar som** controla música e efeitos juntos e permanece visível durante a rolagem. Desligar o som preserva o volume e as escolhas individuais de música/efeitos; essa preferência fica salva neste navegador. Ativar recupera o volume padrão se estiver em zero e liga os dois canais caso ambos estivessem desmarcados. Nas configurações e na pausa, a música continua pausada. O status informa bloqueios ou falhas de carregamento. Consulte `docs/CORRECAO-SOM.md` para a verificação.
 
 ## Entrega e manutenção

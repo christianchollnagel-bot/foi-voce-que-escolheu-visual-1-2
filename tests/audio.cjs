@@ -7,7 +7,7 @@ async function main(){
   for(const touch of [false,true]){
    const c=await b.newContext({viewport:{width:320,height:740},isMobile:touch,hasTouch:touch,serviceWorkers:'block'});
    await c.addInitScript(()=>{window.audioAudit=[];window.forceAudioFailure='';window.audioPlayCalls=0;const Original=window.Audio;window.Audio=function(src){const a=new Original(src),play=a.play.bind(a);a.play=()=>{audioPlayCalls++;return forceAudioFailure?Promise.reject(new DOMException('Falha simulada',forceAudioFailure)):play();};audioAudit.push(a);return a;}});
-   const p=await c.newPage(),errors=[];p.on('pageerror',e=>errors.push(e.message));
+   const p=await c.newPage(),errors=[];p.setDefaultTimeout(15000);p.on('pageerror',e=>errors.push(e.message));
    await p.goto(base+'/?teste=1');await p.waitForFunction(()=>window.FVQE);
    const press=async name=>{const el=p.getByRole('button',{name,exact:true});if(touch)await el.tap();else await el.click();};
    const audible=()=>p.waitForFunction(()=>audioAudit.some(a=>a.loop&&!a.paused&&a.volume>0&&a.currentTime>.2));
@@ -42,6 +42,13 @@ async function main(){
    await p.evaluate(()=>{Feedback.cancel();Feedback.fire('message')});
    await p.waitForFunction(()=>audioAudit.some(a=>!a.loop&&a.currentTime>.1));
    assert.equal(await p.evaluate(()=>audioAudit.length),2,'canais reutilizados entre telas');
+   for(const [context,file] of [['confusion','agora-explica'],['ending','fim-do-turno'],['opening','turno-comecou'],['route','era-so-entregar']]){
+    await p.evaluate(value=>Feedback.context(value),context);
+    await p.waitForFunction(file=>audioAudit.some(a=>a.loop&&a.getAttribute('src').includes(file)&&!a.paused&&a.currentTime>.15&&Number.isFinite(a.duration)),file);
+    await p.evaluate(()=>{const music=audioAudit.find(a=>a.loop);music.currentTime=music.duration-.08;});
+    await p.waitForFunction(()=>audioAudit.some(a=>a.loop&&!a.paused&&a.currentTime>.1&&a.currentTime<1));
+   }
+   assert.equal(await p.evaluate(()=>audioAudit.length),2,'trocas e retornos reutilizam os canais');
    await p.evaluate(()=>{const s=document.getElementById('stage');s.scrollTop=s.scrollHeight});
    const layout=await p.evaluate(()=>{const s=document.getElementById('stage').getBoundingClientRect(),b=document.getElementById('sound-toggle').getBoundingClientRect();return {visible:b.top>=Math.max(0,s.top)&&b.bottom<=Math.min(innerHeight,s.bottom),fits:document.documentElement.scrollWidth<=innerWidth};});
    assert.deepEqual(layout,{visible:true,fits:true});
@@ -64,7 +71,7 @@ async function main(){
    await p.getByRole('button',{name:'Desativar som',exact:true}).focus();await p.keyboard.press('Space');await silent();
    assert.deepEqual(errors,[]);await c.close();
   }
-  report.checks=['Som ligado por padrão; primeira ação do jogo inicia música sem botão de áudio','Música e efeito reproduzem com relógio avançando em clique e toque','Ativar/desativar interrompe ambos os canais sem alterar a narrativa','Mudo persiste ao recarregar; configurações individuais são preservadas','Recupera volume zero e canais desmarcados ao ativar','Pausa e retomada usam os mesmos dois canais','Controle permanece visível na rolagem e cabe em 320 px','Bloqueio de autoplay e falha de mídia informados; recuperação funciona','Salvamento anterior compatível; primeira ação de desligar não toca áudio','Botão funciona com Enter e Espaço'];
+  report.checks=['Som ligado por padrão; primeira ação do jogo inicia música sem botão de áudio','Música e efeito reproduzem com relógio avançando em clique e toque','Ativar/desativar interrompe ambos os canais sem alterar a narrativa','Mudo persiste ao recarregar; configurações individuais são preservadas','Recupera volume zero e canais desmarcados ao ativar','Pausa e retomada usam os mesmos dois canais','As quatro trilhas carregam, completam a emenda do loop e retomam após troca de contexto','Controle permanece visível na rolagem e cabe em 320 px','Bloqueio de autoplay e falha de mídia informados; recuperação funciona','Salvamento anterior compatível; primeira ação de desligar não toca áudio','Botão funciona com Enter e Espaço'];
   fs.writeFileSync('tests/resultados/audio.json',JSON.stringify(report,null,2));console.log(JSON.stringify(report,null,2));
  }finally{await b.close();}
 }

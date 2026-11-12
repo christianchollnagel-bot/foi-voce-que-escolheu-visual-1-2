@@ -4,9 +4,9 @@ Responsável acadêmico: **Christian Cândia Hollnagel**. Direção e requisitos
 
 ## Produção sonora desta atualização
 
-Os dez WAV foram produzidos pelo script `scripts/compor-audio.cjs`, que inclui a partitura, a harmonia, o arranjo e a síntese. Sem gravações, melodias de novelas, samples ou instrumentos de terceiros. Osciladores senoidais e harmônicos com envelopes simulam piano, baixo e madeira; ruído pseudoaleatório com semente fixa e envelopes produz a percussão. Não é atribuída composição humana exclusiva a essa produção assistida. Os arquivos são materiais originais criados para uso e distribuição neste projeto; não se promete certificação jurídica universal de exclusividade.
+Os dez WAV são produzidos por `scripts/compor-audio.cjs`; as quatro trilhas usam o arranjo e o sintetizador de `scripts/trilha-eletronica.cjs`. Sem gravações, melodias de novelas, samples ou instrumentos de terceiros. Osciladores e ruído pseudoaleatório determinístico produzem baixo, teclas elétricas, motivo melódico e percussão eletrônica com inspiração brasileira. Não há instrumentistas gravados. Não é atribuída composição humana exclusiva a essa produção assistida. Os arquivos são materiais originais criados para uso e distribuição neste projeto; não se promete certificação jurídica universal de exclusividade.
 
-108 BPM; motivo de dois compassos; harmonia em torno de C, Am, Dm e G; quatro acompanhamentos de oito compassos. WAV PCM mono, 22.050 Hz, 16 bits, decodificados no navegador. Fontes de composição ficam fora da pasta pública.
+Nova batida: **112 BPM, 4/4**, motivo de dois compassos preservado, baixo sincopado e acordes C6/9, Am9, Dm9 e G13. Bumbo eletrônico, palmas suaves, shaker, tamborim e aro sintetizados, com pequeno atraso nas semicolcheias alternadas. As quatro trilhas têm oito compassos, 756.000 quadros, **17,142857 segundos**, em WAV PCM estéreo, **44.100 Hz / 16 bits**. Efeitos e vinhetas anteriores permanecem idênticos, em mono, 22.050 Hz / 16 bits. A partitura reproduzível fica fora da pasta pública. Veja `BATIDA-ELETRONICA.md`.
 
 | Peça | Arquivo em web/audio | Uso |
 |---|---|---|
@@ -23,7 +23,7 @@ Os dez WAV foram produzidos pelo script `scripts/compor-audio.cjs`, que inclui a
 
 Os sons de resultado já contêm o contato do carimbo; não é tocado outro carimbo na mesma conclusão. Música e efeitos têm controles independentes. O acompanhamento diminui durante os efeitos; uma única instância de música e uma de efeito impedem empilhamento. Faixas só mudam ao mudar o contexto musical, e a pausa conserva a posição. A mudança entre contextos usa corte entre frases/contextos de tela; não há mixagem musical por compasso. Reprodução bloqueada não interrompe a partida.
 
-`audio-medicoes.json` registra duração, pico, RMS e diferença entre as amostras de emenda. Foram verificados arquivos não vazios, decodificação, ausência de clipping e emendas numéricas. Não houve avaliação auditiva humana nem teste de alto-falante de celular; não se afirma que a qualidade percebida foi aprovada por escuta.
+`audio-medicoes.json` registra duração, pico de amostra, RMS e diferença entre as amostras de emenda. As trilhas modernas também registram RMS em dBFS, correlação estéreo e energia mono; essas medidas não são LUFS nem true peak. O ganho de masterização é comum às quatro trilhas e aos stems, mantendo as diferenças de intensidade. Foram verificados arquivos não vazios, decodificação, ausência de clipping de amostra, soma dos stems e emendas numéricas. Não houve avaliação auditiva humana nem teste de alto-falante de celular; não se afirma que a qualidade percebida foi aprovada por escuta.
 
 Na correção de som, os mesmos arquivos foram normalizados a pico 0,8 e a atenuação da música foi reduzida. O controle do topo agora alterna **Desativar som / Ativar som**, com áudio ligado por padrão e reprodução a partir da primeira interação. O modo mudo persiste e preserva as preferências individuais de música/efeitos e volume. `CORRECAO-SOM.md`, `evidencias/audio-correcao.json` e `evidencias/audio-controle.json` registram os testes de reprodução, controle, bloqueio e recuperação.
 

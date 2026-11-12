@@ -3494,7 +3494,7 @@ const resources = [
   ],
   [
     "audio/agora-explica.wav",
-    "3b4930bcd83458fa9975c0b29ea635f8fb599f25b5f237a8289b1963e1d0ab08"
+    "57697209d2808239bb0c9c0e554a1b8eefd712f6bc7ff04e98636c1b876c170e"
   ],
   [
     "audio/batidas.wav",
@@ -3510,11 +3510,11 @@ const resources = [
   ],
   [
     "audio/era-so-entregar.wav",
-    "5235f1552a8e53d17a50ef90bf43c4ba791bbaf550e47736d8fd2d9c896f2430"
+    "bdb588893dbda144fed462511eced377414cce15be88de82261e08eea8ccc556"
   ],
   [
     "audio/fim-do-turno.wav",
-    "cebc9da02f0e4ad8890c6f62c2a63612f0b2aa4db580e4ee11b3e1024470a37a"
+    "c28ca7783d6c9d080d70331b29d7b5f3e739192d48bc4720521f2739f100ba98"
   ],
   [
     "audio/impacto.wav",
@@ -3526,7 +3526,7 @@ const resources = [
   ],
   [
     "audio/turno-comecou.wav",
-    "465c3b7b220132b6600508f86bfbce1779810a95f0d961bedc32309edc9e61a6"
+    "10ce6968f66d4ad6981bbb3ed0f79d053b22fe383739ac88d8132eefbb94d827"
   ],
   [
     "audio/vitoria.wav",
@@ -3614,7 +3614,7 @@ const resources = [
   ]
 ];
 const prefix = 'fvqe-v1|' + self.registration.scope + '|';
-const cacheName = prefix + '09873e637626d311516da9373d77cdb81c6b0ea3e56c9cffb93c46dc96a587e1';
+const cacheName = prefix + 'aab135c6cdc79a828c7bd79dc3dbfbff4d75a72712eaec392f8d649d79d8d1db';
 const root = new URL(self.registration.scope);
 const urls = new Map(resources.map(([path, hash]) => [new URL(path, root).href, hash]));
 

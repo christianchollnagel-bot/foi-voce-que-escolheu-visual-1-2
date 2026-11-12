@@ -1,0 +1,66 @@
+{
+  "bpm": 112,
+  "bars": 8,
+  "sampleRate": 44100,
+  "channels": 2,
+  "bits": 16,
+  "frames": 756000,
+  "tracks": [
+    {
+      "file": "turno-comecou.wav",
+      "seconds": 17.142857142857142,
+      "peak": 0.759979248046875,
+      "rms": 0.14162043147927397,
+      "rmsDbFS": -16.977481735382028,
+      "seam": 0.00128173828125,
+      "monoRms": 0.14152049281886192,
+      "minWindowRms": 0.025945001044359546,
+      "maxStemErrorLSB": 2,
+      "sha256": "10ce6968f66d4ad6981bbb3ed0f79d053b22fe383739ac88d8132eefbb94d827"
+    },
+    {
+      "file": "era-so-entregar.wav",
+      "seconds": 17.142857142857142,
+      "peak": 0.610809326171875,
+      "rms": 0.11716999601569447,
+      "rmsDbFS": -18.623671696914815,
+      "seam": 0.0008544921875,
+      "monoRms": 0.11708137751221304,
+      "minWindowRms": 0.010570045305690385,
+      "maxStemErrorLSB": 2,
+      "sha256": "bdb588893dbda144fed462511eced377414cce15be88de82261e08eea8ccc556"
+    },
+    {
+      "file": "agora-explica.wav",
+      "seconds": 17.142857142857142,
+      "peak": 0.7572021484375,
+      "rms": 0.13711675937552165,
+      "rmsDbFS": -17.258189188750073,
+      "seam": 0.001251220703125,
+      "monoRms": 0.13705252824030756,
+      "minWindowRms": 0.022075233637951885,
+      "maxStemErrorLSB": 2,
+      "sha256": "57697209d2808239bb0c9c0e554a1b8eefd712f6bc7ff04e98636c1b876c170e"
+    },
+    {
+      "file": "fim-do-turno.wav",
+      "seconds": 17.142857142857142,
+      "peak": 0.4775390625,
+      "rms": 0.08325678218775277,
+      "rmsDbFS": -21.59160756562383,
+      "seam": 0.000457763671875,
+      "monoRms": 0.08309558590301706,
+      "minWindowRms": 0.006378816734598553,
+      "maxStemErrorLSB": 2,
+      "sha256": "c28ca7783d6c9d080d70331b29d7b5f3e739192d48bc4720521f2739f100ba98"
+    }
+  ],
+  "checks": [
+    "Quatro loops estéreo PCM 44,1 kHz / 16 bits / oito compassos a 112 BPM",
+    "Picos de amostra com margem e emendas abaixo de 0,004 FS",
+    "Nenhuma janela de 100 ms inesperadamente silenciosa",
+    "Soma mono preserva a energia; offset DC desprezível",
+    "Quatro stems por faixa recompõem a mix com erro máximo de três LSB",
+    "Renderização determinística; seis efeitos e vinhetas anteriores idênticos"
+  ]
+}
