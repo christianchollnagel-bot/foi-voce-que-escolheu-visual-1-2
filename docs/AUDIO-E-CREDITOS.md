@@ -25,6 +25,8 @@ Os sons de resultado já contêm o contato do carimbo; não é tocado outro cari
 
 `audio-medicoes.json` registra duração, pico, RMS e diferença entre as amostras de emenda. Foram verificados arquivos não vazios, decodificação, ausência de clipping e emendas numéricas. Não houve avaliação auditiva humana nem teste de alto-falante de celular; não se afirma que a qualidade percebida foi aprovada por escuta.
 
+Na correção de som, os mesmos arquivos foram normalizados a pico 0,8, a atenuação da música foi reduzida e foi acrescentada uma prévia explícita. `CORRECAO-SOM.md` e `evidencias/audio-correcao.json` registram os novos testes de reprodução, bloqueio e recuperação.
+
 ## Vibração
 
 Padrões em milissegundos, alternando pulso e pausa: vitória `[45,65,45]`; derrota `[140]`; carimbo `[30]`; central `[25,50,25,50,40]`; revelação `[40]`; impacto `[35]`; porta `[40,120,40]`. Resultados têm prioridade; impactos têm intervalo mínimo de um segundo no transporte. A vibração é cancelada ao ocultar ou pausar. Modos: Desligada, Somente resultados e Todos os efeitos. Não há controle de intensidade. Testes de chamadas simuladas não comprovam percepção física.

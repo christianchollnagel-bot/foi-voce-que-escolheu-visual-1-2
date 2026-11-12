@@ -214,11 +214,12 @@
   function fileTab(label,detail){
     return '<div class="file-tab">'+glyph('historico')+'<span>'+esc(label)+'</span><b>'+esc(detail)+'</b></div>';
   }
+  function soundControl(){return '<div class="sound-bar"><button type="button" data-action="sound-enable">Ativar e testar som</button><small id="audio-status" role="status">'+esc(Feedback.status())+'</small></div>';}
   function present(kicker,heading,html='',actions=[],tag='EDIÇÃO DE CAMPO'){
     const old=$('stage');currentActions=actions;
     const prior=old.querySelector('.portrait.actor img')?.cloneNode?.();
     const pauseButton=session&&!['desfecho','pausa','continuar','config','acessibilidade'].includes(screen)&&gameScreens.includes(screen)?dataBtn('Ⅱ Pausa','open','pausa'):'';
-    old.innerHTML='<header class="band"><span>ARQUIVO DAS ESCOLHAS</span>'+ (pauseButton||'<span>FVQE / 26</span>')+'</header><div class="inside"><div class="kicker">'+esc(kicker)+'</div><h1 tabindex="-1">'+esc(heading)+'</h1><div class="bookbody">'+html+'</div><nav class="actions" aria-label="Ações da tela">'+(screen==='escolha'?'<h2 class="decision-label">Sua decisão</h2>':'')+actions.map((a,i)=>'<button type="button" data-action="item" data-value="'+i+'" class="'+esc(a.style||(i===0?'primary':''))+'"'+(a.choice==null?'':' data-choice="'+a.choice+'"')+'>'+((a.choice==null)?'':'<b aria-hidden="true">'+String(i+1).padStart(2,'0')+'</b>')+esc(a.label)+'</button>').join('')+'</nav></div><footer class="foot"><span>'+esc(tag)+'</span><span class="bars" aria-hidden="true"></span></footer><small id="storage-status" role="status" hidden></small>';
+    old.innerHTML='<header class="band"><span>ARQUIVO DAS ESCOLHAS</span>'+ (pauseButton||'<span>FVQE / 26</span>')+'</header>'+soundControl()+'<div class="inside"><div class="kicker">'+esc(kicker)+'</div><h1 tabindex="-1">'+esc(heading)+'</h1><div class="bookbody">'+html+'</div><nav class="actions" aria-label="Ações da tela">'+(screen==='escolha'?'<h2 class="decision-label">Sua decisão</h2>':'')+actions.map((a,i)=>'<button type="button" data-action="item" data-value="'+i+'" class="'+esc(a.style||(i===0?'primary':''))+'"'+(a.choice==null?'':' data-choice="'+a.choice+'"')+'>'+((a.choice==null)?'':'<b aria-hidden="true">'+String(i+1).padStart(2,'0')+'</b>')+esc(a.label)+'</button>').join('')+'</nav></div><footer class="foot"><span>'+esc(tag)+'</span><span class="bars" aria-hidden="true"></span></footer><small id="storage-status" role="status" hidden></small>';
     window.RevelarRetratos?.(old);
     const arriving=old.querySelector('.portrait.actor');
     if(prior && arriving?.firstElementChild && prior.src!==arriving.firstElementChild.src && !prefs.motion && !matchMedia('(prefers-reduced-motion: reduce)').matches){
@@ -466,6 +467,14 @@
   function handle(e){
     const b=e.target.closest('button[data-action]');if(!b)return;
     const a=b.dataset.action,v=b.dataset.value;
+    if(a==='sound-enable'){
+      sound={...sound,music:true,effects:true,volume:sound.volume>0?sound.volume:.55};
+      Feedback.configure(sound);Feedback.preview();
+      document.querySelectorAll('[data-sound="music"],[data-sound="effects"]').forEach(el=>el.checked=true);
+      const volume=document.querySelector('[data-sound="volume"]');if(volume)volume.value=sound.volume;
+      save();return;
+    }
+
     // Controles substituídos sob o ponteiro ignoram o segundo clique físico da mesma sequência.
     const now=performance.now();
     if(e.detail>1||(e.detail>0&&now-lastPhysicalAction<260&&lastPoint&&Math.hypot(e.clientX-lastPoint[0],e.clientY-lastPoint[1])<6))return;
@@ -506,7 +515,7 @@
     open('menu');
   }
   document.addEventListener('click',handle);
-  document.addEventListener('input',e=>{if(e.target.id==='playername')draft.name=e.target.value.trimStart().slice(0,48);if(e.target.id==='pronouns')draft.pronouns=e.target.value.trimStart().slice(0,32);save()});
+  document.addEventListener('input',e=>{if(e.target.dataset.sound==='volume'){sound.volume=Number(e.target.value);Feedback.configure(sound);}if(e.target.id==='playername')draft.name=e.target.value.trimStart().slice(0,48);if(e.target.id==='pronouns')draft.pronouns=e.target.value.trimStart().slice(0,32);save()});
   document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!e.repeat){e.preventDefault();back()}if(e.repeat&&['Enter',' '].includes(e.key)&&e.target.closest('button'))e.preventDefault()});
   // Uma entrada sentinela permite que Voltar pause no navegador. No menu, Voltar sai da página.
   try{

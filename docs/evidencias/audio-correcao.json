@@ -1,0 +1,110 @@
+{
+  "checks": [
+    "Reprodução real com clique e toque sob política de autoplay restrita",
+    "Música e efeito com relógio avançando e sem erro de mídia",
+    "Dois canais reutilizados entre telas",
+    "Prévia nas configurações sem reativar música pausada",
+    "Mute/volume zero persistidos; botão explícito recupera áudio",
+    "Bloqueio de autoplay e falha de mídia informados; recuperação pelo botão",
+    "Preferências de som não alteram estado narrativo",
+    "Layout sem rolagem horizontal em 320 px"
+  ],
+  "devices": [
+    {
+      "touch": false,
+      "initial": [
+        {
+          "loop": true,
+          "time": 0.315496,
+          "volume": 0.099,
+          "src": "audio/turno-comecou.wav"
+        },
+        {
+          "loop": false,
+          "time": 0.292288,
+          "volume": 0.49500000000000005,
+          "src": "audio/mensagem.wav"
+        }
+      ]
+    },
+    {
+      "touch": true,
+      "initial": [
+        {
+          "loop": true,
+          "time": 0.310402,
+          "volume": 0.099,
+          "src": "audio/turno-comecou.wav"
+        },
+        {
+          "loop": false,
+          "time": 0.287182,
+          "volume": 0.49500000000000005,
+          "src": "audio/mensagem.wav"
+        }
+      ]
+    }
+  ],
+  "levels": [
+    {
+      "file": "turno-comecou.wav",
+      "peak": 0.79998779296875,
+      "rms": 0.14982025652505146,
+      "changeDb": 12.549343814635925
+    },
+    {
+      "file": "era-so-entregar.wav",
+      "peak": 0.79998779296875,
+      "rms": 0.15868985031129676,
+      "changeDb": 15.36884480130891
+    },
+    {
+      "file": "agora-explica.wav",
+      "peak": 0.79998779296875,
+      "rms": 0.16474368819823307,
+      "changeDb": 13.400948499290262
+    },
+    {
+      "file": "fim-do-turno.wav",
+      "peak": 0.79998779296875,
+      "rms": 0.15306566702177782,
+      "changeDb": 12.802441243292186
+    },
+    {
+      "file": "vitoria.wav",
+      "peak": 0.79998779296875,
+      "rms": 0.1659829121396484,
+      "changeDb": 8.820257808419393
+    },
+    {
+      "file": "derrota.wav",
+      "peak": 0.79998779296875,
+      "rms": 0.1343346077929983,
+      "changeDb": 6.163511233889134
+    },
+    {
+      "file": "carimbo.wav",
+      "peak": 0.79998779296875,
+      "rms": 0.0824135042012858,
+      "changeDb": 6.56248297362578
+    },
+    {
+      "file": "mensagem.wav",
+      "peak": 0.79998779296875,
+      "rms": 0.14268401224750016,
+      "changeDb": 12.67495740870632
+    },
+    {
+      "file": "batidas.wav",
+      "peak": 0.79998779296875,
+      "rms": 0.11831096924536781,
+      "changeDb": 7.977607035762315
+    },
+    {
+      "file": "impacto.wav",
+      "peak": 0.79998779296875,
+      "rms": 0.10089860012662685,
+      "changeDb": 7.593250703650673
+    }
+  ]
+}

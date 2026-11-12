@@ -22,6 +22,8 @@ No transporte, escolha a estratégia e use as setas, os botões de toque ou **At
 
 Configurações permitem controlar música, efeitos, volume, vibração, texto ampliado, contraste e redução de movimento. Tab, Enter e Esc permitem navegar. Áudio e vibração não são necessários para compreender os resultados.
 
+O botão **Ativar e testar som**, no topo da tela, liga o áudio e toca uma mensagem de teste. Ele também recupera o volume se estiver zerado. O status avisa se o navegador bloqueou a reprodução ou se algum áudio não carregou. Nas configurações, a música fica pausada, mas o botão permite ouvir a prévia. Consulte `docs/CORRECAO-SOM.md` para a verificação dessa correção.
+
 ## Entrega e manutenção
 
 - Fonte canônica: `web/`.

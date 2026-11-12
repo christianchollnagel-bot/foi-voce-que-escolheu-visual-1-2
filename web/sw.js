@@ -2,7 +2,7 @@
 const resources = [
   [
     "app.js",
-    "1691abce04f7ac6305891dbe5ac20e1caf480ff70eec45c9d73be5b4afc26f92"
+    "c806f70037c1bc3eb12f6d9d6e69c1bb83f78e83b76ffd70919048c1eba92d64"
   ],
   [
     "assets/avatares/01-alegria.webp",
@@ -3490,47 +3490,47 @@ const resources = [
   ],
   [
     "atualizacao.css",
-    "0757a567116bad04bda37e715767ea03e65f2157775ea9cfb508d078723474f2"
+    "f9206cfc436c5bdd56a7e5f13b9f81174a2be2d294e7d4de532053f24d1d1b93"
   ],
   [
     "audio/agora-explica.wav",
-    "a72681053d8dcaf4b56f1b5088674a8677365a8688d10cc8384c57368c0a0ea0"
+    "3b4930bcd83458fa9975c0b29ea635f8fb599f25b5f237a8289b1963e1d0ab08"
   ],
   [
     "audio/batidas.wav",
-    "12e73fb88a87461136c357a98dd8d9769e20c937982b331723e851ba3e782039"
+    "b811dd91241e0e385d560ac218ee2b711d8f9d8175c8506083776b77478a6395"
   ],
   [
     "audio/carimbo.wav",
-    "49030c34168fb6caff021499cf992496fb15d51295a40c1c6283791ad17646dc"
+    "8486fd20248c28fe5d7fba84d41236f161420c094c55a91edcd70e2fd99b2375"
   ],
   [
     "audio/derrota.wav",
-    "6d6d8db2aeec070ff641f99b0ab6326ae5ac75e4ab0f2bc672911964f396554b"
+    "e76ea036e12c22bd78a6ca80bd85c537a9ab2d891f785e039a10cba164a07a89"
   ],
   [
     "audio/era-so-entregar.wav",
-    "d575a15d4ad4706f76026947036cf196568d1a392c0d289ba40b1b875172552c"
+    "5235f1552a8e53d17a50ef90bf43c4ba791bbaf550e47736d8fd2d9c896f2430"
   ],
   [
     "audio/fim-do-turno.wav",
-    "2752b7343288ed59caaca8ac43b710f472480ab7e7f29bc08fd090596914bc03"
+    "cebc9da02f0e4ad8890c6f62c2a63612f0b2aa4db580e4ee11b3e1024470a37a"
   ],
   [
     "audio/impacto.wav",
-    "2e057190bde5326065b02d1b253669bc63a6a09d0da3172d477c446523ad25b0"
+    "611c7627579db00c363cac0134f4c4efd55088b4216c80abbaf74ac40bacad96"
   ],
   [
     "audio/mensagem.wav",
-    "ab51bf064a3f08d3fcfcf9c8c1689ebe58b5791adf735e79c365239229951ec1"
+    "7b50fa73b5159ab4c8477f5b3b5d6720bc652d87a9ed699f86ef3028c206eee6"
   ],
   [
     "audio/turno-comecou.wav",
-    "1b5ac0e8748644c9825ef87956a4a5994319e00f8fc631f70809f1b04b1d6fd7"
+    "465c3b7b220132b6600508f86bfbce1779810a95f0d961bedc32309edc9e61a6"
   ],
   [
     "audio/vitoria.wav",
-    "6a7e3f6d24e82b111613baf4449f1daeb11ba2b42b36397f5f2a019e11aaf03c"
+    "3c35e428dbd1c1f5c07e165c561b953bd781287107cc517c8095e5f0f584a8fd"
   ],
   [
     "caderno.js",
@@ -3550,7 +3550,7 @@ const resources = [
   ],
   [
     "feedback.js",
-    "98fc562f8c185154f90e30574aa38f31c38c8e8ba2e5a923c3bfe0ccb9e39bbf"
+    "81c2f44335458df4ad6998a5bbdbc0137751528cbe327aa93ea5a87fe6e751be"
   ],
   [
     "folhas.js",
@@ -3614,7 +3614,7 @@ const resources = [
   ]
 ];
 const prefix = 'fvqe-v1|' + self.registration.scope + '|';
-const cacheName = prefix + '352767eada5d174977f044fe25249caca7a02c6c84c3758acd91067315be724c';
+const cacheName = prefix + '94d98c8e48656f6966830fdf7b05728298d366fbbf45956177f51d02e4477efd';
 const root = new URL(self.registration.scope);
 const urls = new Map(resources.map(([path, hash]) => [new URL(path, root).href, hash]));
 
