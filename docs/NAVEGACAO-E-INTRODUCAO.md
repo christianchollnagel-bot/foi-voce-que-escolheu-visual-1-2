@@ -16,7 +16,7 @@ Atualização de 12/11/2026, sobre a branch `codex/atualizacao-completa`.
 
 | Recurso | Função/formato | Origem e consumo |
 |---|---|---|
-| `paginas.js` / `paginas.css` | Colunas CSS contidas na janela; controle de foco e páginas | Código original desta atualização; carregado por `index.html`, montado por `present()` |
+| `paginas.js` / `paginas.css` | Páginas por limites medidos de linhas e controles; controle de foco | Fluxo vertical normal, sem colunas CSS; carregado por `index.html`, montado por `present()` |
 | `introducao.js` | SVG original em coordenadas 640 × 400, escalável; três camadas/cenas | Vetores criados para o projeto, sem imagens, samples ou vídeo externos; componente `fvqe-introducao` integrado ao prólogo |
 | Cena 1 | Balcão, mãos, envelope em trajetória | Receber e entender o pedido; movimento suave de posição e rotação |
 | Cena 2 | Dois caminhos, escolhas e marcador móvel | Perguntar/decidir; marcador acompanha uma bifurcação |
@@ -26,7 +26,17 @@ Paleta, tipografia e contornos seguem o jogo existente. Não há nova faixa, voz
 
 ## Evidências
 
-### Correção da paginação mobile após a captura do usuário
+### Edição 12.11-C: revisão após os vídeos do iPhone
+
+Os vídeos enviados pelo usuário mostraram que as tentativas anteriores não resolveram o problema no aparelho: menu e catálogo continuavam cortados em `1 / 1`. A nova composição abandona colunas CSS e a contagem por `scrollWidth`. O conteúdo permanece em fluxo vertical normal. O paginador mede linhas de texto e conjuntos que precisam ficar inteiros, monta os intervalos de cada página e apresenta somente um intervalo por vez, sem rolagem.
+
+Os nós do jogo não são movidos nem remontados durante paginação ou redimensionamento, preservando o transporte e seus ouvintes. Botões, retratos, campos e controles da carga são mantidos inteiros. Textos longos podem continuar na página seguinte entre linhas. As animações decorativas da leitura passam a alterar só a opacidade, para não deslocar os limites já medidos; a animação 2D de introdução permanece. Conteúdo de capítulos recolhidos e títulos visualmente ocultos não entra na contagem.
+
+O rodapé identifica `12.11-C`, permitindo conferir qual edição o telefone recebeu. A atualização offline reutiliza recursos de caches anteriores somente após conferir seus hashes, baixando novamente alterações ou dados corrompidos. A PWA instalada também consulta atualizações ao abrir. O progresso continua no armazenamento do navegador e a nova versão aguarda o fechamento das janelas antigas.
+
+`tests/videos-iphone.cjs` reproduz os percursos observados pelos botões, sem habilitar a API de teste do jogo: menu, prólogo, crachá, seleção do último retrato, confirmação, carta, pedido e pausa/retomada. A inspeção de páginas agora confere **cada linha de texto em alguma página**, além de todos os controles e ausência de rolagem. Também passaram os testes de 240 layouts, fluxo completo/consultas/reset/transporte e introdução em Chrome/WebKit. Isso não substitui a validação no iPhone físico. Os vídeos privados e seus quadros não foram adicionados ao repositório.
+
+### Tentativa anterior após a captura estática (substituída pela edição C)
 
 A captura recebida mostrou o catálogo de personagens cortado, contador `1 / 1` e os dois botões desativados. O cálculo anterior dependia de `height:100%` dentro de flex e somente de `scrollWidth`. A composição agora recebe a altura disponível em pixels; o total considera também os retângulos dos fragmentos renderizados. Uma medida momentaneamente vazia não é usada para repaginar. As regras antigas de `overflow:auto` da moldura e do catálogo foram removidas da folha base.
 

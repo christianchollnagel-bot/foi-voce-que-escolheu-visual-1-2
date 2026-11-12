@@ -7,7 +7,7 @@ const hash=x=>crypto.createHash('sha256').update(x).digest('hex');
 async function install(body,script=app,scope='https://game.netlify.app/'){
  const handlers={},stored=new Map(),context={URL,TextEncoder,TextDecoder,crypto:crypto.webcrypto,Response,
   self:{registration:{scope},addEventListener:(name,fn)=>handlers[name]=fn},
-  caches:{open:async()=>({put:async(url,res)=>stored.set(url,await res.text())}),delete:async()=>stored.clear()},
+  caches:{keys:async()=>[],open:async()=>({put:async(url,res)=>stored.set(url,await res.text())}),delete:async()=>stored.clear()},
   fetch:async url=>new Response(url.endsWith('index.html')?body:script,{status:200})};
  vm.createContext(context);const source=fs.readFileSync('web/sw.js','utf8').replace(/const resources = [\s\S]*?;\nconst prefix =/,'const resources = '+JSON.stringify([['index.html',hash(html)],['app.js',hash(app)]])+';\nconst prefix =');vm.runInContext(source,context);
  let pending;handlers.install({waitUntil:p=>pending=p});return {pending,stored};
@@ -15,7 +15,7 @@ async function install(body,script=app,scope='https://game.netlify.app/'){
 async function main(){
  for(const body of [html,hosted]){const {pending,stored}=await install(body);await pending;assert.equal(stored.get('https://game.netlify.app/index.html'),body,'conserva HTML original e identificação do host');assert.equal(stored.size,2);}
  for(const [body,script,scope] of [[hosted.replace('Arquivo','CORROMPIDO'),app],[hosted,app+'alterado'],[hosted+'<script>erro()</script>',app],[hosted,app,'http://localhost/']]){
-  const {pending,stored}=await install(body,script,scope);await assert.rejects(pending,/Integridade inválida/);assert.equal(stored.size,0,'remove cache incompleto');
+  const {pending,stored}=await install(body,script,scope);await assert.rejects(pending,/integridade inválida/i);assert.equal(stored.size,0,'remove cache incompleto');
  }
  console.log('Integridade: HTML original/Netlify aprovados, resposta preservada, alterações no jogo/scripts e marcação desconhecida rejeitadas.');
 }

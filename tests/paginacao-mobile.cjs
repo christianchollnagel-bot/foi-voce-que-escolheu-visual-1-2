@@ -24,8 +24,8 @@ async function run(type){
    assert.equal(await page.evaluate(()=>FVQE.estado().screen),'universo');
    report.push({engine:type.name(),width,height,...result});
   }
-  // Injeção de falha: altura indefinida e scrollWidth sem as colunas excedentes.
-  // Reproduz o estado "1 / 1" com conteúdo cortado; refresh deve se recuperar.
+  // scrollWidth incompleto não pode tornar o catálogo uma única página.
+  // A altura automática é normal nesta edição, sem fragmentação por colunas CSS.
   await page.setViewportSize({width:393,height:724});await page.evaluate(()=>{FVQE.abrir('base');const f=document.querySelector('.inside');f.style.height='auto';Object.defineProperty(f,'scrollWidth',{configurable:true,get(){return this.clientWidth}});GamePages.refresh()});await settle(page);
   assert.ok(Number(await page.locator('#stage').getAttribute('data-pages'))>1);
   await turn(1);await turn(-1);await inspect(page,type.name()+' recuperação de medição incompleta',{wheel:false});

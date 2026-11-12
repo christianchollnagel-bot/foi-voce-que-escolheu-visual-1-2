@@ -1,0 +1,19 @@
+{
+  "report": [
+    {
+      "engine": "webkit",
+      "version": "26.0",
+      "flow": "menu, introdução, crachá, último retrato, confirmar, carta, pedido e pausa",
+      "productionMode": true,
+      "errors": []
+    },
+    {
+      "engine": "chromium",
+      "version": "157.0.8103.39",
+      "flow": "menu, introdução, crachá, último retrato, confirmar, carta, pedido e pausa",
+      "productionMode": true,
+      "errors": []
+    }
+  ],
+  "limits": "Fluxos dos vídeos reproduzidos em automação; sem inspeção no iPhone físico."
+}

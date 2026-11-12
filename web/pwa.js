@@ -11,7 +11,7 @@ if (matchMedia('(display-mode: standalone)').matches && matchMedia('(pointer: fi
   }, {once: true});
 }
 (() => {
-  const version = 'Edição de continuidade · base Visual 1.2';
+  const version = 'Edição 12.11-C · base Visual 1.2';
   let status = 'Preparando os arquivos para jogar sem conexão…';
   function announce(message) {
     status = message;
@@ -56,7 +56,7 @@ if (matchMedia('(display-mode: standalone)').matches && matchMedia('(pointer: fi
     if (reg.waiting) waiting();
     else if (reg.active) ready();
     else navigator.serviceWorker.ready.then(() => reg.waiting ? waiting() : ready());
-    if (reg.active && !instalado) reg.update().catch(() => {});
+    if (reg.active) reg.update().catch(() => {});
   }).catch(() => announce('Não foi possível preparar o modo offline. Confira a conexão e reabra o jogo.'));
 })();
 

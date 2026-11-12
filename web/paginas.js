@@ -1,7 +1,7 @@
 window.GamePages=(()=>{
   document.body.classList.toggle('hosted-netlify',location.hostname.endsWith('.netlify.app'));
-  let stage=null,viewport=null,flow=null,page=0,total=1,step=0,frame=0,observer=null,mutations=null,anchor=null;
-  const gap=24,originalTab=new WeakMap();
+  let stage=null,viewport=null,flow=null,page=0,total=1,pages=[],contentHeight=0,frame=0,observer=null,mutations=null,anchor=null;
+  const revision='12.11-C',originalTab=new WeakMap();
   const controls='button,input,select,textarea,a[href],summary,[tabindex]';
   function updateViewport(){
     const visual=window.visualViewport;
@@ -14,11 +14,16 @@ window.GamePages=(()=>{
     document.body.classList.toggle('editing-small',height<450&&editing);
   }
   function rectangles(el){return [...el.getClientRects()];}
+  function rendered(el){
+    if(el.closest('[hidden]')||el.checkVisibility?.({visibilityProperty:true})===false)return false;
+    const closed=el.closest('details:not([open])');return !closed||closed.querySelector('summary')?.contains(el);
+  }
   function visible(el){
     if(el.checkVisibility?.({visibilityProperty:true})===false)return false;
     const closed=el.closest('details:not([open])');if(closed&&!closed.querySelector('summary')?.contains(el))return false;
     const box=viewport.getBoundingClientRect();
-    return rectangles(el).some(r=>r.width>0&&r.height>0&&r.left>=box.left-1&&r.right<=box.right+1&&r.top>=box.top-1&&r.bottom<=box.bottom+1);
+    const bottom=box.top+Math.min(box.height,(pages[page]?.end||box.height)-(pages[page]?.start||0));
+    return rectangles(el).some(r=>r.width>0&&r.height>0&&r.left>=box.left-1&&r.right<=box.right+1&&r.top>=box.top-1&&r.bottom<=bottom+1);
   }
   function updateControls(){
     for(const el of flow.querySelectorAll(controls)){
@@ -29,7 +34,13 @@ window.GamePages=(()=>{
     }
   }
   function apply(){
-    page=Math.max(0,Math.min(total-1,page));flow.style.setProperty('--page-offset',(-page*step)+'px');
+    page=Math.max(0,Math.min(total-1,page));
+    const current=pages[page]||{start:0,end:viewport.clientHeight};
+    flow.style.setProperty('--page-offset',(-current.start)+'px');
+    // Recortar entre linhas/controles inteiros, sem rolar ou remontar componentes.
+    const clip='inset('+current.start+'px 0 '+Math.max(0,contentHeight-current.end)+'px 0)';
+    flow.style.clipPath=clip;flow.style.webkitClipPath=clip;
+    stage.dataset.pageStart=String(current.start);stage.dataset.pageEnd=String(current.end);
     const moving=!!stage.querySelector('fvqe-transporte')?.running;
     stage.querySelector('[data-page=previous]').disabled=page===0||moving;
     stage.querySelector('[data-page=next]').disabled=page===total-1||moving;
@@ -40,7 +51,42 @@ window.GamePages=(()=>{
   function locate(el){
     const box=flow.getBoundingClientRect(),rect=rectangles(el).find(r=>r.width&&r.height);
     if(!rect)return page;
-    return Math.max(0,Math.floor((rect.left-box.left+1)/step));
+    const top=rect.top-box.top,bottom=rect.bottom-box.top;
+    const index=pages.findIndex(p=>top>=p.start-1&&bottom<=p.end+1);
+    return index<0?Math.max(0,pages.findIndex(p=>top<p.end)):index;
+  }
+  function measure(height){
+    const origin=flow.getBoundingClientRect().top,segments=[];
+    const add=rect=>{if(rect.width>0&&rect.height>0)segments.push({start:Math.max(0,rect.top-origin),end:rect.bottom-origin});};
+    // Linhas reais, em fluxo normal. A paginação não usa colunas CSS nem scrollWidth.
+    const walker=document.createTreeWalker(flow,NodeFilter.SHOW_TEXT);
+    while(walker.nextNode()){
+      const node=walker.currentNode,el=node.parentElement;
+      if(!node.textContent.trim()||el.closest('svg,script,style,.clipped')||!rendered(el))continue;
+      if(stage.dataset.screen==='abertura'&&el.closest('h1'))continue;
+      const range=document.createRange();range.selectNodeContents(node);
+      for(const rect of range.getClientRects())add(rect);
+    }
+    // Nunca dividir um botão, uma imagem, um campo ou os controles da carga.
+    for(const el of flow.querySelectorAll('button,input,select,textarea,summary,img,svg,h1,h2,h3,.kicker,.plate,.portrait,.file-tab,.official-cover,.detail-print,.dialogue:not(.featured),.field,.audio-settings>label,.cargo-play')){
+      if(!rendered(el))continue;
+      if(el.tagName==='IMG'&&el.closest('.portrait'))continue;
+      for(const rect of rectangles(el))if(rect.height<=height+.5)add(rect);
+    }
+    segments.sort((a,b)=>a.start-b.start||a.end-b.end);
+    const lines=[];
+    for(const segment of segments){const last=lines.at(-1);if(last&&segment.start<last.end-.1)last.end=Math.max(last.end,segment.end);else lines.push({...segment});}
+    contentHeight=Math.max(flow.getBoundingClientRect().height,lines.at(-1)?.end||0);
+    const result=[];
+    for(let i=0;i<lines.length;){
+      const start=result.length?lines[i].start:0,limit=start+height;let next=i;
+      while(next<lines.length&&lines[next].end<=limit+.5)next++;
+      // Um elemento excepcionalmente alto continua paginado por intervalos finitos.
+      if(next===i){const end=Math.min(lines[i].end,limit);result.push({start,end});if(end>=lines[i].end-.5)i++;else lines[i].start=end;continue;}
+      const end=next<lines.length?Math.min(limit,lines[next].start):Math.min(limit,contentHeight);
+      result.push({start,end});i=next;
+    }
+    return result.length?result:[{start:0,end:Math.min(height,contentHeight)}];
   }
   function refresh(){
     if(!flow?.isConnected)return;
@@ -48,20 +94,14 @@ window.GamePages=(()=>{
     const focused=flow.contains(document.activeElement)?document.activeElement:null;
     const moving=stage.querySelector('fvqe-transporte');
     const keep=anchor||(moving?.running?moving.querySelector('.cargo-play'):focused);anchor=null;
-    // A altura percentual de um filho de flex pode ser indefinida durante a
-    // composição mobile. Sem altura definida, as colunas viram um bloco vertical.
-    const box=viewport.getBoundingClientRect(),height=Math.floor(box.height),width=box.width;
-    if(height<1||width<1)return;
+    const box=viewport.getBoundingClientRect(),height=Math.floor(box.height);
+    if(height<1||box.width<1)return;
     stage.style.setProperty('--page-height',height+'px');
-    flow.style.height=height+'px';
-    step=width+gap;
-    // Alguns motores não incluem todas as colunas em scrollWidth. Medir também
-    // os fragmentos impede que "1 / 1" esconda conteúdo ainda fora da janela.
-    const range=document.createRange();range.selectNodeContents(flow);
-    const left=flow.getBoundingClientRect().left;
-    let extent=flow.scrollWidth;
-    for(const rect of range.getClientRects())extent=Math.max(extent,rect.right-left);
-    total=Math.max(1,Math.ceil((extent+gap-2)/step));
+    const film=stage.dataset.screen==='prologo';
+    flow.style.height=film?height+'px':'auto';
+    pages=film?[{start:0,end:height}]:measure(height);
+    if(film)contentHeight=height;
+    total=pages.length;
     if(keep?.isConnected)page=locate(keep);
     apply();
   }
@@ -73,6 +113,7 @@ window.GamePages=(()=>{
   }
   function mount(root){
     observer?.disconnect();mutations?.disconnect();stage=root;viewport=root.querySelector('.page-viewport');flow=root.querySelector('.inside');page=0;anchor=null;
+    const footer=root.querySelector('.foot>span');if(footer&&!footer.dataset.revision){footer.dataset.revision=revision;footer.textContent+=' · '+revision;}
     root.querySelector('[data-page=previous]').onclick=()=>turn(-1);
     root.querySelector('[data-page=next]').onclick=()=>turn(1);
     observer=new ResizeObserver(schedule);observer.observe(viewport);
@@ -89,5 +130,5 @@ window.GamePages=(()=>{
     if(!viewport||e.altKey||e.ctrlKey||e.metaKey||/^(INPUT|TEXTAREA|SELECT)$/.test(e.target.tagName))return;
     if(e.key==='PageDown'||e.key==='PageUp'){e.preventDefault();turn(e.key==='PageDown'?1:-1);}
   });
-  return {mount,refresh,reveal};
+  return {mount,refresh,reveal,revision};
 })();

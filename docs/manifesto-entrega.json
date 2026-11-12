@@ -4486,13 +4486,13 @@
   },
   {
     "file": "paginas.css",
-    "sha256": "52cc930f1ea452800f5125c46715a875167798289f1253d8b7cf29bdee35be12",
-    "bytes": 8098
+    "sha256": "dc603d9fcf0cc1386afdd93ff9d215c0122d7f495f5ae7889d9a8237e08bb32e",
+    "bytes": 8288
   },
   {
     "file": "paginas.js",
-    "sha256": "2f8c7398e68c8df38633906a2a40480674128565b29b462f50a40037cf5a4dea",
-    "bytes": 5750
+    "sha256": "069d0e5ce0c46b4f4cf3f6bd9a3c2af0b2f36459d9544c366a7eeb05191272a8",
+    "bytes": 8607
   },
   {
     "file": "portaria.js",
@@ -4506,8 +4506,8 @@
   },
   {
     "file": "pwa.js",
-    "sha256": "dc0d5e39cbdde33191d0ecfaf1c9b17dd723efbba30ca2c9779bddbb31d75105",
-    "bytes": 3169
+    "sha256": "e3354e62ac0eb54deb4312dee6967a0a7e2bd627a12376160b99f9710da6dcf0",
+    "bytes": 3147
   },
   {
     "file": "rotulos-v1.js",
@@ -4521,8 +4521,8 @@
   },
   {
     "file": "sw.js",
-    "sha256": "5c6b9bd8d588eadbee061314bba0462e7626e3a316360d641bb6a024e1492e93",
-    "bytes": 111817
+    "sha256": "500674ef3102dba4fdf2ee476918a47956c85348f84b63e9f62153b5f68a6f18",
+    "bytes": 112374
   },
   {
     "file": "tintas.js",

@@ -3590,11 +3590,11 @@ const resources = [
   ],
   [
     "paginas.css",
-    "52cc930f1ea452800f5125c46715a875167798289f1253d8b7cf29bdee35be12"
+    "dc603d9fcf0cc1386afdd93ff9d215c0122d7f495f5ae7889d9a8237e08bb32e"
   ],
   [
     "paginas.js",
-    "2f8c7398e68c8df38633906a2a40480674128565b29b462f50a40037cf5a4dea"
+    "069d0e5ce0c46b4f4cf3f6bd9a3c2af0b2f36459d9544c366a7eeb05191272a8"
   ],
   [
     "portaria.js",
@@ -3606,7 +3606,7 @@ const resources = [
   ],
   [
     "pwa.js",
-    "dc0d5e39cbdde33191d0ecfaf1c9b17dd723efbba30ca2c9779bddbb31d75105"
+    "e3354e62ac0eb54deb4312dee6967a0a7e2bd627a12376160b99f9710da6dcf0"
   ],
   [
     "rotulos-v1.js",
@@ -3626,7 +3626,7 @@ const resources = [
   ]
 ];
 const prefix = 'fvqe-v1|' + self.registration.scope + '|';
-const cacheName = prefix + '896a74290f262dbcfa24885778c8d695ebc1cf85217f073843d9627e855b73d7';
+const cacheName = prefix + '6e1df5eb9ff23ab3fb10505d260e3435f253370242912c3d32724431831e13cd';
 const root = new URL(self.registration.scope);
 const urls = new Map(resources.map(([path, hash]) => [new URL(path, root).href, hash]));
 
@@ -3641,17 +3641,26 @@ self.addEventListener('install', event => {
   event.waitUntil((async () => {
     const cache = await caches.open(cacheName);
     try {
+      const previous=await Promise.all((await caches.keys()).filter(key=>key.startsWith(prefix)&&key!==cacheName).map(key=>caches.open(key)));
+      async function valid(response,url,expected){
+        if(!response?.ok)return false;
+        let bytes=await response.clone().arrayBuffer();
+        if(url===new URL('index.html',root).href&&root.hostname.endsWith('.netlify.app'))
+          bytes=new TextEncoder().encode(sourceHtml(new TextDecoder().decode(bytes)));
+        const digest=await crypto.subtle.digest('SHA-256',bytes);
+        return Array.from(new Uint8Array(digest),b=>b.toString(16).padStart(2,'0')).join('')===expected;
+      }
       const pending=urls.entries();
       async function loadBatch(){
         for (const [url, expected] of pending) {
-        const response = await fetch(url, {cache:'no-store', redirect:'error', credentials:'same-origin'});
-        if (!response.ok) throw Error('Recurso indisponível: ' + url);
-        let bytes = await response.clone().arrayBuffer();
-        if (url === new URL('index.html', root).href && root.hostname.endsWith('.netlify.app'))
-          bytes = new TextEncoder().encode(sourceHtml(new TextDecoder().decode(bytes)));
-        const digest = await crypto.subtle.digest('SHA-256', bytes);
-        const actual = Array.from(new Uint8Array(digest), b => b.toString(16).padStart(2, '0')).join('');
-        if (actual !== expected) throw Error('Integridade inválida: ' + url);
+          let response;
+          // Reutilizar somente bytes conferidos: corrigir a navegação não exige
+          // baixar novamente centenas de retratos, músicas e efeitos intactos.
+          for(const old of previous){const candidate=await old.match(url);if(await valid(candidate,url,expected)){response=candidate;break;}}
+          if(!response){
+            response=await fetch(url,{cache:'no-store',redirect:'error',credentials:'same-origin'});
+            if(!await valid(response,url,expected))throw Error('Recurso indisponível ou integridade inválida: '+url);
+          }
           await cache.put(url, response);
         }
       }
