@@ -28,7 +28,7 @@
     'A ficha ainda está com você. Debaixo da árvore, o vizinho espera saber se a visita acabou.'
   ];
   const chapterNames=['I · O balcão','II · Uma casa para trinta e oito','III · A entrega'];
-  let screen='abertura',profile={...initialProfile},draft={...initialProfile},prefs={large:false,contrast:false,motion:false},session=null,book=[],shownExpression='neutro',configReturn='menu',avatarReturn='universo',sessionNotice='',lastPhysicalAction=-Infinity,lastPoint=null;
+  let screen='abertura',profile={...initialProfile},draft={...initialProfile},prefs={large:false,contrast:false,motion:false},session=null,book=[],shownExpression='neutro',configReturn='menu',avatarReturn='universo',sessionNotice='';
   let introSeen=false;
   let intro={page:0,origin:'menu',target:'menu',id:0};
   let currentActions=[];
@@ -466,7 +466,7 @@
   });
   document.addEventListener('change',e=>{const k=e.target.dataset.sound;if(!k)return;sound[k]=['music','effects'].includes(k)?e.target.checked:k==='volume'?Number(e.target.value):e.target.value;Feedback.configure(sound);save();});
   function handle(e){
-    const b=e.target.closest('button[data-action]');if(!b)return;
+    const b=e.target.closest('button[data-action]');if(!b||!b.isConnected||b.disabled||b.closest('[inert]'))return;
     const a=b.dataset.action,v=b.dataset.value;
     if(a==='sound-toggle'){
       const enable=!Feedback.enabled();
@@ -478,10 +478,8 @@
       save();return;
     }
 
-    // Controles substituídos sob o ponteiro ignoram o segundo clique físico da mesma sequência.
-    const now=performance.now();
-    if(e.detail>1||(e.detail>0&&now-lastPhysicalAction<260&&lastPoint&&Math.hypot(e.clientX-lastPoint[0],e.clientY-lastPoint[1])<6))return;
-    if(e.detail>0){lastPhysicalAction=now;lastPoint=[e.clientX,e.clientY]}
+    // Cada ativação válida responde, inclusive toques rápidos e cliques de acessibilidade.
+    // Elementos de uma tela já substituída são rejeitados acima, sem bloquear o próximo botão.
     if(a==='item'){currentActions[Number(v)]?.fn();return}
     if(a==='open'){
       if(['observar','perguntar'].includes(v)&&session&&!session.inspections.some(x=>x.key===v&&x.step===fromId(session.state)))session.inspections.push({key:v,step:fromId(session.state),at:clock()});

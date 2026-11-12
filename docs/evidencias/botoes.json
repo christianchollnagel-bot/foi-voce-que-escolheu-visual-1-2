@@ -1,0 +1,3508 @@
+{
+  "date": "2026-11-12",
+  "checks": [
+    {
+      "engine": "webkit",
+      "screen": "abertura",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "webkit",
+      "screen": "abertura",
+      "button": "Abrir o arquivo",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "webkit",
+      "screen": "conteudo",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "webkit",
+      "screen": "conteudo",
+      "button": "Entendi · ir para o menu",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "webkit",
+      "screen": "menu",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "webkit",
+      "screen": "menu",
+      "button": "Nova partida",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "webkit",
+      "screen": "menu",
+      "button": "Resetar jogo",
+      "action": "item",
+      "value": "1"
+    },
+    {
+      "engine": "webkit",
+      "screen": "menu",
+      "button": "Ver capítulos e atos",
+      "action": "item",
+      "value": "2"
+    },
+    {
+      "engine": "webkit",
+      "screen": "menu",
+      "button": "Personalizar meu crachá",
+      "action": "item",
+      "value": "3"
+    },
+    {
+      "engine": "webkit",
+      "screen": "menu",
+      "button": "Configurações",
+      "action": "item",
+      "value": "4"
+    },
+    {
+      "engine": "webkit",
+      "screen": "menu",
+      "button": "Créditos",
+      "action": "item",
+      "value": "5"
+    },
+    {
+      "engine": "webkit",
+      "screen": "menu",
+      "button": "Rever introdução",
+      "action": "item",
+      "value": "6"
+    },
+    {
+      "engine": "webkit",
+      "screen": "ajuda",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "webkit",
+      "screen": "ajuda",
+      "button": "Montar meu crachá",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "webkit",
+      "screen": "ajuda",
+      "button": "Começar com o crachá padrão",
+      "action": "item",
+      "value": "1"
+    },
+    {
+      "engine": "webkit",
+      "screen": "ajuda",
+      "button": "Voltar ao menu",
+      "action": "item",
+      "value": "2"
+    },
+    {
+      "engine": "webkit",
+      "screen": "config",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "webkit",
+      "screen": "config",
+      "button": "Recursos de acessibilidade",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "webkit",
+      "screen": "config",
+      "button": "Voltar",
+      "action": "item",
+      "value": "1"
+    },
+    {
+      "engine": "webkit",
+      "screen": "acessibilidade",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "webkit",
+      "screen": "acessibilidade",
+      "button": "Texto ampliado · desativado",
+      "action": "pref",
+      "value": "large"
+    },
+    {
+      "engine": "webkit",
+      "screen": "acessibilidade",
+      "button": "Contraste reforçado · desativado",
+      "action": "pref",
+      "value": "contrast"
+    },
+    {
+      "engine": "webkit",
+      "screen": "acessibilidade",
+      "button": "Reduzir movimento · desativado",
+      "action": "pref",
+      "value": "motion"
+    },
+    {
+      "engine": "webkit",
+      "screen": "acessibilidade",
+      "button": "Voltar às configurações",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "webkit",
+      "screen": "capitulos",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "webkit",
+      "screen": "capitulos",
+      "button": "01 · As duas margens",
+      "action": "start-case",
+      "value": "0"
+    },
+    {
+      "engine": "webkit",
+      "screen": "capitulos",
+      "button": "02 · Uma cadeira para o público",
+      "action": "start-case",
+      "value": "1"
+    },
+    {
+      "engine": "webkit",
+      "screen": "capitulos",
+      "button": "03 · A ordem das camas",
+      "action": "start-case",
+      "value": "2"
+    },
+    {
+      "engine": "webkit",
+      "screen": "capitulos",
+      "button": "04 · A oficina de empréstimos",
+      "action": "start-case",
+      "value": "3"
+    },
+    {
+      "engine": "webkit",
+      "screen": "capitulos",
+      "button": "05 · O tamanho da mudança",
+      "action": "start-case",
+      "value": "4"
+    },
+    {
+      "engine": "webkit",
+      "screen": "capitulos",
+      "button": "06 · Sessão das quatro",
+      "action": "start-case",
+      "value": "5"
+    },
+    {
+      "engine": "webkit",
+      "screen": "capitulos",
+      "button": "07 · A tarifa do silêncio",
+      "action": "start-case",
+      "value": "6"
+    },
+    {
+      "engine": "webkit",
+      "screen": "capitulos",
+      "button": "08 · O avesso do recibo",
+      "action": "start-case",
+      "value": "7"
+    },
+    {
+      "engine": "webkit",
+      "screen": "capitulos",
+      "button": "09 · As pessoas na sala",
+      "action": "start-case",
+      "value": "8"
+    },
+    {
+      "engine": "webkit",
+      "screen": "capitulos",
+      "button": "10 · O peso do volume",
+      "action": "start-case",
+      "value": "9"
+    },
+    {
+      "engine": "webkit",
+      "screen": "capitulos",
+      "button": "11 · O sábado do Íris",
+      "action": "start-case",
+      "value": "10"
+    },
+    {
+      "engine": "webkit",
+      "screen": "capitulos",
+      "button": "12 · A casa de botão",
+      "action": "start-case",
+      "value": "11"
+    },
+    {
+      "engine": "webkit",
+      "screen": "capitulos",
+      "button": "Visita especial · A portaria",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "webkit",
+      "screen": "capitulos",
+      "button": "Abrir o histórico",
+      "action": "item",
+      "value": "1"
+    },
+    {
+      "engine": "webkit",
+      "screen": "capitulos",
+      "button": "Voltar ao menu",
+      "action": "item",
+      "value": "2"
+    },
+    {
+      "engine": "webkit",
+      "screen": "capitulos",
+      "button": "Turno de três entregas",
+      "action": "item",
+      "value": "3"
+    },
+    {
+      "engine": "webkit",
+      "screen": "base",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "webkit",
+      "screen": "base",
+      "button": "✓ Tranças",
+      "action": "set-base",
+      "value": "a"
+    },
+    {
+      "engine": "webkit",
+      "screen": "base",
+      "button": "Óculos",
+      "action": "set-base",
+      "value": "b"
+    },
+    {
+      "engine": "webkit",
+      "screen": "base",
+      "button": "Cachos",
+      "action": "set-base",
+      "value": "c"
+    },
+    {
+      "engine": "webkit",
+      "screen": "base",
+      "button": "Prateado",
+      "action": "set-base",
+      "value": "4"
+    },
+    {
+      "engine": "webkit",
+      "screen": "base",
+      "button": "Raspado",
+      "action": "set-base",
+      "value": "5"
+    },
+    {
+      "engine": "webkit",
+      "screen": "base",
+      "button": "Lenço",
+      "action": "set-base",
+      "value": "6"
+    },
+    {
+      "engine": "webkit",
+      "screen": "base",
+      "button": "Barba",
+      "action": "set-base",
+      "value": "7"
+    },
+    {
+      "engine": "webkit",
+      "screen": "base",
+      "button": "Sardas",
+      "action": "set-base",
+      "value": "8"
+    },
+    {
+      "engine": "webkit",
+      "screen": "base",
+      "button": "Liso longo",
+      "action": "set-base",
+      "value": "9"
+    },
+    {
+      "engine": "webkit",
+      "screen": "base",
+      "button": "Black alto",
+      "action": "set-base",
+      "value": "10"
+    },
+    {
+      "engine": "webkit",
+      "screen": "base",
+      "button": "Brincos",
+      "action": "set-base",
+      "value": "11"
+    },
+    {
+      "engine": "webkit",
+      "screen": "base",
+      "button": "Pixie",
+      "action": "set-base",
+      "value": "12"
+    },
+    {
+      "engine": "webkit",
+      "screen": "base",
+      "button": "Barba branca",
+      "action": "set-base",
+      "value": "13"
+    },
+    {
+      "engine": "webkit",
+      "screen": "base",
+      "button": "Locs acobreados",
+      "action": "set-base",
+      "value": "14"
+    },
+    {
+      "engine": "webkit",
+      "screen": "base",
+      "button": "Franja longa",
+      "action": "set-base",
+      "value": "15"
+    },
+    {
+      "engine": "webkit",
+      "screen": "base",
+      "button": "Chanel prateado",
+      "action": "set-base",
+      "value": "16"
+    },
+    {
+      "engine": "webkit",
+      "screen": "base",
+      "button": "Cabelo longo",
+      "action": "set-base",
+      "value": "17"
+    },
+    {
+      "engine": "webkit",
+      "screen": "base",
+      "button": "Barba cheia",
+      "action": "set-base",
+      "value": "18"
+    },
+    {
+      "engine": "webkit",
+      "screen": "base",
+      "button": "Tranças presas",
+      "action": "set-base",
+      "value": "19"
+    },
+    {
+      "engine": "webkit",
+      "screen": "base",
+      "button": "Franja assimétrica",
+      "action": "set-base",
+      "value": "20"
+    },
+    {
+      "engine": "webkit",
+      "screen": "base",
+      "button": "Ondas e barba",
+      "action": "set-base",
+      "value": "21"
+    },
+    {
+      "engine": "webkit",
+      "screen": "base",
+      "button": "Afro e argolas",
+      "action": "set-base",
+      "value": "22"
+    },
+    {
+      "engine": "webkit",
+      "screen": "base",
+      "button": "Ondas grisalhas",
+      "action": "set-base",
+      "value": "23"
+    },
+    {
+      "engine": "webkit",
+      "screen": "base",
+      "button": "Bigode",
+      "action": "set-base",
+      "value": "24"
+    },
+    {
+      "engine": "webkit",
+      "screen": "base",
+      "button": "Usar este avatar",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "webkit",
+      "screen": "base",
+      "button": "Continuar",
+      "action": "item",
+      "value": "1"
+    },
+    {
+      "engine": "webkit",
+      "screen": "base",
+      "button": "Pular personalização",
+      "action": "item",
+      "value": "2"
+    },
+    {
+      "engine": "webkit",
+      "screen": "rosto",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "webkit",
+      "screen": "rosto",
+      "button": "✓ Contorno da base",
+      "action": "set-face",
+      "value": "original"
+    },
+    {
+      "engine": "webkit",
+      "screen": "rosto",
+      "button": "Alongado",
+      "action": "set-face",
+      "value": "a"
+    },
+    {
+      "engine": "webkit",
+      "screen": "rosto",
+      "button": "Largo",
+      "action": "set-face",
+      "value": "b"
+    },
+    {
+      "engine": "webkit",
+      "screen": "rosto",
+      "button": "Maçãs salientes",
+      "action": "set-face",
+      "value": "c"
+    },
+    {
+      "engine": "webkit",
+      "screen": "rosto",
+      "button": "✓ Tom da ilustração",
+      "action": "set-skin",
+      "value": "original"
+    },
+    {
+      "engine": "webkit",
+      "screen": "rosto",
+      "button": "Dourado quente",
+      "action": "set-skin",
+      "value": "dourada"
+    },
+    {
+      "engine": "webkit",
+      "screen": "rosto",
+      "button": "Marrom profundo",
+      "action": "set-skin",
+      "value": "retinta"
+    },
+    {
+      "engine": "webkit",
+      "screen": "rosto",
+      "button": "Continuar",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "webkit",
+      "screen": "rosto",
+      "button": "Voltar",
+      "action": "item",
+      "value": "1"
+    },
+    {
+      "engine": "webkit",
+      "screen": "rosto",
+      "button": "Pular personalização",
+      "action": "item",
+      "value": "2"
+    },
+    {
+      "engine": "webkit",
+      "screen": "cabelo",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "webkit",
+      "screen": "cabelo",
+      "button": "✓ Cabelo da ilustração",
+      "action": "set-hair",
+      "value": "original"
+    },
+    {
+      "engine": "webkit",
+      "screen": "cabelo",
+      "button": "Acobreado",
+      "action": "set-hair",
+      "value": "castanho"
+    },
+    {
+      "engine": "webkit",
+      "screen": "cabelo",
+      "button": "Mecha caramelo",
+      "action": "set-hair",
+      "value": "mecha"
+    },
+    {
+      "engine": "webkit",
+      "screen": "cabelo",
+      "button": "Continuar",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "webkit",
+      "screen": "cabelo",
+      "button": "Voltar",
+      "action": "item",
+      "value": "1"
+    },
+    {
+      "engine": "webkit",
+      "screen": "cabelo",
+      "button": "Pular personalização",
+      "action": "item",
+      "value": "2"
+    },
+    {
+      "engine": "webkit",
+      "screen": "roupa",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "webkit",
+      "screen": "roupa",
+      "button": "✓ Sem broche",
+      "action": "set-pin",
+      "value": "original"
+    },
+    {
+      "engine": "webkit",
+      "screen": "roupa",
+      "button": "Dominó",
+      "action": "set-pin",
+      "value": "domino"
+    },
+    {
+      "engine": "webkit",
+      "screen": "roupa",
+      "button": "Estrela",
+      "action": "set-pin",
+      "value": "estrela"
+    },
+    {
+      "engine": "webkit",
+      "screen": "roupa",
+      "button": "Selo",
+      "action": "set-pin",
+      "value": "selo"
+    },
+    {
+      "engine": "webkit",
+      "screen": "roupa",
+      "button": "✓ Roupa da ilustração",
+      "action": "set-outfit",
+      "value": "original"
+    },
+    {
+      "engine": "webkit",
+      "screen": "roupa",
+      "button": "Ultramarino",
+      "action": "set-outfit",
+      "value": "colete"
+    },
+    {
+      "engine": "webkit",
+      "screen": "roupa",
+      "button": "Verde-menta",
+      "action": "set-outfit",
+      "value": "jaqueta"
+    },
+    {
+      "engine": "webkit",
+      "screen": "roupa",
+      "button": "Continuar",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "webkit",
+      "screen": "roupa",
+      "button": "Voltar",
+      "action": "item",
+      "value": "1"
+    },
+    {
+      "engine": "webkit",
+      "screen": "roupa",
+      "button": "Pular personalização",
+      "action": "item",
+      "value": "2"
+    },
+    {
+      "engine": "webkit",
+      "screen": "nome",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "webkit",
+      "screen": "nome",
+      "button": "Continuar",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "webkit",
+      "screen": "nome",
+      "button": "Voltar",
+      "action": "item",
+      "value": "1"
+    },
+    {
+      "engine": "webkit",
+      "screen": "nome",
+      "button": "Pular personalização",
+      "action": "item",
+      "value": "2"
+    },
+    {
+      "engine": "webkit",
+      "screen": "previa",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "webkit",
+      "screen": "previa",
+      "button": "Confirmar personagem",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "webkit",
+      "screen": "previa",
+      "button": "Ver repertório de expressões",
+      "action": "item",
+      "value": "1"
+    },
+    {
+      "engine": "webkit",
+      "screen": "previa",
+      "button": "Voltar",
+      "action": "item",
+      "value": "2"
+    },
+    {
+      "engine": "webkit",
+      "screen": "previa",
+      "button": "Pular personalização",
+      "action": "item",
+      "value": "3"
+    },
+    {
+      "engine": "webkit",
+      "screen": "expressoes",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "webkit",
+      "screen": "expressoes",
+      "button": "Neutro",
+      "action": "expr",
+      "value": "neutro"
+    },
+    {
+      "engine": "webkit",
+      "screen": "expressoes",
+      "button": "Atenção",
+      "action": "expr",
+      "value": "atento"
+    },
+    {
+      "engine": "webkit",
+      "screen": "expressoes",
+      "button": "Curiosidade",
+      "action": "expr",
+      "value": "curioso"
+    },
+    {
+      "engine": "webkit",
+      "screen": "expressoes",
+      "button": "Surpresa",
+      "action": "expr",
+      "value": "surpresa"
+    },
+    {
+      "engine": "webkit",
+      "screen": "expressoes",
+      "button": "Choque",
+      "action": "expr",
+      "value": "choque"
+    },
+    {
+      "engine": "webkit",
+      "screen": "expressoes",
+      "button": "Pânico",
+      "action": "expr",
+      "value": "panico"
+    },
+    {
+      "engine": "webkit",
+      "screen": "expressoes",
+      "button": "Desconfiança",
+      "action": "expr",
+      "value": "desconfiado"
+    },
+    {
+      "engine": "webkit",
+      "screen": "expressoes",
+      "button": "Hesitação",
+      "action": "expr",
+      "value": "hesitante"
+    },
+    {
+      "engine": "webkit",
+      "screen": "expressoes",
+      "button": "Concentração",
+      "action": "expr",
+      "value": "concentrado"
+    },
+    {
+      "engine": "webkit",
+      "screen": "expressoes",
+      "button": "Confiança",
+      "action": "expr",
+      "value": "confiante"
+    },
+    {
+      "engine": "webkit",
+      "screen": "expressoes",
+      "button": "Alegria",
+      "action": "expr",
+      "value": "alegria"
+    },
+    {
+      "engine": "webkit",
+      "screen": "expressoes",
+      "button": "Alívio",
+      "action": "expr",
+      "value": "aliviado"
+    },
+    {
+      "engine": "webkit",
+      "screen": "expressoes",
+      "button": "Ironia",
+      "action": "expr",
+      "value": "ironia"
+    },
+    {
+      "engine": "webkit",
+      "screen": "expressoes",
+      "button": "Constrangimento",
+      "action": "expr",
+      "value": "constrangido"
+    },
+    {
+      "engine": "webkit",
+      "screen": "expressoes",
+      "button": "Impaciência",
+      "action": "expr",
+      "value": "impaciente"
+    },
+    {
+      "engine": "webkit",
+      "screen": "expressoes",
+      "button": "Irritação",
+      "action": "expr",
+      "value": "irritado"
+    },
+    {
+      "engine": "webkit",
+      "screen": "expressoes",
+      "button": "Cansaço",
+      "action": "expr",
+      "value": "cansado"
+    },
+    {
+      "engine": "webkit",
+      "screen": "expressoes",
+      "button": "Decepção",
+      "action": "expr",
+      "value": "decepcao"
+    },
+    {
+      "engine": "webkit",
+      "screen": "expressoes",
+      "button": "Tristeza",
+      "action": "expr",
+      "value": "tristeza"
+    },
+    {
+      "engine": "webkit",
+      "screen": "expressoes",
+      "button": "Reserva",
+      "action": "expr",
+      "value": "reservado"
+    },
+    {
+      "engine": "webkit",
+      "screen": "expressoes",
+      "button": "Voltar ao crachá",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "webkit",
+      "screen": "creditos",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "webkit",
+      "screen": "creditos",
+      "button": "Voltar ao menu",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "webkit",
+      "screen": "universo",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "webkit",
+      "screen": "universo",
+      "button": "Levar a carta de Dalva",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "webkit",
+      "screen": "universo",
+      "button": "Escolher outro capítulo",
+      "action": "item",
+      "value": "1"
+    },
+    {
+      "engine": "webkit",
+      "screen": "turno",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "webkit",
+      "screen": "turno",
+      "button": "Começar este turno",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "webkit",
+      "screen": "turno",
+      "button": "Voltar aos capítulos",
+      "action": "item",
+      "value": "1"
+    },
+    {
+      "engine": "webkit",
+      "screen": "acessibilidade",
+      "button": "dois toques rápidos no mesmo lugar"
+    },
+    {
+      "engine": "webkit",
+      "screen": "acessibilidade",
+      "button": "ativação com click.detail=2"
+    },
+    {
+      "engine": "webkit",
+      "screen": "prologo",
+      "button": "pausar / retomar / pular"
+    },
+    {
+      "engine": "webkit",
+      "screen": "config",
+      "button": "music"
+    },
+    {
+      "engine": "webkit",
+      "screen": "config",
+      "button": "effects"
+    },
+    {
+      "engine": "webkit",
+      "screen": "config",
+      "button": "volume"
+    },
+    {
+      "engine": "webkit",
+      "screen": "config",
+      "button": "vibração indisponível sinalizada",
+      "disabled": true
+    },
+    {
+      "engine": "webkit",
+      "screen": "entrada",
+      "button": "Ⅱ Pausa",
+      "action": "open",
+      "value": "pausa"
+    },
+    {
+      "engine": "webkit",
+      "screen": "entrada",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "webkit",
+      "screen": "entrada",
+      "button": "Receber o pedido",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "webkit",
+      "screen": "vinculo",
+      "button": "Ⅱ Pausa",
+      "action": "open",
+      "value": "pausa"
+    },
+    {
+      "engine": "webkit",
+      "screen": "vinculo",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "webkit",
+      "screen": "vinculo",
+      "button": "Prometer guardar o assunto",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "webkit",
+      "screen": "vinculo",
+      "button": "Não prometer; pedir que ela esconda o carimbo",
+      "action": "item",
+      "value": "1"
+    },
+    {
+      "engine": "webkit",
+      "screen": "vinculo",
+      "button": "Ⅱ Pausa",
+      "action": "open",
+      "value": "pausa"
+    },
+    {
+      "engine": "webkit",
+      "screen": "vinculo",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "webkit",
+      "screen": "vinculo",
+      "button": "Continuar",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "webkit",
+      "screen": "escolha",
+      "button": "Ⅱ Pausa",
+      "action": "open",
+      "value": "pausa"
+    },
+    {
+      "engine": "webkit",
+      "screen": "escolha",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "webkit",
+      "screen": "escolha",
+      "button": "Examinar a cena",
+      "action": "open",
+      "value": "observar"
+    },
+    {
+      "engine": "webkit",
+      "screen": "escolha",
+      "button": "Perguntar a Dalva",
+      "action": "open",
+      "value": "perguntar"
+    },
+    {
+      "engine": "webkit",
+      "screen": "escolha",
+      "button": "Caderno",
+      "action": "open",
+      "value": "historico"
+    },
+    {
+      "engine": "webkit",
+      "screen": "escolha",
+      "button": "01Perguntar como ela quer ser apresentada",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "webkit",
+      "screen": "escolha",
+      "button": "02Pegar a carta pela ponta",
+      "action": "item",
+      "value": "1"
+    },
+    {
+      "engine": "webkit",
+      "screen": "consequencia",
+      "button": "Ⅱ Pausa",
+      "action": "open",
+      "value": "pausa"
+    },
+    {
+      "engine": "webkit",
+      "screen": "consequencia",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "webkit",
+      "screen": "consequencia",
+      "button": "Ver a próxima decisão",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "webkit",
+      "screen": "consequencia",
+      "button": "Consultar histórico",
+      "action": "item",
+      "value": "1"
+    },
+    {
+      "engine": "webkit",
+      "screen": "escolha",
+      "button": "Ⅱ Pausa",
+      "action": "open",
+      "value": "pausa"
+    },
+    {
+      "engine": "webkit",
+      "screen": "escolha",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "webkit",
+      "screen": "escolha",
+      "button": "Examinar a cena",
+      "action": "open",
+      "value": "observar"
+    },
+    {
+      "engine": "webkit",
+      "screen": "escolha",
+      "button": "Perguntar a Dalva",
+      "action": "open",
+      "value": "perguntar"
+    },
+    {
+      "engine": "webkit",
+      "screen": "escolha",
+      "button": "Caderno",
+      "action": "open",
+      "value": "historico"
+    },
+    {
+      "engine": "webkit",
+      "screen": "escolha",
+      "button": "01Anunciar que chegou uma carta urgente",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "webkit",
+      "screen": "escolha",
+      "button": "02Pedir licença na ponta do balcão",
+      "action": "item",
+      "value": "1"
+    },
+    {
+      "engine": "webkit",
+      "screen": "consequencia",
+      "button": "Ⅱ Pausa",
+      "action": "open",
+      "value": "pausa"
+    },
+    {
+      "engine": "webkit",
+      "screen": "consequencia",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "webkit",
+      "screen": "consequencia",
+      "button": "Ver a próxima decisão",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "webkit",
+      "screen": "consequencia",
+      "button": "Consultar histórico",
+      "action": "item",
+      "value": "1"
+    },
+    {
+      "engine": "webkit",
+      "screen": "escolha",
+      "button": "Ⅱ Pausa",
+      "action": "open",
+      "value": "pausa"
+    },
+    {
+      "engine": "webkit",
+      "screen": "escolha",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "webkit",
+      "screen": "escolha",
+      "button": "Examinar a cena",
+      "action": "open",
+      "value": "observar"
+    },
+    {
+      "engine": "webkit",
+      "screen": "escolha",
+      "button": "Perguntar a Dalva",
+      "action": "open",
+      "value": "perguntar"
+    },
+    {
+      "engine": "webkit",
+      "screen": "escolha",
+      "button": "Caderno",
+      "action": "open",
+      "value": "historico"
+    },
+    {
+      "engine": "webkit",
+      "screen": "escolha",
+      "button": "01Ditar o que diz a carta pra andar mais rápido",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "webkit",
+      "screen": "escolha",
+      "button": "02Pedir à senhora que só segure a porta",
+      "action": "item",
+      "value": "1"
+    },
+    {
+      "engine": "webkit",
+      "screen": "consequencia",
+      "button": "Ⅱ Pausa",
+      "action": "open",
+      "value": "pausa"
+    },
+    {
+      "engine": "webkit",
+      "screen": "consequencia",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "webkit",
+      "screen": "consequencia",
+      "button": "Abrir o recibo",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "webkit",
+      "screen": "consequencia",
+      "button": "Consultar histórico",
+      "action": "item",
+      "value": "1"
+    },
+    {
+      "engine": "webkit",
+      "screen": "desfecho",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "webkit",
+      "screen": "desfecho",
+      "button": "Jogar de novo",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "webkit",
+      "screen": "desfecho",
+      "button": "Próxima entrega",
+      "action": "item",
+      "value": "1"
+    },
+    {
+      "engine": "webkit",
+      "screen": "desfecho",
+      "button": "Rever minhas escolhas",
+      "action": "item",
+      "value": "2"
+    },
+    {
+      "engine": "webkit",
+      "screen": "desfecho",
+      "button": "Fechar o recibo",
+      "action": "item",
+      "value": "3"
+    },
+    {
+      "engine": "webkit",
+      "screen": "pausa",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "webkit",
+      "screen": "pausa",
+      "button": "Retomar partida",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "webkit",
+      "screen": "pausa",
+      "button": "Configurações",
+      "action": "item",
+      "value": "1"
+    },
+    {
+      "engine": "webkit",
+      "screen": "pausa",
+      "button": "Histórico das escolhas",
+      "action": "item",
+      "value": "2"
+    },
+    {
+      "engine": "webkit",
+      "screen": "pausa",
+      "button": "Voltar ao menu",
+      "action": "item",
+      "value": "3"
+    },
+    {
+      "engine": "webkit",
+      "screen": "continuar",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "webkit",
+      "screen": "continuar",
+      "button": "Abrir último recibo",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "webkit",
+      "screen": "continuar",
+      "button": "Ver recibos da partida",
+      "action": "item",
+      "value": "1"
+    },
+    {
+      "engine": "webkit",
+      "screen": "continuar",
+      "button": "Voltar ao menu",
+      "action": "item",
+      "value": "2"
+    },
+    {
+      "engine": "webkit",
+      "screen": "historico",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "webkit",
+      "screen": "historico",
+      "button": "Revisar a última escolha",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "webkit",
+      "screen": "historico",
+      "button": "Voltar ao recibo",
+      "action": "item",
+      "value": "1"
+    },
+    {
+      "engine": "webkit",
+      "screen": "historico",
+      "button": "Voltar ao menu",
+      "action": "item",
+      "value": "2"
+    },
+    {
+      "engine": "webkit",
+      "screen": "revisao",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "webkit",
+      "screen": "revisao",
+      "button": "Ver todo o histórico",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "webkit",
+      "screen": "revisao",
+      "button": "Voltar ao menu",
+      "action": "item",
+      "value": "1"
+    },
+    {
+      "engine": "webkit",
+      "screen": "resumo",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "webkit",
+      "screen": "resumo",
+      "button": "Ver o próximo ato",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "webkit",
+      "screen": "resumo",
+      "button": "Escolher um capítulo",
+      "action": "item",
+      "value": "1"
+    },
+    {
+      "engine": "webkit",
+      "screen": "resumo",
+      "button": "Voltar ao menu",
+      "action": "item",
+      "value": "2"
+    },
+    {
+      "engine": "webkit",
+      "screen": "transicao",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "webkit",
+      "screen": "transicao",
+      "button": "Entrar no ato II",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "webkit",
+      "screen": "transicao",
+      "button": "Ver o caderno",
+      "action": "item",
+      "value": "1"
+    },
+    {
+      "engine": "webkit",
+      "screen": "documento",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "webkit",
+      "screen": "documento",
+      "button": "Voltar à partida",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "webkit",
+      "screen": "documento",
+      "button": "Capítulos e atos",
+      "action": "item",
+      "value": "1"
+    },
+    {
+      "engine": "webkit",
+      "screen": "observar",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "webkit",
+      "screen": "observar",
+      "button": "Voltar à decisão",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "webkit",
+      "screen": "observar",
+      "button": "Consultar documento da entrega",
+      "action": "item",
+      "value": "1"
+    },
+    {
+      "engine": "webkit",
+      "screen": "perguntar",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "webkit",
+      "screen": "perguntar",
+      "button": "Voltar à decisão",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "webkit",
+      "screen": "perguntar",
+      "button": "Consultar documento da entrega",
+      "action": "item",
+      "value": "1"
+    },
+    {
+      "engine": "webkit",
+      "screen": "encerrar",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "webkit",
+      "screen": "encerrar",
+      "button": "Recomeçar esta entrega",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "webkit",
+      "screen": "encerrar",
+      "button": "Revisitar escolhas",
+      "action": "item",
+      "value": "1"
+    },
+    {
+      "engine": "webkit",
+      "screen": "encerrar",
+      "button": "Resumo deste ato",
+      "action": "item",
+      "value": "2"
+    },
+    {
+      "engine": "webkit",
+      "screen": "encerrar",
+      "button": "Créditos",
+      "action": "item",
+      "value": "3"
+    },
+    {
+      "engine": "webkit",
+      "screen": "encerrar",
+      "button": "Voltar ao menu",
+      "action": "item",
+      "value": "4"
+    },
+    {
+      "engine": "webkit",
+      "screen": "menu",
+      "button": "cancelar reset preserva partida"
+    },
+    {
+      "engine": "webkit",
+      "screen": "menu",
+      "button": "exportar registro preservado"
+    },
+    {
+      "engine": "webkit",
+      "screen": "transporte",
+      "button": "sensor: recusa mantém alternativas"
+    },
+    {
+      "engine": "webkit",
+      "screen": "transporte",
+      "button": "estratégia / iniciar / esquerda / direita / pausar / retomar"
+    },
+    {
+      "engine": "chromium",
+      "screen": "abertura",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "chromium",
+      "screen": "abertura",
+      "button": "Abrir o arquivo",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "chromium",
+      "screen": "conteudo",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "chromium",
+      "screen": "conteudo",
+      "button": "Entendi · ir para o menu",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "chromium",
+      "screen": "menu",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "chromium",
+      "screen": "menu",
+      "button": "Nova partida",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "chromium",
+      "screen": "menu",
+      "button": "Resetar jogo",
+      "action": "item",
+      "value": "1"
+    },
+    {
+      "engine": "chromium",
+      "screen": "menu",
+      "button": "Ver capítulos e atos",
+      "action": "item",
+      "value": "2"
+    },
+    {
+      "engine": "chromium",
+      "screen": "menu",
+      "button": "Personalizar meu crachá",
+      "action": "item",
+      "value": "3"
+    },
+    {
+      "engine": "chromium",
+      "screen": "menu",
+      "button": "Configurações",
+      "action": "item",
+      "value": "4"
+    },
+    {
+      "engine": "chromium",
+      "screen": "menu",
+      "button": "Créditos",
+      "action": "item",
+      "value": "5"
+    },
+    {
+      "engine": "chromium",
+      "screen": "menu",
+      "button": "Rever introdução",
+      "action": "item",
+      "value": "6"
+    },
+    {
+      "engine": "chromium",
+      "screen": "ajuda",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "chromium",
+      "screen": "ajuda",
+      "button": "Montar meu crachá",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "chromium",
+      "screen": "ajuda",
+      "button": "Começar com o crachá padrão",
+      "action": "item",
+      "value": "1"
+    },
+    {
+      "engine": "chromium",
+      "screen": "ajuda",
+      "button": "Voltar ao menu",
+      "action": "item",
+      "value": "2"
+    },
+    {
+      "engine": "chromium",
+      "screen": "config",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "chromium",
+      "screen": "config",
+      "button": "Recursos de acessibilidade",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "chromium",
+      "screen": "config",
+      "button": "Voltar",
+      "action": "item",
+      "value": "1"
+    },
+    {
+      "engine": "chromium",
+      "screen": "acessibilidade",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "chromium",
+      "screen": "acessibilidade",
+      "button": "Texto ampliado · desativado",
+      "action": "pref",
+      "value": "large"
+    },
+    {
+      "engine": "chromium",
+      "screen": "acessibilidade",
+      "button": "Contraste reforçado · desativado",
+      "action": "pref",
+      "value": "contrast"
+    },
+    {
+      "engine": "chromium",
+      "screen": "acessibilidade",
+      "button": "Reduzir movimento · desativado",
+      "action": "pref",
+      "value": "motion"
+    },
+    {
+      "engine": "chromium",
+      "screen": "acessibilidade",
+      "button": "Voltar às configurações",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "chromium",
+      "screen": "capitulos",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "chromium",
+      "screen": "capitulos",
+      "button": "01 · As duas margens",
+      "action": "start-case",
+      "value": "0"
+    },
+    {
+      "engine": "chromium",
+      "screen": "capitulos",
+      "button": "02 · Uma cadeira para o público",
+      "action": "start-case",
+      "value": "1"
+    },
+    {
+      "engine": "chromium",
+      "screen": "capitulos",
+      "button": "03 · A ordem das camas",
+      "action": "start-case",
+      "value": "2"
+    },
+    {
+      "engine": "chromium",
+      "screen": "capitulos",
+      "button": "04 · A oficina de empréstimos",
+      "action": "start-case",
+      "value": "3"
+    },
+    {
+      "engine": "chromium",
+      "screen": "capitulos",
+      "button": "05 · O tamanho da mudança",
+      "action": "start-case",
+      "value": "4"
+    },
+    {
+      "engine": "chromium",
+      "screen": "capitulos",
+      "button": "06 · Sessão das quatro",
+      "action": "start-case",
+      "value": "5"
+    },
+    {
+      "engine": "chromium",
+      "screen": "capitulos",
+      "button": "07 · A tarifa do silêncio",
+      "action": "start-case",
+      "value": "6"
+    },
+    {
+      "engine": "chromium",
+      "screen": "capitulos",
+      "button": "08 · O avesso do recibo",
+      "action": "start-case",
+      "value": "7"
+    },
+    {
+      "engine": "chromium",
+      "screen": "capitulos",
+      "button": "09 · As pessoas na sala",
+      "action": "start-case",
+      "value": "8"
+    },
+    {
+      "engine": "chromium",
+      "screen": "capitulos",
+      "button": "10 · O peso do volume",
+      "action": "start-case",
+      "value": "9"
+    },
+    {
+      "engine": "chromium",
+      "screen": "capitulos",
+      "button": "11 · O sábado do Íris",
+      "action": "start-case",
+      "value": "10"
+    },
+    {
+      "engine": "chromium",
+      "screen": "capitulos",
+      "button": "12 · A casa de botão",
+      "action": "start-case",
+      "value": "11"
+    },
+    {
+      "engine": "chromium",
+      "screen": "capitulos",
+      "button": "Visita especial · A portaria",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "chromium",
+      "screen": "capitulos",
+      "button": "Abrir o histórico",
+      "action": "item",
+      "value": "1"
+    },
+    {
+      "engine": "chromium",
+      "screen": "capitulos",
+      "button": "Voltar ao menu",
+      "action": "item",
+      "value": "2"
+    },
+    {
+      "engine": "chromium",
+      "screen": "capitulos",
+      "button": "Turno de três entregas",
+      "action": "item",
+      "value": "3"
+    },
+    {
+      "engine": "chromium",
+      "screen": "base",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "chromium",
+      "screen": "base",
+      "button": "✓ Tranças",
+      "action": "set-base",
+      "value": "a"
+    },
+    {
+      "engine": "chromium",
+      "screen": "base",
+      "button": "Óculos",
+      "action": "set-base",
+      "value": "b"
+    },
+    {
+      "engine": "chromium",
+      "screen": "base",
+      "button": "Cachos",
+      "action": "set-base",
+      "value": "c"
+    },
+    {
+      "engine": "chromium",
+      "screen": "base",
+      "button": "Prateado",
+      "action": "set-base",
+      "value": "4"
+    },
+    {
+      "engine": "chromium",
+      "screen": "base",
+      "button": "Raspado",
+      "action": "set-base",
+      "value": "5"
+    },
+    {
+      "engine": "chromium",
+      "screen": "base",
+      "button": "Lenço",
+      "action": "set-base",
+      "value": "6"
+    },
+    {
+      "engine": "chromium",
+      "screen": "base",
+      "button": "Barba",
+      "action": "set-base",
+      "value": "7"
+    },
+    {
+      "engine": "chromium",
+      "screen": "base",
+      "button": "Sardas",
+      "action": "set-base",
+      "value": "8"
+    },
+    {
+      "engine": "chromium",
+      "screen": "base",
+      "button": "Liso longo",
+      "action": "set-base",
+      "value": "9"
+    },
+    {
+      "engine": "chromium",
+      "screen": "base",
+      "button": "Black alto",
+      "action": "set-base",
+      "value": "10"
+    },
+    {
+      "engine": "chromium",
+      "screen": "base",
+      "button": "Brincos",
+      "action": "set-base",
+      "value": "11"
+    },
+    {
+      "engine": "chromium",
+      "screen": "base",
+      "button": "Pixie",
+      "action": "set-base",
+      "value": "12"
+    },
+    {
+      "engine": "chromium",
+      "screen": "base",
+      "button": "Barba branca",
+      "action": "set-base",
+      "value": "13"
+    },
+    {
+      "engine": "chromium",
+      "screen": "base",
+      "button": "Locs acobreados",
+      "action": "set-base",
+      "value": "14"
+    },
+    {
+      "engine": "chromium",
+      "screen": "base",
+      "button": "Franja longa",
+      "action": "set-base",
+      "value": "15"
+    },
+    {
+      "engine": "chromium",
+      "screen": "base",
+      "button": "Chanel prateado",
+      "action": "set-base",
+      "value": "16"
+    },
+    {
+      "engine": "chromium",
+      "screen": "base",
+      "button": "Cabelo longo",
+      "action": "set-base",
+      "value": "17"
+    },
+    {
+      "engine": "chromium",
+      "screen": "base",
+      "button": "Barba cheia",
+      "action": "set-base",
+      "value": "18"
+    },
+    {
+      "engine": "chromium",
+      "screen": "base",
+      "button": "Tranças presas",
+      "action": "set-base",
+      "value": "19"
+    },
+    {
+      "engine": "chromium",
+      "screen": "base",
+      "button": "Franja assimétrica",
+      "action": "set-base",
+      "value": "20"
+    },
+    {
+      "engine": "chromium",
+      "screen": "base",
+      "button": "Ondas e barba",
+      "action": "set-base",
+      "value": "21"
+    },
+    {
+      "engine": "chromium",
+      "screen": "base",
+      "button": "Afro e argolas",
+      "action": "set-base",
+      "value": "22"
+    },
+    {
+      "engine": "chromium",
+      "screen": "base",
+      "button": "Ondas grisalhas",
+      "action": "set-base",
+      "value": "23"
+    },
+    {
+      "engine": "chromium",
+      "screen": "base",
+      "button": "Bigode",
+      "action": "set-base",
+      "value": "24"
+    },
+    {
+      "engine": "chromium",
+      "screen": "base",
+      "button": "Usar este avatar",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "chromium",
+      "screen": "base",
+      "button": "Continuar",
+      "action": "item",
+      "value": "1"
+    },
+    {
+      "engine": "chromium",
+      "screen": "base",
+      "button": "Pular personalização",
+      "action": "item",
+      "value": "2"
+    },
+    {
+      "engine": "chromium",
+      "screen": "rosto",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "chromium",
+      "screen": "rosto",
+      "button": "✓ Contorno da base",
+      "action": "set-face",
+      "value": "original"
+    },
+    {
+      "engine": "chromium",
+      "screen": "rosto",
+      "button": "Alongado",
+      "action": "set-face",
+      "value": "a"
+    },
+    {
+      "engine": "chromium",
+      "screen": "rosto",
+      "button": "Largo",
+      "action": "set-face",
+      "value": "b"
+    },
+    {
+      "engine": "chromium",
+      "screen": "rosto",
+      "button": "Maçãs salientes",
+      "action": "set-face",
+      "value": "c"
+    },
+    {
+      "engine": "chromium",
+      "screen": "rosto",
+      "button": "✓ Tom da ilustração",
+      "action": "set-skin",
+      "value": "original"
+    },
+    {
+      "engine": "chromium",
+      "screen": "rosto",
+      "button": "Dourado quente",
+      "action": "set-skin",
+      "value": "dourada"
+    },
+    {
+      "engine": "chromium",
+      "screen": "rosto",
+      "button": "Marrom profundo",
+      "action": "set-skin",
+      "value": "retinta"
+    },
+    {
+      "engine": "chromium",
+      "screen": "rosto",
+      "button": "Continuar",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "chromium",
+      "screen": "rosto",
+      "button": "Voltar",
+      "action": "item",
+      "value": "1"
+    },
+    {
+      "engine": "chromium",
+      "screen": "rosto",
+      "button": "Pular personalização",
+      "action": "item",
+      "value": "2"
+    },
+    {
+      "engine": "chromium",
+      "screen": "cabelo",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "chromium",
+      "screen": "cabelo",
+      "button": "✓ Cabelo da ilustração",
+      "action": "set-hair",
+      "value": "original"
+    },
+    {
+      "engine": "chromium",
+      "screen": "cabelo",
+      "button": "Acobreado",
+      "action": "set-hair",
+      "value": "castanho"
+    },
+    {
+      "engine": "chromium",
+      "screen": "cabelo",
+      "button": "Mecha caramelo",
+      "action": "set-hair",
+      "value": "mecha"
+    },
+    {
+      "engine": "chromium",
+      "screen": "cabelo",
+      "button": "Continuar",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "chromium",
+      "screen": "cabelo",
+      "button": "Voltar",
+      "action": "item",
+      "value": "1"
+    },
+    {
+      "engine": "chromium",
+      "screen": "cabelo",
+      "button": "Pular personalização",
+      "action": "item",
+      "value": "2"
+    },
+    {
+      "engine": "chromium",
+      "screen": "roupa",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "chromium",
+      "screen": "roupa",
+      "button": "✓ Sem broche",
+      "action": "set-pin",
+      "value": "original"
+    },
+    {
+      "engine": "chromium",
+      "screen": "roupa",
+      "button": "Dominó",
+      "action": "set-pin",
+      "value": "domino"
+    },
+    {
+      "engine": "chromium",
+      "screen": "roupa",
+      "button": "Estrela",
+      "action": "set-pin",
+      "value": "estrela"
+    },
+    {
+      "engine": "chromium",
+      "screen": "roupa",
+      "button": "Selo",
+      "action": "set-pin",
+      "value": "selo"
+    },
+    {
+      "engine": "chromium",
+      "screen": "roupa",
+      "button": "✓ Roupa da ilustração",
+      "action": "set-outfit",
+      "value": "original"
+    },
+    {
+      "engine": "chromium",
+      "screen": "roupa",
+      "button": "Ultramarino",
+      "action": "set-outfit",
+      "value": "colete"
+    },
+    {
+      "engine": "chromium",
+      "screen": "roupa",
+      "button": "Verde-menta",
+      "action": "set-outfit",
+      "value": "jaqueta"
+    },
+    {
+      "engine": "chromium",
+      "screen": "roupa",
+      "button": "Continuar",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "chromium",
+      "screen": "roupa",
+      "button": "Voltar",
+      "action": "item",
+      "value": "1"
+    },
+    {
+      "engine": "chromium",
+      "screen": "roupa",
+      "button": "Pular personalização",
+      "action": "item",
+      "value": "2"
+    },
+    {
+      "engine": "chromium",
+      "screen": "nome",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "chromium",
+      "screen": "nome",
+      "button": "Continuar",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "chromium",
+      "screen": "nome",
+      "button": "Voltar",
+      "action": "item",
+      "value": "1"
+    },
+    {
+      "engine": "chromium",
+      "screen": "nome",
+      "button": "Pular personalização",
+      "action": "item",
+      "value": "2"
+    },
+    {
+      "engine": "chromium",
+      "screen": "previa",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "chromium",
+      "screen": "previa",
+      "button": "Confirmar personagem",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "chromium",
+      "screen": "previa",
+      "button": "Ver repertório de expressões",
+      "action": "item",
+      "value": "1"
+    },
+    {
+      "engine": "chromium",
+      "screen": "previa",
+      "button": "Voltar",
+      "action": "item",
+      "value": "2"
+    },
+    {
+      "engine": "chromium",
+      "screen": "previa",
+      "button": "Pular personalização",
+      "action": "item",
+      "value": "3"
+    },
+    {
+      "engine": "chromium",
+      "screen": "expressoes",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "chromium",
+      "screen": "expressoes",
+      "button": "Neutro",
+      "action": "expr",
+      "value": "neutro"
+    },
+    {
+      "engine": "chromium",
+      "screen": "expressoes",
+      "button": "Atenção",
+      "action": "expr",
+      "value": "atento"
+    },
+    {
+      "engine": "chromium",
+      "screen": "expressoes",
+      "button": "Curiosidade",
+      "action": "expr",
+      "value": "curioso"
+    },
+    {
+      "engine": "chromium",
+      "screen": "expressoes",
+      "button": "Surpresa",
+      "action": "expr",
+      "value": "surpresa"
+    },
+    {
+      "engine": "chromium",
+      "screen": "expressoes",
+      "button": "Choque",
+      "action": "expr",
+      "value": "choque"
+    },
+    {
+      "engine": "chromium",
+      "screen": "expressoes",
+      "button": "Pânico",
+      "action": "expr",
+      "value": "panico"
+    },
+    {
+      "engine": "chromium",
+      "screen": "expressoes",
+      "button": "Desconfiança",
+      "action": "expr",
+      "value": "desconfiado"
+    },
+    {
+      "engine": "chromium",
+      "screen": "expressoes",
+      "button": "Hesitação",
+      "action": "expr",
+      "value": "hesitante"
+    },
+    {
+      "engine": "chromium",
+      "screen": "expressoes",
+      "button": "Concentração",
+      "action": "expr",
+      "value": "concentrado"
+    },
+    {
+      "engine": "chromium",
+      "screen": "expressoes",
+      "button": "Confiança",
+      "action": "expr",
+      "value": "confiante"
+    },
+    {
+      "engine": "chromium",
+      "screen": "expressoes",
+      "button": "Alegria",
+      "action": "expr",
+      "value": "alegria"
+    },
+    {
+      "engine": "chromium",
+      "screen": "expressoes",
+      "button": "Alívio",
+      "action": "expr",
+      "value": "aliviado"
+    },
+    {
+      "engine": "chromium",
+      "screen": "expressoes",
+      "button": "Ironia",
+      "action": "expr",
+      "value": "ironia"
+    },
+    {
+      "engine": "chromium",
+      "screen": "expressoes",
+      "button": "Constrangimento",
+      "action": "expr",
+      "value": "constrangido"
+    },
+    {
+      "engine": "chromium",
+      "screen": "expressoes",
+      "button": "Impaciência",
+      "action": "expr",
+      "value": "impaciente"
+    },
+    {
+      "engine": "chromium",
+      "screen": "expressoes",
+      "button": "Irritação",
+      "action": "expr",
+      "value": "irritado"
+    },
+    {
+      "engine": "chromium",
+      "screen": "expressoes",
+      "button": "Cansaço",
+      "action": "expr",
+      "value": "cansado"
+    },
+    {
+      "engine": "chromium",
+      "screen": "expressoes",
+      "button": "Decepção",
+      "action": "expr",
+      "value": "decepcao"
+    },
+    {
+      "engine": "chromium",
+      "screen": "expressoes",
+      "button": "Tristeza",
+      "action": "expr",
+      "value": "tristeza"
+    },
+    {
+      "engine": "chromium",
+      "screen": "expressoes",
+      "button": "Reserva",
+      "action": "expr",
+      "value": "reservado"
+    },
+    {
+      "engine": "chromium",
+      "screen": "expressoes",
+      "button": "Voltar ao crachá",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "chromium",
+      "screen": "creditos",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "chromium",
+      "screen": "creditos",
+      "button": "Voltar ao menu",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "chromium",
+      "screen": "universo",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "chromium",
+      "screen": "universo",
+      "button": "Levar a carta de Dalva",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "chromium",
+      "screen": "universo",
+      "button": "Escolher outro capítulo",
+      "action": "item",
+      "value": "1"
+    },
+    {
+      "engine": "chromium",
+      "screen": "turno",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "chromium",
+      "screen": "turno",
+      "button": "Começar este turno",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "chromium",
+      "screen": "turno",
+      "button": "Voltar aos capítulos",
+      "action": "item",
+      "value": "1"
+    },
+    {
+      "engine": "chromium",
+      "screen": "acessibilidade",
+      "button": "dois toques rápidos no mesmo lugar"
+    },
+    {
+      "engine": "chromium",
+      "screen": "acessibilidade",
+      "button": "ativação com click.detail=2"
+    },
+    {
+      "engine": "chromium",
+      "screen": "prologo",
+      "button": "pausar / retomar / pular"
+    },
+    {
+      "engine": "chromium",
+      "screen": "config",
+      "button": "music"
+    },
+    {
+      "engine": "chromium",
+      "screen": "config",
+      "button": "effects"
+    },
+    {
+      "engine": "chromium",
+      "screen": "config",
+      "button": "volume"
+    },
+    {
+      "engine": "chromium",
+      "screen": "config",
+      "button": "vibração"
+    },
+    {
+      "engine": "chromium",
+      "screen": "entrada",
+      "button": "Ⅱ Pausa",
+      "action": "open",
+      "value": "pausa"
+    },
+    {
+      "engine": "chromium",
+      "screen": "entrada",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "chromium",
+      "screen": "entrada",
+      "button": "Receber o pedido",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "chromium",
+      "screen": "vinculo",
+      "button": "Ⅱ Pausa",
+      "action": "open",
+      "value": "pausa"
+    },
+    {
+      "engine": "chromium",
+      "screen": "vinculo",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "chromium",
+      "screen": "vinculo",
+      "button": "Prometer guardar o assunto",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "chromium",
+      "screen": "vinculo",
+      "button": "Não prometer; pedir que ela esconda o carimbo",
+      "action": "item",
+      "value": "1"
+    },
+    {
+      "engine": "chromium",
+      "screen": "vinculo",
+      "button": "Ⅱ Pausa",
+      "action": "open",
+      "value": "pausa"
+    },
+    {
+      "engine": "chromium",
+      "screen": "vinculo",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "chromium",
+      "screen": "vinculo",
+      "button": "Continuar",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "chromium",
+      "screen": "escolha",
+      "button": "Ⅱ Pausa",
+      "action": "open",
+      "value": "pausa"
+    },
+    {
+      "engine": "chromium",
+      "screen": "escolha",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "chromium",
+      "screen": "escolha",
+      "button": "Examinar a cena",
+      "action": "open",
+      "value": "observar"
+    },
+    {
+      "engine": "chromium",
+      "screen": "escolha",
+      "button": "Perguntar a Dalva",
+      "action": "open",
+      "value": "perguntar"
+    },
+    {
+      "engine": "chromium",
+      "screen": "escolha",
+      "button": "Caderno",
+      "action": "open",
+      "value": "historico"
+    },
+    {
+      "engine": "chromium",
+      "screen": "escolha",
+      "button": "01Perguntar como ela quer ser apresentada",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "chromium",
+      "screen": "escolha",
+      "button": "02Pegar a carta pela ponta",
+      "action": "item",
+      "value": "1"
+    },
+    {
+      "engine": "chromium",
+      "screen": "consequencia",
+      "button": "Ⅱ Pausa",
+      "action": "open",
+      "value": "pausa"
+    },
+    {
+      "engine": "chromium",
+      "screen": "consequencia",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "chromium",
+      "screen": "consequencia",
+      "button": "Ver a próxima decisão",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "chromium",
+      "screen": "consequencia",
+      "button": "Consultar histórico",
+      "action": "item",
+      "value": "1"
+    },
+    {
+      "engine": "chromium",
+      "screen": "escolha",
+      "button": "Ⅱ Pausa",
+      "action": "open",
+      "value": "pausa"
+    },
+    {
+      "engine": "chromium",
+      "screen": "escolha",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "chromium",
+      "screen": "escolha",
+      "button": "Examinar a cena",
+      "action": "open",
+      "value": "observar"
+    },
+    {
+      "engine": "chromium",
+      "screen": "escolha",
+      "button": "Perguntar a Dalva",
+      "action": "open",
+      "value": "perguntar"
+    },
+    {
+      "engine": "chromium",
+      "screen": "escolha",
+      "button": "Caderno",
+      "action": "open",
+      "value": "historico"
+    },
+    {
+      "engine": "chromium",
+      "screen": "escolha",
+      "button": "01Anunciar que chegou uma carta urgente",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "chromium",
+      "screen": "escolha",
+      "button": "02Pedir licença na ponta do balcão",
+      "action": "item",
+      "value": "1"
+    },
+    {
+      "engine": "chromium",
+      "screen": "consequencia",
+      "button": "Ⅱ Pausa",
+      "action": "open",
+      "value": "pausa"
+    },
+    {
+      "engine": "chromium",
+      "screen": "consequencia",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "chromium",
+      "screen": "consequencia",
+      "button": "Ver a próxima decisão",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "chromium",
+      "screen": "consequencia",
+      "button": "Consultar histórico",
+      "action": "item",
+      "value": "1"
+    },
+    {
+      "engine": "chromium",
+      "screen": "escolha",
+      "button": "Ⅱ Pausa",
+      "action": "open",
+      "value": "pausa"
+    },
+    {
+      "engine": "chromium",
+      "screen": "escolha",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "chromium",
+      "screen": "escolha",
+      "button": "Examinar a cena",
+      "action": "open",
+      "value": "observar"
+    },
+    {
+      "engine": "chromium",
+      "screen": "escolha",
+      "button": "Perguntar a Dalva",
+      "action": "open",
+      "value": "perguntar"
+    },
+    {
+      "engine": "chromium",
+      "screen": "escolha",
+      "button": "Caderno",
+      "action": "open",
+      "value": "historico"
+    },
+    {
+      "engine": "chromium",
+      "screen": "escolha",
+      "button": "01Ditar o que diz a carta pra andar mais rápido",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "chromium",
+      "screen": "escolha",
+      "button": "02Pedir à senhora que só segure a porta",
+      "action": "item",
+      "value": "1"
+    },
+    {
+      "engine": "chromium",
+      "screen": "consequencia",
+      "button": "Ⅱ Pausa",
+      "action": "open",
+      "value": "pausa"
+    },
+    {
+      "engine": "chromium",
+      "screen": "consequencia",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "chromium",
+      "screen": "consequencia",
+      "button": "Abrir o recibo",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "chromium",
+      "screen": "consequencia",
+      "button": "Consultar histórico",
+      "action": "item",
+      "value": "1"
+    },
+    {
+      "engine": "chromium",
+      "screen": "desfecho",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "chromium",
+      "screen": "desfecho",
+      "button": "Jogar de novo",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "chromium",
+      "screen": "desfecho",
+      "button": "Próxima entrega",
+      "action": "item",
+      "value": "1"
+    },
+    {
+      "engine": "chromium",
+      "screen": "desfecho",
+      "button": "Rever minhas escolhas",
+      "action": "item",
+      "value": "2"
+    },
+    {
+      "engine": "chromium",
+      "screen": "desfecho",
+      "button": "Fechar o recibo",
+      "action": "item",
+      "value": "3"
+    },
+    {
+      "engine": "chromium",
+      "screen": "pausa",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "chromium",
+      "screen": "pausa",
+      "button": "Retomar partida",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "chromium",
+      "screen": "pausa",
+      "button": "Configurações",
+      "action": "item",
+      "value": "1"
+    },
+    {
+      "engine": "chromium",
+      "screen": "pausa",
+      "button": "Histórico das escolhas",
+      "action": "item",
+      "value": "2"
+    },
+    {
+      "engine": "chromium",
+      "screen": "pausa",
+      "button": "Voltar ao menu",
+      "action": "item",
+      "value": "3"
+    },
+    {
+      "engine": "chromium",
+      "screen": "continuar",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "chromium",
+      "screen": "continuar",
+      "button": "Abrir último recibo",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "chromium",
+      "screen": "continuar",
+      "button": "Ver recibos da partida",
+      "action": "item",
+      "value": "1"
+    },
+    {
+      "engine": "chromium",
+      "screen": "continuar",
+      "button": "Voltar ao menu",
+      "action": "item",
+      "value": "2"
+    },
+    {
+      "engine": "chromium",
+      "screen": "historico",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "chromium",
+      "screen": "historico",
+      "button": "Revisar a última escolha",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "chromium",
+      "screen": "historico",
+      "button": "Voltar ao recibo",
+      "action": "item",
+      "value": "1"
+    },
+    {
+      "engine": "chromium",
+      "screen": "historico",
+      "button": "Voltar ao menu",
+      "action": "item",
+      "value": "2"
+    },
+    {
+      "engine": "chromium",
+      "screen": "revisao",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "chromium",
+      "screen": "revisao",
+      "button": "Ver todo o histórico",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "chromium",
+      "screen": "revisao",
+      "button": "Voltar ao menu",
+      "action": "item",
+      "value": "1"
+    },
+    {
+      "engine": "chromium",
+      "screen": "resumo",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "chromium",
+      "screen": "resumo",
+      "button": "Ver o próximo ato",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "chromium",
+      "screen": "resumo",
+      "button": "Escolher um capítulo",
+      "action": "item",
+      "value": "1"
+    },
+    {
+      "engine": "chromium",
+      "screen": "resumo",
+      "button": "Voltar ao menu",
+      "action": "item",
+      "value": "2"
+    },
+    {
+      "engine": "chromium",
+      "screen": "transicao",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "chromium",
+      "screen": "transicao",
+      "button": "Entrar no ato II",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "chromium",
+      "screen": "transicao",
+      "button": "Ver o caderno",
+      "action": "item",
+      "value": "1"
+    },
+    {
+      "engine": "chromium",
+      "screen": "documento",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "chromium",
+      "screen": "documento",
+      "button": "Voltar à partida",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "chromium",
+      "screen": "documento",
+      "button": "Capítulos e atos",
+      "action": "item",
+      "value": "1"
+    },
+    {
+      "engine": "chromium",
+      "screen": "observar",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "chromium",
+      "screen": "observar",
+      "button": "Voltar à decisão",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "chromium",
+      "screen": "observar",
+      "button": "Consultar documento da entrega",
+      "action": "item",
+      "value": "1"
+    },
+    {
+      "engine": "chromium",
+      "screen": "perguntar",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "chromium",
+      "screen": "perguntar",
+      "button": "Voltar à decisão",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "chromium",
+      "screen": "perguntar",
+      "button": "Consultar documento da entrega",
+      "action": "item",
+      "value": "1"
+    },
+    {
+      "engine": "chromium",
+      "screen": "encerrar",
+      "button": "Desativar som",
+      "action": "sound-toggle",
+      "value": ""
+    },
+    {
+      "engine": "chromium",
+      "screen": "encerrar",
+      "button": "Recomeçar esta entrega",
+      "action": "item",
+      "value": "0"
+    },
+    {
+      "engine": "chromium",
+      "screen": "encerrar",
+      "button": "Revisitar escolhas",
+      "action": "item",
+      "value": "1"
+    },
+    {
+      "engine": "chromium",
+      "screen": "encerrar",
+      "button": "Resumo deste ato",
+      "action": "item",
+      "value": "2"
+    },
+    {
+      "engine": "chromium",
+      "screen": "encerrar",
+      "button": "Créditos",
+      "action": "item",
+      "value": "3"
+    },
+    {
+      "engine": "chromium",
+      "screen": "encerrar",
+      "button": "Voltar ao menu",
+      "action": "item",
+      "value": "4"
+    },
+    {
+      "engine": "chromium",
+      "screen": "menu",
+      "button": "cancelar reset preserva partida"
+    },
+    {
+      "engine": "chromium",
+      "screen": "menu",
+      "button": "exportar registro preservado"
+    },
+    {
+      "engine": "chromium",
+      "screen": "transporte",
+      "button": "sensor: recusa mantém alternativas"
+    },
+    {
+      "engine": "chromium",
+      "screen": "transporte",
+      "button": "estratégia / iniciar / esquerda / direita / pausar / retomar"
+    }
+  ],
+  "method": "toques reais de automação, sem intervalo artificial; estados verificados após cada ação",
+  "limits": "WebKit/Chrome no Windows, sem iPhone físico",
+  "variants": [
+    {
+      "engine": "webkit",
+      "button": "✓ Contorno da base"
+    },
+    {
+      "engine": "webkit",
+      "button": "Alongado"
+    },
+    {
+      "engine": "webkit",
+      "button": "Largo"
+    },
+    {
+      "engine": "webkit",
+      "button": "Maçãs salientes"
+    },
+    {
+      "engine": "webkit",
+      "button": "✓ Tom da ilustração"
+    },
+    {
+      "engine": "webkit",
+      "button": "Dourado quente"
+    },
+    {
+      "engine": "webkit",
+      "button": "Marrom profundo"
+    },
+    {
+      "engine": "webkit",
+      "button": "✓ Sem moldura"
+    },
+    {
+      "engine": "webkit",
+      "button": "Medalhão"
+    },
+    {
+      "engine": "webkit",
+      "button": "Postal"
+    },
+    {
+      "engine": "webkit",
+      "button": "✓ Papel"
+    },
+    {
+      "engine": "webkit",
+      "button": "Menta"
+    },
+    {
+      "engine": "webkit",
+      "button": "Ultramarino"
+    },
+    {
+      "engine": "webkit",
+      "button": "Vermelhão"
+    },
+    {
+      "engine": "webkit",
+      "button": "✓ Cabelo da ilustração"
+    },
+    {
+      "engine": "webkit",
+      "button": "Acobreado"
+    },
+    {
+      "engine": "webkit",
+      "button": "Mecha caramelo"
+    },
+    {
+      "engine": "webkit",
+      "button": "✓ Sem adereço"
+    },
+    {
+      "engine": "webkit",
+      "button": "Faixa vermelha"
+    },
+    {
+      "engine": "webkit",
+      "button": "Gorro ultramarino"
+    },
+    {
+      "engine": "webkit",
+      "button": "✓ Sem broche"
+    },
+    {
+      "engine": "webkit",
+      "button": "Dominó"
+    },
+    {
+      "engine": "webkit",
+      "button": "Estrela"
+    },
+    {
+      "engine": "webkit",
+      "button": "Selo"
+    },
+    {
+      "engine": "webkit",
+      "button": "✓ Roupa do retrato"
+    },
+    {
+      "engine": "webkit",
+      "button": "Lenço ultramarino"
+    },
+    {
+      "engine": "webkit",
+      "button": "Lenço menta"
+    },
+    {
+      "engine": "webkit",
+      "button": "Enter e Espaço"
+    },
+    {
+      "engine": "webkit",
+      "button": "Próxima entrega e balanço de três entregas"
+    },
+    {
+      "engine": "webkit",
+      "button": "Balanço: capítulos"
+    },
+    {
+      "engine": "webkit",
+      "button": "Balanço: menu"
+    },
+    {
+      "engine": "webkit",
+      "button": "Balanço: novo turno"
+    },
+    {
+      "engine": "webkit",
+      "button": "Retomar meu turno"
+    },
+    {
+      "engine": "chromium",
+      "button": "✓ Contorno da base"
+    },
+    {
+      "engine": "chromium",
+      "button": "Alongado"
+    },
+    {
+      "engine": "chromium",
+      "button": "Largo"
+    },
+    {
+      "engine": "chromium",
+      "button": "Maçãs salientes"
+    },
+    {
+      "engine": "chromium",
+      "button": "✓ Tom da ilustração"
+    },
+    {
+      "engine": "chromium",
+      "button": "Dourado quente"
+    },
+    {
+      "engine": "chromium",
+      "button": "Marrom profundo"
+    },
+    {
+      "engine": "chromium",
+      "button": "✓ Sem moldura"
+    },
+    {
+      "engine": "chromium",
+      "button": "Medalhão"
+    },
+    {
+      "engine": "chromium",
+      "button": "Postal"
+    },
+    {
+      "engine": "chromium",
+      "button": "✓ Papel"
+    },
+    {
+      "engine": "chromium",
+      "button": "Menta"
+    },
+    {
+      "engine": "chromium",
+      "button": "Ultramarino"
+    },
+    {
+      "engine": "chromium",
+      "button": "Vermelhão"
+    },
+    {
+      "engine": "chromium",
+      "button": "✓ Cabelo da ilustração"
+    },
+    {
+      "engine": "chromium",
+      "button": "Acobreado"
+    },
+    {
+      "engine": "chromium",
+      "button": "Mecha caramelo"
+    },
+    {
+      "engine": "chromium",
+      "button": "✓ Sem adereço"
+    },
+    {
+      "engine": "chromium",
+      "button": "Faixa vermelha"
+    },
+    {
+      "engine": "chromium",
+      "button": "Gorro ultramarino"
+    },
+    {
+      "engine": "chromium",
+      "button": "✓ Sem broche"
+    },
+    {
+      "engine": "chromium",
+      "button": "Dominó"
+    },
+    {
+      "engine": "chromium",
+      "button": "Estrela"
+    },
+    {
+      "engine": "chromium",
+      "button": "Selo"
+    },
+    {
+      "engine": "chromium",
+      "button": "✓ Roupa do retrato"
+    },
+    {
+      "engine": "chromium",
+      "button": "Lenço ultramarino"
+    },
+    {
+      "engine": "chromium",
+      "button": "Lenço menta"
+    },
+    {
+      "engine": "chromium",
+      "button": "Enter e Espaço"
+    },
+    {
+      "engine": "chromium",
+      "button": "Próxima entrega e balanço de três entregas"
+    },
+    {
+      "engine": "chromium",
+      "button": "Balanço: capítulos"
+    },
+    {
+      "engine": "chromium",
+      "button": "Balanço: menu"
+    },
+    {
+      "engine": "chromium",
+      "button": "Balanço: novo turno"
+    },
+    {
+      "engine": "chromium",
+      "button": "Retomar meu turno"
+    }
+  ],
+  "total": 534,
+  "layoutChecks": 240
+}

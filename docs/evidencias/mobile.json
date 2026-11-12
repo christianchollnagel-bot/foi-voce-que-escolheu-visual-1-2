@@ -989,7 +989,7 @@
       ],
       "large": false,
       "screen": "conteudo",
-      "pages": 2,
+      "pages": 4,
       "controls": 1
     },
     {
@@ -1005,7 +1005,7 @@
       ],
       "large": false,
       "screen": "menu",
-      "pages": 4,
+      "pages": 5,
       "controls": 7
     },
     {
@@ -1021,7 +1021,7 @@
       ],
       "large": false,
       "screen": "config",
-      "pages": 4,
+      "pages": 5,
       "controls": 6
     },
     {
@@ -1037,7 +1037,7 @@
       ],
       "large": false,
       "screen": "acessibilidade",
-      "pages": 2,
+      "pages": 3,
       "controls": 4
     },
     {
@@ -1053,7 +1053,7 @@
       ],
       "large": false,
       "screen": "capitulos",
-      "pages": 5,
+      "pages": 6,
       "controls": 11
     },
     {
@@ -1069,7 +1069,7 @@
       ],
       "large": false,
       "screen": "base",
-      "pages": 9,
+      "pages": 15,
       "controls": 27
     },
     {
@@ -1085,7 +1085,7 @@
       ],
       "large": false,
       "screen": "rosto",
-      "pages": 4,
+      "pages": 5,
       "controls": 10
     },
     {
@@ -1101,7 +1101,7 @@
       ],
       "large": false,
       "screen": "cabelo",
-      "pages": 3,
+      "pages": 4,
       "controls": 6
     },
     {
@@ -1117,7 +1117,7 @@
       ],
       "large": false,
       "screen": "roupa",
-      "pages": 3,
+      "pages": 5,
       "controls": 10
     },
     {
@@ -1133,7 +1133,7 @@
       ],
       "large": false,
       "screen": "nome",
-      "pages": 3,
+      "pages": 5,
       "controls": 5
     },
     {
@@ -1149,7 +1149,7 @@
       ],
       "large": false,
       "screen": "previa",
-      "pages": 3,
+      "pages": 4,
       "controls": 4
     },
     {
@@ -1165,7 +1165,7 @@
       ],
       "large": false,
       "screen": "expressoes",
-      "pages": 3,
+      "pages": 5,
       "controls": 21
     },
     {
@@ -1181,7 +1181,7 @@
       ],
       "large": false,
       "screen": "creditos",
-      "pages": 3,
+      "pages": 5,
       "controls": 1
     },
     {
@@ -1197,7 +1197,7 @@
       ],
       "large": false,
       "screen": "universo",
-      "pages": 3,
+      "pages": 4,
       "controls": 2
     },
     {
@@ -1469,7 +1469,7 @@
       ],
       "large": false,
       "screen": "conteudo",
-      "pages": 2,
+      "pages": 3,
       "controls": 1
     },
     {
@@ -1501,7 +1501,7 @@
       ],
       "large": false,
       "screen": "config",
-      "pages": 2,
+      "pages": 3,
       "controls": 6
     },
     {
@@ -1517,7 +1517,7 @@
       ],
       "large": false,
       "screen": "acessibilidade",
-      "pages": 2,
+      "pages": 3,
       "controls": 4
     },
     {
@@ -1597,7 +1597,7 @@
       ],
       "large": false,
       "screen": "roupa",
-      "pages": 2,
+      "pages": 3,
       "controls": 10
     },
     {
@@ -1613,7 +1613,7 @@
       ],
       "large": false,
       "screen": "nome",
-      "pages": 2,
+      "pages": 3,
       "controls": 5
     },
     {
@@ -1645,7 +1645,7 @@
       ],
       "large": false,
       "screen": "expressoes",
-      "pages": 2,
+      "pages": 3,
       "controls": 21
     },
     {
@@ -1661,7 +1661,7 @@
       ],
       "large": false,
       "screen": "creditos",
-      "pages": 3,
+      "pages": 4,
       "controls": 1
     },
     {
@@ -1677,7 +1677,7 @@
       ],
       "large": false,
       "screen": "universo",
-      "pages": 2,
+      "pages": 3,
       "controls": 2
     },
     {
@@ -2941,7 +2941,7 @@
       ],
       "large": false,
       "screen": "config",
-      "pages": 4,
+      "pages": 5,
       "controls": 6
     },
     {
@@ -2957,7 +2957,7 @@
       ],
       "large": false,
       "screen": "acessibilidade",
-      "pages": 2,
+      "pages": 4,
       "controls": 4
     },
     {
@@ -2989,7 +2989,7 @@
       ],
       "large": false,
       "screen": "base",
-      "pages": 9,
+      "pages": 15,
       "controls": 27
     },
     {
@@ -3021,7 +3021,7 @@
       ],
       "large": false,
       "screen": "cabelo",
-      "pages": 3,
+      "pages": 4,
       "controls": 6
     },
     {
@@ -3037,7 +3037,7 @@
       ],
       "large": false,
       "screen": "roupa",
-      "pages": 3,
+      "pages": 4,
       "controls": 10
     },
     {
@@ -3053,7 +3053,7 @@
       ],
       "large": false,
       "screen": "nome",
-      "pages": 3,
+      "pages": 4,
       "controls": 5
     },
     {
@@ -3101,7 +3101,7 @@
       ],
       "large": false,
       "screen": "creditos",
-      "pages": 4,
+      "pages": 5,
       "controls": 1
     },
     {

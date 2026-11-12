@@ -2,7 +2,7 @@
 const resources = [
   [
     "app.js",
-    "a90977b1f0fa1a269be7c807180e98ef7a165a1d9c1f676b6f11a7435fee43fd"
+    "135c3d8e7ea3f139311127421fd583696e87ac0baa9b63e382fd8c3bc71eb2ef"
   ],
   [
     "assets/avatares/01-alegria.webp",
@@ -3626,7 +3626,7 @@ const resources = [
   ]
 ];
 const prefix = 'fvqe-v1|' + self.registration.scope + '|';
-const cacheName = prefix + '4aa5cba4da9dbab6dad947b58aa2a79812ca9f602c44db7c1183d18047ac26ed';
+const cacheName = prefix + 'fb3e413689e30056e97165ef5d82a289849d85d12c1d2f695de6244e87c42cc4';
 const root = new URL(self.registration.scope);
 const urls = new Map(resources.map(([path, hash]) => [new URL(path, root).href, hash]));
 

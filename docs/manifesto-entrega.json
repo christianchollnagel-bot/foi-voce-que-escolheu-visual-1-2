@@ -1,8 +1,8 @@
 [
   {
     "file": "app.js",
-    "sha256": "a90977b1f0fa1a269be7c807180e98ef7a165a1d9c1f676b6f11a7435fee43fd",
-    "bytes": 55194
+    "sha256": "135c3d8e7ea3f139311127421fd583696e87ac0baa9b63e382fd8c3bc71eb2ef",
+    "bytes": 55049
   },
   {
     "file": "assets/avatares/01-alegria.webp",
@@ -4521,7 +4521,7 @@
   },
   {
     "file": "sw.js",
-    "sha256": "35f11da647ee3036bddf08ad4eed06b91e434bf83ca8b0fceda4217e37c44fac",
+    "sha256": "0fd6b5a9f9ae4e806c54be6371502ede66c9a2bff1989b61beac3340f6cee689",
     "bytes": 111817
   },
   {

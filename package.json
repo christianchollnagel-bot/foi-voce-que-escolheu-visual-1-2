@@ -15,6 +15,7 @@
     "test:fluxos": "node tests/fluxos-paginados.cjs",
     "test:introducao": "node tests/introducao.cjs",
     "test:mobile": "node tests/mobile.cjs",
+    "test:botoes": "node tests/botoes.cjs && node tests/botoes-variantes.cjs",
     "test:audio-mobile": "node tests/audio-mobile.cjs",
     "test:offline-webkit": "node tests/offline-webkit.cjs"
   }

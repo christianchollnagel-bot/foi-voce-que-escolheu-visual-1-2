@@ -17,6 +17,7 @@ Atualização de 12/11/2026. O pedido “iOS 25 em diante” foi interpretado co
 
 Servir `web` em `http://localhost:4180` ou definir `GAME_URL` para outro endereço.
 
+- `npm run test:botoes`: ativa controles por toque em Chrome e WebKit e verifica o estado resultante. Abrange menus, capítulos, personalização, expressões, acessibilidade, som, prólogo, decisões, consultas, recibos, reset/cancelamento, exportação, transporte e balanço do turno. Inclui dois toques consecutivos na mesma coordenada, cliques com contagem maior que um e teclado. As variantes de personagem e os três serviços do turno têm cobertura própria.
 - `node tests/mobile.cjs`: Chrome e WebKit; 320×568, 360×640, 390×844 e 844×390; texto normal/ampliado; áreas seguras simuladas; acesso aos textos e controles por páginas. Exercita toque, música, introdução, teclado/zoom simulados, salvamento ao ocultar, permissão de sensores negada/concedida, rotação e Voltar.
 - `node tests/audio-mobile.cjs`: simula o volume HTML somente leitura e usa ganhos reais de Web Audio para conferir volume, mudo, redução sob efeito, suspensão/retomada e reutilização dos dois canais.
 - `node tests/audio.cjs`, `node tests/introducao.cjs`, `node tests/robustez.cjs` e `node tests/motores.cjs`: regressões de reprodução por clique/toque emulado, animação, sensores/recuperação de progresso e regras narrativas.
@@ -26,6 +27,16 @@ Servir `web` em `http://localhost:4180` ou definir `GAME_URL` para outro endere�
 Resultado desta execução: **240 combinações de layout** aprovadas em Chrome **157.0.8103.39** e WebKit **26.0**, além dos fluxos descritos acima. Não houve erro JavaScript nos fluxos mobile.
 
 Relatórios de compatibilidade em `docs/evidencias`. Capturas e detalhes transitórios em `tests/resultados`.
+
+## Correção dos botões por toque
+
+Na revisão de todos os grupos de controles, foi reproduzida uma falha ao tocar duas vezes seguidas em uma preferência: o segundo toque era ignorado. O filtro global descartava cliques com `detail > 1` e toques dentro de 260 ms na mesma coordenada, inclusive quando o controle tinha sido redesenhado. Isso também podia bloquear a próxima ação em um botão diferente que ocupasse aquele lugar.
+
+O tratamento agora aceita cada ativação válida de um botão conectado, habilitado e fora de regiões `inert`. Não há um segundo tratador de toque disparando a mesma ação. A paginação, os controles de transporte e o teclado continuam usando seus eventos nativos. A repetição automática de atalhos pelo teclado mantém sua proteção existente.
+
+As pausas artificiais de 280 ms foram removidas dos auxiliares de teste. A verificação usa o resultado da ação, além da visibilidade do botão. Isso permite detectar o bloqueio que a checagem anterior de layout não evidenciava. O teste mobile continua verificando as 240 combinações de layout, e o percurso dos 13 capítulos é conferido no WebKit.
+
+Resultado desta revisão: **534 verificações de controles aprovadas**, sendo 234 da varredura principal e 33 das variantes em cada navegador. As 240 combinações de layout e os 13 capítulos no WebKit também passaram com a correção. Registro em `docs/evidencias/botoes.json`; continuam válidos os limites de simulação descritos abaixo.
 
 ## Limites e conferência em aparelho
 
