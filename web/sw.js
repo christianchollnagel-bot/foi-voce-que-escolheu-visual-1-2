@@ -1,8 +1,8 @@
-/* Gerado por tools/gerar-sw.cjs. O navegador só ativa a troca depois de liberar a versão anterior. */
+/* Gerado por scripts/empacotar.cjs. Atualiza apenas após fechar as janelas antigas. */
 const resources = [
   [
     "app.js",
-    "8ba3d31310aaa55746796295155ab08f85834342cdbc8c3515cc470f54a85fbd"
+    "1691abce04f7ac6305891dbe5ac20e1caf480ff70eec45c9d73be5b4afc26f92"
   ],
   [
     "assets/avatares/01-alegria.webp",
@@ -3489,16 +3489,68 @@ const resources = [
     "b56a22c5d076a931c9afdf97e49d4e9070cbaeafa6f81a69c160ac1e6cc4c500"
   ],
   [
+    "atualizacao.css",
+    "0757a567116bad04bda37e715767ea03e65f2157775ea9cfb508d078723474f2"
+  ],
+  [
+    "audio/agora-explica.wav",
+    "a72681053d8dcaf4b56f1b5088674a8677365a8688d10cc8384c57368c0a0ea0"
+  ],
+  [
+    "audio/batidas.wav",
+    "12e73fb88a87461136c357a98dd8d9769e20c937982b331723e851ba3e782039"
+  ],
+  [
+    "audio/carimbo.wav",
+    "49030c34168fb6caff021499cf992496fb15d51295a40c1c6283791ad17646dc"
+  ],
+  [
+    "audio/derrota.wav",
+    "6d6d8db2aeec070ff641f99b0ab6326ae5ac75e4ab0f2bc672911964f396554b"
+  ],
+  [
+    "audio/era-so-entregar.wav",
+    "d575a15d4ad4706f76026947036cf196568d1a392c0d289ba40b1b875172552c"
+  ],
+  [
+    "audio/fim-do-turno.wav",
+    "2752b7343288ed59caaca8ac43b710f472480ab7e7f29bc08fd090596914bc03"
+  ],
+  [
+    "audio/impacto.wav",
+    "2e057190bde5326065b02d1b253669bc63a6a09d0da3172d477c446523ad25b0"
+  ],
+  [
+    "audio/mensagem.wav",
+    "ab51bf064a3f08d3fcfcf9c8c1689ebe58b5791adf735e79c365239229951ec1"
+  ],
+  [
+    "audio/turno-comecou.wav",
+    "1b5ac0e8748644c9825ef87956a4a5994319e00f8fc631f70809f1b04b1d6fd7"
+  ],
+  [
+    "audio/vitoria.wav",
+    "6a7e3f6d24e82b111613baf4449f1daeb11ba2b42b36397f5f2a019e11aaf03c"
+  ],
+  [
     "caderno.js",
-    "92e261c04adc0b99b6ac5ff1b735ffa8c776e01226e8da19b10c8e79a9775c0f"
+    "b6dcb335ed38ae5435f9ba3127bee1a270cadddcea6070f2ae65aa9ed71aa6f6"
   ],
   [
     "casos.js",
     "6dab88509cf92dc9ceaca77980111bb4ec0e0c0ca015ba2b3775bce877bce402"
   ],
   [
+    "continuidade.js",
+    "56ac9794d9bbde942a63d50c5290f4dadf549196a0f5a0c0db870c4098ceb261"
+  ],
+  [
     "editorial.css",
     "2f62367c9db4cc4a943aecf8463d943d2b40dba450cea67b58e3947108bcc6a7"
+  ],
+  [
+    "feedback.js",
+    "98fc562f8c185154f90e30574aa38f31c38c8e8ba2e5a923c3bfe0ccb9e39bbf"
   ],
   [
     "folhas.js",
@@ -3518,7 +3570,7 @@ const resources = [
   ],
   [
     "index.html",
-    "6e68a9ea99771558408e1fad65fec809e3307190547f7405312107a87bebefb2"
+    "4606662c01464470540c1aa65a6e5b6c37db96438198809d5daf616b4afc9e05"
   ],
   [
     "manifest.webmanifest",
@@ -3542,7 +3594,7 @@ const resources = [
   ],
   [
     "pwa.js",
-    "ec67c4278e5869cdededdbaad0a5b99dee018c15ab5f803e3526a8d12419b426"
+    "3170d98d00e70cacd2d3b4920c0e9163cdcaa3fa9883d28041089f2e0fcb5df5"
   ],
   [
     "rotulos-v1.js",
@@ -3555,10 +3607,14 @@ const resources = [
   [
     "tintas.js",
     "3354dc7d4af5d5ea37ef6a119ab8ea257dae79186690877add006ebb17a15d7c"
+  ],
+  [
+    "transporte.js",
+    "819004a8fcc9a6a2ae412a6e231d25f001032199edb2eeb05da42555586c6bcd"
   ]
 ];
 const prefix = 'fvqe-v1|' + self.registration.scope + '|';
-const cacheName = prefix + 'a6251dc039fa20497a0ed895c988622a5e85a2b4c79e390e937865605a25aea8';
+const cacheName = prefix + '352767eada5d174977f044fe25249caca7a02c6c84c3758acd91067315be724c';
 const root = new URL(self.registration.scope);
 const urls = new Map(resources.map(([path, hash]) => [new URL(path, root).href, hash]));
 

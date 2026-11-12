@@ -11,7 +11,7 @@ if (matchMedia('(display-mode: standalone)').matches) {
   }, {once: true});
 }
 (() => {
-  const version = 'V1 Visual 1.2';
+  const version = 'Edição de continuidade · base Visual 1.2';
   let status = 'Preparando os arquivos para jogar sem conexão…';
   function announce(message) {
     status = message;
@@ -41,7 +41,7 @@ if (matchMedia('(display-mode: standalone)').matches) {
       navigator.serviceWorker.register('./sw.js', {updateViaCache:'none'})
   ).then(reg => {
     const ready = () => announce('Pronto para jogar offline.');
-    const waiting = () => announce('Atualização pronta. Termine sua partida e feche todas as janelas do jogo para aplicá-la.');
+    const waiting = () => announce('Atualização pronta. Seu progresso fica salvo. Feche todas as janelas do jogo para aplicar a atualização e depois continue.');
     function watch(worker) {
       if (!worker) return;
       worker.addEventListener('statechange', () => {
@@ -59,4 +59,5 @@ if (matchMedia('(display-mode: standalone)').matches) {
     if (reg.active && !instalado) reg.update().catch(() => {});
   }).catch(() => announce('Não foi possível preparar o modo offline. Confira a conexão e reabra o jogo.'));
 })();
+
 

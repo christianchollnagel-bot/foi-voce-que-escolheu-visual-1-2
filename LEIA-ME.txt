@@ -1,8 +1,11 @@
-﻿Foi Você Que Escolheu — V1 Visual 1.2
-Projeto Inovação Chris · 2026/2 · Responsável acadêmico: Christian
+Foi Você Que Escolheu — atualização da Visual 1.2
+Projeto Inovação Chris 2026/2 · Responsável acadêmico: Christian Cândia Hollnagel.
 
-Windows: abra Windows/Instalar Visual 1.2.exe. Depois, use o ícone Foi Você Que Escolheu — Visual 1.2 na Área de Trabalho. Requer Microsoft Edge WebView2 Runtime.
+Fonte: web. Publicação: Entrega/netlify. ZIP: Foi_Voce_Que_Escolheu_Netlify.zip.
+Para abrir: node scripts/servir.cjs Entrega/netlify 4173
+Depois abra http://localhost:4173.
 
-Navegador: sirva web/ via HTTPS ou localhost. Aguarde a preparação offline indicada na capa. A partida pertence à sessão da janela.
-
-Abra Entrega/Indice.html para ver a auditoria, o sistema de componentes, as comparações e as provas de teste.
+O progresso agora é salvo neste navegador e aparelho. Use Continuar partida.
+Consulte README.md e docs/PUBLICACAO.md para instruções completas.
+Os relatórios HTML antigos em Entrega são registros históricos da base.
+Nenhum deploy em produção foi realizado.

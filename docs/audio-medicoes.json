@@ -1,0 +1,82 @@
+[
+  {
+    "file": "turno-comecou.wav",
+    "seconds": 17.77777777777778,
+    "peak": 0.28819270608374253,
+    "rms": 0.05397138144264383,
+    "loop": true,
+    "seam": 8.440486514793913e-7
+  },
+  {
+    "file": "era-so-entregar.wav",
+    "seconds": 17.77777777777778,
+    "peak": 0.20830895279635286,
+    "rms": 0.041320645672195275,
+    "loop": true,
+    "seam": 8.440486514793913e-7
+  },
+  {
+    "file": "agora-explica.wav",
+    "seconds": 17.77777777777778,
+    "peak": 0.2612779444921449,
+    "rms": 0.05380486527561146,
+    "loop": true,
+    "seam": 8.440486514793913e-7
+  },
+  {
+    "file": "fim-do-turno.wav",
+    "seconds": 17.77777777777778,
+    "peak": 0.27991625143387716,
+    "rms": 0.0535569596699526,
+    "loop": true,
+    "seam": 8.440486514793913e-7
+  },
+  {
+    "file": "vitoria.wav",
+    "seconds": 2.8,
+    "peak": 0.32600902206271687,
+    "rms": 0.06763990858221078,
+    "loop": false,
+    "seam": 0
+  },
+  {
+    "file": "derrota.wav",
+    "seconds": 2.8,
+    "peak": 0.44265660389349837,
+    "rms": 0.07433012658876713,
+    "loop": false,
+    "seam": 0
+  },
+  {
+    "file": "carimbo.wav",
+    "seconds": 0.5,
+    "peak": 0.4227838222578992,
+    "rms": 0.043553870389858806,
+    "loop": false,
+    "seam": 0
+  },
+  {
+    "file": "mensagem.wav",
+    "seconds": 0.5,
+    "peak": 0.209167708696892,
+    "rms": 0.0373061098868611,
+    "loop": false,
+    "seam": 0
+  },
+  {
+    "file": "batidas.wav",
+    "seconds": 0.6500226757369615,
+    "peak": 0.3592213640483851,
+    "rms": 0.053124784692759455,
+    "loop": false,
+    "seam": 0
+  },
+  {
+    "file": "impacto.wav",
+    "seconds": 0.5,
+    "peak": 0.3754740907332075,
+    "rms": 0.04735601267349839,
+    "loop": false,
+    "seam": 0
+  }
+]

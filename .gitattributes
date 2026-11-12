@@ -1,0 +1,2 @@
+# O service worker verifica SHA-256 dos bytes publicados. Não converter LF/CRLF.
+web/** -text

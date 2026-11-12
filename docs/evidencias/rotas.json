@@ -1,0 +1,47 @@
+{
+  "routes": [
+    {
+      "group": 0,
+      "ids": [
+        0,
+        4,
+        8
+      ],
+      "log": 5
+    },
+    {
+      "group": 1,
+      "ids": [
+        1,
+        5,
+        9
+      ],
+      "log": 7
+    },
+    {
+      "group": 2,
+      "ids": [
+        2,
+        6,
+        10
+      ],
+      "log": 9
+    },
+    {
+      "group": 3,
+      "ids": [
+        3,
+        7,
+        11
+      ],
+      "log": 12
+    }
+  ],
+  "marmita": "impacto → desculpa → pedido na oficina → cobrança por Inês",
+  "layout": [
+    320,
+    390,
+    1440
+  ],
+  "errors": []
+}

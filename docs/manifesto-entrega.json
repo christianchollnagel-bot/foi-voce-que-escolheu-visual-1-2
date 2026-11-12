@@ -1,0 +1,4527 @@
+[
+  {
+    "file": "app.js",
+    "sha256": "1691abce04f7ac6305891dbe5ac20e1caf480ff70eec45c9d73be5b4afc26f92",
+    "bytes": 53289
+  },
+  {
+    "file": "assets/avatares/01-alegria.webp",
+    "sha256": "9fe3cf51b1e636302af6a1ee65d6e4006581e1b10eb35b1fd71ee11450ec8269",
+    "bytes": 22526
+  },
+  {
+    "file": "assets/avatares/01-aliviado.webp",
+    "sha256": "8eed4f09dec93173af583a4d3a9179d443551f7c1a1825a72c94a624e86401f5",
+    "bytes": 24620
+  },
+  {
+    "file": "assets/avatares/01-atento.webp",
+    "sha256": "6737dd6a6dc8488cf5684f018d4768c4b0eafe50ec0f66bb5566f51407b6f86b",
+    "bytes": 27918
+  },
+  {
+    "file": "assets/avatares/01-cansado.webp",
+    "sha256": "79409552cc47c3103226d44dceccc83f91b9551ba16bb1eb2f3fa48101d6520e",
+    "bytes": 24104
+  },
+  {
+    "file": "assets/avatares/01-choque.webp",
+    "sha256": "ed8325638f400ddfe7e49bc2d254067466612b99e24cfd156b0637dab4def6c7",
+    "bytes": 26366
+  },
+  {
+    "file": "assets/avatares/01-concentrado.webp",
+    "sha256": "848df87d8efcfa57c7321c966242e86134fd5f9b472699e35723975777daa0b4",
+    "bytes": 28332
+  },
+  {
+    "file": "assets/avatares/01-confiante.webp",
+    "sha256": "c3ad19844d2fbd3bb70548f7e6de6e94cf7181d2fc1a331444350b563557d4de",
+    "bytes": 24560
+  },
+  {
+    "file": "assets/avatares/01-constrangimento.webp",
+    "sha256": "dcd6302f750e5a68ba5b8b9a18d15900e487aa81d77c334607167499fb087252",
+    "bytes": 23582
+  },
+  {
+    "file": "assets/avatares/01-curioso.webp",
+    "sha256": "c8631e2ca985987e5ca21746b6de66a7e9d70447eff0c050ba5dcaade6330c6a",
+    "bytes": 25674
+  },
+  {
+    "file": "assets/avatares/01-decepcao.webp",
+    "sha256": "57a851052b1a55c9f509b0706e5ea21ec69d654a14a69b2ea2f3393bfead18a8",
+    "bytes": 25602
+  },
+  {
+    "file": "assets/avatares/01-desconfianca.webp",
+    "sha256": "fc2250d532ad8c953ad07ebcaebd21facf1e2583ff9d068350051a62d0a05d6e",
+    "bytes": 23048
+  },
+  {
+    "file": "assets/avatares/01-hesitante.webp",
+    "sha256": "129c42e0c0c6cb697a9cc237192f53b69d4b6c963d72a7e221fef5b59ecfd7ca",
+    "bytes": 22504
+  },
+  {
+    "file": "assets/avatares/01-impaciente.webp",
+    "sha256": "47c72427606be973ec198cae3823724c1f942dd4f13c772e3df9af159d799195",
+    "bytes": 24798
+  },
+  {
+    "file": "assets/avatares/01-ironia.webp",
+    "sha256": "e4da3e9efece74c91e095d11c40933eb3473d158f85c441cca19b030aaa08186",
+    "bytes": 21856
+  },
+  {
+    "file": "assets/avatares/01-irritacao.webp",
+    "sha256": "dc0142b4e29f2afe90c6caa1228bd9db06ad69f134445e72bb12cbb5c551de7e",
+    "bytes": 23892
+  },
+  {
+    "file": "assets/avatares/01-neutro.webp",
+    "sha256": "565ced0f8f80eeeb1711bcdd01d5c6ab2a980189f4b84bfd73c648ca0abfa00e",
+    "bytes": 23282
+  },
+  {
+    "file": "assets/avatares/01-panico.webp",
+    "sha256": "d97ebf84b9f55d603be27f2ab3d2d8edaff7989e3a3aeb68b80de77795e0c768",
+    "bytes": 24346
+  },
+  {
+    "file": "assets/avatares/01-reservado.webp",
+    "sha256": "6f7181af65eb8b3976375621e014f759eb1b457a3c2c4d04975406e9276fd964",
+    "bytes": 22732
+  },
+  {
+    "file": "assets/avatares/01-surpresa.webp",
+    "sha256": "fb2047ed7ab8a6cfcf3a41913425d0c6262dc5ee29e19378b59fa743daf608ca",
+    "bytes": 23850
+  },
+  {
+    "file": "assets/avatares/01-tristeza.webp",
+    "sha256": "032dda2d520648ee1285aa9938c5ef1aee112af33ebd87b8a2d28652ed154580",
+    "bytes": 23542
+  },
+  {
+    "file": "assets/avatares/02-alegria.webp",
+    "sha256": "3653df6d96cc07b7ecc9058a022c6de6cb02d8b956d82c58b7b9f2e96f082012",
+    "bytes": 21966
+  },
+  {
+    "file": "assets/avatares/02-aliviado.webp",
+    "sha256": "80e8d7f15507755e1d8a842e29118a000e6509b26abcc6de533903c41f1a7281",
+    "bytes": 25320
+  },
+  {
+    "file": "assets/avatares/02-atento.webp",
+    "sha256": "da69a38ac1a55022157c356eebf8e686caf9e198256ddea3536a8c82e946b9c4",
+    "bytes": 29716
+  },
+  {
+    "file": "assets/avatares/02-cansado.webp",
+    "sha256": "7727245ed4cc8d9b7768c41c7f3aa2f2fe328a9be6363c041bab58526b288f18",
+    "bytes": 24852
+  },
+  {
+    "file": "assets/avatares/02-choque.webp",
+    "sha256": "c368b9236ced6850acf7d5a29b60f8bbfc1d076aab2d4ca2b1df60a70d39a6b1",
+    "bytes": 26862
+  },
+  {
+    "file": "assets/avatares/02-concentrado.webp",
+    "sha256": "870685d7d1d836b6039fe3b7b456f0ef3ec3802158a3c376c1b9b2b963977cd5",
+    "bytes": 30288
+  },
+  {
+    "file": "assets/avatares/02-confiante.webp",
+    "sha256": "b8a61c00f967cf70034e8c0dbb7c3cf821a67d9939bab0a2b7415338fbff4394",
+    "bytes": 24296
+  },
+  {
+    "file": "assets/avatares/02-constrangimento.webp",
+    "sha256": "98673388138b839207e9e8b062620c2533d9e31135514706034553355d281b81",
+    "bytes": 24290
+  },
+  {
+    "file": "assets/avatares/02-curioso.webp",
+    "sha256": "29be8ce70d73740d158e4a21be09ed63076e4fa631b8ba5e14380d6ddbee7e7e",
+    "bytes": 26434
+  },
+  {
+    "file": "assets/avatares/02-decepcao.webp",
+    "sha256": "fe8c3dcc54e6826ad620671c2e01ff5c1d4f4a07bf2da4f0895d46fec567d78d",
+    "bytes": 26364
+  },
+  {
+    "file": "assets/avatares/02-desconfianca.webp",
+    "sha256": "2b19785eb43a479a374f05963e1201033ab17de91e9cfe3917e0a039278ba5c1",
+    "bytes": 23066
+  },
+  {
+    "file": "assets/avatares/02-hesitante.webp",
+    "sha256": "101c4a4edbe81cb8f31e947fdf1371f36b5ed48cc5c8af7aec3fb07c99396a56",
+    "bytes": 23102
+  },
+  {
+    "file": "assets/avatares/02-impaciente.webp",
+    "sha256": "1bfc4b6c633bad0a4bc2715cc32cea50abf9f42d07e3be96bfb5d65a6d950756",
+    "bytes": 24784
+  },
+  {
+    "file": "assets/avatares/02-ironia.webp",
+    "sha256": "486847b058273cb1661ab1381885ae75b164fae02f308316c4503f62b05e6117",
+    "bytes": 21134
+  },
+  {
+    "file": "assets/avatares/02-irritacao.webp",
+    "sha256": "46c48c6008ab9a8a67a35981a17e2b2e40e969570d1c2467dde0a3f6d7c1f55d",
+    "bytes": 23408
+  },
+  {
+    "file": "assets/avatares/02-neutro.webp",
+    "sha256": "4e18da5592d4f9969e3c6857980aa93d09a7b5722c2010714f84bd64851a0ff2",
+    "bytes": 22108
+  },
+  {
+    "file": "assets/avatares/02-panico.webp",
+    "sha256": "6ca4b8a5351039ab87a804310780c54677305e58523f2805de07f6e93c151f1c",
+    "bytes": 23468
+  },
+  {
+    "file": "assets/avatares/02-reservado.webp",
+    "sha256": "41e8d0bb636a5680dcd536f09d452dabafdad19f214d2b1f8e9d6bcb9e097c24",
+    "bytes": 21880
+  },
+  {
+    "file": "assets/avatares/02-surpresa.webp",
+    "sha256": "cdc0ee2996be7f3ace03c109d4b3008f57b177a42d0c48e4becb93a05086d6ce",
+    "bytes": 22702
+  },
+  {
+    "file": "assets/avatares/02-tristeza.webp",
+    "sha256": "ad84d6005147743ef7093c8d163f8a2c1cf7ff3a5df37212e1723ab3c04feda7",
+    "bytes": 23466
+  },
+  {
+    "file": "assets/avatares/03-alegria.webp",
+    "sha256": "325d8aea64f0b2e829a4ff18d9c6b0b0681d37199b8d2b9044a31b3d2854ab09",
+    "bytes": 22740
+  },
+  {
+    "file": "assets/avatares/03-aliviado.webp",
+    "sha256": "6c209f062dcecea59a639c961aa58939f3186eedea8741fe9bdc2f7521a26b35",
+    "bytes": 23684
+  },
+  {
+    "file": "assets/avatares/03-atento.webp",
+    "sha256": "bf3925951bb405ffb5b73fd39217ba9ed22c0331caf93f7d1a98780bfd5f51e6",
+    "bytes": 28968
+  },
+  {
+    "file": "assets/avatares/03-cansado.webp",
+    "sha256": "7260e8536b73688a9ff1cb8214a81e63168f81f070cd1966717c8754979240f5",
+    "bytes": 24558
+  },
+  {
+    "file": "assets/avatares/03-choque.webp",
+    "sha256": "3d890e8dce9757922a1d031d93d03cf2b721ca43ab6d3bf859d1d60feb3ff08e",
+    "bytes": 26418
+  },
+  {
+    "file": "assets/avatares/03-concentrado.webp",
+    "sha256": "29ceb37902b56f6f0bb7b576c940875c5556274e4fa484d3a8f6c8ee80d2c315",
+    "bytes": 28798
+  },
+  {
+    "file": "assets/avatares/03-confiante.webp",
+    "sha256": "82b19f0b7ecaccfafb29e2651af31a60235f3867d2d8a4862afb9d621e5b5f96",
+    "bytes": 23362
+  },
+  {
+    "file": "assets/avatares/03-constrangimento.webp",
+    "sha256": "6d05fb7aa33149c5c896715fdce6e3f4dfd9c0a543d47192371eea3c7a8a51b0",
+    "bytes": 22354
+  },
+  {
+    "file": "assets/avatares/03-curioso.webp",
+    "sha256": "9edbafdfcdad00741788aa7f1255b86eab70b94ddf8ecbcbee39a198944348f3",
+    "bytes": 25700
+  },
+  {
+    "file": "assets/avatares/03-decepcao.webp",
+    "sha256": "9a9d27f9643e9344eca2cccfd202968eb98314047b66cb6cb064d57d6dfaffeb",
+    "bytes": 26042
+  },
+  {
+    "file": "assets/avatares/03-desconfianca.webp",
+    "sha256": "80aa0801f8a1a0bba7fdc2ac5f4a1980122a127a7c14eb2bbb6ba358ccbaea60",
+    "bytes": 22936
+  },
+  {
+    "file": "assets/avatares/03-hesitante.webp",
+    "sha256": "b4a5beb8e369d89a514f7778f5ef3f826786b4a85a0b8097c07a1956a04a8287",
+    "bytes": 22136
+  },
+  {
+    "file": "assets/avatares/03-impaciente.webp",
+    "sha256": "ba64db45121b7b37a67e70377b0f6609e68e04129b6fd9798b345b8d77aa0eb5",
+    "bytes": 24066
+  },
+  {
+    "file": "assets/avatares/03-ironia.webp",
+    "sha256": "e19c6bd7a090f2227f218f64421b1c574cef4dbaac4ffa1f05c8f839417b18b4",
+    "bytes": 21470
+  },
+  {
+    "file": "assets/avatares/03-irritacao.webp",
+    "sha256": "a4b4b20ad526140954b952e508475fbb8b5162b8ee2312f91392d7df60804318",
+    "bytes": 23524
+  },
+  {
+    "file": "assets/avatares/03-neutro.webp",
+    "sha256": "407a0cf4901c2c50fbab67b1bd9a5a79e6913b1dccdc237e1254fb16312be8a6",
+    "bytes": 21660
+  },
+  {
+    "file": "assets/avatares/03-panico.webp",
+    "sha256": "c9bdeb9a3df76b80af3705a5b27e360cfa60464232042f218ea8c7f0c301cab1",
+    "bytes": 22902
+  },
+  {
+    "file": "assets/avatares/03-reservado.webp",
+    "sha256": "0cd9310a70d8cc967ff94699e9c4b0ff657105d16563cbe8b3fccba65b136a2f",
+    "bytes": 21774
+  },
+  {
+    "file": "assets/avatares/03-surpresa.webp",
+    "sha256": "4b27325abce543d997751292669062b1d11ad9448411b208652f1de034e85bf0",
+    "bytes": 23108
+  },
+  {
+    "file": "assets/avatares/03-tristeza.webp",
+    "sha256": "5e369e776b72ef578cf96c9816a966f3c5d8fe7b74d018c2e168dc957f7e761a",
+    "bytes": 22848
+  },
+  {
+    "file": "assets/avatares/04-alegria.webp",
+    "sha256": "fa697c7b373becf95d391f725e49443a8bc099149178832df2008d7e000cb1c3",
+    "bytes": 28060
+  },
+  {
+    "file": "assets/avatares/04-aliviado.webp",
+    "sha256": "db82df402e4ae242e67b781e5fafcf709378435208d8ebb38f4087969ecd7ad7",
+    "bytes": 29866
+  },
+  {
+    "file": "assets/avatares/04-atento.webp",
+    "sha256": "9ffab97bf55a0b062b8c08bdcef9d913c50305e28d35c04daf4416ece1a6ba1c",
+    "bytes": 33066
+  },
+  {
+    "file": "assets/avatares/04-cansado.webp",
+    "sha256": "d1de9dc79f76af19a8127233f9c51245e4695c9b9e3d51f9fe375f9802400e48",
+    "bytes": 30312
+  },
+  {
+    "file": "assets/avatares/04-choque.webp",
+    "sha256": "5253be94cc302f56df57ba8da667af5f46be75b5dda6185d658c77191ea3673b",
+    "bytes": 30532
+  },
+  {
+    "file": "assets/avatares/04-concentrado.webp",
+    "sha256": "8ebcb9ee6abb9ac47682644a771b0537c729b6137ceb1437e09310d5fe810005",
+    "bytes": 33652
+  },
+  {
+    "file": "assets/avatares/04-confiante.webp",
+    "sha256": "979bb1e6fb60101865deb9174531b2a504fbdb4434fbc7c94f3c47a0131e846a",
+    "bytes": 29108
+  },
+  {
+    "file": "assets/avatares/04-constrangimento.webp",
+    "sha256": "01ed8e15bbd68f5f65998293a1aceaff3299f93c167f86b68c55f11ffab20cde",
+    "bytes": 29520
+  },
+  {
+    "file": "assets/avatares/04-curioso.webp",
+    "sha256": "173020a69ff181cf3ede9a9cac1403e2fc5e07cbaeeb45f3b58251f5416ab4c1",
+    "bytes": 30664
+  },
+  {
+    "file": "assets/avatares/04-decepcao.webp",
+    "sha256": "50ff8664408c608e3fb02acdfb2dd1611334e3eead03c09844c266a19e155848",
+    "bytes": 30860
+  },
+  {
+    "file": "assets/avatares/04-desconfianca.webp",
+    "sha256": "41b870423592d9b687382f691c13ac72c8b2718889211c9cf9b7b296828ec58a",
+    "bytes": 28254
+  },
+  {
+    "file": "assets/avatares/04-hesitante.webp",
+    "sha256": "864bed2e39d407dc5809d3bb9bd5b664684d54ab1ef30a9b791aa9e0d605097a",
+    "bytes": 28224
+  },
+  {
+    "file": "assets/avatares/04-impaciente.webp",
+    "sha256": "002cfe8c17b15bacc7cab797e7ecc187be557ff4b74795ff529431d4bf613ffd",
+    "bytes": 29704
+  },
+  {
+    "file": "assets/avatares/04-ironia.webp",
+    "sha256": "554c7f1e0f49d067fb7bdb820ba0793e9f199993c920e517e384db77972dff5e",
+    "bytes": 26996
+  },
+  {
+    "file": "assets/avatares/04-irritacao.webp",
+    "sha256": "6d48dfca134d026c1ee143c15519c78bdb76c8181368517bd0ceae04a8bfc642",
+    "bytes": 29058
+  },
+  {
+    "file": "assets/avatares/04-neutro.webp",
+    "sha256": "38fe758a90b09911f929f2944ff4e87d1faffc05e33c24708fcbe34350faa0fe",
+    "bytes": 28136
+  },
+  {
+    "file": "assets/avatares/04-panico.webp",
+    "sha256": "cc9c94254a8d6bed047e3e041b019f378212e5813b45611d1c2d6e227b4dfe16",
+    "bytes": 28792
+  },
+  {
+    "file": "assets/avatares/04-reservado.webp",
+    "sha256": "7e90d19c19c09864b9be974d742b34be1175858b0f2cf0d4845412b14b592216",
+    "bytes": 27382
+  },
+  {
+    "file": "assets/avatares/04-surpresa.webp",
+    "sha256": "8c41e328b83d31dfb727cd38ff2f5f2ff3168c8c8977c420db26a0750b428c28",
+    "bytes": 28898
+  },
+  {
+    "file": "assets/avatares/04-tristeza.webp",
+    "sha256": "4e83f7bd5477148958ddfa41702a79e53b98ead266790bfd1eab3b10347926ba",
+    "bytes": 27836
+  },
+  {
+    "file": "assets/avatares/04.webp",
+    "sha256": "62fd184a32317de15bd248e731155872eeae41ace841bf17f7fc3a35b3ae8a2e",
+    "bytes": 35928
+  },
+  {
+    "file": "assets/avatares/05-alegria.webp",
+    "sha256": "a8d5320db0534d973ec998c59cc41d29604a59a35439a91d7f2b66c7e6ffbb3c",
+    "bytes": 24736
+  },
+  {
+    "file": "assets/avatares/05-aliviado.webp",
+    "sha256": "e8461aaf939d2ff1dcafe57ec95245afb834a0b735ee6f5174b855fc399b7122",
+    "bytes": 25838
+  },
+  {
+    "file": "assets/avatares/05-atento.webp",
+    "sha256": "678b9d5d5b02740580b472cd95bbaa8cbae98feb782b1c854716e76221c9ca64",
+    "bytes": 29160
+  },
+  {
+    "file": "assets/avatares/05-cansado.webp",
+    "sha256": "fbcb93ab457dce5e92008c71e0748d2842dfd587d9c7b22248fd3cb6ef5df7a5",
+    "bytes": 26494
+  },
+  {
+    "file": "assets/avatares/05-choque.webp",
+    "sha256": "3253157a80070e74fe0104df9912d3fd8b4a29aebfdfd6c4b99f9e95b3d3b42a",
+    "bytes": 26986
+  },
+  {
+    "file": "assets/avatares/05-concentrado.webp",
+    "sha256": "617b5ce2d06d857bc1a6fc5aa7e846a339815f29daf0aff84e72e3c25a7bdbd8",
+    "bytes": 29696
+  },
+  {
+    "file": "assets/avatares/05-confiante.webp",
+    "sha256": "2ef123df203fb7fdaedc8482a10fc6cecd7265ed9eb10fa14824c576813b1b48",
+    "bytes": 25532
+  },
+  {
+    "file": "assets/avatares/05-constrangimento.webp",
+    "sha256": "94d057eec69a0116fccb8d259eb6e8cdd69a48f360094240ad909253e8a867c6",
+    "bytes": 25994
+  },
+  {
+    "file": "assets/avatares/05-curioso.webp",
+    "sha256": "3db35ac850c7c2b0f14fe7f235f0a59d8d8e3f62d0ee6a3d09deb3461fe2889b",
+    "bytes": 27552
+  },
+  {
+    "file": "assets/avatares/05-decepcao.webp",
+    "sha256": "d005f057f34729b6be66faeca61bdcab93539569c991735a40955543f753de50",
+    "bytes": 26556
+  },
+  {
+    "file": "assets/avatares/05-desconfianca.webp",
+    "sha256": "8b4aa9aba865e0167a4abf9e4a4b716854ac4490880ea9e25e66a661f3ac92b3",
+    "bytes": 25194
+  },
+  {
+    "file": "assets/avatares/05-hesitante.webp",
+    "sha256": "289f589148c31797a2ada2c5923341ffdacbe081637b5bf06bcf303f73ecf1a5",
+    "bytes": 25288
+  },
+  {
+    "file": "assets/avatares/05-impaciente.webp",
+    "sha256": "105009d27160a47be32c837250ccf193b92d8d3d87b5d159c2217393cdd7ee82",
+    "bytes": 26298
+  },
+  {
+    "file": "assets/avatares/05-ironia.webp",
+    "sha256": "440ef947094181fd73a4f77b86c4577616fc25d0a806d6671ab5877cf6841c02",
+    "bytes": 24482
+  },
+  {
+    "file": "assets/avatares/05-irritacao.webp",
+    "sha256": "03ea826519e5138f5f9d2839e777d4af1dd2c78b58d5edb1c67b1f4d93abed52",
+    "bytes": 26102
+  },
+  {
+    "file": "assets/avatares/05-neutro.webp",
+    "sha256": "7a0116075e67b76c08624655a25922c7abd7f4b42cd340412a3d9438951d4a35",
+    "bytes": 25828
+  },
+  {
+    "file": "assets/avatares/05-panico.webp",
+    "sha256": "f2071bff97ed0c0c61db5c7d3ae6fe93eea6b170540c6a8bf6fa50cf6bde5688",
+    "bytes": 25588
+  },
+  {
+    "file": "assets/avatares/05-reservado.webp",
+    "sha256": "de91e2134df3a6bf65ac41b0d6da9a00cde441b087748bcca844751e85ec7858",
+    "bytes": 25358
+  },
+  {
+    "file": "assets/avatares/05-surpresa.webp",
+    "sha256": "a95e98c131975caee24c0e3ee7d12328145cbecd28da264b316b6b84ed80afaf",
+    "bytes": 25502
+  },
+  {
+    "file": "assets/avatares/05-tristeza.webp",
+    "sha256": "aaa682487e74f584888e13b2f96c0a88043c15e11f1b95fb22a6f85ff94bd20b",
+    "bytes": 25304
+  },
+  {
+    "file": "assets/avatares/05.webp",
+    "sha256": "833a053e770682ccc7243d17ca00e8013a077d35e962a0978fe177ba88cfae9c",
+    "bytes": 33452
+  },
+  {
+    "file": "assets/avatares/06-alegria.webp",
+    "sha256": "ed85f4e6bca16179161b5b047cc792393a9d2eaf0d72a25085473a4b885439b0",
+    "bytes": 26902
+  },
+  {
+    "file": "assets/avatares/06-aliviado.webp",
+    "sha256": "6d68e165ec291c4139831f34f21ee56b1b08eeaf4a590d61b69ed919b174ed6b",
+    "bytes": 29506
+  },
+  {
+    "file": "assets/avatares/06-atento.webp",
+    "sha256": "76e39e8f40782fb87b7aa994382018596a29eeba7a37426ab8076f126c5e7208",
+    "bytes": 32682
+  },
+  {
+    "file": "assets/avatares/06-cansado.webp",
+    "sha256": "9c18538d15531179e42482961ed4aebe297f0d316952cbfcf6de1da7be4d2b8f",
+    "bytes": 30056
+  },
+  {
+    "file": "assets/avatares/06-choque.webp",
+    "sha256": "78cfd29f9b4c41b5f8b4a10739e3fd295b4613867c35df4204abba83d2a0877d",
+    "bytes": 30506
+  },
+  {
+    "file": "assets/avatares/06-concentrado.webp",
+    "sha256": "76e36f8c7de258e365909ae36b7a506c7af8a8fe343062dd534cd59a6f920642",
+    "bytes": 31608
+  },
+  {
+    "file": "assets/avatares/06-confiante.webp",
+    "sha256": "867fff8e93b6b1ab783d02f82b3fdafb96c9458a68789a9629e90799c31cb228",
+    "bytes": 29662
+  },
+  {
+    "file": "assets/avatares/06-constrangimento.webp",
+    "sha256": "b4aca7e84ee75b84ce25a8d20981569e2ecf89c23d76f5475d665d699ec508ba",
+    "bytes": 28820
+  },
+  {
+    "file": "assets/avatares/06-curioso.webp",
+    "sha256": "41dfcf4e0bb9cb38a140c9e0c15548ac17054fdaa194fcbcf1a5d8e1bb22c512",
+    "bytes": 30322
+  },
+  {
+    "file": "assets/avatares/06-decepcao.webp",
+    "sha256": "86220b8df992361750e542d88b7f8386037ca59d635cf885b4288b05b8be92d5",
+    "bytes": 30524
+  },
+  {
+    "file": "assets/avatares/06-desconfianca.webp",
+    "sha256": "2d0e95668f469fe908f46af02296ddd95b9ce095a7b183b26e26fb14f56dbf20",
+    "bytes": 27144
+  },
+  {
+    "file": "assets/avatares/06-hesitante.webp",
+    "sha256": "9ee5e5ef7d18ef16f6a233458acac3cf47978404c68c4157c9914c174d73163b",
+    "bytes": 26922
+  },
+  {
+    "file": "assets/avatares/06-impaciente.webp",
+    "sha256": "7bf0f7a0ab3de128debb50ad9e4450227022647caa90885f4c9c277a56467c66",
+    "bytes": 28146
+  },
+  {
+    "file": "assets/avatares/06-ironia.webp",
+    "sha256": "dcf506d060fd4680a120b8945519f11ffae5a3f11b332114f694926c7c0dca75",
+    "bytes": 26392
+  },
+  {
+    "file": "assets/avatares/06-irritacao.webp",
+    "sha256": "12e6b002a2f248957a161e456d1318aa8690fcd314b3bbb52e176b8f390bea0a",
+    "bytes": 29230
+  },
+  {
+    "file": "assets/avatares/06-neutro.webp",
+    "sha256": "c72f5321730c7859cfc8ae5f3efb8b553ab220d5e1554eb182a1fb8c5f83f839",
+    "bytes": 27674
+  },
+  {
+    "file": "assets/avatares/06-panico.webp",
+    "sha256": "5a6b73bbb4e073db51348182afd1b0d9ac95fe29d68e72dbb087da052554a23c",
+    "bytes": 28208
+  },
+  {
+    "file": "assets/avatares/06-reservado.webp",
+    "sha256": "0eccbd66a94fca9b8a2551bbb6655f85d11bcb788283a3e636f3f1b8fa684319",
+    "bytes": 26918
+  },
+  {
+    "file": "assets/avatares/06-surpresa.webp",
+    "sha256": "f1df9f06831516b7d27ea5f27344f70cca9d4b245b1d1ba18ec8c7a114c1e806",
+    "bytes": 27572
+  },
+  {
+    "file": "assets/avatares/06-tristeza.webp",
+    "sha256": "f67e957e44e1965d0404fed0ae320f0ef3b970be571e2042d19ba1a19e382bd7",
+    "bytes": 28692
+  },
+  {
+    "file": "assets/avatares/06.webp",
+    "sha256": "674e8655b57b00e2c1460696a85f4152161e111de9fe0e771683100a4e09405c",
+    "bytes": 35692
+  },
+  {
+    "file": "assets/avatares/07-alegria.webp",
+    "sha256": "54acf65445c9939199113429ca9b28fb3df0f786573fe89dc92ce47f2123ed44",
+    "bytes": 27320
+  },
+  {
+    "file": "assets/avatares/07-aliviado.webp",
+    "sha256": "e6139291713f668beaa987bce386655162a55d0418760d7f89178f3e78438f4c",
+    "bytes": 28078
+  },
+  {
+    "file": "assets/avatares/07-atento.webp",
+    "sha256": "47f2d6518a22fc35765a172ad108a87e1e0e20a460d4b79bdc8f65e9fac57d7c",
+    "bytes": 30368
+  },
+  {
+    "file": "assets/avatares/07-cansado.webp",
+    "sha256": "83693c17b4bca35158b9b75017329873c3c37fe7b3d44b0986e2820b27e06abf",
+    "bytes": 27516
+  },
+  {
+    "file": "assets/avatares/07-choque.webp",
+    "sha256": "7c4387b02ebf061df24c164f5cf2bc9b9423f0d352951afe8ed34a717b49656b",
+    "bytes": 29800
+  },
+  {
+    "file": "assets/avatares/07-concentrado.webp",
+    "sha256": "5de2514d8d2ed34e15ec3effcc0c974c1789b9f912ef65c5dc7b0040b12a86fe",
+    "bytes": 32326
+  },
+  {
+    "file": "assets/avatares/07-confiante.webp",
+    "sha256": "2a941332c6115cc08500a3dd690d3edaef0ba1db7ba75054735efe3109fc871c",
+    "bytes": 27654
+  },
+  {
+    "file": "assets/avatares/07-constrangimento.webp",
+    "sha256": "97b9494bfbe0ea7ae3a73d4a113e7e599fd465264a7953250f3d14c60c269971",
+    "bytes": 26810
+  },
+  {
+    "file": "assets/avatares/07-curioso.webp",
+    "sha256": "bc1a53b949ecf44ce6b08578785330014438db5c24ac04278f3ea31ae0c7a0fd",
+    "bytes": 29596
+  },
+  {
+    "file": "assets/avatares/07-decepcao.webp",
+    "sha256": "d48fb93d5ac5320c54febaf143867afeb5a3431e4e870b8c87e9d4e04838cb20",
+    "bytes": 28646
+  },
+  {
+    "file": "assets/avatares/07-desconfianca.webp",
+    "sha256": "efb9bbdbf1283d405c9b73776e91fcb5aa4e9b46876ffa63ab5fdd7286bd6617",
+    "bytes": 27044
+  },
+  {
+    "file": "assets/avatares/07-hesitante.webp",
+    "sha256": "1ee9992dc13a32c4b2d5b008ee669f551257253504c0af14f6d54df67a6642d5",
+    "bytes": 27178
+  },
+  {
+    "file": "assets/avatares/07-impaciente.webp",
+    "sha256": "ed037370ac48e0a72fc2574058aeb5154556a2398f523bd0d593fe9d5e2f75e8",
+    "bytes": 28500
+  },
+  {
+    "file": "assets/avatares/07-ironia.webp",
+    "sha256": "af5ec803ac52d5808ad59ae4743c783adf1fadcc990908d641ed3fd29c11df4c",
+    "bytes": 26264
+  },
+  {
+    "file": "assets/avatares/07-irritacao.webp",
+    "sha256": "b8471519cb52a8bc9b549e437e46e75db1c81d2c426987b2acaf96e1225533d2",
+    "bytes": 28114
+  },
+  {
+    "file": "assets/avatares/07-neutro.webp",
+    "sha256": "b593db5d6ef2095018eb0d3242538654e736a4c9fc74eb51f704787261dc2351",
+    "bytes": 27460
+  },
+  {
+    "file": "assets/avatares/07-panico.webp",
+    "sha256": "d7cee64f8f2d68008a498d00cb751982141e0ea35d3e530cf1e618e431542ba6",
+    "bytes": 28238
+  },
+  {
+    "file": "assets/avatares/07-reservado.webp",
+    "sha256": "8ec6fee7c128bf45ca4067bda0e50df7fe4bffaf7a50e7ee9abb80338afe594d",
+    "bytes": 27398
+  },
+  {
+    "file": "assets/avatares/07-surpresa.webp",
+    "sha256": "4afa3451e2bf3c1d727c68220c76341376d6564b5a915cfd4b40178ac3ac2be5",
+    "bytes": 27778
+  },
+  {
+    "file": "assets/avatares/07-tristeza.webp",
+    "sha256": "106a873ad574cd4aa5bdf6159762d9732787b66f228ef6b30140af8bfb8efe21",
+    "bytes": 27320
+  },
+  {
+    "file": "assets/avatares/07.webp",
+    "sha256": "3af961879540bae137a55917a4b1351bd47c9659254eea6aef035e1b9fedaf08",
+    "bytes": 35984
+  },
+  {
+    "file": "assets/avatares/08-alegria.webp",
+    "sha256": "a71f86993fab1b291f8c4794b26f0599ba0902537c6e905d746b01cf405179d9",
+    "bytes": 28710
+  },
+  {
+    "file": "assets/avatares/08-aliviado.webp",
+    "sha256": "3f69b7f30ab05f6e122da2d1e5227a3fc7fc934cfc4cca5b9b66fb6524ef5b85",
+    "bytes": 30700
+  },
+  {
+    "file": "assets/avatares/08-atento.webp",
+    "sha256": "00189859f03133f54c5e8e9ddb7da71445162d5f2cac8c9b21b76e418c6beb66",
+    "bytes": 33422
+  },
+  {
+    "file": "assets/avatares/08-cansado.webp",
+    "sha256": "460a33af5acc891078e22331676336a2e5de2ec770580ed9b5d4faa7559fd6aa",
+    "bytes": 31784
+  },
+  {
+    "file": "assets/avatares/08-choque.webp",
+    "sha256": "87aef2ea2c4595b33fd43518da742de8065aac02702338f1d77f014e5cc5906d",
+    "bytes": 31676
+  },
+  {
+    "file": "assets/avatares/08-concentrado.webp",
+    "sha256": "73a4bfd7fffcd9b2a7684d667c3c0f688e04081c0b6e32500e9b8098b46f4cb6",
+    "bytes": 33442
+  },
+  {
+    "file": "assets/avatares/08-confiante.webp",
+    "sha256": "fdafb277c7490fe992ba675c08bec08fd4babecfbb0bba1dce02211f71fcd237",
+    "bytes": 30096
+  },
+  {
+    "file": "assets/avatares/08-constrangimento.webp",
+    "sha256": "cb6e2e9addb4abcdf54feebda2fc3dec5f7ed574cfdbe38edb417dbf7a9ae8c9",
+    "bytes": 29984
+  },
+  {
+    "file": "assets/avatares/08-curioso.webp",
+    "sha256": "1d7b4b5b7791d06a488dcce66ef5596d494ba3124e3db45c118cc4cbaa8dfdd2",
+    "bytes": 31902
+  },
+  {
+    "file": "assets/avatares/08-decepcao.webp",
+    "sha256": "65ba92430a791adc3819a1f4e8b7236c8b4e23dd483dc90bdc2ba151d91f4ffc",
+    "bytes": 31342
+  },
+  {
+    "file": "assets/avatares/08-desconfianca.webp",
+    "sha256": "5e575be07e57351ea68aa8a010f219331964783bb353adb6e01804f06b65df79",
+    "bytes": 29372
+  },
+  {
+    "file": "assets/avatares/08-hesitante.webp",
+    "sha256": "13ccfc4d2d3b0667bc1276cc5475c5d74052f0797749b75a45f9c6a75f4ec571",
+    "bytes": 28502
+  },
+  {
+    "file": "assets/avatares/08-impaciente.webp",
+    "sha256": "c954427d2058b1c71ddaa29170f6d862e2e1c4ed589fa277acc5ac6b113811b9",
+    "bytes": 30392
+  },
+  {
+    "file": "assets/avatares/08-ironia.webp",
+    "sha256": "1d2548b53af0b982522a7ca626ad7fcb7d5d2fce0c948fefb1d59cce41c99bcb",
+    "bytes": 28278
+  },
+  {
+    "file": "assets/avatares/08-irritacao.webp",
+    "sha256": "c7e6b4c708fc03d77e6be8f83b6d062fd5423782ee95aaca6dcca20dea67ab11",
+    "bytes": 30220
+  },
+  {
+    "file": "assets/avatares/08-neutro.webp",
+    "sha256": "5e9fdbba0c84d3c87ab4985eecdefb8f55087039ce1421bca6f6524be2915b69",
+    "bytes": 29622
+  },
+  {
+    "file": "assets/avatares/08-panico.webp",
+    "sha256": "4c51de212bc36be8cb9a76caeecc65c63e2a2af2dee5a70420fc94c43370c8a0",
+    "bytes": 29526
+  },
+  {
+    "file": "assets/avatares/08-reservado.webp",
+    "sha256": "d8422b0d530a522ab625999f65f209e65a62a02fa2c5f39e9ecef10ac9132292",
+    "bytes": 28730
+  },
+  {
+    "file": "assets/avatares/08-surpresa.webp",
+    "sha256": "a6fb0d6a3b856fdd42a13180468b659d83e8bcfe7b8608068fbc819b320180da",
+    "bytes": 28904
+  },
+  {
+    "file": "assets/avatares/08-tristeza.webp",
+    "sha256": "a6cc44471a57abe39b7e709666bf7404c02d57b2653d07f08f45059fd928267e",
+    "bytes": 29430
+  },
+  {
+    "file": "assets/avatares/08.webp",
+    "sha256": "8f63713c59aa65fa577db2b0e8d27389df17476327b7ca0ed26645e69c17add7",
+    "bytes": 36468
+  },
+  {
+    "file": "assets/avatares/09-alegria.webp",
+    "sha256": "43824a4b4c60448859280aad8ca18de3231153462afd8081251045f2f7c646ef",
+    "bytes": 29320
+  },
+  {
+    "file": "assets/avatares/09-aliviado.webp",
+    "sha256": "2ce0b48880fb5e66d30583f76af6a245c67cc9e5eaffe96cbac2a52d0bc8b3a0",
+    "bytes": 31416
+  },
+  {
+    "file": "assets/avatares/09-atento.webp",
+    "sha256": "99d47ed693a22dd290f8f6706cff19b59ee190659c1b97c1c165f5dea099dce0",
+    "bytes": 33644
+  },
+  {
+    "file": "assets/avatares/09-cansado.webp",
+    "sha256": "7840cd5c3eec136cd2b2331b1ad6afe816db317f11d5ec1f2ca5a4623a3171ff",
+    "bytes": 31312
+  },
+  {
+    "file": "assets/avatares/09-choque.webp",
+    "sha256": "e9312efefee9177ce3375ddc785ebaf4bb0714ca291bbd61e0818a255003e5c6",
+    "bytes": 32078
+  },
+  {
+    "file": "assets/avatares/09-concentrado.webp",
+    "sha256": "a23d279286cae264d6c05607e373ba81b7dae145f694f63cd801754c3b2f18f9",
+    "bytes": 34526
+  },
+  {
+    "file": "assets/avatares/09-confiante.webp",
+    "sha256": "09041429ee9fa9bc781e4ecc566c5227752819bac64caf297e6577f0478e0213",
+    "bytes": 29592
+  },
+  {
+    "file": "assets/avatares/09-constrangimento.webp",
+    "sha256": "d0f2926b8e9a33fd7b64f547b6eed8ad1f86adf5dde13d84d7194360c917fdd0",
+    "bytes": 30832
+  },
+  {
+    "file": "assets/avatares/09-curioso.webp",
+    "sha256": "6913b07427e9beaa69108591fed39e3d5aea627366574ff72082f94842e0bdc8",
+    "bytes": 31826
+  },
+  {
+    "file": "assets/avatares/09-decepcao.webp",
+    "sha256": "833dd8be760b9a372f0cce0b4f065ce8f517a0b3666f7123ceb3c26591a71bd9",
+    "bytes": 32224
+  },
+  {
+    "file": "assets/avatares/09-desconfianca.webp",
+    "sha256": "b02ea4029d39744b2e96cf25e2dec08e23ee6a934589aa9077fc57c34d8a16b0",
+    "bytes": 29970
+  },
+  {
+    "file": "assets/avatares/09-hesitante.webp",
+    "sha256": "d835300f75ade4d1dff8defb1e843144720eec707275bd49b933475b6c808745",
+    "bytes": 29096
+  },
+  {
+    "file": "assets/avatares/09-impaciente.webp",
+    "sha256": "3625d28d363b53937f32a22dc883e9f3fbf3addef2a70c41885b9b6c08a58025",
+    "bytes": 30472
+  },
+  {
+    "file": "assets/avatares/09-ironia.webp",
+    "sha256": "841275355ad3b9f7ab024a765da2cc9736a76d34c4ab32de4e536ccfa34d1bef",
+    "bytes": 29086
+  },
+  {
+    "file": "assets/avatares/09-irritacao.webp",
+    "sha256": "6a1a4f85629c24d2635822d78f6470bba1a694610baa0af7ed70a85d130267c7",
+    "bytes": 30484
+  },
+  {
+    "file": "assets/avatares/09-neutro.webp",
+    "sha256": "818f1136df6aed879812d0f14b551768b5386d70d30dd042fb1b01e29123cc9c",
+    "bytes": 30220
+  },
+  {
+    "file": "assets/avatares/09-panico.webp",
+    "sha256": "5c80d60d1e15b5da2340b2dda4b0a26e413272feb76cdd0483670012ff71b914",
+    "bytes": 30206
+  },
+  {
+    "file": "assets/avatares/09-reservado.webp",
+    "sha256": "961a7d8633360bd850f64a287d9c7d731fe45b69997f3d2d68610cb1ec05de85",
+    "bytes": 29362
+  },
+  {
+    "file": "assets/avatares/09-surpresa.webp",
+    "sha256": "d9961661ccf3ad010707593046c6cea3ec21248f8cdfc559ee2f90e8cd6b40a7",
+    "bytes": 29672
+  },
+  {
+    "file": "assets/avatares/09-tristeza.webp",
+    "sha256": "91100aa319b6b7809b3d26b070276928004fd238987f0f697359d312e82d4950",
+    "bytes": 30088
+  },
+  {
+    "file": "assets/avatares/09.webp",
+    "sha256": "02b9dbdc2fe9427c599a53fb4bf8db1a54f5b0ac870e7575a8eb88ef5a1623b3",
+    "bytes": 36988
+  },
+  {
+    "file": "assets/avatares/10-alegria.webp",
+    "sha256": "bf284907bb805aef7ac41299b5eb9fa4c224c24a3a11a4a2ebf40760ebce1131",
+    "bytes": 23094
+  },
+  {
+    "file": "assets/avatares/10-aliviado.webp",
+    "sha256": "08a945f66338184f882bc7f5a66c00126014758c461c87ec8d868adc2c7aafe2",
+    "bytes": 25082
+  },
+  {
+    "file": "assets/avatares/10-atento.webp",
+    "sha256": "43ae522529e4aa616f6d879b95b497247e2d253af0dd0d32d18e464574ca0183",
+    "bytes": 27536
+  },
+  {
+    "file": "assets/avatares/10-cansado.webp",
+    "sha256": "54650e6afbaa40f3ce02ac13f965a22d6a27fb4ee03c10264163f894bfc83801",
+    "bytes": 24842
+  },
+  {
+    "file": "assets/avatares/10-choque.webp",
+    "sha256": "80a7c341479f95192eac9a54d4ea0f364485ae6a0ab5049848a9fa318c47ca65",
+    "bytes": 26652
+  },
+  {
+    "file": "assets/avatares/10-concentrado.webp",
+    "sha256": "c0073292752892faf3e93258a3945c17e054aab0b56a66ef2fdcf52e483e4ece",
+    "bytes": 30048
+  },
+  {
+    "file": "assets/avatares/10-confiante.webp",
+    "sha256": "ac6840887660a12f0eecaf7043dfa78fc05453a57b7dee7b7626855cf4ba37eb",
+    "bytes": 24462
+  },
+  {
+    "file": "assets/avatares/10-constrangimento.webp",
+    "sha256": "1b9e84452c8e099fd1aaccc3cfbed8e45bdfb26d02e5a1b367b697bd3cc3f0fb",
+    "bytes": 23640
+  },
+  {
+    "file": "assets/avatares/10-curioso.webp",
+    "sha256": "ea7f410837dd55f3621ee71a7969c26642c870687aecb428d3245780193e2da4",
+    "bytes": 26932
+  },
+  {
+    "file": "assets/avatares/10-decepcao.webp",
+    "sha256": "d5ff7acc7481235befa043788b2e94127b3fed054c4b4452354071646bca6122",
+    "bytes": 25664
+  },
+  {
+    "file": "assets/avatares/10-desconfianca.webp",
+    "sha256": "7dbadd993df9f174d93122a189169136beb92d11bdc6f6c833c55b4537f5197c",
+    "bytes": 23346
+  },
+  {
+    "file": "assets/avatares/10-hesitante.webp",
+    "sha256": "217f5b22c20d4483adafdda0c1b6f6b44a10764ce42f7b2d92154adf1dc70552",
+    "bytes": 23790
+  },
+  {
+    "file": "assets/avatares/10-impaciente.webp",
+    "sha256": "b88ba89fef2ba3623a3a3535f4cb32138b10d4deab21984d93138685708f4e8c",
+    "bytes": 25114
+  },
+  {
+    "file": "assets/avatares/10-ironia.webp",
+    "sha256": "074c77ab792ed0a6fd57ea2e16e3c1a6ba31ee7cb958a487f0555a2bae3c9c31",
+    "bytes": 23056
+  },
+  {
+    "file": "assets/avatares/10-irritacao.webp",
+    "sha256": "7de28b598cf9098872a2910fe64c514f731b51db952a4feb45b775d5cc9e7f3b",
+    "bytes": 24910
+  },
+  {
+    "file": "assets/avatares/10-neutro.webp",
+    "sha256": "7b29a9381f7885e336139c26c1690f338f81ebace394eac872be8ac33e210147",
+    "bytes": 24116
+  },
+  {
+    "file": "assets/avatares/10-panico.webp",
+    "sha256": "cb36fe42d09739354f71b1dcac193234a591075fb38c68754da0290ef61a9b52",
+    "bytes": 24974
+  },
+  {
+    "file": "assets/avatares/10-reservado.webp",
+    "sha256": "1a73dd968ee2f866efe14bfd4bf489990b2d709517282071b4a062e9feddba6b",
+    "bytes": 24282
+  },
+  {
+    "file": "assets/avatares/10-surpresa.webp",
+    "sha256": "64288e0c2245378d4b328f9e95001c80a54d8a7fe2ef8add8cadf249546e2bba",
+    "bytes": 23822
+  },
+  {
+    "file": "assets/avatares/10-tristeza.webp",
+    "sha256": "48a237649d92dc091fea17bb3f822f9695c3a467fcdf175c7857e7e7374ff735",
+    "bytes": 23622
+  },
+  {
+    "file": "assets/avatares/10.webp",
+    "sha256": "344df88eff617665ef5bb4340a988459569691910983c4cb807d6f27c3dc7d35",
+    "bytes": 32344
+  },
+  {
+    "file": "assets/avatares/11-alegria.webp",
+    "sha256": "3749b2d4ba782d73702a9f9724ceb544b75d93637eb989964698084742a149aa",
+    "bytes": 21822
+  },
+  {
+    "file": "assets/avatares/11-aliviado.webp",
+    "sha256": "ce0c6735f7d1ce03bc86bba348dec15d387c0c0f6e79307e3c75b46109f3df8a",
+    "bytes": 24306
+  },
+  {
+    "file": "assets/avatares/11-atento.webp",
+    "sha256": "ee594555dafa621f1f5a5542c622f3ed48db5c13286e41839b34fb5e56e5c256",
+    "bytes": 27048
+  },
+  {
+    "file": "assets/avatares/11-cansado.webp",
+    "sha256": "6f00855605e0c1007e7b40c0ca632bb6b843f67c9941fab10f5d560d57099e25",
+    "bytes": 23986
+  },
+  {
+    "file": "assets/avatares/11-choque.webp",
+    "sha256": "3b1700de92d40ee2b7fa3a47c6f160c7116b03c1bea30438be59e68189b6ca76",
+    "bytes": 26040
+  },
+  {
+    "file": "assets/avatares/11-concentrado.webp",
+    "sha256": "5320e2220da5b452c2a8593a57ed6e5752ee402bd533d2c6e5fd7086a725a6b0",
+    "bytes": 28152
+  },
+  {
+    "file": "assets/avatares/11-confiante.webp",
+    "sha256": "6392c1f4866486024ffacd9f47a406557a32efeb46b1d91c83e1e43278346120",
+    "bytes": 24270
+  },
+  {
+    "file": "assets/avatares/11-constrangimento.webp",
+    "sha256": "24c4aa78003abbe57e3580665c21addcb1bdfc498341e3a4c61594401a263288",
+    "bytes": 23822
+  },
+  {
+    "file": "assets/avatares/11-curioso.webp",
+    "sha256": "fcbcdd3fe851669dfc92ca442b120c17abbd91bc82405853b5313ff3ee231e43",
+    "bytes": 25900
+  },
+  {
+    "file": "assets/avatares/11-decepcao.webp",
+    "sha256": "39848dde5618c6bcf10d6b34b8914a4c86ee7a2503ad79656fcabfd3c5561999",
+    "bytes": 25432
+  },
+  {
+    "file": "assets/avatares/11-desconfianca.webp",
+    "sha256": "f769f42de1c1275bf51e28f3c613fa5d495461896a937d3d7659dc87d1a44253",
+    "bytes": 23342
+  },
+  {
+    "file": "assets/avatares/11-hesitante.webp",
+    "sha256": "50feb4ed955ce6f2b0e1beb42bbe6c238a8ba0e39f953563508f6028890dc7dc",
+    "bytes": 23108
+  },
+  {
+    "file": "assets/avatares/11-impaciente.webp",
+    "sha256": "9de0981f31e076cb2ca06557d89c75a0bfe277d8895509dfd605d21f46af28a9",
+    "bytes": 24290
+  },
+  {
+    "file": "assets/avatares/11-ironia.webp",
+    "sha256": "6436653911a630d96eaf37f459321b1e9aad3d1bb5a3f558200057aca976b192",
+    "bytes": 22880
+  },
+  {
+    "file": "assets/avatares/11-irritacao.webp",
+    "sha256": "3e54352bbe15e6291b69e032005f9d8789e9d0b222173409df18516fd0a586f6",
+    "bytes": 24278
+  },
+  {
+    "file": "assets/avatares/11-neutro.webp",
+    "sha256": "0c9db3c225af93bcce625028aea7c277ab8f8dc67e81e8a05d5787b5afb22830",
+    "bytes": 23624
+  },
+  {
+    "file": "assets/avatares/11-panico.webp",
+    "sha256": "6660e04c4a53d66216ac9bf13ab53fa7bc687297183114062d960d9b74bf964c",
+    "bytes": 24578
+  },
+  {
+    "file": "assets/avatares/11-reservado.webp",
+    "sha256": "d94d1cf640953e83caf6c2cfa5e7b9a7f2a87c796c91da5b89610ddd12a09fe6",
+    "bytes": 23058
+  },
+  {
+    "file": "assets/avatares/11-surpresa.webp",
+    "sha256": "d1c05089ebfd3f45d472a7de1764b14ca828929f326c489607c65f6889e93ffc",
+    "bytes": 23750
+  },
+  {
+    "file": "assets/avatares/11-tristeza.webp",
+    "sha256": "84217af28e102241a09df8064a9b67b98908f2fadee585199c6436c214a8ee47",
+    "bytes": 23530
+  },
+  {
+    "file": "assets/avatares/11.webp",
+    "sha256": "ccc77cd9a4eed22fd0b9ce31694ae589c1518595de3e0c73267a4ba827094de4",
+    "bytes": 32004
+  },
+  {
+    "file": "assets/avatares/12-alegria.webp",
+    "sha256": "1cceac8b8fe33695b216d9d68a33c0c712322ee42a35717595871b509d94916c",
+    "bytes": 22454
+  },
+  {
+    "file": "assets/avatares/12-aliviado.webp",
+    "sha256": "efb99bf67761d49573e7e291a4482865f8c21f9352a4d955c28cf172ff1ca37b",
+    "bytes": 24508
+  },
+  {
+    "file": "assets/avatares/12-atento.webp",
+    "sha256": "5e218f72d65b6f4a5b1bf1aa817f94418362d9f121fa559cfbcd45fe3ceb9d48",
+    "bytes": 26466
+  },
+  {
+    "file": "assets/avatares/12-cansado.webp",
+    "sha256": "f78dcdb7369537eb91dfeff1049a92244a6d80f6c5dcc86eb9ab77d6aa437a19",
+    "bytes": 24640
+  },
+  {
+    "file": "assets/avatares/12-choque.webp",
+    "sha256": "24d551400dca09682a5106bd615be0c837cee159b98980acd7f0f868d4d41ea5",
+    "bytes": 25970
+  },
+  {
+    "file": "assets/avatares/12-concentrado.webp",
+    "sha256": "6f20ae240b8face777b6de2e3e525c38759277996ec29d1e8b411e8a5fa88fca",
+    "bytes": 27936
+  },
+  {
+    "file": "assets/avatares/12-confiante.webp",
+    "sha256": "8f1ea4fcb79b5ecb3831ed07c14be6ff98fa95ce5042e110426cf06c6047612a",
+    "bytes": 24114
+  },
+  {
+    "file": "assets/avatares/12-constrangimento.webp",
+    "sha256": "5cc3f03d74b33b001499595ba0f7cf62e8f19af7eb88916f5f3367838325e1c1",
+    "bytes": 24550
+  },
+  {
+    "file": "assets/avatares/12-curioso.webp",
+    "sha256": "6ff826d43e79a14fc232e7d4a43ebbdd464c8db54dd062da322ec284b3e3f8fb",
+    "bytes": 25566
+  },
+  {
+    "file": "assets/avatares/12-decepcao.webp",
+    "sha256": "aee7fca804491add44bc9e4200d7bc5ce3499d165ebd8118dfb5f6f2d2c4c1d0",
+    "bytes": 25520
+  },
+  {
+    "file": "assets/avatares/12-desconfianca.webp",
+    "sha256": "dbd2ddffefe1de3ca718967c3f8ebc697d8ced39ea305a06bcb3b51007696c63",
+    "bytes": 22966
+  },
+  {
+    "file": "assets/avatares/12-hesitante.webp",
+    "sha256": "eb9793dc950a510b7fb5574e64963d13e979a213ebc07968ab698460a9e7dae6",
+    "bytes": 23230
+  },
+  {
+    "file": "assets/avatares/12-impaciente.webp",
+    "sha256": "882e097ef019ee70355c366d93ca0f751d85a87e367e41c05713926ef57878fa",
+    "bytes": 24754
+  },
+  {
+    "file": "assets/avatares/12-ironia.webp",
+    "sha256": "98637ef852b6403f6de601e170262e3f5388b1fc1ccb0b4bd16b4078af2b48e5",
+    "bytes": 22534
+  },
+  {
+    "file": "assets/avatares/12-irritacao.webp",
+    "sha256": "02654ef4be5fb1b29df8ac6459fb8f5509aca64fd8bd645f646337c7fd63f0c3",
+    "bytes": 23938
+  },
+  {
+    "file": "assets/avatares/12-neutro.webp",
+    "sha256": "745d4173fab7e4abea296bb983dd475b0967767c702fb5ebeb55b0bd33d9efa2",
+    "bytes": 23574
+  },
+  {
+    "file": "assets/avatares/12-panico.webp",
+    "sha256": "00bee8df15271b37a85c442da8347c400c77cbea4955175e5ac66404a34c3c4f",
+    "bytes": 24204
+  },
+  {
+    "file": "assets/avatares/12-reservado.webp",
+    "sha256": "e2141839953e32d1cdcd9e86f43fbd8e57c4d1bd7eb850af8a2229a3bbc25536",
+    "bytes": 23640
+  },
+  {
+    "file": "assets/avatares/12-surpresa.webp",
+    "sha256": "99c86e97d7f8a8b6269b4492fc32dc59f2e6eb370a83736fe6895883e52477b1",
+    "bytes": 23278
+  },
+  {
+    "file": "assets/avatares/12-tristeza.webp",
+    "sha256": "52032b281bb2c2379961c597302120cdadc55f0a046ed1c5bfee748e244a1110",
+    "bytes": 23298
+  },
+  {
+    "file": "assets/avatares/12.webp",
+    "sha256": "108d935afb6d662f6ee07dc16568419fce55a6aa325dc89cbb4cd99024b3a3ec",
+    "bytes": 31392
+  },
+  {
+    "file": "assets/avatares/13-alegria.webp",
+    "sha256": "b573414caefe9268c19258162691202825af9cd48e5eb9253712735bb3af1056",
+    "bytes": 25540
+  },
+  {
+    "file": "assets/avatares/13-aliviado.webp",
+    "sha256": "b8c8a49a614c0e9a4536f3a5ff9e98702f72e0977a939b2a648a0ab9fcca7e62",
+    "bytes": 24978
+  },
+  {
+    "file": "assets/avatares/13-atento.webp",
+    "sha256": "e5a5d1444e3332a04faaefa9f0f64020368f1f15886568faafbb58567f65d112",
+    "bytes": 29630
+  },
+  {
+    "file": "assets/avatares/13-cansado.webp",
+    "sha256": "c6b47a200484837bad5d62e7386fca69190f5ac77c6426ac2d172fcf35d141a5",
+    "bytes": 26980
+  },
+  {
+    "file": "assets/avatares/13-choque.webp",
+    "sha256": "ec825536491bd4b5aa7e77df6c63809c8f573d374159da9883161e8a79d1cb58",
+    "bytes": 26532
+  },
+  {
+    "file": "assets/avatares/13-concentrado.webp",
+    "sha256": "c7e3236cf0b8f4c4be4d297e719cd2ddd4a05666305223ed5d406d96220e4d00",
+    "bytes": 29666
+  },
+  {
+    "file": "assets/avatares/13-confiante.webp",
+    "sha256": "c6d0a930a81b09aca8689f9a097b48a0a5fda3da003a4bbfbe4e88230780de27",
+    "bytes": 24474
+  },
+  {
+    "file": "assets/avatares/13-constrangimento.webp",
+    "sha256": "79382bb6a99c146ae9098365a27316d6ac4d52642e331a81a1f83b42230ff511",
+    "bytes": 26850
+  },
+  {
+    "file": "assets/avatares/13-curioso.webp",
+    "sha256": "4c58f3fdf5c3dea30663e5644b3fda7e7919662941304d80f56875a34e848193",
+    "bytes": 26226
+  },
+  {
+    "file": "assets/avatares/13-decepcao.webp",
+    "sha256": "8cf1273f10d0f8993550669c8bf23813de1fde3afb2e67bcca8eaf22edd7d313",
+    "bytes": 25908
+  },
+  {
+    "file": "assets/avatares/13-desconfianca.webp",
+    "sha256": "2f94f6079db3a8c28df8d05229655c909d43632cf009b2a1c0e7ada174f296c5",
+    "bytes": 25452
+  },
+  {
+    "file": "assets/avatares/13-hesitante.webp",
+    "sha256": "ac7615ba46d4b70d2112a7ed35107c271474017ed4b90c2706d6a58da0d14b8e",
+    "bytes": 25186
+  },
+  {
+    "file": "assets/avatares/13-impaciente.webp",
+    "sha256": "f0e6cb134f12163fc5c081a1c8f8b1d4aacc015910ca0851d89381ac3c2a2ddd",
+    "bytes": 25168
+  },
+  {
+    "file": "assets/avatares/13-ironia.webp",
+    "sha256": "58948034be08f7b7af653cbac459051c0162a9ce3fab68386e9bd6181f554350",
+    "bytes": 24722
+  },
+  {
+    "file": "assets/avatares/13-irritacao.webp",
+    "sha256": "6aee503934dc44a2eaeb068893a11290b74f7402d8aea580389cb0a47139b29f",
+    "bytes": 26506
+  },
+  {
+    "file": "assets/avatares/13-neutro.webp",
+    "sha256": "cd219e8da77923036fc2d4d4ca02c2fd43ac7591b339ff0638ac0b0d7fd72c4e",
+    "bytes": 25060
+  },
+  {
+    "file": "assets/avatares/13-panico.webp",
+    "sha256": "88a13f059c75f0c95ca35d02a4ea8df449b9b3f3d2805acbecfe9da5f20b111f",
+    "bytes": 25952
+  },
+  {
+    "file": "assets/avatares/13-reservado.webp",
+    "sha256": "d3efeaa17976ea44ec654c2212df0db85c261d3b654f0453b1ea8b2dcaf49f0e",
+    "bytes": 25470
+  },
+  {
+    "file": "assets/avatares/13-surpresa.webp",
+    "sha256": "fc8c9ac6ddc1306ecd3f1398b6f4fd2c56b8dcfce710789f830f9ad4e84910ea",
+    "bytes": 25462
+  },
+  {
+    "file": "assets/avatares/13-tristeza.webp",
+    "sha256": "e15b5d596832ee679bdcb18019cd13df0ea6bb4eeca1774a8d3d0df8d42bf5da",
+    "bytes": 24928
+  },
+  {
+    "file": "assets/avatares/13.webp",
+    "sha256": "f9d534c2015dd10342184e93e6e274e3092c3da87df2c692221d04aaa669664e",
+    "bytes": 72034
+  },
+  {
+    "file": "assets/avatares/14-alegria.webp",
+    "sha256": "e232c4f9d27233d6441dbf38560a82b285d0ff7a6914291e74e13374e2c2a7a3",
+    "bytes": 23822
+  },
+  {
+    "file": "assets/avatares/14-aliviado.webp",
+    "sha256": "e230ff613f825a9b88b13d6d8758e3d8cdd52e58471fca81a2ec054cf1f9214d",
+    "bytes": 25196
+  },
+  {
+    "file": "assets/avatares/14-atento.webp",
+    "sha256": "98bfd7d1ccb8f58942409553841a9147bb92bc9f0cd09843799b7c7cbe9d515d",
+    "bytes": 29812
+  },
+  {
+    "file": "assets/avatares/14-cansado.webp",
+    "sha256": "c51cce4b9d3005bcc2c1dc2e3fca21fc4c2960a1efb9dd585655d3e182097714",
+    "bytes": 25884
+  },
+  {
+    "file": "assets/avatares/14-choque.webp",
+    "sha256": "b1207cbcaed047d7c4ee358e04fe05ef50606d30ad3c2addde82fe232a66d86c",
+    "bytes": 26284
+  },
+  {
+    "file": "assets/avatares/14-concentrado.webp",
+    "sha256": "afa83d6c940a55302f76a4bc8c52f31e32bde6939b7835987ad07a57331b188a",
+    "bytes": 29978
+  },
+  {
+    "file": "assets/avatares/14-confiante.webp",
+    "sha256": "249f6686d73c5c44c2c6ab7f82cd7eed3fb7e72b11f227b29a57abf22c511d5e",
+    "bytes": 23594
+  },
+  {
+    "file": "assets/avatares/14-constrangimento.webp",
+    "sha256": "b9c9bb05a33979aa7a13cf09b35943f285471c93a92ba40eee3ca42e5c7cf6a2",
+    "bytes": 26936
+  },
+  {
+    "file": "assets/avatares/14-curioso.webp",
+    "sha256": "22bbe4e04abccd42fee4f7544a8b84c958e5bb36b302b32be5828db6796e149c",
+    "bytes": 26038
+  },
+  {
+    "file": "assets/avatares/14-decepcao.webp",
+    "sha256": "5955ebcd0769a4f0bdf3b924010d128acd8c22d5c4af4d8477edcddd1a1e8e25",
+    "bytes": 26302
+  },
+  {
+    "file": "assets/avatares/14-desconfianca.webp",
+    "sha256": "229acefe4d9444d2c930c9f00b82087def48408c81c106cb2cda96df80ef05d2",
+    "bytes": 24352
+  },
+  {
+    "file": "assets/avatares/14-hesitante.webp",
+    "sha256": "0c3e49bd1bbe6a2a79f3f19fc2335655a6d70cbab5440c4a6d3aef27bbc5c9ab",
+    "bytes": 23338
+  },
+  {
+    "file": "assets/avatares/14-impaciente.webp",
+    "sha256": "df3d2c826186b94c4680d95e53795f19b6c96206633c27ed277d3002968ae1f6",
+    "bytes": 24302
+  },
+  {
+    "file": "assets/avatares/14-ironia.webp",
+    "sha256": "30a33b4323e07596cb478902fcfcbb8f80567a25a8b0a005c3c39701591ced96",
+    "bytes": 23504
+  },
+  {
+    "file": "assets/avatares/14-irritacao.webp",
+    "sha256": "774d7ec78b7de52dc2a5cf9f1453aaa2427f5c353f7e691e87ce699c6a2091a6",
+    "bytes": 25208
+  },
+  {
+    "file": "assets/avatares/14-neutro.webp",
+    "sha256": "76be1a4c2e375f30953cc16e8b608c31f19f117cccb15f12d058e9adb0132fc5",
+    "bytes": 24000
+  },
+  {
+    "file": "assets/avatares/14-panico.webp",
+    "sha256": "d1b929ad0e7b0796b054d32a68490a8a537e9ff2f1a9f55a388d9623565b41e4",
+    "bytes": 24994
+  },
+  {
+    "file": "assets/avatares/14-reservado.webp",
+    "sha256": "d490f73c6b0f9be99053fcbdebd3ca8b94fe2a759bddb26cb520502c3e253dac",
+    "bytes": 24778
+  },
+  {
+    "file": "assets/avatares/14-surpresa.webp",
+    "sha256": "dd9a1877e79aa112455f72783fef25b2a5fd9043c31c7c047c44ba4e35a9dcc9",
+    "bytes": 24580
+  },
+  {
+    "file": "assets/avatares/14-tristeza.webp",
+    "sha256": "94bd52651684f06591a06781be5c01ea97faea4e23f09d6b5f6bf23220f8e50c",
+    "bytes": 25282
+  },
+  {
+    "file": "assets/avatares/14.webp",
+    "sha256": "0bbf14db48e76e13ea2650b028e96c0f737571c82da23c4c6f314c805ffcac9b",
+    "bytes": 66852
+  },
+  {
+    "file": "assets/avatares/15-alegria.webp",
+    "sha256": "0416525f73ecc958b81774e55dd6a8bd68280328cce207cb2a1c2b18eafc38e7",
+    "bytes": 24284
+  },
+  {
+    "file": "assets/avatares/15-aliviado.webp",
+    "sha256": "0eada1f3387f249d9c4c2c51ca598e6bad30e6926b932aeab85446f78ab971d3",
+    "bytes": 25396
+  },
+  {
+    "file": "assets/avatares/15-atento.webp",
+    "sha256": "a4f43f10f06fd3693f1a7a1c8b5438348f1f973c482ef99de990d5b75f198b0c",
+    "bytes": 28100
+  },
+  {
+    "file": "assets/avatares/15-cansado.webp",
+    "sha256": "c2f4291511bcc41e2297c5ff35323cd1cd1a2d56ed363b9d3f8dd3be61cb6ffa",
+    "bytes": 25674
+  },
+  {
+    "file": "assets/avatares/15-choque.webp",
+    "sha256": "14facbbcc3ee51136ed3d532c9ff616bbf21b8bb3a76ed16e66349e172244e4f",
+    "bytes": 25808
+  },
+  {
+    "file": "assets/avatares/15-concentrado.webp",
+    "sha256": "e2e026e017d40a0fb4f91a662c0e2192a5d8524c9ebb59eb01e514265db3f04f",
+    "bytes": 27816
+  },
+  {
+    "file": "assets/avatares/15-confiante.webp",
+    "sha256": "bbdd10aa57ed4dccd3fa258fcfc79f5fb95c22a94249fb4da02eb0300f1ffdf3",
+    "bytes": 24244
+  },
+  {
+    "file": "assets/avatares/15-constrangimento.webp",
+    "sha256": "dac6addfc2deb20057e374951bd30735d3b98f25be238e7485e2cca9e0d4847a",
+    "bytes": 25438
+  },
+  {
+    "file": "assets/avatares/15-curioso.webp",
+    "sha256": "cc74103f6b12b63ae12152331d47e2649b9bbdbb12ab8039d85e0743ecdf4c99",
+    "bytes": 25846
+  },
+  {
+    "file": "assets/avatares/15-decepcao.webp",
+    "sha256": "7d8e763602ea7f199d9f493c593997d23d748f1c620ce1a77807a2c5b4adf31c",
+    "bytes": 25500
+  },
+  {
+    "file": "assets/avatares/15-desconfianca.webp",
+    "sha256": "eecf4b0a6d6fe5e580fbe300ce23242e26f91d43682e5d8f8fb586831af786c1",
+    "bytes": 24050
+  },
+  {
+    "file": "assets/avatares/15-hesitante.webp",
+    "sha256": "8fd992f2ac91e9f7c780fc10e69f68b97c142e3e66bcb2659202710c78e00f19",
+    "bytes": 24278
+  },
+  {
+    "file": "assets/avatares/15-impaciente.webp",
+    "sha256": "07aa971f09035561a1f2557ec0cadc6ebff3da71acb2bea4ae7f3506c3a48576",
+    "bytes": 24922
+  },
+  {
+    "file": "assets/avatares/15-ironia.webp",
+    "sha256": "ebce1ef2770bf296ab9c1a1d1fb1ea2f4f54aae440f0c99639be0f1cdfe38cf7",
+    "bytes": 23094
+  },
+  {
+    "file": "assets/avatares/15-irritacao.webp",
+    "sha256": "ae9e380042c3ec49bba23a2ed884ab8135cbee8bde693a25f3d5d7da0380f501",
+    "bytes": 25052
+  },
+  {
+    "file": "assets/avatares/15-neutro.webp",
+    "sha256": "663108de8cad22392668d47b314016b3ab42ad8ff8c249b01b4dcb245f8f8b1a",
+    "bytes": 24622
+  },
+  {
+    "file": "assets/avatares/15-panico.webp",
+    "sha256": "ce168b6d7098187e0af19da5d015dbaea315fb6da75beda63d3f047c84dcf014",
+    "bytes": 25572
+  },
+  {
+    "file": "assets/avatares/15-reservado.webp",
+    "sha256": "18dfd9ebda337e9cf78d3d76a6d96cbd85c073b00734e9d148085ab026c5c8a1",
+    "bytes": 24860
+  },
+  {
+    "file": "assets/avatares/15-surpresa.webp",
+    "sha256": "51f8ce887eb6af4afe77d4fb3a41f44cd27cc1d48ecd66139abcd4a7d76a0aa0",
+    "bytes": 24794
+  },
+  {
+    "file": "assets/avatares/15-tristeza.webp",
+    "sha256": "cc81fe8927ad46c2b31b83c8d5e18c25a16cfa358bf393b2f3d13116c8ac0c4b",
+    "bytes": 24784
+  },
+  {
+    "file": "assets/avatares/15.webp",
+    "sha256": "024fab12c6ba2d56235f387e7364aa6a8bb99ff18f9f5368ad86172294967d46",
+    "bytes": 67064
+  },
+  {
+    "file": "assets/avatares/16-alegria.webp",
+    "sha256": "18794316d2194f178f42428601675d95fab745fd6341af638494440833c4a0b6",
+    "bytes": 27174
+  },
+  {
+    "file": "assets/avatares/16-aliviado.webp",
+    "sha256": "3fe5ba215c862acf2ed330558f57c422c3a3201cdd21aea74ee94caabd440ac7",
+    "bytes": 28368
+  },
+  {
+    "file": "assets/avatares/16-atento.webp",
+    "sha256": "fb080a033dcc2e3adcb06a4aace7514cd884427fe8e94bb40f0133dc37d7aa71",
+    "bytes": 30724
+  },
+  {
+    "file": "assets/avatares/16-cansado.webp",
+    "sha256": "2a1d1d1b23b38750ecbf74a7071640d1577880bf27bb1e549d378e1c1fc67426",
+    "bytes": 29320
+  },
+  {
+    "file": "assets/avatares/16-choque.webp",
+    "sha256": "1051dcbe46a99f9b2a0df6ec1a5d47502f7a6dc0d937ba23f0c2b49ec5f6698f",
+    "bytes": 28482
+  },
+  {
+    "file": "assets/avatares/16-concentrado.webp",
+    "sha256": "c8d6387b1a59d40d47a0da14bea58371866003616535e5f8f6ca09503715b20a",
+    "bytes": 32032
+  },
+  {
+    "file": "assets/avatares/16-confiante.webp",
+    "sha256": "983e47ba22f843157642ee98c95042aa85fbbb037a4493b4a4e50f0bf2f76fa1",
+    "bytes": 26608
+  },
+  {
+    "file": "assets/avatares/16-constrangimento.webp",
+    "sha256": "0d62827f4d1853a65810a281f87631e9958d816ff326952076b50f6e5e31ad63",
+    "bytes": 29128
+  },
+  {
+    "file": "assets/avatares/16-curioso.webp",
+    "sha256": "d0512675a3f1e5306f24e2616421c66faa563087137246ce7cd115ae9007768f",
+    "bytes": 27858
+  },
+  {
+    "file": "assets/avatares/16-decepcao.webp",
+    "sha256": "eec5394ab9b8a4a548f8b7090a3c64d7d79e8de7febbfc93d347cb469cb57ba0",
+    "bytes": 28158
+  },
+  {
+    "file": "assets/avatares/16-desconfianca.webp",
+    "sha256": "384aa9dfd0f1000c9e565c061b05421bcf22a3d04f0d97d101606e77c6084e6f",
+    "bytes": 27280
+  },
+  {
+    "file": "assets/avatares/16-hesitante.webp",
+    "sha256": "b4852aad2695050645dc0cc2ab130d7e5ab76f2c14a5644e7f7797a7909ccfc3",
+    "bytes": 26796
+  },
+  {
+    "file": "assets/avatares/16-impaciente.webp",
+    "sha256": "39898561557b9e81f139bcd311ac59e80029d86dcb78203201d5f0e891026fb6",
+    "bytes": 27310
+  },
+  {
+    "file": "assets/avatares/16-ironia.webp",
+    "sha256": "2be8d2151a25ae6a66651042c87bf98323484d334fc57f0659a2046b36067091",
+    "bytes": 26876
+  },
+  {
+    "file": "assets/avatares/16-irritacao.webp",
+    "sha256": "81e9b6c0cadc419a10480831fc2dd0d5e69af7ddaf50183560849bc662d000b7",
+    "bytes": 28186
+  },
+  {
+    "file": "assets/avatares/16-neutro.webp",
+    "sha256": "f0e68c766fc1d635c621140946739cc0057ff07c462070397198b6f80ef8a6e0",
+    "bytes": 27120
+  },
+  {
+    "file": "assets/avatares/16-panico.webp",
+    "sha256": "a3ad53561e318a9afc530961bcc466804570f837dda932d504d501c7f1a9bd0d",
+    "bytes": 27900
+  },
+  {
+    "file": "assets/avatares/16-reservado.webp",
+    "sha256": "2da400b0609561746ee3cda16c40b331350e6472c778f5c6f09b3b2fc41a8965",
+    "bytes": 26382
+  },
+  {
+    "file": "assets/avatares/16-surpresa.webp",
+    "sha256": "ab40f98ed3be81bb4fd71db7d0e1bc2ee08d5fbab255a5bed61b6c8fab46d991",
+    "bytes": 26772
+  },
+  {
+    "file": "assets/avatares/16-tristeza.webp",
+    "sha256": "65f042e3666905b70c0498efd720df39a483ef99f4c12e8ee6acef09af240c5f",
+    "bytes": 28106
+  },
+  {
+    "file": "assets/avatares/16.webp",
+    "sha256": "6b1b325ec08a6544b8e13bd98609ed966ed0f1c77e32c931137a805e67f3b528",
+    "bytes": 73252
+  },
+  {
+    "file": "assets/avatares/17-alegria.webp",
+    "sha256": "df04847077269e82c2bb88b1fbb86bbdd65837e5da94758b97da1e7a644ecda6",
+    "bytes": 24416
+  },
+  {
+    "file": "assets/avatares/17-aliviado.webp",
+    "sha256": "6849c10b6ca7e735aa7808547e98b61c93d835e7f5c9681291cf0ca3561349af",
+    "bytes": 25012
+  },
+  {
+    "file": "assets/avatares/17-atento.webp",
+    "sha256": "ba05461c8177ac8b2ec8ce4f023c33a027f64bcf65bcc02d1f6c7631f83c7763",
+    "bytes": 26892
+  },
+  {
+    "file": "assets/avatares/17-cansado.webp",
+    "sha256": "16dcc25580fa5c23428faf9528ae51092ce13ec8e295c0be1ec3c88c21eaa3cf",
+    "bytes": 25092
+  },
+  {
+    "file": "assets/avatares/17-choque.webp",
+    "sha256": "58666f7a3d4a39ac49b446d7d8ab36039fafe705496b52873fc0efa3c7418d1e",
+    "bytes": 26172
+  },
+  {
+    "file": "assets/avatares/17-concentrado.webp",
+    "sha256": "910608eca8a6c360045ec24d7dc3211e52bde232b1c2f3e988436e6451768fc0",
+    "bytes": 28998
+  },
+  {
+    "file": "assets/avatares/17-confiante.webp",
+    "sha256": "e7b88bc2a1f928ad3b974b6ac8dc51565a71643c289cec60e28f90227c464267",
+    "bytes": 24802
+  },
+  {
+    "file": "assets/avatares/17-constrangimento.webp",
+    "sha256": "d0af88637ac179dcc697bf84a26a0a254ac11c8e5058770f8b265223fa2458b9",
+    "bytes": 23888
+  },
+  {
+    "file": "assets/avatares/17-curioso.webp",
+    "sha256": "bcab0710a9cba8f0832c8289ff9311d52fb34e8edf82e4a5f064a3c96188f6d9",
+    "bytes": 25660
+  },
+  {
+    "file": "assets/avatares/17-decepcao.webp",
+    "sha256": "4e459a936651551296d8cb05b70edbe3506fd04dc72602f8a496be7102bea930",
+    "bytes": 25452
+  },
+  {
+    "file": "assets/avatares/17-desconfianca.webp",
+    "sha256": "7fe8ebe133b345a31bb174184b5318d2230eb72ac08ce7d1949891878658fa18",
+    "bytes": 24988
+  },
+  {
+    "file": "assets/avatares/17-hesitante.webp",
+    "sha256": "8f69cf98d82c3dd7f34f8cdaccba52cd1b4796ba24987be686fdfa643b2e2e29",
+    "bytes": 24130
+  },
+  {
+    "file": "assets/avatares/17-impaciente.webp",
+    "sha256": "c08b4574ccf9d78bf41100b1d41a023d7964154a765397110e4ec61d49ad4157",
+    "bytes": 24890
+  },
+  {
+    "file": "assets/avatares/17-ironia.webp",
+    "sha256": "30d38085b2899de24c96b1a7837f03748a5695aa13dc007a7a20935c96b1237f",
+    "bytes": 23516
+  },
+  {
+    "file": "assets/avatares/17-irritacao.webp",
+    "sha256": "b909a3ae56e61503ab2696efd78b0d6c0d8f1386ebbb9231e5ce070bffcc6205",
+    "bytes": 25340
+  },
+  {
+    "file": "assets/avatares/17-neutro.webp",
+    "sha256": "7effcfb5c7d5d9c0ebec35b33d69e298deef0cf181615f9cb9a938c47d25ea66",
+    "bytes": 24524
+  },
+  {
+    "file": "assets/avatares/17-panico.webp",
+    "sha256": "c4994c82536df8b7a60023fdec85bcdabcbfcdb9575732342a7605052c1422be",
+    "bytes": 25690
+  },
+  {
+    "file": "assets/avatares/17-reservado.webp",
+    "sha256": "234f17874bda0efec51aa08bca067551cefab6aaa73d2e45545f010616bb7fa0",
+    "bytes": 23618
+  },
+  {
+    "file": "assets/avatares/17-surpresa.webp",
+    "sha256": "1de1708e372cb6f66d9e52d23b8df818b6afa070224ea33713507566341fac0b",
+    "bytes": 24920
+  },
+  {
+    "file": "assets/avatares/17-tristeza.webp",
+    "sha256": "237a9c2ae67246b2a35ccf5c80d9697eb3330e9f2b9ec57afee6bbcea607fbbd",
+    "bytes": 23858
+  },
+  {
+    "file": "assets/avatares/17.webp",
+    "sha256": "a43c963ab176aadf51b7bcac0f976d1dee80f0c9d9d49222993474811cd67754",
+    "bytes": 66696
+  },
+  {
+    "file": "assets/avatares/18-alegria.webp",
+    "sha256": "6a05ebfa30f4045b199caa0b903f33b5a4372bfebcb5ca3e51edd22be907cc87",
+    "bytes": 22916
+  },
+  {
+    "file": "assets/avatares/18-aliviado.webp",
+    "sha256": "7b093fb1383bee64900b88411b4214da3f24e854d6ddcc4881004d45b8b02d7a",
+    "bytes": 23378
+  },
+  {
+    "file": "assets/avatares/18-atento.webp",
+    "sha256": "2a08523559c8bcccebf22ca7f05458f78b3ff55961d5972625e07ef967d2f764",
+    "bytes": 27534
+  },
+  {
+    "file": "assets/avatares/18-cansado.webp",
+    "sha256": "d345e3f52312613e4c071d78d2b1c45e1e1b71a500129ece4d7d1427640c2dc9",
+    "bytes": 24512
+  },
+  {
+    "file": "assets/avatares/18-choque.webp",
+    "sha256": "f33f5bb375d2fa2027f143975b74ecc9dbbb2f7bcbcadf444b65c9b623ad3fcb",
+    "bytes": 24788
+  },
+  {
+    "file": "assets/avatares/18-concentrado.webp",
+    "sha256": "765787c1c359afd8b5c97d06ba406be6d400befe360eb2b488ad95ddc07bbcd1",
+    "bytes": 26772
+  },
+  {
+    "file": "assets/avatares/18-confiante.webp",
+    "sha256": "7b9d957234858daf940a5bdb45bd9c0723dbf0afb06bf910a1e6e9194129392a",
+    "bytes": 23138
+  },
+  {
+    "file": "assets/avatares/18-constrangimento.webp",
+    "sha256": "48e4d5c82c8d9fcf5b6a29cb9330220edd86a8ea5396028879b17c3f66da0d84",
+    "bytes": 23462
+  },
+  {
+    "file": "assets/avatares/18-curioso.webp",
+    "sha256": "2bef8c28fa6cdadbe92a676aa3a7e6e8f4e183b0ef1fe805a65524ca7ba6b21d",
+    "bytes": 24934
+  },
+  {
+    "file": "assets/avatares/18-decepcao.webp",
+    "sha256": "57c3d218f2543ef9e3ddf8e51644e9fc7296848655e844f01f44d4b02b7f72ac",
+    "bytes": 23654
+  },
+  {
+    "file": "assets/avatares/18-desconfianca.webp",
+    "sha256": "d76bbffb19da93efde07e55333b383744ad4383a77cae444cbfd8a301c18cc53",
+    "bytes": 22920
+  },
+  {
+    "file": "assets/avatares/18-hesitante.webp",
+    "sha256": "c65c0e33288a52f13516081fdde9fd9fed6630283af5e65b4c589ca4664db859",
+    "bytes": 23204
+  },
+  {
+    "file": "assets/avatares/18-impaciente.webp",
+    "sha256": "917987085e783e9cb528c5a70902c4a695921eb1f12f23338087332ce28f1f15",
+    "bytes": 23542
+  },
+  {
+    "file": "assets/avatares/18-ironia.webp",
+    "sha256": "9b0616503525a014248af6e205c10c9e874ff951f754953eba4af1bf1f0570b5",
+    "bytes": 22368
+  },
+  {
+    "file": "assets/avatares/18-irritacao.webp",
+    "sha256": "6705d0223f17bf9da717f6f5ff2ba388124518c60b113b87d628d3bb75698614",
+    "bytes": 24018
+  },
+  {
+    "file": "assets/avatares/18-neutro.webp",
+    "sha256": "d67627d41fbd52ce030a6de77ff313d0cf2d1a9e0cf7e91c4c676b74d513431f",
+    "bytes": 22748
+  },
+  {
+    "file": "assets/avatares/18-panico.webp",
+    "sha256": "89771cc5896ce730485721c9d53ab2a49df5bea0403a317dd2f0d94629ca5988",
+    "bytes": 24524
+  },
+  {
+    "file": "assets/avatares/18-reservado.webp",
+    "sha256": "f36b76156e5c350679df8e733198600fdde1ba92e7869713110588f82bb75c53",
+    "bytes": 23912
+  },
+  {
+    "file": "assets/avatares/18-surpresa.webp",
+    "sha256": "f9186fa0d959c04736742bf6e4052fb14d5d9f270eef3c868230a0ffc484d3f5",
+    "bytes": 23382
+  },
+  {
+    "file": "assets/avatares/18-tristeza.webp",
+    "sha256": "3b96f50e2a3b6a8787edfd4538417c7c8544faa1964fabcc4d87d3105fdb13ee",
+    "bytes": 22374
+  },
+  {
+    "file": "assets/avatares/18.webp",
+    "sha256": "3f1da149257c8ff8778f2a7189e9994c5c5b1e85140e9718ff979d9f989fba41",
+    "bytes": 67062
+  },
+  {
+    "file": "assets/avatares/19-alegria.webp",
+    "sha256": "d1f5e7caf0091bb919023e4982540f23e776d11a60091b510e6759835693bf5b",
+    "bytes": 25890
+  },
+  {
+    "file": "assets/avatares/19-aliviado.webp",
+    "sha256": "8c601a583a6267e8ffeff2a9a02d1a03f177368de027918a4bb1b58883c30bea",
+    "bytes": 26434
+  },
+  {
+    "file": "assets/avatares/19-atento.webp",
+    "sha256": "00912f57f2e2ea9a71f66599abace545936237ea4ee0efa223f7fc69f96f5fc7",
+    "bytes": 29654
+  },
+  {
+    "file": "assets/avatares/19-cansado.webp",
+    "sha256": "9b7e55dd624ea8ad71269fa40bf39cda6ba060dd0b00735b4add92fefac6600c",
+    "bytes": 26730
+  },
+  {
+    "file": "assets/avatares/19-choque.webp",
+    "sha256": "0c5177d74cc7c257bb75f15ad893cde96292d037ef46d93ee65d3db0c85b9b78",
+    "bytes": 27394
+  },
+  {
+    "file": "assets/avatares/19-concentrado.webp",
+    "sha256": "aef57cd31e4c0f73f9b98c7e01a8aa506c1bc204d3d02c54732792de59b2cbdc",
+    "bytes": 30308
+  },
+  {
+    "file": "assets/avatares/19-confiante.webp",
+    "sha256": "0e97a963a69d4763143f584746401b550a1fa15e6bf5450d480a106d53a65b75",
+    "bytes": 25406
+  },
+  {
+    "file": "assets/avatares/19-constrangimento.webp",
+    "sha256": "42d38043241589345ed0659116f7181aeedb93d4324a4979673d33281ed45250",
+    "bytes": 27514
+  },
+  {
+    "file": "assets/avatares/19-curioso.webp",
+    "sha256": "77e7d0c31023c43b35449b43c76ce3114065f9a97658d367316df1ffb3959941",
+    "bytes": 26900
+  },
+  {
+    "file": "assets/avatares/19-decepcao.webp",
+    "sha256": "4a2a8dff04cec8e1bb324bef9c4680ded535155a103d2e0a0760af63846ccb5f",
+    "bytes": 26748
+  },
+  {
+    "file": "assets/avatares/19-desconfianca.webp",
+    "sha256": "63079210fad7690bed36f43c9797204653691bf5ff1c1798ab592451aa916733",
+    "bytes": 25862
+  },
+  {
+    "file": "assets/avatares/19-hesitante.webp",
+    "sha256": "e050076faeca09638266fc04c43d4d458b70b8db0fb66ceb19beabdffdb4ba32",
+    "bytes": 25358
+  },
+  {
+    "file": "assets/avatares/19-impaciente.webp",
+    "sha256": "2af47b570b2956149dc25477ec67dedd80b0afe176aac420986d1e5a60a5c4da",
+    "bytes": 25830
+  },
+  {
+    "file": "assets/avatares/19-ironia.webp",
+    "sha256": "e99e0b22ef76a68bf60df280e72fdb882b49655426f24ed35771c178f81df577",
+    "bytes": 25712
+  },
+  {
+    "file": "assets/avatares/19-irritacao.webp",
+    "sha256": "66f8c4106431b68ccef0be990ddedf566802e2c02ab0f1dd2705b017f8d0a4dc",
+    "bytes": 27100
+  },
+  {
+    "file": "assets/avatares/19-neutro.webp",
+    "sha256": "6f9bfbb497dbe582d5ccead70b4baaf4389a14745829cae733abca3b43dafc15",
+    "bytes": 25770
+  },
+  {
+    "file": "assets/avatares/19-panico.webp",
+    "sha256": "8a62005451e6c6659fcc9bfb6099e084c62cd45744b0f0b061dd574c73f247bc",
+    "bytes": 26864
+  },
+  {
+    "file": "assets/avatares/19-reservado.webp",
+    "sha256": "66d435c26f91031b8e18c1033075fe900cdc58cf37cd9767fda9e9230795a08d",
+    "bytes": 26344
+  },
+  {
+    "file": "assets/avatares/19-surpresa.webp",
+    "sha256": "e0dcbe470731c65b5fcaa00a077b90554bd048c45bcf524bb4cb5a96a30bb361",
+    "bytes": 26254
+  },
+  {
+    "file": "assets/avatares/19-tristeza.webp",
+    "sha256": "4b69e20e0ca9f61e1d4a726630a383795f51cb647db0a86cdef32db913e09214",
+    "bytes": 26144
+  },
+  {
+    "file": "assets/avatares/19.webp",
+    "sha256": "f92130a8d61eb7669f0b73fc24605bbcce5e2015a2e9bb0c3982304f5bbe496e",
+    "bytes": 70820
+  },
+  {
+    "file": "assets/avatares/20-alegria.webp",
+    "sha256": "5d049bb20314dd55ce1ae555a83e12f1f7759864b7af05e5a131f9cbbe379cd7",
+    "bytes": 27010
+  },
+  {
+    "file": "assets/avatares/20-aliviado.webp",
+    "sha256": "118068219bc506eb8f3f03b91190a928ccc19e9a40602e9d40049e5e3bf16afd",
+    "bytes": 27470
+  },
+  {
+    "file": "assets/avatares/20-atento.webp",
+    "sha256": "de563d2935143460930da81c501a9325ac86912cb32fa226cbb171ec1cf61a7a",
+    "bytes": 32152
+  },
+  {
+    "file": "assets/avatares/20-cansado.webp",
+    "sha256": "d1f1be7900ff64980a62df11c80ec740c35f4d09c2ffdbfd29f476057398e729",
+    "bytes": 30124
+  },
+  {
+    "file": "assets/avatares/20-choque.webp",
+    "sha256": "4d571395155344f5b13d391b640b7d7dbad008ffb4bc5cdf24c103ade3af4fc3",
+    "bytes": 28816
+  },
+  {
+    "file": "assets/avatares/20-concentrado.webp",
+    "sha256": "9d4886749573084ff0f677b20e2d59635c7955468a98d33d7b18e0d19bfe42a9",
+    "bytes": 30978
+  },
+  {
+    "file": "assets/avatares/20-confiante.webp",
+    "sha256": "c1448899bea4ac1a5b337886066c032bfc3b607cce7a0ba16c3b2d5715658d58",
+    "bytes": 26550
+  },
+  {
+    "file": "assets/avatares/20-constrangimento.webp",
+    "sha256": "172f591ba9728a2250b641d79919e906a355655c9eff32dac3472bb8f7b45d2d",
+    "bytes": 28158
+  },
+  {
+    "file": "assets/avatares/20-curioso.webp",
+    "sha256": "c3290b359b0d6c3ee6694c572233c524cb43f7ba3fa8aad8bb01fc2195e508e5",
+    "bytes": 28366
+  },
+  {
+    "file": "assets/avatares/20-decepcao.webp",
+    "sha256": "20de7dd447d558f4210b6a0f836337626c44be6b434870b34f033e207117c3b3",
+    "bytes": 28580
+  },
+  {
+    "file": "assets/avatares/20-desconfianca.webp",
+    "sha256": "745101b0eb63098c354acacf56b5d948c34a706f08a685920b07c5a664e34a6d",
+    "bytes": 26472
+  },
+  {
+    "file": "assets/avatares/20-hesitante.webp",
+    "sha256": "d3ed438eeeeadef75f07710dfe9d0718fc3f5c4869b1a5e17418b39a7de96178",
+    "bytes": 26660
+  },
+  {
+    "file": "assets/avatares/20-impaciente.webp",
+    "sha256": "264a6cc660e94954f254919c0e8d61cfedcc9f1fc08760c5dd90310b750d224d",
+    "bytes": 27216
+  },
+  {
+    "file": "assets/avatares/20-ironia.webp",
+    "sha256": "32bcfe5dde3ec7cfb2610a156a62ccab21ee62f77de8b562611f56c993296017",
+    "bytes": 26030
+  },
+  {
+    "file": "assets/avatares/20-irritacao.webp",
+    "sha256": "0b4b7ac7be361e5c6590ea2f9c7527541b11c52c6f931ccdeada9a4deb62505a",
+    "bytes": 27336
+  },
+  {
+    "file": "assets/avatares/20-neutro.webp",
+    "sha256": "7a277ca11732df3132e88256ca8d80f4c7d0e0b7fdde150d615630b7915a7ae0",
+    "bytes": 26538
+  },
+  {
+    "file": "assets/avatares/20-panico.webp",
+    "sha256": "ffefeb55ffeb0c827c20a400940f7a9460bfe3ed39a3f8b5348801a580d5bc03",
+    "bytes": 27712
+  },
+  {
+    "file": "assets/avatares/20-reservado.webp",
+    "sha256": "8ce829c5697d1a45f3ca3189c37f23cfd84575e3aa2fb7cd3a5b6bc799d98a90",
+    "bytes": 27660
+  },
+  {
+    "file": "assets/avatares/20-surpresa.webp",
+    "sha256": "a934169f0c8285445df86c0a8c08bce95833270333f6130b731bb40c212cb170",
+    "bytes": 26542
+  },
+  {
+    "file": "assets/avatares/20-tristeza.webp",
+    "sha256": "882ec6b77e1a253237ffeef477db3ce72d460b07b5898200807348dc6fa0c65d",
+    "bytes": 27492
+  },
+  {
+    "file": "assets/avatares/20.webp",
+    "sha256": "6475e8dfb485b24ba26b4c1b8ab3c323b000aa990295c34dd430ff3ce9a258b9",
+    "bytes": 71966
+  },
+  {
+    "file": "assets/avatares/21-alegria.webp",
+    "sha256": "ccc74b0dd5629a94e7bf8e08ba670e66414cbbb540a6f1b64506794150d7c669",
+    "bytes": 23756
+  },
+  {
+    "file": "assets/avatares/21-aliviado.webp",
+    "sha256": "2215f2f3583e5d3055421cdefdf4b98e4a5900d867665e69de44181a845dfa61",
+    "bytes": 24792
+  },
+  {
+    "file": "assets/avatares/21-atento.webp",
+    "sha256": "30c85286d8d203a85210992e07e2ec5284fb1d21a2ea16ae0ba9f8a7c0e22a66",
+    "bytes": 28098
+  },
+  {
+    "file": "assets/avatares/21-cansado.webp",
+    "sha256": "193ed76a1faabf02df314d7572c55844bd79f39f102af0622aa5bc5d8d4712ce",
+    "bytes": 26034
+  },
+  {
+    "file": "assets/avatares/21-choque.webp",
+    "sha256": "54b270f375aee7e424d1b476f71946328e0fbac683ea1b9dfda5535e936bbf87",
+    "bytes": 25760
+  },
+  {
+    "file": "assets/avatares/21-concentrado.webp",
+    "sha256": "990a966f3da961732ac203225822501a8abfc388039e8a3d84ec1fd43002226f",
+    "bytes": 28448
+  },
+  {
+    "file": "assets/avatares/21-confiante.webp",
+    "sha256": "f8fab29145f25450cd9119d9d0cd68f65b9330402f51577a833c8682e4f257d3",
+    "bytes": 24032
+  },
+  {
+    "file": "assets/avatares/21-constrangimento.webp",
+    "sha256": "e54bdb9f10d8f5d4499cde996c9bda3e0cfe39a5482b128d0892fcbab560fe3b",
+    "bytes": 24102
+  },
+  {
+    "file": "assets/avatares/21-curioso.webp",
+    "sha256": "b7dc126767182fffcb00671af93c4e0a3b73b8003e792c4336d0dc841c3b0795",
+    "bytes": 25642
+  },
+  {
+    "file": "assets/avatares/21-decepcao.webp",
+    "sha256": "04f7fbc2ea5ff2b7f2adad279e3972790756b4056a775011701d12ad0eee0c59",
+    "bytes": 25060
+  },
+  {
+    "file": "assets/avatares/21-desconfianca.webp",
+    "sha256": "df32a54fe4a22f78223cd1f797ab43f19705292fe38ea3461f29924a120d0931",
+    "bytes": 24212
+  },
+  {
+    "file": "assets/avatares/21-hesitante.webp",
+    "sha256": "894a91cfa2429178f408d5d2489b234296ed6dc95035b3afc1bd840dd6042250",
+    "bytes": 24298
+  },
+  {
+    "file": "assets/avatares/21-impaciente.webp",
+    "sha256": "83b2b01efca3a2f883b946e9e726133a25b09977bf6d155d6456242e2e5a4723",
+    "bytes": 24440
+  },
+  {
+    "file": "assets/avatares/21-ironia.webp",
+    "sha256": "24d963d90fb88a8e42dd36ed56472449154d8916282a0c177f3f555c2966841d",
+    "bytes": 23578
+  },
+  {
+    "file": "assets/avatares/21-irritacao.webp",
+    "sha256": "db15f69f26c9f4e02620270979dc029148a23e97983bffa365af9715e3e23a4f",
+    "bytes": 24712
+  },
+  {
+    "file": "assets/avatares/21-neutro.webp",
+    "sha256": "41a37dce631c49c99bb92b1119f1d72b5572fc0e8f6b22bf2ae6556a7076f34d",
+    "bytes": 24384
+  },
+  {
+    "file": "assets/avatares/21-panico.webp",
+    "sha256": "4e7d836136071d00e3374cb747c5373e9ac8ca4bb8b25a123073612d0c20de20",
+    "bytes": 25692
+  },
+  {
+    "file": "assets/avatares/21-reservado.webp",
+    "sha256": "e98124d86e2da050f0502d9c6dba1cffcf27e2b1da5dce161409a200c2f729bd",
+    "bytes": 24194
+  },
+  {
+    "file": "assets/avatares/21-surpresa.webp",
+    "sha256": "2b8de9aca1765949fe9c3d40bfed3a418ddb2f19e9e5a2f1aff6148240db5580",
+    "bytes": 24838
+  },
+  {
+    "file": "assets/avatares/21-tristeza.webp",
+    "sha256": "b6d9ccf2a67079e824ab1f722b31f634d4f91351bb4c74b5909f99fca5273f65",
+    "bytes": 23938
+  },
+  {
+    "file": "assets/avatares/21.webp",
+    "sha256": "ccaf7956dbb928fc0d41f2de993b74500146b5001cf6b6dfd90b1e4402867a03",
+    "bytes": 66658
+  },
+  {
+    "file": "assets/avatares/22-alegria.webp",
+    "sha256": "c92210797791c824f345fce5b97b0e1573016d349ac33b49bb46d0f50c0545af",
+    "bytes": 24982
+  },
+  {
+    "file": "assets/avatares/22-aliviado.webp",
+    "sha256": "b73e584bb63869904d069d42c18e0db8af6b6547d3ef44be74637529cc498d75",
+    "bytes": 26332
+  },
+  {
+    "file": "assets/avatares/22-atento.webp",
+    "sha256": "f89350cd634873bc8b0857c7f30d10cec517065cfc2e77287a217afcbdb5cdad",
+    "bytes": 28562
+  },
+  {
+    "file": "assets/avatares/22-cansado.webp",
+    "sha256": "5e6a61fa67d000fd4f62ee30afbacf87467cac04ba250f279e83e91976d84bf5",
+    "bytes": 26522
+  },
+  {
+    "file": "assets/avatares/22-choque.webp",
+    "sha256": "efd606a8d80eeb84f4d35c4e2f1890cc6632d58ea39e5af7b3979e8cc7568ee2",
+    "bytes": 28230
+  },
+  {
+    "file": "assets/avatares/22-concentrado.webp",
+    "sha256": "cdf980eeb5017c024d6bc1f60f10c0bdb3ab7475da7f7ebf8e2a4799344281c4",
+    "bytes": 30846
+  },
+  {
+    "file": "assets/avatares/22-confiante.webp",
+    "sha256": "2183ad9622196b48bd61b7196d89fbfc32a10a84d37234c1cdd95b1ed5a2b8f7",
+    "bytes": 25914
+  },
+  {
+    "file": "assets/avatares/22-constrangimento.webp",
+    "sha256": "7fb9ed87afcbf1537870644ba0ef06129dd38b41e4726e9f652112e8061604a0",
+    "bytes": 26046
+  },
+  {
+    "file": "assets/avatares/22-curioso.webp",
+    "sha256": "d03d447529f67ecce5130ad5f0b3830b8211354b333a269668a1717e06b75711",
+    "bytes": 27126
+  },
+  {
+    "file": "assets/avatares/22-decepcao.webp",
+    "sha256": "ea578aea05b8898ecf329b17fcbe7973ce749dad04d31c13cd28e2299e78e025",
+    "bytes": 26554
+  },
+  {
+    "file": "assets/avatares/22-desconfianca.webp",
+    "sha256": "a78648f3cc3c0eac758c68f8e7f0eda4af21dce55b309bdb876ca544c8e05256",
+    "bytes": 25456
+  },
+  {
+    "file": "assets/avatares/22-hesitante.webp",
+    "sha256": "ce84febb69e75c775b6d8f2c25396b8e7d88d6bae9f6675f2b144fa2a0daf158",
+    "bytes": 25072
+  },
+  {
+    "file": "assets/avatares/22-impaciente.webp",
+    "sha256": "4acea694f4e920a170e9664dae2880a9c9520c8789f440aa795e54e6ac44f2b2",
+    "bytes": 26000
+  },
+  {
+    "file": "assets/avatares/22-ironia.webp",
+    "sha256": "375719b7488fbd2356ad0dcbf724ca04f18cc48760990acbc30d65292d20e093",
+    "bytes": 24788
+  },
+  {
+    "file": "assets/avatares/22-irritacao.webp",
+    "sha256": "7644833e2551ce5516b330de60d299466e3958385e64e66206dc86247ab7c863",
+    "bytes": 26884
+  },
+  {
+    "file": "assets/avatares/22-neutro.webp",
+    "sha256": "8ff840d74bafe2292bed5f9c83531ecf05450c1404d9ca84411735846f35382a",
+    "bytes": 25014
+  },
+  {
+    "file": "assets/avatares/22-panico.webp",
+    "sha256": "e3bda29ab61b0335ac340172fabc39d1c1b5f4ae4a3d1432dc724cf24f49ebf7",
+    "bytes": 27326
+  },
+  {
+    "file": "assets/avatares/22-reservado.webp",
+    "sha256": "719ec027e3427badbc019408706e489304a773781b1c1e12317ac3906d23ac3b",
+    "bytes": 25226
+  },
+  {
+    "file": "assets/avatares/22-surpresa.webp",
+    "sha256": "9c1f321ef98efc87cc6f552cd543ec4beffa895b06c616c4e26a8e001ea1f2b2",
+    "bytes": 25738
+  },
+  {
+    "file": "assets/avatares/22-tristeza.webp",
+    "sha256": "5511f2179953b2ed73ee5b13bfa3895f16db015a01b8487ee2170088f019259a",
+    "bytes": 25260
+  },
+  {
+    "file": "assets/avatares/22.webp",
+    "sha256": "19baa247bb77a326c908e8b346f69cdf806df3fa6b591bd185c2fe2a15a9118c",
+    "bytes": 69378
+  },
+  {
+    "file": "assets/avatares/23-alegria.webp",
+    "sha256": "173c0f091ba96b7718b80b7346a5a6c9f397e3e714f8f14f7108a5aaa0379783",
+    "bytes": 26384
+  },
+  {
+    "file": "assets/avatares/23-aliviado.webp",
+    "sha256": "52cfbfda974c5e8c331be79dbdfda2cbcc20aa2082265430bef5b3a3b5b1618e",
+    "bytes": 28638
+  },
+  {
+    "file": "assets/avatares/23-atento.webp",
+    "sha256": "9f2f74902b231dd5746d2ad312d143863b80fe79236ad8229dc7b852348931dc",
+    "bytes": 31726
+  },
+  {
+    "file": "assets/avatares/23-cansado.webp",
+    "sha256": "87ebb6b9daed6f4528b14bf11234aea61a86e585b6b744601f696a5a4fff5d0e",
+    "bytes": 29688
+  },
+  {
+    "file": "assets/avatares/23-choque.webp",
+    "sha256": "b79f653cb97a85810feb0493264f80940fca2a970acc46c4efbcc00a51e31885",
+    "bytes": 27468
+  },
+  {
+    "file": "assets/avatares/23-concentrado.webp",
+    "sha256": "a9a4d00605ed2b480d1a0e081e466d1f78d4ac78506ac636f56258c40c8b5a49",
+    "bytes": 33672
+  },
+  {
+    "file": "assets/avatares/23-confiante.webp",
+    "sha256": "0c87d2fd5f37da5c5a883b63ec9c2cb7a20ce4cf950e100d7c721780a5a9e63e",
+    "bytes": 25690
+  },
+  {
+    "file": "assets/avatares/23-constrangimento.webp",
+    "sha256": "8bc0576d56fb10341f296cf565f1e7dee4c5828c8fe57ce1be14cb49e2e26fc6",
+    "bytes": 27418
+  },
+  {
+    "file": "assets/avatares/23-curioso.webp",
+    "sha256": "b87abeb1b6da1268f1ead161404d02ce86b8f4862ce6dbe6d4a68ee53c74ac2f",
+    "bytes": 28326
+  },
+  {
+    "file": "assets/avatares/23-decepcao.webp",
+    "sha256": "2e5788b5bd30a34e244857c164a45d93057358f488fd3d16a02ff02d26381d3d",
+    "bytes": 28428
+  },
+  {
+    "file": "assets/avatares/23-desconfianca.webp",
+    "sha256": "2ddaf6035367d4c4afebad35301636a6607701a94ccc78556912223b8701dffd",
+    "bytes": 26092
+  },
+  {
+    "file": "assets/avatares/23-hesitante.webp",
+    "sha256": "e95dc33be0a799797f1459c9c327b0102edcf98ade0701921331f01bf662a086",
+    "bytes": 26496
+  },
+  {
+    "file": "assets/avatares/23-impaciente.webp",
+    "sha256": "eefc2748e5bf1b9675a220ea3bf76868d149c49e84e316ea73663d6d563897bb",
+    "bytes": 26514
+  },
+  {
+    "file": "assets/avatares/23-ironia.webp",
+    "sha256": "9e1fd21560a339093532d01e9f03b04ddbcc4a377cb89910fb3c904560677767",
+    "bytes": 25772
+  },
+  {
+    "file": "assets/avatares/23-irritacao.webp",
+    "sha256": "05683df23f1cecac439b8832fc7473d4589f9a3a7e0bd39c354b545f09de0250",
+    "bytes": 27438
+  },
+  {
+    "file": "assets/avatares/23-neutro.webp",
+    "sha256": "a758b034a3ca7ddb01779f51f9bdf541d8b4035ea22d494c820c9d50a27dfb99",
+    "bytes": 25804
+  },
+  {
+    "file": "assets/avatares/23-panico.webp",
+    "sha256": "eb045d197cbe7e3742799ee9e1d11123807d595066196a5ed909f8847203211e",
+    "bytes": 28378
+  },
+  {
+    "file": "assets/avatares/23-reservado.webp",
+    "sha256": "8583f6322d16a2e1c67942b5e4516e83cc3b1ace41022346118fe63280804dd5",
+    "bytes": 27186
+  },
+  {
+    "file": "assets/avatares/23-surpresa.webp",
+    "sha256": "1a126103a83235cc154e6d25c14549399c904048e46e646ba13a4c956134a497",
+    "bytes": 25716
+  },
+  {
+    "file": "assets/avatares/23-tristeza.webp",
+    "sha256": "771462d709aac788c1b2f650decd5af26254908e3054377c74c05bafd3ba1764",
+    "bytes": 26756
+  },
+  {
+    "file": "assets/avatares/23.webp",
+    "sha256": "52c6badebb3274ce51bd68975da2e78a8f4ffb1a0e88f3709983f57e6eaabd5f",
+    "bytes": 71992
+  },
+  {
+    "file": "assets/avatares/24-alegria.webp",
+    "sha256": "02130db165da1fbc37c8b8e3f6ebc4b9d5efaa43b89ae49841284597b16b16ac",
+    "bytes": 23480
+  },
+  {
+    "file": "assets/avatares/24-aliviado.webp",
+    "sha256": "c86075eee6a960f764f4f31408acd49e9f4388d6e56a1f85f1ea034c02340f66",
+    "bytes": 24284
+  },
+  {
+    "file": "assets/avatares/24-atento.webp",
+    "sha256": "a2cc58d16c36e5d205668dace7f3755986513b32acc5ad4e974930c1d06e9f3e",
+    "bytes": 29934
+  },
+  {
+    "file": "assets/avatares/24-cansado.webp",
+    "sha256": "43f3d553cf7671fe519f6d90eab13fb43c5c5deee2ad706c76e6764223b70c9b",
+    "bytes": 25364
+  },
+  {
+    "file": "assets/avatares/24-choque.webp",
+    "sha256": "e19ee39451c95f9bace554d85c6391fbcb299f151590aa52012979070c542cbb",
+    "bytes": 25816
+  },
+  {
+    "file": "assets/avatares/24-concentrado.webp",
+    "sha256": "513b74d8161449af431d15b3df8e6da0636a2f99e25439b2710735b2c29c5cda",
+    "bytes": 28646
+  },
+  {
+    "file": "assets/avatares/24-confiante.webp",
+    "sha256": "be48c333c92c6bafff80ed5c84b1d5002498586f682d0d862fd02793e543fa23",
+    "bytes": 23236
+  },
+  {
+    "file": "assets/avatares/24-constrangimento.webp",
+    "sha256": "760f0e78ae1d4462f198c9faeb198187d2144d055e58d11a07e49ce3a393013d",
+    "bytes": 24842
+  },
+  {
+    "file": "assets/avatares/24-curioso.webp",
+    "sha256": "2d2111f2843dab2a7b384f383e7bc11f424321de75cadf128f189bb74de3bc25",
+    "bytes": 25666
+  },
+  {
+    "file": "assets/avatares/24-decepcao.webp",
+    "sha256": "bf7af8e6f54e850a75dd613f86fb2d348d88bdee4c69ca3b1d24ba440b09ab25",
+    "bytes": 24696
+  },
+  {
+    "file": "assets/avatares/24-desconfianca.webp",
+    "sha256": "b428061d238fa93eb0949b1936abd13f6681d4b91015a2fa895943e59d530201",
+    "bytes": 24120
+  },
+  {
+    "file": "assets/avatares/24-hesitante.webp",
+    "sha256": "de57d0b2a3af4b7068c09d2a134d4fe5d80f64bbf71a69b936429e9915306786",
+    "bytes": 23224
+  },
+  {
+    "file": "assets/avatares/24-impaciente.webp",
+    "sha256": "486644b04f86f67f1aeb7e554b6c7c80773b1e1c4ff4a07d0be7a95c0d792ea0",
+    "bytes": 23948
+  },
+  {
+    "file": "assets/avatares/24-ironia.webp",
+    "sha256": "cac5073378d6f38b32551fdcd5cb5ae5a8ba9fd6c8f5355b4e28258f8bab3288",
+    "bytes": 23100
+  },
+  {
+    "file": "assets/avatares/24-irritacao.webp",
+    "sha256": "fefb9bde43cc2a205cdc4f387d49876b93c80b70d0bf4758ff0c09733f67a823",
+    "bytes": 24938
+  },
+  {
+    "file": "assets/avatares/24-neutro.webp",
+    "sha256": "fe4435015421b2009507b0a7a97a97359404f99cc3da904f2305a1bc6e4f8f39",
+    "bytes": 23528
+  },
+  {
+    "file": "assets/avatares/24-panico.webp",
+    "sha256": "c4b10e1b51c542de5f0e3aa24970a6a4015983d488b7ba2bca7c09bc3e8da862",
+    "bytes": 25550
+  },
+  {
+    "file": "assets/avatares/24-reservado.webp",
+    "sha256": "de31b35523e308ec60b67a07078bff988314feef275088c7cb6a8126670a6405",
+    "bytes": 24154
+  },
+  {
+    "file": "assets/avatares/24-surpresa.webp",
+    "sha256": "89c1ece4324afd00d315a619ad5c04a9e8d0ddf11ff15a339930e798d79dc4cb",
+    "bytes": 24314
+  },
+  {
+    "file": "assets/avatares/24-tristeza.webp",
+    "sha256": "8a2a260a631da84cb6cd67c41299db93b9d722f1bcb80f4f9745c36779347da0",
+    "bytes": 24294
+  },
+  {
+    "file": "assets/avatares/24.webp",
+    "sha256": "9539076b675fe59aacb612aa3d98f84aaf3502ce48a29b6ab2016504ec1b7df2",
+    "bytes": 68312
+  },
+  {
+    "file": "assets/cartaz.webp",
+    "sha256": "bda957a809c2afd4b91f0ea8c08a9a6e3c1e92cacd5552d2fa92d371c2f49d52",
+    "bytes": 313414
+  },
+  {
+    "file": "assets/cenas/01.webp",
+    "sha256": "651c0ad3ad7ef9a8cea6e1fa6d89601a28a6a4faa5302558900cb478cec00b93",
+    "bytes": 116078
+  },
+  {
+    "file": "assets/cenas/02.webp",
+    "sha256": "cf638c0c8f65a5a7851a617ea6e5a03d0c1c4525a3c64f036e1be47b9cede4eb",
+    "bytes": 115942
+  },
+  {
+    "file": "assets/cenas/03.webp",
+    "sha256": "2b6e6b6e4664b56a4019c2b60d81f566113667dec3883d469c3b7b45dc78bd8a",
+    "bytes": 114736
+  },
+  {
+    "file": "assets/cenas/04.webp",
+    "sha256": "cbf90a357ca13a11286cbe079d5b6338d500445f8b764fc5c29e2e6a79054999",
+    "bytes": 119570
+  },
+  {
+    "file": "assets/cenas/05.webp",
+    "sha256": "b03b0343df0c668ee5e113ad0608bffc55942480a9d1889180f3bf42d8c7bec3",
+    "bytes": 119356
+  },
+  {
+    "file": "assets/cenas/06.webp",
+    "sha256": "e22961460b1407afbc84e8d90c38c4955b785af8e8aa93ff1e22bae5defa5bee",
+    "bytes": 113716
+  },
+  {
+    "file": "assets/cenas/07.webp",
+    "sha256": "81039980af458756d3bad015593404fc4561fdb6fd359dad3af64bef99321c8f",
+    "bytes": 119124
+  },
+  {
+    "file": "assets/cenas/08.webp",
+    "sha256": "4be14d914c9140fc57adaace71aeda6398b2f76b803b2252c68e4c329d0b07be",
+    "bytes": 120228
+  },
+  {
+    "file": "assets/cenas/09.webp",
+    "sha256": "5eaf5a59c78ba1a8f14a40bb763798b45f7aa032df0fbd20f837e15f31e7732c",
+    "bytes": 129684
+  },
+  {
+    "file": "assets/cenas/10.webp",
+    "sha256": "63fe56b84580c1a98a320f97cb0a161a8973534574b1adc2b559d89c8f363c91",
+    "bytes": 111862
+  },
+  {
+    "file": "assets/cenas/11.webp",
+    "sha256": "698eeef20f24a4680109fae11d169efe453cc30c8fa09a34ace33aeaad349508",
+    "bytes": 112496
+  },
+  {
+    "file": "assets/cenas/12.webp",
+    "sha256": "49f013031ac953efc2cc0e3d2cf66053f1587f31b81d39d509cced4bc6de6ad4",
+    "bytes": 133934
+  },
+  {
+    "file": "assets/cenas/13.webp",
+    "sha256": "1601df4c7609f5a7243a514568586c20a1f0374c9eacfd08eeeb4bfeb601ace1",
+    "bytes": 15060
+  },
+  {
+    "file": "assets/elenco/chapeu-alegria.webp",
+    "sha256": "653cfc925fcf30524a41bb208881dde890e722696d639f0809a6b9b475cabb93",
+    "bytes": 40268
+  },
+  {
+    "file": "assets/elenco/chapeu-aliviado.webp",
+    "sha256": "8b0d2c78c147cb1c698c21950ec2edb1074eb7bf567659aa301fb8e94a419e11",
+    "bytes": 41256
+  },
+  {
+    "file": "assets/elenco/chapeu-atento.webp",
+    "sha256": "60be5cf40752989a907c976a2856a33c4d181d1f82ef97e331292013b45f80d2",
+    "bytes": 43182
+  },
+  {
+    "file": "assets/elenco/chapeu-cansado.webp",
+    "sha256": "f8c8aedfaadd20745fafe5aefbc78f4df2da4c1ceb6b997e7309c5a3eb1be7e2",
+    "bytes": 41822
+  },
+  {
+    "file": "assets/elenco/chapeu-choque.webp",
+    "sha256": "fd1859e31e2d84c9d7d2cd9b7cc580ff2ea572f306c9fe1c55946841ad10cbac",
+    "bytes": 43144
+  },
+  {
+    "file": "assets/elenco/chapeu-concentrado.webp",
+    "sha256": "80e487ee0ca8f697d30065ac1b305fd9ff25b40ac038df916af4ac0235260699",
+    "bytes": 41446
+  },
+  {
+    "file": "assets/elenco/chapeu-confiante.webp",
+    "sha256": "089949cf44f4ffcda4ae837080dfd2f633460ecd6200336436f9bcc89ebc9d51",
+    "bytes": 41604
+  },
+  {
+    "file": "assets/elenco/chapeu-constrangimento.webp",
+    "sha256": "8df472ae69eabd94c55930767ad8d8a9fb7b47d94808d7ee27611d0fcb0e55f0",
+    "bytes": 42392
+  },
+  {
+    "file": "assets/elenco/chapeu-curioso.webp",
+    "sha256": "1198f2e5a8c46f210d617c6e0ada982b55caa48b47ee73876633e68fc9bbf0ee",
+    "bytes": 42478
+  },
+  {
+    "file": "assets/elenco/chapeu-decepcao.webp",
+    "sha256": "42c39c97dc8a9e33f0bf785e9b8a6986ebc335f34161f3283478f9d0bad527e9",
+    "bytes": 41748
+  },
+  {
+    "file": "assets/elenco/chapeu-desconfianca.webp",
+    "sha256": "807338ec91b150ed01938dcb99a32c8794d01a5f3c1f1675abff11284711ecd7",
+    "bytes": 40808
+  },
+  {
+    "file": "assets/elenco/chapeu-hesitante.webp",
+    "sha256": "8ef8b492476e12dc6f9e933979dde60b675c032d87e2007e31607265dfc54dd0",
+    "bytes": 41420
+  },
+  {
+    "file": "assets/elenco/chapeu-impaciente.webp",
+    "sha256": "8690da6db5c78fd32157b5be61754afb29e2a09f288a5d8763cceea076604cfe",
+    "bytes": 42196
+  },
+  {
+    "file": "assets/elenco/chapeu-ironia.webp",
+    "sha256": "b7e59f12cb36f4fc74dd1e53fccfd48f7f0319fec908e9a79fdf0080d6abf08d",
+    "bytes": 42338
+  },
+  {
+    "file": "assets/elenco/chapeu-irritacao.webp",
+    "sha256": "e59ed1c915a3ebefe2ca67d72fe9b3e11728817ee43ac5a9adbe35a021678800",
+    "bytes": 41270
+  },
+  {
+    "file": "assets/elenco/chapeu-neutro.webp",
+    "sha256": "6d7bdba36da1e9e2e020dff500b294cc334f9763f2f40827f50c7d27eef8a154",
+    "bytes": 41564
+  },
+  {
+    "file": "assets/elenco/chapeu-panico.webp",
+    "sha256": "addeffd8d02c951cbb60982553d647da410717803bf50b7eb81913b7429d67c8",
+    "bytes": 47358
+  },
+  {
+    "file": "assets/elenco/chapeu-reservado.webp",
+    "sha256": "b5b25d9f9ef2850e6be3b5f2e8baced35e1f811eaa003fc87655e48f01e845d3",
+    "bytes": 41954
+  },
+  {
+    "file": "assets/elenco/chapeu-surpresa.webp",
+    "sha256": "7a4fc219e68882ed0756880211a3d724850af044aee4767c45b162160a5f20af",
+    "bytes": 41200
+  },
+  {
+    "file": "assets/elenco/chapeu-tristeza.webp",
+    "sha256": "07a21b99419a27381a2936d1eb37fc005279fd96d9f5c051c6c07f2a01450c78",
+    "bytes": 41196
+  },
+  {
+    "file": "assets/elenco/cida-alegria.webp",
+    "sha256": "852ae8bec0bfd605953235c0b622f647cbbf513569e8c6395e4fe336099f9105",
+    "bytes": 34896
+  },
+  {
+    "file": "assets/elenco/cida-aliviado.webp",
+    "sha256": "bdcd7d47649d0f5c562780f2905de062ff67e4940ef1a956190a6e907b54f9db",
+    "bytes": 36586
+  },
+  {
+    "file": "assets/elenco/cida-atento.webp",
+    "sha256": "75936e684bb3fc2ffe304b8577dac323d1ddaadfc3d21b08fbdc253e13b9086e",
+    "bytes": 40998
+  },
+  {
+    "file": "assets/elenco/cida-cansado.webp",
+    "sha256": "7bf56aa176fa0f086969ea83251e7644a9ff9b8d6e50de4e925d878c0dc75f8f",
+    "bytes": 37194
+  },
+  {
+    "file": "assets/elenco/cida-choque.webp",
+    "sha256": "8cff14014b9a32d99b1e63d52b74e70cf2befb303ada5ecd3e2cff50594fa0b3",
+    "bytes": 37948
+  },
+  {
+    "file": "assets/elenco/cida-concentrado.webp",
+    "sha256": "b5d5d2035ab4d910bfac0ad232a4ecba01273d6e82385c48263936b4017b2237",
+    "bytes": 37242
+  },
+  {
+    "file": "assets/elenco/cida-confiante.webp",
+    "sha256": "29f1520caba9cdce5f9752a37bdb65c732f9ef04ad93b1ed92ec0067bc2ee79d",
+    "bytes": 35258
+  },
+  {
+    "file": "assets/elenco/cida-constrangimento.webp",
+    "sha256": "dc5a98e7faae3374e857598beff7ac22218f65361becbfcac58f7baa3304325b",
+    "bytes": 37512
+  },
+  {
+    "file": "assets/elenco/cida-curioso.webp",
+    "sha256": "af2c4acb7f813ecad842d2a96e4c7d11cd5a81ce2e638dc53fe508d446eece3b",
+    "bytes": 37856
+  },
+  {
+    "file": "assets/elenco/cida-decepcao.webp",
+    "sha256": "abd762c2236874a22f5247dd67c069df42f5e9b78029716c9a4bf5148806ada0",
+    "bytes": 35980
+  },
+  {
+    "file": "assets/elenco/cida-desconfianca.webp",
+    "sha256": "d1d71d504c0b6548e1766043638cc420654913c79293a5da3dafb7e7dbea32ae",
+    "bytes": 35788
+  },
+  {
+    "file": "assets/elenco/cida-hesitante.webp",
+    "sha256": "4a7e7a33410cafe84ddc112e1946a3ffaa64c767975481fd3f5054d5301a68f5",
+    "bytes": 35280
+  },
+  {
+    "file": "assets/elenco/cida-impaciente.webp",
+    "sha256": "d5b9bcd8b7c4f167e7ce8f2bbfc59015d625fc1537f08c5cf6960227ebeec92c",
+    "bytes": 36102
+  },
+  {
+    "file": "assets/elenco/cida-ironia.webp",
+    "sha256": "826482cde109b54a9e6c2274f649bd481a680a9ac560e77a4752d2ff092dfd3c",
+    "bytes": 36206
+  },
+  {
+    "file": "assets/elenco/cida-irritacao.webp",
+    "sha256": "b1c1442158fe3787a7fe46e2143efca388c8175a212ace4cb17655b45d9536f9",
+    "bytes": 35928
+  },
+  {
+    "file": "assets/elenco/cida-neutro.webp",
+    "sha256": "d712acde96ce97d0edb1b7b1daee3587393bd5434af26255dee94271e75a4372",
+    "bytes": 35636
+  },
+  {
+    "file": "assets/elenco/cida-panico.webp",
+    "sha256": "136ad800c4651b87ca275f1228c287d2b90ca923a480c9ffa40056ecab681555",
+    "bytes": 41548
+  },
+  {
+    "file": "assets/elenco/cida-reservado.webp",
+    "sha256": "dcd3555609227ecab42141b24f85de97aa854172b0f7501e6f953dbccc4e908a",
+    "bytes": 35774
+  },
+  {
+    "file": "assets/elenco/cida-surpresa.webp",
+    "sha256": "0c63d1c02710ce9e37f234373f02cc538210e9bcab91d6931cd72b56241f0166",
+    "bytes": 35670
+  },
+  {
+    "file": "assets/elenco/cida-tristeza.webp",
+    "sha256": "faefbbf5cbdd907a42c4ceef324f1868148aa1744de8aa9f4fd72a9d45aa5e38",
+    "bytes": 34828
+  },
+  {
+    "file": "assets/elenco/crianca-alegria.webp",
+    "sha256": "cb91b56f4138b4534d104927042bb297a49b347b645208278e8cf41692f44af9",
+    "bytes": 34874
+  },
+  {
+    "file": "assets/elenco/crianca-aliviado.webp",
+    "sha256": "b061435534d62b4027d534106e0be6c7d36be0745241d9a478698c08fcc1bab3",
+    "bytes": 36212
+  },
+  {
+    "file": "assets/elenco/crianca-atento.webp",
+    "sha256": "69269f911e5ac5eef828aae56ccce55b6f1be9805091f14ef59c0c1f2a5d1963",
+    "bytes": 39784
+  },
+  {
+    "file": "assets/elenco/crianca-cansado.webp",
+    "sha256": "2c94abf484fac2530ff43c1d6b32ce8a1b2d85791355ca8a893933d58fd4aa55",
+    "bytes": 37874
+  },
+  {
+    "file": "assets/elenco/crianca-choque.webp",
+    "sha256": "39d6cd50cf2f7b8bdb18218f36fa3cac5f234b4926aeef198ac8232a5bfed5f3",
+    "bytes": 38618
+  },
+  {
+    "file": "assets/elenco/crianca-concentrado.webp",
+    "sha256": "a1d37ca37f86894abeace143e68b8fa0fae2737dcb7619071abc59013907dbb1",
+    "bytes": 37902
+  },
+  {
+    "file": "assets/elenco/crianca-confiante.webp",
+    "sha256": "07db8b5a0526d3db5bbe6cfbd8b6c8e755eebeeb2d13b963744b0fbec51db4d1",
+    "bytes": 35398
+  },
+  {
+    "file": "assets/elenco/crianca-constrangimento.webp",
+    "sha256": "289856eeb916a9910cfa5f16a38207d47bc08ec314d7f410e2dff73b06c4a2dd",
+    "bytes": 37158
+  },
+  {
+    "file": "assets/elenco/crianca-curioso.webp",
+    "sha256": "3ed57df3963135a108ad8ea70e774fc714a53acefa9df2170d77648d898cff2d",
+    "bytes": 36534
+  },
+  {
+    "file": "assets/elenco/crianca-decepcao.webp",
+    "sha256": "ca16ff4945d303d03c38be5e389144c8f05916c6c45558ee95bcb7641530d2ae",
+    "bytes": 35992
+  },
+  {
+    "file": "assets/elenco/crianca-desconfianca.webp",
+    "sha256": "9f29320aeb0607f16944e2a3c6da586211af4dcaa3258404b2974a081d6c5835",
+    "bytes": 36240
+  },
+  {
+    "file": "assets/elenco/crianca-hesitante.webp",
+    "sha256": "e135846bcc907395b8edeaf79af9d32ca57412d0b49d9012cc8d1fa4eda1b9d7",
+    "bytes": 36598
+  },
+  {
+    "file": "assets/elenco/crianca-impaciente.webp",
+    "sha256": "905e8b41bfb504a1f86eba92899bc5da347add91a349d9970e6e622cb19b2ea0",
+    "bytes": 35882
+  },
+  {
+    "file": "assets/elenco/crianca-ironia.webp",
+    "sha256": "482b67926053be1309a4e78cd36b922d7674c4eed9d513c55b5c1c297fe4b420",
+    "bytes": 36592
+  },
+  {
+    "file": "assets/elenco/crianca-irritacao.webp",
+    "sha256": "8dca33d0fb8a3973245c81cfa1aa9d136fae82c3287792c8976dabe8107ade0f",
+    "bytes": 35630
+  },
+  {
+    "file": "assets/elenco/crianca-neutro.webp",
+    "sha256": "7dcccf9a2a7d7c153c5fb25d4230ef651953f3aa5983e1f8be9da3369a6de472",
+    "bytes": 36218
+  },
+  {
+    "file": "assets/elenco/crianca-panico.webp",
+    "sha256": "8ed2552f64e99220269366472b9544879b6b92db53e40d48f28544e5592aae23",
+    "bytes": 40976
+  },
+  {
+    "file": "assets/elenco/crianca-reservado.webp",
+    "sha256": "ef1b34347bdf4900e5c3863c4e8f56462596c2231ab7be92ef381b9b962ab0ed",
+    "bytes": 36646
+  },
+  {
+    "file": "assets/elenco/crianca-surpresa.webp",
+    "sha256": "de12178932dbaa06f16d620705ad7609cef6e9cfbb2b68b31c6117d1827889a9",
+    "bytes": 36570
+  },
+  {
+    "file": "assets/elenco/crianca-tristeza.webp",
+    "sha256": "287c6bf038c0ed6b54c31a25ac675ace195be1cc2c4735dbaa0cb4014d912988",
+    "bytes": 35994
+  },
+  {
+    "file": "assets/elenco/dalva-alegria.webp",
+    "sha256": "fce189d0df90ec39484842893586ed14024e13ba71595f870e11109ca3041195",
+    "bytes": 37334
+  },
+  {
+    "file": "assets/elenco/dalva-aliviado.webp",
+    "sha256": "b2e9cbd57be321a41078110af21df98aa530c5ae1958a0ae35510b8fdf57cc89",
+    "bytes": 39122
+  },
+  {
+    "file": "assets/elenco/dalva-atento.webp",
+    "sha256": "a6e189978367d677aee45359b9b9b6d56bed754fc182a3f82aca7ac8d008db91",
+    "bytes": 42986
+  },
+  {
+    "file": "assets/elenco/dalva-cansado.webp",
+    "sha256": "079285dbd7abc335eeb9887d5fc335c232ae1f62f621125753d55c2e274b1b56",
+    "bytes": 39910
+  },
+  {
+    "file": "assets/elenco/dalva-choque.webp",
+    "sha256": "ee15bcde3a2b856a5398c86b111e0d98ce78d14d7d7ea8fbbc68aea3bde315b3",
+    "bytes": 41650
+  },
+  {
+    "file": "assets/elenco/dalva-concentrado.webp",
+    "sha256": "d3b61faec350e0c68bc9f9022b480314fc88c037843b359dc09966873c378f26",
+    "bytes": 41574
+  },
+  {
+    "file": "assets/elenco/dalva-confiante.webp",
+    "sha256": "2f7b060fe8eac35d98431d17949509ba4c00452c394f8ceb76fc7e0f28e97264",
+    "bytes": 37748
+  },
+  {
+    "file": "assets/elenco/dalva-constrangimento.webp",
+    "sha256": "b226290d5a821e55fbe4178065d6cdb638073a142c431b3647c7d8f5f213d213",
+    "bytes": 40254
+  },
+  {
+    "file": "assets/elenco/dalva-curioso.webp",
+    "sha256": "49a930a04760a2509731e049637b6d92b9eacebeb1d599bb7ec33521bf6dcb40",
+    "bytes": 41044
+  },
+  {
+    "file": "assets/elenco/dalva-decepcao.webp",
+    "sha256": "ee1d83c811c54c47437f188f86c4970026292fb5877240fc91f53647612ca25c",
+    "bytes": 38178
+  },
+  {
+    "file": "assets/elenco/dalva-desconfianca.webp",
+    "sha256": "76f55c494837cbc36580aa491bb50887c06790e7cab2f7a2b7f5eeb00f212907",
+    "bytes": 38284
+  },
+  {
+    "file": "assets/elenco/dalva-hesitante.webp",
+    "sha256": "2f21822c7b4ca269f41a544fc267f6cb3d6cdd14261aceb6e9d1f95e49c28fcd",
+    "bytes": 38818
+  },
+  {
+    "file": "assets/elenco/dalva-impaciente.webp",
+    "sha256": "653df6755bd263e6e2895d6394271452a63a785deeefd4d1f6e0040fc5ee3615",
+    "bytes": 38448
+  },
+  {
+    "file": "assets/elenco/dalva-ironia.webp",
+    "sha256": "ca2d90f90f79df8c75b29c3594adabb66a6304c8e083dd6ade7a64998642417f",
+    "bytes": 38774
+  },
+  {
+    "file": "assets/elenco/dalva-irritacao.webp",
+    "sha256": "6ed7d6d625a6c8402f9900a1a250d800fad761f9a888c2ff8d196517acc137bb",
+    "bytes": 38060
+  },
+  {
+    "file": "assets/elenco/dalva-neutro.webp",
+    "sha256": "9b92bf20e87422947fc780aaae5857706a7b3d0b20d062362f1b70de35fbf508",
+    "bytes": 37726
+  },
+  {
+    "file": "assets/elenco/dalva-panico.webp",
+    "sha256": "5c6d9a8eaa70bdb1b7dec90b4e48878b67bddb58b8277ac50554086ccf39bf99",
+    "bytes": 45576
+  },
+  {
+    "file": "assets/elenco/dalva-reservado.webp",
+    "sha256": "29cbc0da169d3ef439aae0ece194b106c9589dcb9e5ffe5427b70a1b42692787",
+    "bytes": 39286
+  },
+  {
+    "file": "assets/elenco/dalva-surpresa.webp",
+    "sha256": "8d4225a2551f86758f5f4ba5d0155e113cad420e0d72d4078734b09354af892b",
+    "bytes": 38730
+  },
+  {
+    "file": "assets/elenco/dalva-tristeza.webp",
+    "sha256": "5f5948994394b6ddbdee3111532935a85f48f46ddea1a9c364963cf07eacdde0",
+    "bytes": 37654
+  },
+  {
+    "file": "assets/elenco/dimas-alegria.webp",
+    "sha256": "2c0128f346e45570662b7ce357010a23bff356fe46bcb5703813baedce53261e",
+    "bytes": 32708
+  },
+  {
+    "file": "assets/elenco/dimas-aliviado.webp",
+    "sha256": "975f62a20537b17dcff9bf89b90358e73715cc62bdec7854ffa9a4f03e298348",
+    "bytes": 35028
+  },
+  {
+    "file": "assets/elenco/dimas-atento.webp",
+    "sha256": "b2f79c4c8c02b15f3fff907eb9c61e9348ac2f445e808d544df20c81faff6b97",
+    "bytes": 39232
+  },
+  {
+    "file": "assets/elenco/dimas-cansado.webp",
+    "sha256": "dd38c7f1ec48974626030021f3f9f581a027725c9817e34613edfbb29abf1fec",
+    "bytes": 35764
+  },
+  {
+    "file": "assets/elenco/dimas-choque.webp",
+    "sha256": "36f53c7a055ddc3afe7de8701b6d624282bb648483e63050761a34ebf37be5c5",
+    "bytes": 37300
+  },
+  {
+    "file": "assets/elenco/dimas-concentrado.webp",
+    "sha256": "b493010942820991e784d3180b4bca96030650fe769e7730ac125acf106c53e1",
+    "bytes": 37222
+  },
+  {
+    "file": "assets/elenco/dimas-confiante.webp",
+    "sha256": "e64dee6b177b023d65fa07dddde3cfab2534cdadce84472df087d696148488fd",
+    "bytes": 34208
+  },
+  {
+    "file": "assets/elenco/dimas-constrangimento.webp",
+    "sha256": "a2f4cf69fe5f114a7c6b6f425066e885fb3ed96923b28e9e0901ae701d0f2511",
+    "bytes": 34814
+  },
+  {
+    "file": "assets/elenco/dimas-curioso.webp",
+    "sha256": "7f6bd134ea9c217187172377b4ab75c1bf24882bd68404ae81d2a3736f10b03e",
+    "bytes": 36778
+  },
+  {
+    "file": "assets/elenco/dimas-decepcao.webp",
+    "sha256": "c56898af5052975fb282915f892a538e84fb93c5aaeee88b3e8c3912455745fe",
+    "bytes": 34276
+  },
+  {
+    "file": "assets/elenco/dimas-desconfianca.webp",
+    "sha256": "39dbb6963afa152000983a6b24ed7ca3b00c3e4bd6f9149fa7851fa4fef6b5b2",
+    "bytes": 34702
+  },
+  {
+    "file": "assets/elenco/dimas-hesitante.webp",
+    "sha256": "c35bdb0fc04cb4eaa47e0d39857d0bfe545896863b2e815e79c6fdb817fd74ed",
+    "bytes": 33324
+  },
+  {
+    "file": "assets/elenco/dimas-impaciente.webp",
+    "sha256": "d6876bf3ed009c2479e9755372e6c0208e557ce1cd99a70290e2b89035971c38",
+    "bytes": 34648
+  },
+  {
+    "file": "assets/elenco/dimas-ironia.webp",
+    "sha256": "864f50faa782c9a9034eb77af0928bee2e3c1404c8b31c66dd8d0ab093499682",
+    "bytes": 35032
+  },
+  {
+    "file": "assets/elenco/dimas-irritacao.webp",
+    "sha256": "7879792ef74d696c4938d203571b9d83fcef0602231764da6d5367150ea575d0",
+    "bytes": 33580
+  },
+  {
+    "file": "assets/elenco/dimas-neutro.webp",
+    "sha256": "e7fe7ea69c8fb44e076cbd1888c23c339c38889f78b6b3b5edb9242d52d55eda",
+    "bytes": 33798
+  },
+  {
+    "file": "assets/elenco/dimas-panico.webp",
+    "sha256": "70aa41255c9aa773b722bbe04ccb0e0534fe21ec04cc7545eb7972f08afe17ea",
+    "bytes": 41978
+  },
+  {
+    "file": "assets/elenco/dimas-reservado.webp",
+    "sha256": "37af2606892b93777aec62cf762a063e934d5d07c374eb56ee91481d55e3b412",
+    "bytes": 34528
+  },
+  {
+    "file": "assets/elenco/dimas-surpresa.webp",
+    "sha256": "b1d5e1b3c21a2b24e56e3c9be1046973b2ef2b441e4c63835a01ad41fd1f12c1",
+    "bytes": 33862
+  },
+  {
+    "file": "assets/elenco/dimas-tristeza.webp",
+    "sha256": "3b583a6f2a53844fa0ca86526f8df1c8f415004a722bc10eefbf8c12d0660ef4",
+    "bytes": 32914
+  },
+  {
+    "file": "assets/elenco/encarregada-alegria.webp",
+    "sha256": "902458fe018056646f49c156697ae4ecf626d6df5868dcfdeb5a8d58ed26ec1f",
+    "bytes": 33878
+  },
+  {
+    "file": "assets/elenco/encarregada-aliviado.webp",
+    "sha256": "09294dfa6d2f0554d445339c035b643e06a6af1222330cb2f8f46979b5a0811e",
+    "bytes": 35778
+  },
+  {
+    "file": "assets/elenco/encarregada-atento.webp",
+    "sha256": "6484108185e9bd93b0619e19c81d686bf58eb75e32fdef3503c3c4c62336213f",
+    "bytes": 40770
+  },
+  {
+    "file": "assets/elenco/encarregada-cansado.webp",
+    "sha256": "63d91da6a96ec652e1a5ec1bd5e3249033fac2c3e4bc0a880e5cea0ab8afbaee",
+    "bytes": 36788
+  },
+  {
+    "file": "assets/elenco/encarregada-choque.webp",
+    "sha256": "a3c3e6b24705e3d596a0d3da142a8289b4aca6a290a35d02147fa4736f6bd023",
+    "bytes": 37566
+  },
+  {
+    "file": "assets/elenco/encarregada-concentrado.webp",
+    "sha256": "841e6bb97c222d42e4bf7383428243166abac3af2edecc726e085c62093f4485",
+    "bytes": 39496
+  },
+  {
+    "file": "assets/elenco/encarregada-confiante.webp",
+    "sha256": "f58f1295aede75fbd6f54765b2f6f0fc5e8642b6d2fba0ffa7ccc309388a978a",
+    "bytes": 33818
+  },
+  {
+    "file": "assets/elenco/encarregada-constrangimento.webp",
+    "sha256": "7e2bd37638bd5ac4fe16eb7cd72ad391eb20d645efe2a66399db8aa46310ee50",
+    "bytes": 36148
+  },
+  {
+    "file": "assets/elenco/encarregada-curioso.webp",
+    "sha256": "ad35ad29d5ca934f2485acc38040d474183672c4c2ef491e4544125b283823c6",
+    "bytes": 36828
+  },
+  {
+    "file": "assets/elenco/encarregada-decepcao.webp",
+    "sha256": "2ad10d299ef0347e56b3f6c3781554f9d208527d3a4dd108a3397285dda4dd6b",
+    "bytes": 35946
+  },
+  {
+    "file": "assets/elenco/encarregada-desconfianca.webp",
+    "sha256": "71cff31561073ecca99ad4a7752df1d1852e854a2197a0da067714eb248e3736",
+    "bytes": 34302
+  },
+  {
+    "file": "assets/elenco/encarregada-hesitante.webp",
+    "sha256": "88885b3e58d76325606d84a662a6a46751d1e98ce95238d25afd7fbb736d6564",
+    "bytes": 35194
+  },
+  {
+    "file": "assets/elenco/encarregada-impaciente.webp",
+    "sha256": "fcb30b5031e12291853c69aefaf7298aecf27a03371c00caca6c212e171f67ee",
+    "bytes": 34768
+  },
+  {
+    "file": "assets/elenco/encarregada-ironia.webp",
+    "sha256": "577ada96d805cb80d28c42248fef226bb16a7605eb50292c0e72069d2a08ce1e",
+    "bytes": 35148
+  },
+  {
+    "file": "assets/elenco/encarregada-irritacao.webp",
+    "sha256": "2565c5a0fea133b26b15a3b4330177cf6a8892ab843d935fca37c5bc13636543",
+    "bytes": 34988
+  },
+  {
+    "file": "assets/elenco/encarregada-neutro.webp",
+    "sha256": "d24ff1074983d1053ddee7462ea79100ae403293f6baa8fe2daacb233127910b",
+    "bytes": 34822
+  },
+  {
+    "file": "assets/elenco/encarregada-panico.webp",
+    "sha256": "01e30fd22a949d23dba183c5902b044ce425e75756177dcc0ecac26329445f96",
+    "bytes": 42344
+  },
+  {
+    "file": "assets/elenco/encarregada-reservado.webp",
+    "sha256": "4a1af78d8ade5e56783b0ce2077bedba3229e5c1df8e6e7737df72f164dba44a",
+    "bytes": 35264
+  },
+  {
+    "file": "assets/elenco/encarregada-surpresa.webp",
+    "sha256": "95a2cb47d5cf77a4c24405e4817b1064bc7677647a703a7c2f0bc47abc7ef78b",
+    "bytes": 35280
+  },
+  {
+    "file": "assets/elenco/encarregada-tristeza.webp",
+    "sha256": "9e5f51d3996bff7e3c051729ad6a54024233fd090477268dec3b32ebfbecacb6",
+    "bytes": 33884
+  },
+  {
+    "file": "assets/elenco/frete-alegria.webp",
+    "sha256": "70185f11b91e166927b8df6b5231c25b0b307c79e293a6677ba9fd45de2ee2a9",
+    "bytes": 36324
+  },
+  {
+    "file": "assets/elenco/frete-aliviado.webp",
+    "sha256": "7551263768473f954988e9b39d823809acd0e3276105247d7c071508d11cb113",
+    "bytes": 38136
+  },
+  {
+    "file": "assets/elenco/frete-atento.webp",
+    "sha256": "532771291bd7ba3be09b56aa7fad4f0b105bb6fc11a52b7a663622709b35fa6f",
+    "bytes": 41712
+  },
+  {
+    "file": "assets/elenco/frete-cansado.webp",
+    "sha256": "1243cbf14336b1317b0ef0f6dff8a155d7623f9736f9340f94082ac95c78fd11",
+    "bytes": 40234
+  },
+  {
+    "file": "assets/elenco/frete-choque.webp",
+    "sha256": "c1e4828ba2aa03ec54949daf7725218f9756e22972a62d85d8c1fc0ea26534da",
+    "bytes": 40900
+  },
+  {
+    "file": "assets/elenco/frete-concentrado.webp",
+    "sha256": "3092fb1a3a835ff62920f5252aa8737a7f0d2c11b0efc9e50ae04f6bf8188174",
+    "bytes": 40874
+  },
+  {
+    "file": "assets/elenco/frete-confiante.webp",
+    "sha256": "e4883f6ff1d16867c02feed5eecd45d882b501e09b44265d090971bd62426af1",
+    "bytes": 37134
+  },
+  {
+    "file": "assets/elenco/frete-constrangimento.webp",
+    "sha256": "e849a428dfd804f49316c50373a9670d274d04a2811d51183e0c68e7ac06a83b",
+    "bytes": 39290
+  },
+  {
+    "file": "assets/elenco/frete-curioso.webp",
+    "sha256": "4bd35b128f08013db6e042302686858bf41e8375e192dd32259c3a56c6d27edf",
+    "bytes": 39664
+  },
+  {
+    "file": "assets/elenco/frete-decepcao.webp",
+    "sha256": "d221a25ecbf92c8ae9718073a7118f4026bf3f15bcac218454c989518f8d29df",
+    "bytes": 37586
+  },
+  {
+    "file": "assets/elenco/frete-desconfianca.webp",
+    "sha256": "88a6318524849540c528a9290fa389045b03a2a17bff4cc8cf313517b6474f2b",
+    "bytes": 37844
+  },
+  {
+    "file": "assets/elenco/frete-hesitante.webp",
+    "sha256": "e75dc15b8af97d9d353231504b2827002a5464a595bd65b2cdcfd50073f43020",
+    "bytes": 37696
+  },
+  {
+    "file": "assets/elenco/frete-impaciente.webp",
+    "sha256": "8e61247e04bbea2364c4d5a85ede64fd755920081a1140a8cb0e0b1d161aa83d",
+    "bytes": 37776
+  },
+  {
+    "file": "assets/elenco/frete-ironia.webp",
+    "sha256": "b3bc9199a7267cd1575bec55a8e9f603a524ac2f32958157aa92b756dd3eba65",
+    "bytes": 38834
+  },
+  {
+    "file": "assets/elenco/frete-irritacao.webp",
+    "sha256": "ac8cd08a34fe9f649a3503c97f8279d9c956da039921f6d36b947f08bab58be9",
+    "bytes": 37938
+  },
+  {
+    "file": "assets/elenco/frete-neutro.webp",
+    "sha256": "cc092d0e72dfbda6418b8725d69231ede534a0c5e15510b7baad223d64d12c68",
+    "bytes": 37048
+  },
+  {
+    "file": "assets/elenco/frete-panico.webp",
+    "sha256": "ab72dce946346cd193fd8d7953b7cfdbac5a2a9d1254936f906238dad2180e7c",
+    "bytes": 44808
+  },
+  {
+    "file": "assets/elenco/frete-reservado.webp",
+    "sha256": "c0a912252485ebb997ec01e250a9f8ab82eb16ed8123e6276423ca406298c6f4",
+    "bytes": 38418
+  },
+  {
+    "file": "assets/elenco/frete-surpresa.webp",
+    "sha256": "6fbfd8e60a6b0b6900fc0b6b33632f080ce13a963b442134cf940202e3656330",
+    "bytes": 37838
+  },
+  {
+    "file": "assets/elenco/frete-tristeza.webp",
+    "sha256": "fc29919ba44592e0c175b10fa422482c0f3dfab547ef357dd61e62f9eaddbbb9",
+    "bytes": 37412
+  },
+  {
+    "file": "assets/elenco/ines-alegria.webp",
+    "sha256": "05d5f5a206aa587984398df3dcbc3505b1d241479c9b4548d8d073980cea72fe",
+    "bytes": 39508
+  },
+  {
+    "file": "assets/elenco/ines-aliviado.webp",
+    "sha256": "1e93d20f990f822d1f9363d87cba7d0303d6ba3a43668fcad85f641dcd37c9b4",
+    "bytes": 41836
+  },
+  {
+    "file": "assets/elenco/ines-atento.webp",
+    "sha256": "101f95b8515050a29dde709d3b4c6cd8ce9db1f1c06a6a2d5c01e56707f69c02",
+    "bytes": 45488
+  },
+  {
+    "file": "assets/elenco/ines-cansado.webp",
+    "sha256": "ced0668d5d66559afc3bad864a11b54a915afeca0f19f3a47ccc7dbe7347fa09",
+    "bytes": 43232
+  },
+  {
+    "file": "assets/elenco/ines-choque.webp",
+    "sha256": "21c03460edb3c3f869453dcd87e9c22196942b7a4e12eb68e931ec797c753d7b",
+    "bytes": 42810
+  },
+  {
+    "file": "assets/elenco/ines-concentrado.webp",
+    "sha256": "635294d102d7604ebb4ad01c5a19135cbf837134d1e07963c75e4b9aa77893ca",
+    "bytes": 44100
+  },
+  {
+    "file": "assets/elenco/ines-confiante.webp",
+    "sha256": "3e84b533e159657780108811be48464429e07ae9556c139de59200ce0894c531",
+    "bytes": 40818
+  },
+  {
+    "file": "assets/elenco/ines-constrangimento.webp",
+    "sha256": "b83f7e07296c7885975b997dcf964f52a29e8c1b1b4e805a4ca8f9b546e802d2",
+    "bytes": 42142
+  },
+  {
+    "file": "assets/elenco/ines-curioso.webp",
+    "sha256": "64ef231b0c5b2399f7f8c208abbdc1cdc05eed7ef36254bcdb187e761650e40f",
+    "bytes": 43350
+  },
+  {
+    "file": "assets/elenco/ines-decepcao.webp",
+    "sha256": "834fd69378b1a78182de4501ac00e1f9cf43e822af4b22f41ce0b41e426c2804",
+    "bytes": 41184
+  },
+  {
+    "file": "assets/elenco/ines-desconfianca.webp",
+    "sha256": "1d4163eb7ad2ce186ea26c6ab75718c4e0c0cb3ac87257753ddea5e17b20ebff",
+    "bytes": 41178
+  },
+  {
+    "file": "assets/elenco/ines-hesitante.webp",
+    "sha256": "16baa7aedfdac88cd571e01980deab564142819ddeeb2c7feaab67d6e4f8094f",
+    "bytes": 40990
+  },
+  {
+    "file": "assets/elenco/ines-impaciente.webp",
+    "sha256": "ba9ad3def6ddd695948114534bdff8caa8e2c2b638eae9537de5a9932c46a620",
+    "bytes": 41858
+  },
+  {
+    "file": "assets/elenco/ines-ironia.webp",
+    "sha256": "32ef2341bb2440656e376296c3b39aafaa81bc3454dc6008bc746d3c3757c331",
+    "bytes": 42014
+  },
+  {
+    "file": "assets/elenco/ines-irritacao.webp",
+    "sha256": "44b6ff80b1e480484563cdb36f07d218e21aa5ada5e2da7dbc3944a99e6fb10d",
+    "bytes": 40930
+  },
+  {
+    "file": "assets/elenco/ines-neutro.webp",
+    "sha256": "2c442036b8f7eb89006ea8fce384875a634f3d84f0e73a4de10c876b2c3c78f6",
+    "bytes": 41164
+  },
+  {
+    "file": "assets/elenco/ines-panico.webp",
+    "sha256": "757942c62cd31ded277a755ac24fb58066ae6d7225dee9cdf6aea5baad5eaab2",
+    "bytes": 47306
+  },
+  {
+    "file": "assets/elenco/ines-reservado.webp",
+    "sha256": "e8eb7fae032986022c018975cd2aca8682273903439f997a6402ea6fe3891e7e",
+    "bytes": 41584
+  },
+  {
+    "file": "assets/elenco/ines-surpresa.webp",
+    "sha256": "3b7a182eaadc007b229c87f832ff3c4317499c080a5bfaf584647dd91f0467f3",
+    "bytes": 40868
+  },
+  {
+    "file": "assets/elenco/ines-tristeza.webp",
+    "sha256": "0de80b61c3b471558b072ab24ae519227cc95b02738473116f20f94a468008f4",
+    "bytes": 40782
+  },
+  {
+    "file": "assets/elenco/isaura-alegria.webp",
+    "sha256": "46158de3b053f17f472f12ade32e5efce3ae8e4d673e8d11f13fdaddaf917383",
+    "bytes": 35410
+  },
+  {
+    "file": "assets/elenco/isaura-aliviado.webp",
+    "sha256": "45ce4ff1742aaa6630eeeb82217441bae13b3ada294bec757655db728de0d5e5",
+    "bytes": 37654
+  },
+  {
+    "file": "assets/elenco/isaura-atento.webp",
+    "sha256": "41bd84a5ff3bd7ed84956fcb861a091e3d49c2b69b7d4646be88452daada5a07",
+    "bytes": 40806
+  },
+  {
+    "file": "assets/elenco/isaura-cansado.webp",
+    "sha256": "5a61f26e073c61c0fe962df64ce6c2f18f7e9f4e2206dec8539c5ffb8cca7b02",
+    "bytes": 39486
+  },
+  {
+    "file": "assets/elenco/isaura-choque.webp",
+    "sha256": "4b8789dd38129d5c53f5aa08cd60e672dfa6dc15871ed173253ef90a5aa30e65",
+    "bytes": 40354
+  },
+  {
+    "file": "assets/elenco/isaura-concentrado.webp",
+    "sha256": "5f5aaa2e0c5a2ea637eeeba0b22c2790bd2e47f2f3244755c0514e181cbb3153",
+    "bytes": 40270
+  },
+  {
+    "file": "assets/elenco/isaura-confiante.webp",
+    "sha256": "c165457921dfd6e748326246d78b1ae6828d1c9a9a5491109538eb83eaba0b58",
+    "bytes": 37372
+  },
+  {
+    "file": "assets/elenco/isaura-constrangimento.webp",
+    "sha256": "0fecaa632adc239bdc9cd33aafada9288fc79f53aa6dbe26ed6cb4ec68dd741e",
+    "bytes": 37894
+  },
+  {
+    "file": "assets/elenco/isaura-curioso.webp",
+    "sha256": "599a80312c9adcbec2ba012f23c1f36829edf512897afabec92293bccd914778",
+    "bytes": 40216
+  },
+  {
+    "file": "assets/elenco/isaura-decepcao.webp",
+    "sha256": "68073eb40bb2dfa2d9f6af6e6811c15c35e01fa1ee5b8c70702ef2647b52548e",
+    "bytes": 37514
+  },
+  {
+    "file": "assets/elenco/isaura-desconfianca.webp",
+    "sha256": "bade1d9b506f5bece5c76275e3cbda2469de68f51ece05828ed87fe20b6d9917",
+    "bytes": 36386
+  },
+  {
+    "file": "assets/elenco/isaura-hesitante.webp",
+    "sha256": "21c6f25a057b422ca95a858fad40907b0801a756984e4bb63a242ba04f5661bc",
+    "bytes": 37062
+  },
+  {
+    "file": "assets/elenco/isaura-impaciente.webp",
+    "sha256": "cef18512f89e1699113e314a31a575e67e827c530f7c92024e96a2c5709ec6b9",
+    "bytes": 37742
+  },
+  {
+    "file": "assets/elenco/isaura-ironia.webp",
+    "sha256": "5c4706c6e6875b483f49bfba33d528d94d714c4ded5f63019de31799aef19490",
+    "bytes": 37994
+  },
+  {
+    "file": "assets/elenco/isaura-irritacao.webp",
+    "sha256": "c447769b93d8ba6b039aed807372da8da803d58848a401d4e15876c31597e6be",
+    "bytes": 36998
+  },
+  {
+    "file": "assets/elenco/isaura-neutro.webp",
+    "sha256": "0511b71514742a9177dec1e9b335ea00f407449b5dddab5d34bb63fffd39c150",
+    "bytes": 36642
+  },
+  {
+    "file": "assets/elenco/isaura-panico.webp",
+    "sha256": "0d3bbea3459293f0adc36e992bb1725d76c60f90fb97dedb0076d845c0bdbf66",
+    "bytes": 43356
+  },
+  {
+    "file": "assets/elenco/isaura-reservado.webp",
+    "sha256": "ba9dc437778997e3f798e2d0ba2c91dc2a8e60135846728761b57723a37804f8",
+    "bytes": 37004
+  },
+  {
+    "file": "assets/elenco/isaura-surpresa.webp",
+    "sha256": "2cff779a2eab739998f819b1035020b528e01f250c4d201bda6fdf714935b479",
+    "bytes": 36754
+  },
+  {
+    "file": "assets/elenco/isaura-tristeza.webp",
+    "sha256": "88538f767ab566c12e7bd03e8ef8f5c8065e1635262980842758db80749fb1ef",
+    "bytes": 36236
+  },
+  {
+    "file": "assets/elenco/lia-alegria.webp",
+    "sha256": "9d8709652f0cbfdef0b4313da8d543fed29bdfd0474e7e59c242e54bba10066b",
+    "bytes": 37788
+  },
+  {
+    "file": "assets/elenco/lia-aliviado.webp",
+    "sha256": "5e015839c367065a0a594fff10e9d4e6abf0556819302f839b54455f7f268cdd",
+    "bytes": 39816
+  },
+  {
+    "file": "assets/elenco/lia-atento.webp",
+    "sha256": "404773df7b5b10d99bef172a70e68ecd386bb8ac195e1da96ff04d7df703a4e4",
+    "bytes": 43088
+  },
+  {
+    "file": "assets/elenco/lia-cansado.webp",
+    "sha256": "344a4f25f98339addb4d261a7fa033af60c3c384bc40d43e84bdef89816fc89e",
+    "bytes": 39388
+  },
+  {
+    "file": "assets/elenco/lia-choque.webp",
+    "sha256": "c6c54f94620f60bfce9e6faeca2009c63c5d6012c3b77e0a50e75e19a3091178",
+    "bytes": 41246
+  },
+  {
+    "file": "assets/elenco/lia-concentrado.webp",
+    "sha256": "524c0b35633cbf14cfcc144b77442cc1caddc4259bba9db10acf7dbf00ac70c1",
+    "bytes": 41666
+  },
+  {
+    "file": "assets/elenco/lia-confiante.webp",
+    "sha256": "17428f9fdb675ae1b544b57a37deba3599e19c803a05f17a6fabbf15a0e92488",
+    "bytes": 39458
+  },
+  {
+    "file": "assets/elenco/lia-constrangimento.webp",
+    "sha256": "0456dedfcdc5659002f324e14f3582a9bcfc54dc6244bba221688a1be6ca27fd",
+    "bytes": 39640
+  },
+  {
+    "file": "assets/elenco/lia-curioso.webp",
+    "sha256": "f0be6a4a34345c0bd1deb66c742e2763e054b2ad0f95d9de0e92ce6f9211c9d7",
+    "bytes": 40888
+  },
+  {
+    "file": "assets/elenco/lia-decepcao.webp",
+    "sha256": "44f5322ec82c4083f095dcc338edd9ff476bc80fc58e6ceb4f837bd8bdc6acbd",
+    "bytes": 39532
+  },
+  {
+    "file": "assets/elenco/lia-desconfianca.webp",
+    "sha256": "7d1a6814e1a1b230d98a634632d489cc0cb50109d7a6b92f6a9f9d15f24d75d9",
+    "bytes": 38552
+  },
+  {
+    "file": "assets/elenco/lia-hesitante.webp",
+    "sha256": "747ef235a48eeb5dfecab90b663a3cfaea6e488b9a557c6a5128a589e18872b2",
+    "bytes": 39178
+  },
+  {
+    "file": "assets/elenco/lia-impaciente.webp",
+    "sha256": "af966792fa4a930ae34a475c15691a8383a233b8b33a0b79d520d4a338eeb094",
+    "bytes": 39530
+  },
+  {
+    "file": "assets/elenco/lia-ironia.webp",
+    "sha256": "ee11d56d03785e398f2da46e72f0aeaa1912ce7a295752ef0f0ae2c7c5795cee",
+    "bytes": 40052
+  },
+  {
+    "file": "assets/elenco/lia-irritacao.webp",
+    "sha256": "635d864207222001ae8ced6de49ccfd0c3ed9be2f19ca154434e1794ea8df951",
+    "bytes": 38568
+  },
+  {
+    "file": "assets/elenco/lia-neutro.webp",
+    "sha256": "fabe3def66a6596d52d792ae2c7af13d0daf62ea5fa07b838f420f65532e1eb2",
+    "bytes": 39066
+  },
+  {
+    "file": "assets/elenco/lia-panico.webp",
+    "sha256": "155780a18d153b12824f16cfa1c144c2eca08a97fe3da0a9d4847d1b534b2136",
+    "bytes": 44888
+  },
+  {
+    "file": "assets/elenco/lia-reservado.webp",
+    "sha256": "6a5b8279f5e141f14b8ba87f7c12fe3847270dc4480e4132240138733bb2ca36",
+    "bytes": 39592
+  },
+  {
+    "file": "assets/elenco/lia-surpresa.webp",
+    "sha256": "c4b52b6e30f21af4749b8aa5b38e4b33bb9771a5d4f28cc3bd76dc02052c698b",
+    "bytes": 38614
+  },
+  {
+    "file": "assets/elenco/lia-tristeza.webp",
+    "sha256": "83846778db7076524865bca1ad9baceb5c21984e528535de4ac0540999750095",
+    "bytes": 37992
+  },
+  {
+    "file": "assets/elenco/ministro-alegria.webp",
+    "sha256": "9e982d951d3f1891490ae5eadbee16432a5577f20a88523aeb6ee38444e1628e",
+    "bytes": 35082
+  },
+  {
+    "file": "assets/elenco/ministro-aliviado.webp",
+    "sha256": "f2e7ef48397d6eb4237348250ddb014a3cf947366a6df18cc3912c8d84c09118",
+    "bytes": 37104
+  },
+  {
+    "file": "assets/elenco/ministro-atento.webp",
+    "sha256": "9c2b46057387f9c3b645dcf0e2e62bb6fa62cff87b69bb8b2218e12cbd0b409f",
+    "bytes": 40428
+  },
+  {
+    "file": "assets/elenco/ministro-cansado.webp",
+    "sha256": "79627181d0aba7fd720d70c8d1eb8a49ab3f3fec73eb83485aeabf0c190321db",
+    "bytes": 37874
+  },
+  {
+    "file": "assets/elenco/ministro-choque.webp",
+    "sha256": "ae04341aa49f26e978544b73720f72037231f9f4807aa4d4821e6c4d9011b86f",
+    "bytes": 38828
+  },
+  {
+    "file": "assets/elenco/ministro-concentrado.webp",
+    "sha256": "8433c0f61949cb0acc9b9706909b296b14415241a2b945d804864a7391e82bee",
+    "bytes": 39474
+  },
+  {
+    "file": "assets/elenco/ministro-confiante.webp",
+    "sha256": "52b406f1c84e7899adfa67fd4d4e6bd69bb057841b3f17c57e67fdf0a810f022",
+    "bytes": 36338
+  },
+  {
+    "file": "assets/elenco/ministro-constrangimento.webp",
+    "sha256": "610e98f4d35a3daaeeb08c48cc1b7366568e3ff91a57a20fc299a0bdca2ca1a2",
+    "bytes": 37536
+  },
+  {
+    "file": "assets/elenco/ministro-curioso.webp",
+    "sha256": "df7853319e85c804804fb7ba90b9326ffce7058a1708e49ff55d019d67c9d385",
+    "bytes": 37918
+  },
+  {
+    "file": "assets/elenco/ministro-decepcao.webp",
+    "sha256": "82f7e3a527eb3545180725627fc42e61262d968138a30ee9e1f252fb44371b98",
+    "bytes": 37758
+  },
+  {
+    "file": "assets/elenco/ministro-desconfianca.webp",
+    "sha256": "2c9379ff92f0d5b6c008c20c1cb78715b52e2d1d17dd98be53dab2f29e725418",
+    "bytes": 36300
+  },
+  {
+    "file": "assets/elenco/ministro-hesitante.webp",
+    "sha256": "93d84d8a4d25c9a6964a470ace28967266af84b5dfe6ab722c02071be5267e85",
+    "bytes": 36530
+  },
+  {
+    "file": "assets/elenco/ministro-impaciente.webp",
+    "sha256": "099513239a04707ac4af69928b1019d33b70a0d91c72d4d1c78ebea8335a4bea",
+    "bytes": 37048
+  },
+  {
+    "file": "assets/elenco/ministro-ironia.webp",
+    "sha256": "957cc1ae6f288c15b21a854c09932198338e03f6cdc876818bae4b29f116d202",
+    "bytes": 37916
+  },
+  {
+    "file": "assets/elenco/ministro-irritacao.webp",
+    "sha256": "5a4954017d3a001bfa6c49e20b11ec4b6b9bd8cedd6cc7710090e5be332fcf7d",
+    "bytes": 36542
+  },
+  {
+    "file": "assets/elenco/ministro-neutro.webp",
+    "sha256": "e3e84c917d4fec6b05dd12722014c8ebcfd2ee3662f9369f49771f73e2b9a37c",
+    "bytes": 36488
+  },
+  {
+    "file": "assets/elenco/ministro-panico.webp",
+    "sha256": "f2503543cd0b2c7f3b938b7824db40971775528d8e6736d2810e04d0400abfeb",
+    "bytes": 43984
+  },
+  {
+    "file": "assets/elenco/ministro-reservado.webp",
+    "sha256": "c1e5c4451756923fc7666c9f20c796f2719ef0789f2fe9c037f7e2cb62def2de",
+    "bytes": 36916
+  },
+  {
+    "file": "assets/elenco/ministro-surpresa.webp",
+    "sha256": "e8b4fc08162b47089d9c25e05e328b57a6dbfecd5c4e1d59d443d8231d4161a3",
+    "bytes": 37238
+  },
+  {
+    "file": "assets/elenco/ministro-tristeza.webp",
+    "sha256": "d3cdbfdb951ef02f50523223659a1cfc8d362d674c7e15b06896c361d6f09805",
+    "bytes": 36340
+  },
+  {
+    "file": "assets/elenco/mulher-alegria.webp",
+    "sha256": "a558eef2c19e9b243fd46a972fa3ad6188c2adb0d2352c0d8b43de796b6707ff",
+    "bytes": 39488
+  },
+  {
+    "file": "assets/elenco/mulher-aliviado.webp",
+    "sha256": "00a6b27c34e4d61a66f113203e832639d731980e226812a7c5fa32a06c4efc27",
+    "bytes": 41454
+  },
+  {
+    "file": "assets/elenco/mulher-atento.webp",
+    "sha256": "e129ec141c0282538806a80c755aeb11b09b1e9794b6296432157e2448c3df57",
+    "bytes": 45386
+  },
+  {
+    "file": "assets/elenco/mulher-cansado.webp",
+    "sha256": "06f6a06061305da71616fbd291673ef61fc144629d24f5389e0f66f5812ff6ed",
+    "bytes": 42850
+  },
+  {
+    "file": "assets/elenco/mulher-choque.webp",
+    "sha256": "1573196393738174c68e71f278dfe994f49335cb645ef44951b2d1db4c257a3b",
+    "bytes": 43952
+  },
+  {
+    "file": "assets/elenco/mulher-concentrado.webp",
+    "sha256": "41240795f4ed05281bc70e63ad6f5222e5fe2debd001c46558a484c66fc5fc60",
+    "bytes": 45262
+  },
+  {
+    "file": "assets/elenco/mulher-confiante.webp",
+    "sha256": "294cb920132c6c571c05e40fdeeeab78c8f8738d896b0ff639f0b8f5bf3574d1",
+    "bytes": 41368
+  },
+  {
+    "file": "assets/elenco/mulher-constrangimento.webp",
+    "sha256": "17d82a16f6b836746fe1fa75cdb1d2b353879ccec552530ebfff438c67afa320",
+    "bytes": 42672
+  },
+  {
+    "file": "assets/elenco/mulher-curioso.webp",
+    "sha256": "e973b5113a4527084ecf69e1bcd6c7b18aa0713e78e74e919a4b8bd4232276fa",
+    "bytes": 42942
+  },
+  {
+    "file": "assets/elenco/mulher-decepcao.webp",
+    "sha256": "dd3e4690b078f265b9c0452d5e653e133d557defe192ecf55777dd5d12cbc924",
+    "bytes": 41848
+  },
+  {
+    "file": "assets/elenco/mulher-desconfianca.webp",
+    "sha256": "0457b906ad689398a061704dfe4a74acde3990639fa2727160dc782e6cb0edd3",
+    "bytes": 41524
+  },
+  {
+    "file": "assets/elenco/mulher-hesitante.webp",
+    "sha256": "1890f1e5d4cde1f2ecee6acee8c7c656bd3a7fe7b899174d0b3ab873dc40b665",
+    "bytes": 41276
+  },
+  {
+    "file": "assets/elenco/mulher-impaciente.webp",
+    "sha256": "40f66aac8e68da84b09f54acf158db06e8c05938a6557c04d4fa95d034515b9b",
+    "bytes": 41758
+  },
+  {
+    "file": "assets/elenco/mulher-ironia.webp",
+    "sha256": "8a2a153b876548b412530d9e0c55cca9f7009c7bdf398e5e12a513fa2616c02a",
+    "bytes": 42532
+  },
+  {
+    "file": "assets/elenco/mulher-irritacao.webp",
+    "sha256": "bf452e63a9d4a0b8f382726368ea8ef9991c971081771d52bda5710142cfd347",
+    "bytes": 41690
+  },
+  {
+    "file": "assets/elenco/mulher-neutro.webp",
+    "sha256": "2bc46176547e64e88b99ffd961c57e2966ed742699c32fe1733bb2fe450e71e6",
+    "bytes": 41212
+  },
+  {
+    "file": "assets/elenco/mulher-panico.webp",
+    "sha256": "37ee1e8cc8200c1617a0140def437bcd3bd96359ecea738b0e69128980f2ae18",
+    "bytes": 48550
+  },
+  {
+    "file": "assets/elenco/mulher-reservado.webp",
+    "sha256": "1b93611e5c07a614fdbbdf85b553720604cf2207fe5667343fddf5db000d8000",
+    "bytes": 41554
+  },
+  {
+    "file": "assets/elenco/mulher-surpresa.webp",
+    "sha256": "e62d3c65c3f77ffac5699a5a628bc7e981354065f1306ca44264b4ed42da37ea",
+    "bytes": 41152
+  },
+  {
+    "file": "assets/elenco/mulher-tristeza.webp",
+    "sha256": "8436c6cf20842f60a8f353ab7c2f6b932841f3f03f88791ba4c446422398484c",
+    "bytes": 41526
+  },
+  {
+    "file": "assets/elenco/porteiro-alegria.webp",
+    "sha256": "893500345c2ffb6911984fe9be6b7e515a9010c85de6b7f74f1408c30abe3233",
+    "bytes": 35312
+  },
+  {
+    "file": "assets/elenco/porteiro-aliviado.webp",
+    "sha256": "4e3104480ed4b590c7e9bca5936fad2d6eb909e9819e2662d8d347a1d9dc9aba",
+    "bytes": 36498
+  },
+  {
+    "file": "assets/elenco/porteiro-atento.webp",
+    "sha256": "55b4bebab4ff440ec2a2d5393c48abcda50dedf7c4ec8e248ecd2cf504c1b132",
+    "bytes": 40584
+  },
+  {
+    "file": "assets/elenco/porteiro-cansado.webp",
+    "sha256": "b30eecb62158a1c0256e12d0f570c3abeb243240ea0b171ef1723b4ce4a13cc4",
+    "bytes": 37592
+  },
+  {
+    "file": "assets/elenco/porteiro-choque.webp",
+    "sha256": "f53b2d5aeb1641630a332e993c335b77314703222938c23e580ad1e36c6c8eda",
+    "bytes": 38700
+  },
+  {
+    "file": "assets/elenco/porteiro-concentrado.webp",
+    "sha256": "4bec5c7e15e265d75177021fcf6a0d52a7b5f4b8cfd0f5eee6cbf15be80789dc",
+    "bytes": 40290
+  },
+  {
+    "file": "assets/elenco/porteiro-confiante.webp",
+    "sha256": "41c570a945cb0931389705163c2bb1d727ffc42949f04d8b614aa86d093abe2b",
+    "bytes": 35416
+  },
+  {
+    "file": "assets/elenco/porteiro-constrangimento.webp",
+    "sha256": "dbd103ac3733130f1ec48137a5deae14154c2c626b92a037846e61763490cdc2",
+    "bytes": 37214
+  },
+  {
+    "file": "assets/elenco/porteiro-curioso.webp",
+    "sha256": "83f59010722bd02fc83e83f08658bfa0aa6408e52ab642b57158ceda72557d81",
+    "bytes": 37904
+  },
+  {
+    "file": "assets/elenco/porteiro-decepcao.webp",
+    "sha256": "77ce1c8f7930dc8db72cbe25872d25517ea87ffc53205cccd6b62d535bc3f5dd",
+    "bytes": 36734
+  },
+  {
+    "file": "assets/elenco/porteiro-desconfianca.webp",
+    "sha256": "03f1daf9bc41785adcf58c765cacb2e77d856cadfef68dbe68399a56daca5a17",
+    "bytes": 36282
+  },
+  {
+    "file": "assets/elenco/porteiro-hesitante.webp",
+    "sha256": "91fdab2812ca76d5d5eec34ba803ea4055019c756c28872dc9057bf1fcf2417f",
+    "bytes": 36204
+  },
+  {
+    "file": "assets/elenco/porteiro-impaciente.webp",
+    "sha256": "69e3a3937f5b0d012aaa44ee67fec38c4855ee6e9d4ea16d097c65cf45d1b852",
+    "bytes": 36312
+  },
+  {
+    "file": "assets/elenco/porteiro-ironia.webp",
+    "sha256": "7a00e9360c5c1b1b2854c569a8cc9889c39faa0dcb443c935a243fe19043e2dc",
+    "bytes": 37340
+  },
+  {
+    "file": "assets/elenco/porteiro-irritacao.webp",
+    "sha256": "c5778f9fec2220f2ff80a9945f9a4af303eacd0bd95a731a8e4d0f64d82ec787",
+    "bytes": 36434
+  },
+  {
+    "file": "assets/elenco/porteiro-neutro.webp",
+    "sha256": "2edf033afd35e4728fb322adbca066783c8617a6700fe86e3f84e3c3929fad4d",
+    "bytes": 35920
+  },
+  {
+    "file": "assets/elenco/porteiro-panico.webp",
+    "sha256": "3f6b55cf48139f5ba7a2b7bbc7c254d30dc8f2d2dc7339930f071c490fecbac5",
+    "bytes": 42810
+  },
+  {
+    "file": "assets/elenco/porteiro-reservado.webp",
+    "sha256": "3f6dd44367bb22be9186c1705752cdcd8a0a67b7aedbc88106717a11d5f52d4c",
+    "bytes": 36772
+  },
+  {
+    "file": "assets/elenco/porteiro-surpresa.webp",
+    "sha256": "46fd067b9a5b1f0c31e2121d5a09e1f137dbbf835bf3316affbc6e59d6246594",
+    "bytes": 36282
+  },
+  {
+    "file": "assets/elenco/porteiro-tristeza.webp",
+    "sha256": "0330719c33c6ac31f7d9dd2bd06dbef67171af19a0b4cda91a9cb14afc7363ae",
+    "bytes": 35904
+  },
+  {
+    "file": "assets/elenco/rui-alegria.webp",
+    "sha256": "a7224cd3a7574bf55d95bc903be7656e8c2dbda9af4e4b3300145bdf861fbbfa",
+    "bytes": 42280
+  },
+  {
+    "file": "assets/elenco/rui-aliviado.webp",
+    "sha256": "d5764e3ec106d6a152d21698eb73a3e457a274da0d9ff90a671cee2889afb04c",
+    "bytes": 44026
+  },
+  {
+    "file": "assets/elenco/rui-atento.webp",
+    "sha256": "780d1e5fe7817d9aaab38e9cc962711ad4e0a852d0a1052e4f54bd7ddecc85b7",
+    "bytes": 47284
+  },
+  {
+    "file": "assets/elenco/rui-cansado.webp",
+    "sha256": "291d05eeaf348aaa5da3eff2fdb4546676d2fb8f737c9a7c0cf69a9bb2669514",
+    "bytes": 44980
+  },
+  {
+    "file": "assets/elenco/rui-choque.webp",
+    "sha256": "38a0d29f88004e40d89260ff0d45bd08b86ec27aeeac21e036411a4ed17659ce",
+    "bytes": 45874
+  },
+  {
+    "file": "assets/elenco/rui-concentrado.webp",
+    "sha256": "fb4fe72118096935a2c9e789a4b9b2ca28ea3c1bebd79e5187cf95f7dc892cdd",
+    "bytes": 45142
+  },
+  {
+    "file": "assets/elenco/rui-confiante.webp",
+    "sha256": "6c7f8c73023c49112bdc0a84e5f2968e81f6ea78f381d20ecbbcb05b06620db4",
+    "bytes": 43964
+  },
+  {
+    "file": "assets/elenco/rui-constrangimento.webp",
+    "sha256": "99bd0986950513babef36cc97fb68a64f8cbd337638b2ff85aac2448afa3f14f",
+    "bytes": 44234
+  },
+  {
+    "file": "assets/elenco/rui-curioso.webp",
+    "sha256": "f05ec94cba0c5f0fbeb0737ef40c80815a986f01689d2e27ef7da4a0ecd091b7",
+    "bytes": 44984
+  },
+  {
+    "file": "assets/elenco/rui-decepcao.webp",
+    "sha256": "c2576210e3ebf718b831be7aef57a2f4ef3a2796bcf79a871fe41180cc9c5720",
+    "bytes": 44824
+  },
+  {
+    "file": "assets/elenco/rui-desconfianca.webp",
+    "sha256": "3c5260e2b80c548ffcba386fe3562ac5ce58d702929ea8b3884a1ca431653fd8",
+    "bytes": 43876
+  },
+  {
+    "file": "assets/elenco/rui-hesitante.webp",
+    "sha256": "a0898c84d67e6dfbaf56958e3cd1f810b8258e1ebfc9a9d62168a50913e53e09",
+    "bytes": 43948
+  },
+  {
+    "file": "assets/elenco/rui-impaciente.webp",
+    "sha256": "670e406693541b5bbb87189b8a634fa6e54c89f339173a2f7766a52b194ff87c",
+    "bytes": 44580
+  },
+  {
+    "file": "assets/elenco/rui-ironia.webp",
+    "sha256": "1914eb45651bd035cff0322a9ecde19b74d582600e4dbf4dcd00dc663e5972b6",
+    "bytes": 44846
+  },
+  {
+    "file": "assets/elenco/rui-irritacao.webp",
+    "sha256": "72bf87f1ed30663ab142a624b47504e9840de0c788a71d2ca448443438c4d7f3",
+    "bytes": 43092
+  },
+  {
+    "file": "assets/elenco/rui-neutro.webp",
+    "sha256": "a44043b737b96e8f98262e01b3824e17bbb380d350f54e1c93b749bfcf65abc6",
+    "bytes": 43366
+  },
+  {
+    "file": "assets/elenco/rui-panico.webp",
+    "sha256": "425dc33d8c5472e40d812ecd57809e2055f4a0fefee9ab48f81d0c4a54092583",
+    "bytes": 46956
+  },
+  {
+    "file": "assets/elenco/rui-reservado.webp",
+    "sha256": "6271a8d1f70b08270b97ef612a770b5257f9f3b169d532e5ac6f5189bd7d81d6",
+    "bytes": 44252
+  },
+  {
+    "file": "assets/elenco/rui-surpresa.webp",
+    "sha256": "a64cd0e456c7b0f468393fac56781038b08673cf1bcfbf96bfda3c4e8242de00",
+    "bytes": 43120
+  },
+  {
+    "file": "assets/elenco/rui-tristeza.webp",
+    "sha256": "4d8e52c43c2cb49bd504c9434ef5b875176d3098def49d59ac9b72d289ef527f",
+    "bytes": 43388
+  },
+  {
+    "file": "assets/elenco/sindica-alegria.webp",
+    "sha256": "ced7a0aebfa33e8c593892b39cd7bb39035bf782b0e54c93b03f1662a79a27cf",
+    "bytes": 36944
+  },
+  {
+    "file": "assets/elenco/sindica-aliviado.webp",
+    "sha256": "4bac9b3beaf8e5c8bf1efa5b02ab0d26b20d16f0f5eca1325df2575af0f94949",
+    "bytes": 39660
+  },
+  {
+    "file": "assets/elenco/sindica-atento.webp",
+    "sha256": "bbd2bbaa8893340f62d9773d58fc8275c413d414a80ba261c30ef68d9a708d1a",
+    "bytes": 42428
+  },
+  {
+    "file": "assets/elenco/sindica-cansado.webp",
+    "sha256": "757d4e02d4e8f9651c3bf9391e4bf5880d6504f803b31eec6db85804fed4d5bb",
+    "bytes": 40130
+  },
+  {
+    "file": "assets/elenco/sindica-choque.webp",
+    "sha256": "c0f30414428e0ad59f3aa788681a8b455ab43c997b6a2cf8554ba912c831a35e",
+    "bytes": 41454
+  },
+  {
+    "file": "assets/elenco/sindica-concentrado.webp",
+    "sha256": "b9357c831c51698cee9d7a8adbafac84c49477f14184404e5aca7821abf1bfa1",
+    "bytes": 41716
+  },
+  {
+    "file": "assets/elenco/sindica-confiante.webp",
+    "sha256": "e73d4e6bf980f19dac58adea3fd7843672ad6e78fbfd0bce85568e0f21e87e2b",
+    "bytes": 38704
+  },
+  {
+    "file": "assets/elenco/sindica-constrangimento.webp",
+    "sha256": "37159f3a10df9ab1692dd3eed5f13b13d1f1aec00cdd8363c73e10c41a0dab56",
+    "bytes": 40284
+  },
+  {
+    "file": "assets/elenco/sindica-curioso.webp",
+    "sha256": "c508d6b683c442b85ff0ee137d7fa8ae70c0c77a329e8e3665d15748aa8d7385",
+    "bytes": 40104
+  },
+  {
+    "file": "assets/elenco/sindica-decepcao.webp",
+    "sha256": "2f8fa4f0a337f891f4e881d356f728894f97c1115948fb2667c95ea7fd0feacb",
+    "bytes": 39924
+  },
+  {
+    "file": "assets/elenco/sindica-desconfianca.webp",
+    "sha256": "24c285c620525aee2d57e7ea68be1241b3a2aace4d2ba878c54519a069e33e1a",
+    "bytes": 39080
+  },
+  {
+    "file": "assets/elenco/sindica-hesitante.webp",
+    "sha256": "0dec2f7252a3b69e8d3ac5775e579c868396a5493a4a47a8e22cf13353036dde",
+    "bytes": 38392
+  },
+  {
+    "file": "assets/elenco/sindica-impaciente.webp",
+    "sha256": "cd49634d9d97909534f9121278dad5c16fabdde6966a15054c2a7c3f7e932d60",
+    "bytes": 38686
+  },
+  {
+    "file": "assets/elenco/sindica-ironia.webp",
+    "sha256": "481047635d2a1887eaf047c827b425d360f21b0fb575cc9b6cc31b56de3f6bbc",
+    "bytes": 39842
+  },
+  {
+    "file": "assets/elenco/sindica-irritacao.webp",
+    "sha256": "688d164321608f238dce8fa1f84b89c5710c932935c18e29f54cb87aa6f28d2a",
+    "bytes": 38188
+  },
+  {
+    "file": "assets/elenco/sindica-neutro.webp",
+    "sha256": "df36b58d06ad42d709ac7dc0b4fff60c4740af39d10d9e2013305161474f22b9",
+    "bytes": 38224
+  },
+  {
+    "file": "assets/elenco/sindica-panico.webp",
+    "sha256": "a10ea5d5ade9e1bc2d3d7a30a535b5b61ed75b5832bdeb468dfb315b0dfb4ef3",
+    "bytes": 45084
+  },
+  {
+    "file": "assets/elenco/sindica-reservado.webp",
+    "sha256": "2e8f5e559172e88a4aaf4e28b22aa3ac1e16acfbaf96e31bd06d921abccd476b",
+    "bytes": 38886
+  },
+  {
+    "file": "assets/elenco/sindica-surpresa.webp",
+    "sha256": "5b5f46ca5673da9e1a9bf5c5a909e409c8d947af1078623a96ce80f52103ac3d",
+    "bytes": 38292
+  },
+  {
+    "file": "assets/elenco/sindica-tristeza.webp",
+    "sha256": "fae2b69fbce542d14fd59008675853e40732ebbc34637617fadcf8b420da6c35",
+    "bytes": 38738
+  },
+  {
+    "file": "assets/elenco/vizinho-alegria.webp",
+    "sha256": "7204c5d96adf77ff70de1a012a7004b44905c687463fbd857e446c03085f4a13",
+    "bytes": 43466
+  },
+  {
+    "file": "assets/elenco/vizinho-aliviado.webp",
+    "sha256": "b3a493bfd01273901ac7f5b7e8c69b3933e6b70c464aec73d16780dc00868ef2",
+    "bytes": 45896
+  },
+  {
+    "file": "assets/elenco/vizinho-atento.webp",
+    "sha256": "7c348ce6b91f7521efbcf226e8b010a4c80331b276574b27521c15d6b8fc319a",
+    "bytes": 47566
+  },
+  {
+    "file": "assets/elenco/vizinho-cansado.webp",
+    "sha256": "1292f17f1b0ed6f31b28d918cefd36df6d6735a7d734fce253b04a0193f3fd5c",
+    "bytes": 45786
+  },
+  {
+    "file": "assets/elenco/vizinho-choque.webp",
+    "sha256": "8ba51ca214adba5d6a13a5ea2e30d1aeb302601072685b1a54176b2e4185d4b5",
+    "bytes": 48242
+  },
+  {
+    "file": "assets/elenco/vizinho-concentrado.webp",
+    "sha256": "4fe973cf393031a3a2f4d9abf52d6979a75049019413293a9c33fa3fe3500adc",
+    "bytes": 46298
+  },
+  {
+    "file": "assets/elenco/vizinho-confiante.webp",
+    "sha256": "1d4e07712929bf10318d922194634ffd502516e78698d5c6b3db0e2046db1844",
+    "bytes": 46466
+  },
+  {
+    "file": "assets/elenco/vizinho-constrangimento.webp",
+    "sha256": "3068a89c46590c20df986a3506f06af00da7b17b35146f1bfb716a08026c3566",
+    "bytes": 46276
+  },
+  {
+    "file": "assets/elenco/vizinho-curioso.webp",
+    "sha256": "4eb1a42f861b1a3e8b291af93a7955c6a2b134e448836ea7b229b134c0c82298",
+    "bytes": 46230
+  },
+  {
+    "file": "assets/elenco/vizinho-decepcao.webp",
+    "sha256": "46a9331e7e04ca402a3276a3a5d2092e58dc67423a04079e81c5bd0b64e8fa47",
+    "bytes": 45860
+  },
+  {
+    "file": "assets/elenco/vizinho-desconfianca.webp",
+    "sha256": "a2c5d420e3ac287604e12b87a5abbd3366e84b867afcc680c5c270da1aaf20fe",
+    "bytes": 45312
+  },
+  {
+    "file": "assets/elenco/vizinho-hesitante.webp",
+    "sha256": "1f50610c2265c13c48ff492ba57c9f15e4d66ca792a04612f571a661693296c0",
+    "bytes": 45460
+  },
+  {
+    "file": "assets/elenco/vizinho-impaciente.webp",
+    "sha256": "9f0669972ed8310e293844e4834d8fb5647b44c5e04f8929147e505dbc013fd5",
+    "bytes": 46038
+  },
+  {
+    "file": "assets/elenco/vizinho-ironia.webp",
+    "sha256": "ea19879deea14091f5bd9f37e57f57cbafb876995ba9a43501359af70852561a",
+    "bytes": 46328
+  },
+  {
+    "file": "assets/elenco/vizinho-irritacao.webp",
+    "sha256": "77686967e866bf285392efca4e2c8a4ae4c154059f3d95a11be2b71351939917",
+    "bytes": 45414
+  },
+  {
+    "file": "assets/elenco/vizinho-neutro.webp",
+    "sha256": "79c1f8077967e9a2c1ce59989c75397d6301e2b1deefdaffd0c3daa39982bcc5",
+    "bytes": 45216
+  },
+  {
+    "file": "assets/elenco/vizinho-panico.webp",
+    "sha256": "fd8b96bdcbb506d90f11470b7778882d58e5b7694a27f240f689a2f51be38984",
+    "bytes": 48608
+  },
+  {
+    "file": "assets/elenco/vizinho-reservado.webp",
+    "sha256": "e6f2d9e098616aeb6ea61f2a2cafab899ddee8c726e8127264fe929745fe08df",
+    "bytes": 45638
+  },
+  {
+    "file": "assets/elenco/vizinho-surpresa.webp",
+    "sha256": "21c26b38adfe05d5a857cead5437d199827d30d8d9c52465a3ce79778bea4505",
+    "bytes": 45410
+  },
+  {
+    "file": "assets/elenco/vizinho-tristeza.webp",
+    "sha256": "f1826c22aadcb28869b9f9ff1b9c8cf0713c4b0022f68865e39ea5d7c0b5bc7b",
+    "bytes": 45014
+  },
+  {
+    "file": "assets/fontes/Barlow-OFL.txt",
+    "sha256": "186d750eb496a4c17a76385f82be6aea2ac1cf2de074a811d63786cf374ea73f",
+    "bytes": 4377
+  },
+  {
+    "file": "assets/fontes/Leitura.ttf",
+    "sha256": "deaa68141fa5ad21bd17d7c11fa79183ceda19b32e40ff5c33874d42f3636dde",
+    "bytes": 1544512
+  },
+  {
+    "file": "assets/fontes/Manchete.ttf",
+    "sha256": "e476562ec9c1e16cf16475895b511f08c804f438cc9a9f80a44ea50a0eeb5b65",
+    "bytes": 109912
+  },
+  {
+    "file": "assets/fontes/Noto-OFL.txt",
+    "sha256": "5e0da210fb04058a8c0087985d2d456b931c2579811a49655721d3cf0c36b6d6",
+    "bytes": 4350
+  },
+  {
+    "file": "assets/prologo/1.webp",
+    "sha256": "9c210602de770b82d98332375f4d28c235b72b6880015a652b3a93770b026e9c",
+    "bytes": 283094
+  },
+  {
+    "file": "assets/prologo/2.webp",
+    "sha256": "2d07fd3dd3f3662b1ca8dd8453d970a8d5023869a211f935aec856e5a8886f79",
+    "bytes": 256506
+  },
+  {
+    "file": "assets/prologo/3.webp",
+    "sha256": "f8f318ce890a501c0a5625701846d52b4a9f023bf8056ba8cbd0afecaa76e79b",
+    "bytes": 239826
+  },
+  {
+    "file": "assets/rostos/a-aliviado.webp",
+    "sha256": "c38d625f6923dd3659a388431cc79a44ebf61ca9fbfade2faaed29c3a2f47ddb",
+    "bytes": 21644
+  },
+  {
+    "file": "assets/rostos/a-cansado.webp",
+    "sha256": "d91800444d3da9dd90327ee1d76fca3d90214c77f0c2e15543b4b938195e5913",
+    "bytes": 21244
+  },
+  {
+    "file": "assets/rostos/a-confiante.webp",
+    "sha256": "5e65578304a1bf7fb8c26b27c1d828dd24418458c912f1ecb29f6e36c9bc6ffd",
+    "bytes": 21248
+  },
+  {
+    "file": "assets/rostos/a-constrangido.webp",
+    "sha256": "b9fc9a819bd4d73432170e7a2abb09c54196313c37b8a203f66861e0947501cc",
+    "bytes": 21138
+  },
+  {
+    "file": "assets/rostos/a-desconfiado.webp",
+    "sha256": "d20ee46725974c6d1fe5ca4f079bf28497719f28cfa603e5db5ccd9877821d21",
+    "bytes": 21182
+  },
+  {
+    "file": "assets/rostos/a-ironia.webp",
+    "sha256": "bc043d4870839887675367d6ebe79b2a7aa3682bfd00ba450d9967908ff07245",
+    "bytes": 21182
+  },
+  {
+    "file": "assets/rostos/a-neutro.webp",
+    "sha256": "14a05334de9de3650057494eb6dd4783f7e12aa5dd223495f2977db4b92955f4",
+    "bytes": 20876
+  },
+  {
+    "file": "assets/rostos/a-panico.webp",
+    "sha256": "208a5f511e346fe718c4d10da659d5881f27ae7f43f1aa52d92f9dcf2d861442",
+    "bytes": 22320
+  },
+  {
+    "file": "assets/rostos/b-aliviado.webp",
+    "sha256": "9663a6017ad41b011dce90d56eb3c61a5c5df6d2fab26e10ffbfbbd77d57277d",
+    "bytes": 22694
+  },
+  {
+    "file": "assets/rostos/b-cansado.webp",
+    "sha256": "e4fa725284d1a3a4ef918e6239f8516aa8a3dad50bc03cb5fa373cd402795394",
+    "bytes": 22646
+  },
+  {
+    "file": "assets/rostos/b-confiante.webp",
+    "sha256": "34cf6da9d5f18ca58d33cb5564d087b288c25f754621f15783e594d9e0757e74",
+    "bytes": 22524
+  },
+  {
+    "file": "assets/rostos/b-constrangido.webp",
+    "sha256": "14925fcbb59e1c652e2c6ae3d51731bf099dacba259059969f364f622fc0aad8",
+    "bytes": 22616
+  },
+  {
+    "file": "assets/rostos/b-desconfiado.webp",
+    "sha256": "221b7424eafc30e91b1dee8846af217a6b8822b1be6e772bd56e6966929cbb3e",
+    "bytes": 22300
+  },
+  {
+    "file": "assets/rostos/b-ironia.webp",
+    "sha256": "edbada9a52f8bcedb5dbc2aceaae3573f5760b3adbae3fe179244994410bc1f1",
+    "bytes": 22662
+  },
+  {
+    "file": "assets/rostos/b-neutro.webp",
+    "sha256": "929f496adf166e1d4565a640a2f1ce11dda811acae03aee22baa5e6155769cc4",
+    "bytes": 22116
+  },
+  {
+    "file": "assets/rostos/b-panico.webp",
+    "sha256": "8aa2019cb33b443157c0950d16cdd22d1f800b737e566ce3f7186a241862f533",
+    "bytes": 23052
+  },
+  {
+    "file": "assets/rostos/base-a.webp",
+    "sha256": "ea8eea37a6c3054772a7aa73654f531a28a84416952d8df83162d3b04bb1b916",
+    "bytes": 48390
+  },
+  {
+    "file": "assets/rostos/base-b.webp",
+    "sha256": "e4fa21446094cfdae2fa77fd3c0ba650017388d014ca55bda1c75c02b3196e3d",
+    "bytes": 51258
+  },
+  {
+    "file": "assets/rostos/base-c.webp",
+    "sha256": "0dce20c80211ebdd98335b13ecd8d06957e39c3fed9659730fbd8f791bcb9436",
+    "bytes": 50656
+  },
+  {
+    "file": "assets/rostos/c-aliviado.webp",
+    "sha256": "85d9d987fc09189d493744560d93c275e5e8e45c9e30c59928463f80c6dca78b",
+    "bytes": 22408
+  },
+  {
+    "file": "assets/rostos/c-cansado.webp",
+    "sha256": "7e2d45ca2152a299899384b3cd5cac2b84cbf58c857b403abad076ead2f50833",
+    "bytes": 21772
+  },
+  {
+    "file": "assets/rostos/c-confiante.webp",
+    "sha256": "1cca7f382f0b042ca059dd503d018ae752bf78093ce84d2afb6e3a9e440265ef",
+    "bytes": 21770
+  },
+  {
+    "file": "assets/rostos/c-constrangido.webp",
+    "sha256": "9bbdeee04379188955c3a3fc342bc93514c5f394f4d34d04a94a23977ac62d1a",
+    "bytes": 22546
+  },
+  {
+    "file": "assets/rostos/c-desconfiado.webp",
+    "sha256": "fe602933a4c7ed39a84c3570f80d9bfa2705defe9566eaa219742a497f4ae479",
+    "bytes": 21570
+  },
+  {
+    "file": "assets/rostos/c-ironia.webp",
+    "sha256": "f00ca9aa89f5e5ec40075517d3adab76f7500f870e995c1b004420d4a3bac4c3",
+    "bytes": 22250
+  },
+  {
+    "file": "assets/rostos/c-neutro.webp",
+    "sha256": "3f1de3ad1d32bf8fe4931b60efa7cbee2663573df1468cc8f005bab6a02b6a7b",
+    "bytes": 21460
+  },
+  {
+    "file": "assets/rostos/c-panico.webp",
+    "sha256": "4e440d690738adce4cc48c9df26c17199c022f51c474c08afdb35941d6331805",
+    "bytes": 22522
+  },
+  {
+    "file": "assets/visual.js",
+    "sha256": "96a1399876f0cd2dffae26c079a3db2d6ea7cfbafa4671f4a384692827829c23",
+    "bytes": 3973248
+  },
+  {
+    "file": "atuacao.js",
+    "sha256": "b56a22c5d076a931c9afdf97e49d4e9070cbaeafa6f81a69c160ac1e6cc4c500",
+    "bytes": 8900
+  },
+  {
+    "file": "atualizacao.css",
+    "sha256": "0757a567116bad04bda37e715767ea03e65f2157775ea9cfb508d078723474f2",
+    "bytes": 1109
+  },
+  {
+    "file": "audio/agora-explica.wav",
+    "sha256": "a72681053d8dcaf4b56f1b5088674a8677365a8688d10cc8384c57368c0a0ea0",
+    "bytes": 784044
+  },
+  {
+    "file": "audio/batidas.wav",
+    "sha256": "12e73fb88a87461136c357a98dd8d9769e20c937982b331723e851ba3e782039",
+    "bytes": 28710
+  },
+  {
+    "file": "audio/carimbo.wav",
+    "sha256": "49030c34168fb6caff021499cf992496fb15d51295a40c1c6283791ad17646dc",
+    "bytes": 22094
+  },
+  {
+    "file": "audio/derrota.wav",
+    "sha256": "6d6d8db2aeec070ff641f99b0ab6326ae5ac75e4ab0f2bc672911964f396554b",
+    "bytes": 123524
+  },
+  {
+    "file": "audio/era-so-entregar.wav",
+    "sha256": "d575a15d4ad4706f76026947036cf196568d1a392c0d289ba40b1b875172552c",
+    "bytes": 784044
+  },
+  {
+    "file": "audio/fim-do-turno.wav",
+    "sha256": "2752b7343288ed59caaca8ac43b710f472480ab7e7f29bc08fd090596914bc03",
+    "bytes": 784044
+  },
+  {
+    "file": "audio/impacto.wav",
+    "sha256": "2e057190bde5326065b02d1b253669bc63a6a09d0da3172d477c446523ad25b0",
+    "bytes": 22094
+  },
+  {
+    "file": "audio/mensagem.wav",
+    "sha256": "ab51bf064a3f08d3fcfcf9c8c1689ebe58b5791adf735e79c365239229951ec1",
+    "bytes": 22094
+  },
+  {
+    "file": "audio/turno-comecou.wav",
+    "sha256": "1b5ac0e8748644c9825ef87956a4a5994319e00f8fc631f70809f1b04b1d6fd7",
+    "bytes": 784044
+  },
+  {
+    "file": "audio/vitoria.wav",
+    "sha256": "6a7e3f6d24e82b111613baf4449f1daeb11ba2b42b36397f5f2a019e11aaf03c",
+    "bytes": 123524
+  },
+  {
+    "file": "caderno.js",
+    "sha256": "b6dcb335ed38ae5435f9ba3127bee1a270cadddcea6070f2ae65aa9ed71aa6f6",
+    "bytes": 7512
+  },
+  {
+    "file": "casos.js",
+    "sha256": "6dab88509cf92dc9ceaca77980111bb4ec0e0c0ca015ba2b3775bce877bce402",
+    "bytes": 28759
+  },
+  {
+    "file": "continuidade.js",
+    "sha256": "56ac9794d9bbde942a63d50c5290f4dadf549196a0f5a0c0db870c4098ceb261",
+    "bytes": 17528
+  },
+  {
+    "file": "editorial.css",
+    "sha256": "2f62367c9db4cc4a943aecf8463d943d2b40dba450cea67b58e3947108bcc6a7",
+    "bytes": 6614
+  },
+  {
+    "file": "feedback.js",
+    "sha256": "98fc562f8c185154f90e30574aa38f31c38c8e8ba2e5a923c3bfe0ccb9e39bbf",
+    "bytes": 2317
+  },
+  {
+    "file": "folhas.js",
+    "sha256": "231937fce122052d964d32dd678084ca2d11a8b8d1e68e0af987a577255c818f",
+    "bytes": 758
+  },
+  {
+    "file": "grafismos.js",
+    "sha256": "5cc41fee4a9fa8f375f668b4fdde5a18cd49d53a282d8179d1696a0787d81600",
+    "bytes": 2453
+  },
+  {
+    "file": "icons/v1-192.png",
+    "sha256": "067babae3ed45548d4d302b8a9db5979402644a1d301377aab9a50624cd4429a",
+    "bytes": 51074
+  },
+  {
+    "file": "icons/v1-512.png",
+    "sha256": "81dc8975d27c7a837a57de5a7fffacc9360447e6e69438bdb93ec117be84c7b1",
+    "bytes": 362282
+  },
+  {
+    "file": "index.html",
+    "sha256": "4606662c01464470540c1aa65a6e5b6c37db96438198809d5daf616b4afc9e05",
+    "bytes": 1458
+  },
+  {
+    "file": "manifest.webmanifest",
+    "sha256": "8f2bc35a2d1de2080fdc33e834b72e43795c1b2fe337dc296c21c2830f043a14",
+    "bytes": 621
+  },
+  {
+    "file": "motor.js",
+    "sha256": "071952bea6e824fe00ada25b6ee135bff170141b5b76599792d61bf3d3741819",
+    "bytes": 1180
+  },
+  {
+    "file": "observacoes.js",
+    "sha256": "0755382969d0f8fa63fad28e7e79305c8ce695e45f1eeb0e9ad8fa2aadd8e18b",
+    "bytes": 8842
+  },
+  {
+    "file": "portaria.js",
+    "sha256": "c04acb804f3f655386b8d611c8fc4d542f227b1cdd011bfbc2c5fe70e8327808",
+    "bytes": 17828
+  },
+  {
+    "file": "prologo.js",
+    "sha256": "0bd7ff2b3bf6b714c5874af6696ea34ecae61b8e429b143eb81324c343072eba",
+    "bytes": 1511
+  },
+  {
+    "file": "pwa.js",
+    "sha256": "3170d98d00e70cacd2d3b4920c0e9163cdcaa3fa9883d28041089f2e0fcb5df5",
+    "bytes": 3191
+  },
+  {
+    "file": "rotulos-v1.js",
+    "sha256": "64b704e41b552282589fe3a32330c3547a435f166d6e0de2b96d806f7ad40412",
+    "bytes": 2314
+  },
+  {
+    "file": "style.css",
+    "sha256": "755d7362acbb0c213d33b16fae58a1b4fab64a06545b3ac2bbb6561e4d1ca8ab",
+    "bytes": 17635
+  },
+  {
+    "file": "sw.js",
+    "sha256": "f19c2149f2361972636d46a8f14d926f404046d207989c77e12b48b8f2fe8769",
+    "bytes": 110630
+  },
+  {
+    "file": "tintas.js",
+    "sha256": "3354dc7d4af5d5ea37ef6a119ab8ea257dae79186690877add006ebb17a15d7c",
+    "bytes": 3492
+  },
+  {
+    "file": "transporte.js",
+    "sha256": "819004a8fcc9a6a2ae412a6e231d25f001032199edb2eeb05da42555586c6bcd",
+    "bytes": 6084
+  },
+  {
+    "file": "_headers",
+    "sha256": "e42a756c8e76a7c374e8052692dda310ead51b30cee38be45e0503ce55e9f17d",
+    "bytes": 135
+  }
+]

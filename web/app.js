@@ -6,7 +6,10 @@
   const initialProfile={base:'a',face:'original',skin:'original',hair:'original',outfit:'original',headwear:'original',pin:'original',mount:'original',trim:'original',name:'',pronouns:''};
   const shifts=[[0,4,8],[1,5,9],[2,6,10],[3,7,11]];
   let shift=null,shiftSequence=0;
-  const gameScreens=['entrada','escolha','consequencia','desfecho'];
+  const gameScreens=['entrada','escolha','consequencia','desfecho','vinculo','transporte'];
+  let world=Continuidade.fresh(),saveBlocked=false,restoreMenu=false;
+  const audioDefaults={music:true,effects:true,volume:.55,haptics:'results'};
+  let sound={...audioDefaults};
   const cadernoScreens=['universo','capitulos','historico','revisao','resumo','transicao','documento'];
   const expressionLabels=Object.fromEntries(Object.entries(Atelier.cues).map(([k,v])=>[k,v[0]]));
   const steps={prep:'O primeiro gesto',social:'O encontro',event:'Um imprevisto',delivery:'A entrega',repair:'Última conferência',end:'Recibo'};
@@ -31,7 +34,7 @@
   const clock=()=>performance.timeOrigin+performance.now();
   const clone=o=>JSON.parse(JSON.stringify(o));
   const rehearsal=window.FVQE_ENSAIO===true||new URLSearchParams(location.search).get('ensaio')==='1';
-  const saved=()=>({version:1,screen,profile,draft,prefs,session,book,shift,shiftSequence,shownExpression,configReturn,avatarReturn,intro});
+  const saved=()=>({version:2,world,sound,screen,profile,draft,prefs,session,book,shift,shiftSequence,shownExpression,configReturn,avatarReturn,intro});
   function cleanProfile(p){
     return Object.fromEntries(Object.entries(initialProfile).map(([k,defaultValue])=>[k,typeof p?.[k]==='string'?p[k].slice(0,k==='pronouns'?32:48):defaultValue]));
   }
@@ -42,6 +45,12 @@
   }
   function restoreAttempt(s){
     if(!s)return null;
+    if(s.schema===2){
+      if(!Number.isInteger(s.id)||s.id<0||s.id>12||!gameScreens.includes(s.phase)||!Array.isArray(s.history)||s.history.length>100||!s.state||!Number.isFinite(s.metrics?.started)||!Array.isArray(s.bridges)||s.bridges.some(k=>!Continuidade.scenes[k]))throw Error('registro inválido');
+      if(s.id===12){PortariaIA.view(s.state)}else if(!['prep','social','event','delivery','repair','end'].includes(s.state.step))throw Error('cena inválida');
+      if(s.history.some(h=>typeof h.choice!=='string'||typeof h.reaction!=='string'))throw Error('histórico inválido');
+      return s;
+    }
     if(!Number.isInteger(s.id)||s.id<0||s.id>12||!gameScreens.includes(s.phase)||!Array.isArray(s.history)||s.history.length>16||!Number.isFinite(s.metrics?.started))throw Error('tentativa inválida');
     const isPortaria=s.id===12,c=CASOS[s.id];
     let replay=isPortaria?PortariaIA.start():{step:'prep',ready:false,awkward:false};
@@ -54,13 +63,15 @@
     if(s.phase==='entrada'&&s.history.length||s.phase==='consequencia'&&!s.history.length||s.phase==='desfecho'&&!ended||s.phase==='escolha'&&ended)throw Error('fase inválida');
     const cleanMetrics={started:s.metrics.started};
     for(const k of ['firstChoice','firstConsequenceDOM','firstConsequenceFrame','ending'])cleanMetrics[k]=Number.isFinite(s.metrics[k])?s.metrics[k]:null;
-    return {...s,state:replay,metrics:cleanMetrics,line:s.history.at(-1)?.reaction||'',expression:Object.hasOwn(expressionLabels,s.expression)?s.expression:'neutro',inspections:Array.isArray(s.inspections)?s.inspections.filter(x=>x&&typeof x.key==='string'):[]};
+    return {...s,schema:2,uid:'migrada-'+s.metrics.started,bridges:[],bridgeIndex:0,bridgeResponse:null,bridgeReturn:'escolha',cargo:null,support:false,completed:s.phase==='desfecho',state:replay,metrics:cleanMetrics,line:s.history.at(-1)?.reaction||'',expression:Object.hasOwn(expressionLabels,s.expression)?s.expression:'neutro',inspections:Array.isArray(s.inspections)?s.inspections.filter(x=>x&&typeof x.key==='string'):[]};
   }
   try{
-    const raw=!rehearsal&&sessionStorage.getItem(storageKey);
+    const raw=!rehearsal&&(localStorage.getItem(storageKey)||sessionStorage.getItem(storageKey));
     if(raw){
       const d=JSON.parse(raw);
-      if(d?.version!==1)throw Error('formato desconhecido');
+      if(![1,2].includes(d?.version))throw Error('formato desconhecido');
+      if(d.version===2){if(!d.world||!Array.isArray(d.world.log)||!Array.isArray(d.world.rumors)||['facts','knowledge','relations','favors','promises'].some(k=>!d.world[k]||typeof d.world[k]!=='object'||Array.isArray(d.world[k])))throw Error('memória inválida');world=d.world;sound={...audioDefaults,music:d.sound?.music!==false,effects:d.sound?.effects!==false,volume:Number.isFinite(d.sound?.volume)?Math.max(0,Math.min(1,d.sound.volume)):.55,haptics:['off','results','all'].includes(d.sound?.haptics)?d.sound.haptics:'results'};}
+      restoreMenu=true;
       if(d.intro && [0,1,2].includes(d.intro.page) && ['menu','ajuda','entrega','turno'].includes(d.intro.target))intro=d.intro;
       profile=cleanProfile(d.profile);draft=cleanProfile(d.draft||profile);
       for(const key of Object.keys(prefs))prefs[key]=d.prefs?.[key]===true;
@@ -80,11 +91,11 @@
       if(screen==='turnofim'&&shift?.receipts.length!==3)screen='menu';
     }
   }catch{
-    screen='menu';session=null;sessionNotice='O registro anterior desta aba não pôde ser lido. Você pode começar outra entrega.';
+    screen='menu';session=null;saveBlocked=true;sessionNotice='Não foi possível ler o progresso anterior. Ele foi preservado. Você pode exportá-lo antes de confirmar uma nova partida.';
   }
   function save(){
     if(rehearsal)return;
-    try{sessionStorage.setItem(storageKey,JSON.stringify(saved()))}
+    try{if(!saveBlocked){localStorage.setItem(storageKey,JSON.stringify(saved()));sessionNotice='';}}
     catch{sessionNotice='O navegador ficou sem espaço ou não conseguiu salvar. A partida continua nesta página. Se você atualizar, pode perder o progresso.'}
     const status=$('storage-status');
     if(status){status.hidden=!sessionNotice;status.textContent=sessionNotice}
@@ -220,9 +231,10 @@
     $('leftRail').innerHTML='<div class="rule"></div><small class="binder">COLEÇÃO / FICÇÃO INTERATIVA</small><div class="arch">Foi você<br>que escolheu</div><hr><p>O Arquivo das Escolhas</p><small>INOVAÇÃO CHRIS · 2026/2</small>';
     $('rightRail').innerHTML='<small class="binder">'+(active?'FOLHA DE SERVIÇO':'CIRCULAÇÃO INTERNA')+'</small>'+icon(active?n:9)+'<hr><b>'+esc(active?chapter(n):'Caderno do entregador')+'</b><p>'+esc(active?goal(n):'A encomenda muda de mãos. Você decide o que vai pro papel.')+'</p>'+(active?dataBtn('Consultar histórico','open','historico'):'');
     $('rightRail').querySelectorAll('button').forEach(b=>b.className='rail-link');
-    $('stage').setAttribute('data-screen',screen);save();
+    $('stage').setAttribute('data-screen',screen);
+    Feedback.configure(sound);Feedback.context(['pausa','config','acessibilidade'].includes(screen)?'paused':screen==='turnofim'?'ending':screen==='vinculo'&&Continuidade.scenes[session?.bridges?.[session.bridgeIndex]]?.requires?'confusion':session&&gameScreens.includes(screen)?'route':'opening');save();
   }
-  function open(id){if(id==='menu')intro.credit=false;if(id==='config'&&screen!=='acessibilidade')configReturn=screen==='pausa'?'pausa':'menu';if(id==='acessibilidade'&&screen!=='config')configReturn=session?'pausa':'menu';screen=id;draw()}
+  function open(id){if(screen==='transporte'&&id!==screen)Feedback.cancel();if(id==='menu')intro.credit=false;if(id==='config'&&screen!=='acessibilidade')configReturn=screen==='pausa'?'pausa':'menu';if(id==='acessibilidade'&&screen!=='config')configReturn=session?'pausa':'menu';screen=id;draw()}
   function introduce(target,id=0){
     if(intro.credit && target==='entrega'){start(id);return}
     if(intro.credit && target==='turno'){startShift();return}
@@ -254,8 +266,8 @@
       shift=null;
     }
     intro.credit=false;
-    session={id,state:id===12?PortariaIA.start():{step:'prep',ready:false,awkward:false},history:[],line:'',phase:'entrada',expression:'neutro',inspections:[],metrics:{started:clock(),firstChoice:null,firstConsequenceDOM:null,firstConsequenceFrame:null,ending:null}};
-    open('entrada');
+    session={schema:2,uid:Date.now().toString(36)+'-'+Math.random().toString(36).slice(2),bridges:Continuidade.queue(world,id),bridgeIndex:0,bridgeReturn:'escolha',bridgeResponse:null,cargo:null,support:false,id,state:id===12?PortariaIA.start():{step:'prep',ready:false,awkward:false},history:[],line:'',phase:'entrada',expression:'neutro',inspections:[],metrics:{started:clock(),firstChoice:null,firstConsequenceDOM:null,firstConsequenceFrame:null,ending:null}};
+    open('entrada');Feedback.fire(id===12?'knock':'message');
   }
   function startShift(){
     if(!rehearsal&&session&&(session.phase!=='desfecho'||(shift&&shift.receipts.length<3))&&!confirm('Se você começar o turno agora, a tentativa atual termina aqui. Quer começar?'))return;
@@ -285,10 +297,10 @@
   function fromId(s){return special()?PortariaIA.view(s).id:s.step}
   function advance(){
     if(!session)return;
-    if(screen==='entrada')phase('escolha');
+    if(screen==='entrada'){if(session.bridges?.length){phase('vinculo');if(Continuidade.scenes[session.bridges[0]].requires)Feedback.fire('reveal');}else beginTransport();}
     else if(screen==='consequencia'){
-      if(result().ended){const at=clock();session.metrics.ending??=at;const res=result();book.push({id:cn(),name:name(),at,win:!!res.win,awkward:!!res.awkward,history:clone(session.history),metrics:clone(session.metrics)});if(shift)shift.receipts.push({id:cn(),win:!!res.win,awkward:!!res.awkward,at});phase('desfecho')}
-      else phase('escolha');
+      if(result().ended){if(cn()===2&&session.state.win&&session.cargo?.impacts&&!session.marmitaExplained){session.marmitaExplained=true;session.bridges=['marmita'];session.bridgeIndex=0;session.bridgeReturn='consequencia';phase('vinculo');return;}if(!session.completed){session.completed=true;Feedback.fire(result().win?'win':'loss');}const at=clock();session.metrics.ending??=at;const res=result();if(!book.some(r=>r.uid===session.uid&&r.uid))book.push({uid:session.uid,id:cn(),name:name(),at,win:!!res.win,awkward:!!res.awkward,history:clone(session.history),metrics:clone(session.metrics)});if(shift&&!shift.receipts.some(r=>r.id===cn()))shift.receipts.push({id:cn(),win:!!res.win,awkward:!!res.awkward,at});phase('desfecho')}
+      else {if(special()&&session.state.scene==='P04'&&Continuidade.knows(world,'porteiro','parentesco')&&!session.returnLie){session.returnLie=true;session.bridges=['cobrar_parentesco'];session.bridgeIndex=0;session.bridgeReturn='escolha';phase('vinculo');Feedback.fire('reveal');}else phase('escolha');}
     }
   }
   function labels(){return special()?PortariaIA.view(session.state).options:options(kcase(),session.state)}
@@ -298,8 +310,9 @@
     let next,reaction;
     if(special()){next=PortariaIA.choose(previous,index);const v=PortariaIA.view(next);reaction=v.reaction||v.text;session.expression=v.expression||'neutro'}
     else{[next,reaction]=run(kcase(),previous,index);session.expression=next.step==='end'?(next.win?'aliviado':next.awkward?'panico':'cansado'):from==='social'&&next.awkward?'constrangido':from==='event'?'ironia':next.step==='repair'?'desconfiado':next.ready?'confiante':'desconfiado'}
+    if(!special()){if(from==='prep'&&session.support){next.ready=true;reaction+=' Você também conta com a conferência feita junto de quem ajudou antes.';}if(next.step==='end'&&session.cargoRisk){next.win=false;reaction+=' A carga chegou sem conferência depois do impacto. A entrega fica pendente.';}Continuidade.baseChoice(world,cn(),from,index,next);}
     session.state=next;session.line=reaction;
-    session.history.push({choice,index,from,to:fromId(next),reaction,ready:next.ready,awkward:result().awkward,at,previous:clone(previous),next:clone(next)});
+    session.history.push({decisionId:cn()+':'+from+':'+index,choice,index,from,to:fromId(next),reaction,ready:next.ready,awkward:result().awkward,at,previous:clone(previous),next:clone(next)});
     phase('consequencia');
     if(session.history.length===1){
       const owner=session;owner.metrics.firstConsequenceDOM=clock();save();
@@ -331,11 +344,12 @@
   }
   function gameView(){
     if(!session){open('menu');return}
+    if(screen==='vinculo'){bridgeView();return}if(screen==='transporte'){present('Percurso','Carga em movimento',scenePlate(cn())+'<fvqe-transporte></fvqe-transporte>',[act('Pausar e voltar ao menu','menu','subtle')]);return;}
     const id=cn(),c=kcase(),v=special()?PortariaIA.view(session.state):null,e=playerCue(),k=session.state.step;
     const shiftPrefix=shift?'TURNO '+(shifts[shift.group].indexOf(id)+1)+'/3 · ':'';
     const lead=id===12?'ESPECIAL · PORTARIA':shiftPrefix+'ATO '+chapterNames[Math.floor(id/4)]+'　/　'+String(id+1).padStart(2,'0');
     if(screen==='entrada'){
-      present(lead,chapter(id),scenePlate(id)+sceneText(Atelier.current(session,'entrada'),v?v.text:c.opening,[0,12].includes(id))+'<p class="goal">'+esc(goal(id))+'</p>',[opt('Receber o pedido',advance)]);return;
+      present(lead,chapter(id),scenePlate(id)+para(id===12?'Você dá duas batidas na porta. O porteiro atende.':'Mensagem da central: novo serviço recebido. Confira o pedido antes de sair.')+sceneText(Atelier.current(session,'entrada'),v?v.text:c.opening,[0,12].includes(id))+'<p class="goal">'+esc(goal(id))+'</p>',[opt('Receber o pedido',advance)]);return;
     }
     if(screen==='escolha'){
       const caption=v?v.title:(k==='event'?c.event.title:steps[k]);
@@ -356,6 +370,7 @@
       [(shift?opt(shift.receipts.length===3?'Ver balanço do turno':'Próxima entrega do turno',nextShift):opt('Jogar de novo',()=>introduce('entrega',id))),...(!shift&&id<11?[opt('Próxima entrega',()=>start(id+1))]:[]),act('Rever minhas escolhas','revisao','subtle'),...(shift?[]:[act('Fechar o recibo','encerrar','subtle')])],title(id));
   }
   function metricsHtml(m){
+    if(!rehearsal)return '';
     const fmt=t=>t==null?'aguardando quadro':Math.max(0,t-m.started).toFixed(1)+' ms';
     return '<details class="metrics"><summary>Tempos desta partida</summary><p>Início do pedido: 0,0 ms<br>Primeira escolha: '+fmt(m.firstChoice)+'<br>Primeira consequência no DOM: '+fmt(m.firstConsequenceDOM)+'<br>Primeira janela de pintura (dois quadros): '+fmt(m.firstConsequenceFrame)+'<br>Recibo aberto: '+fmt(m.ending)+'</p><small>O relógio conta também o tempo de leitura e as pausas. Esses tempos não medem compreensão.</small></details>';
   }
@@ -369,6 +384,7 @@
       const acts=v.actions.map(x=>opt(x.label,x.do));
       if(screen==='capitulos'){acts.unshift(opt('Visita especial · A portaria',()=>introduce('entrega',12)));acts.push(act('Turno de três entregas','turno','subtle'))}
       if(screen==='historico'&&session&&!acts.some(x=>/retomar|partida|recibo/i.test(x.label)))acts.unshift(opt('Voltar à partida',resume));
+      if(screen==='historico'&&world.log.length)v.html+='<h2>Lembranças entre entregas</h2>'+world.log.map(e=>'<article class="memory-note">'+para(e.choice)+para(e.reaction)+'</article>').join('');
       const tab=fileTab(screen==='capitulos'?'Índice da campanha':'Caderno de rota',screen==='capitulos'?'12 capítulos':session?title(cn()):'Arquivo');
       present(v.kicker,v.title,(screen==='universo'?coverPlate():tab)+v.html,acts);return;
     }
@@ -380,18 +396,18 @@
         present('Antes de entrar','Aviso de conteúdo',coverPlate()+para('A história trata de remoção de moradores, perda de moradia, exposição pública e constrangimento. Há pressão no trabalho e humor sobre a burocracia.')+'<p class="note">O projeto foi pensado para quem tem 18 anos ou mais. Ainda não há classificação indicativa oficial.</p>',[act('Entendi · ir para o menu','menu')]);break;
       case 'menu':
         present('Arquivo · recepção','Caderno do entregador',coverPlate()+para('Você pega a encomenda com uma pessoa e entrega pra outra. Às vezes vai uma promessa junto. Essa não vem na etiqueta.'),
-          [...(session?[act('Continuar partida','continuar')]:[]),opt(session?'Iniciar outra entrega':'Iniciar jogo',()=>introduce('ajuda')),act('Ver capítulos e atos','capitulos'),opt('Personalizar meu crachá',()=>profileStart('menu'),'subtle'),act('Configurações','config','subtle'),act('Créditos','creditos','subtle'),opt('Rever introdução',()=>introduce('menu'),'subtle')]);break;
+          [...(session?[act('Continuar partida','continuar')]:[]),opt('Nova partida',newGame),...(saveBlocked?[opt('Exportar progresso preservado',exportSave)]:[]),act('Ver capítulos e atos','capitulos'),opt('Personalizar meu crachá',()=>profileStart('menu'),'subtle'),act('Configurações','config','subtle'),act('Créditos','creditos','subtle'),opt('Rever introdução',()=>introduce('menu'),'subtle')]);break;
       case 'ajuda':
         present('Guia rápido','Como se joga',coverPlate()+'<ol><li>Leia o pedido. O que a pessoa está esperando?</li><li>Escolha o que fazer. Repare em quem viu.</li><li>Abra o recibo pra ver o que chegou. Dá pra passar vergonha e ainda assim ganhar.</li></ol>'+para('Leia no seu ritmo. As escolhas não têm prazo.'),[opt('Montar meu crachá',()=>profileStart('universo')),act(Object.keys(initialProfile).some(k=>profile[k]!==initialProfile[k])?'Usar meu crachá atual':'Começar com o crachá padrão','universo'),act('Voltar ao menu','menu','subtle')]);break;
       case 'expressoes':
         present('Crachá · prova de impressão','Vinte expressões',avatar(draft,shownExpression)+'<div class="chips">'+Object.entries(expressionLabels).map(([key,label])=>dataBtn(label,'expr',key,key===shownExpression)).join('')+'</div>',[act('Voltar ao crachá','previa')]);break;
       case 'continuar':
-        present('Memória desta aba','Continuar partida',session?scenePlate(cn())+para(title(cn())+' · '+session.history.length+' '+(session.history.length===1?'escolha registrada.':'escolhas registradas.'))+para('Se o navegador conseguir salvar, você pode atualizar esta aba e retomar do mesmo ponto.'):'<p>Ainda não há uma entrega em andamento.</p>',
-          [...(session?[opt(session.phase==='desfecho'?'Abrir último recibo':'Retomar do mesmo ponto',resume)]:[]),act('Ver recibos da sessão','historico'),act('Voltar ao menu','menu','subtle')]);break;
+        present('Memória neste navegador','Continuar partida',session?scenePlate(cn())+para(title(cn())+' · '+session.history.length+' '+(session.history.length===1?'escolha registrada.':'escolhas registradas.'))+para('O progresso fica neste navegador e aparelho. Feche e volte ao mesmo endereço para continuar. Limpar os dados do site pode apagar a partida.'):'<p>Ainda não há uma entrega em andamento.</p>',
+          [...(session?[opt(session.phase==='desfecho'?'Abrir último recibo':'Retomar do mesmo ponto',resume)]:[]),act('Ver recibos da partida','historico'),act('Voltar ao menu','menu','subtle')]);break;
       case 'pausa':
-        present('Intervalo · serviço em espera','Partida pausada',session?scenePlate(cn())+para(title(cn()))+para('Pode voltar ao menu. Sua entrega fica aqui na aba, no ponto em que você parou.'):'<p>Escolha uma entrega no menu.</p>',[opt('Retomar partida',resume),act('Configurações','config'),act('Histórico das escolhas','historico','subtle'),act('Voltar ao menu','menu','subtle')]);break;
+        present('Intervalo · serviço em espera','Partida pausada',session?scenePlate(cn())+para(title(cn()))+para('Pode voltar ao menu ou fechar a página. O progresso fica neste navegador. Um transporte interrompido recomeça do início do trecho.'):'<p>Escolha uma entrega no menu.</p>',[opt('Retomar partida',resume),act('Configurações','config'),act('Histórico das escolhas','historico','subtle'),act('Voltar ao menu','menu','subtle')]);break;
       case 'config':
-        present('Preferências','Configurações',fileTab('Preferências','Nesta sessão')+para('Suas preferências valem enquanto esta aba estiver aberta. Para jogar pelo teclado, use Tab e Enter.')+'<fvqe-offline></fvqe-offline>',[act('Recursos de acessibilidade','acessibilidade'),act('Voltar',configReturn,'subtle')]);break;
+        present('Preferências','Configurações',fileTab('Preferências','Neste navegador')+settingsHtml()+para('As preferências ficam neste navegador. Para jogar pelo teclado, use Tab e Enter.')+'<fvqe-offline></fvqe-offline>',[act('Recursos de acessibilidade','acessibilidade'),act('Voltar',configReturn,'subtle')]);break;
       case 'acessibilidade':
         present('Leitura · controles','Acessibilidade',fileTab('Preferências','Leitura e controles')+'<p>As cores e as expressões também têm rótulos. Dá pra acompanhar todas as decisões sem som.</p><div class="chips">'+[['large','Texto ampliado'],['contrast','Contraste reforçado'],['motion','Reduzir movimento']].map(([k,l])=>dataBtn(l+' · '+(prefs[k]?'ativado':'desativado'),'pref',k,prefs[k])).join('')+'</div>'+para('Tab e Shift + Tab percorrem os controles. Enter ativa. Esc pausa ou retorna.'),[opt('Voltar às configurações',()=>{screen='config';draw()})]);break;
       case 'observar':case 'perguntar':{
@@ -404,7 +420,7 @@
       }
       case 'turno':{
         const ids=shifts[shiftSequence%shifts.length];
-        const h=para('Você faz uma entrega por ato. Conclua pelo menos duas das três pra ganhar o turno. O vexame aparece no recibo, mas não cancela a entrega.')+'<ol>'+ids.map(i=>'<li>'+esc(title(i))+'</li>').join('')+'</ol>'+para('O turno foi pensado para durar de 3 a 5 minutos. Você decide quando avançar.');
+        const h=para('Você faz uma entrega por ato. Conclua pelo menos duas das três pra ganhar o turno. O vexame aparece no recibo, mas não cancela a entrega.')+'<ol>'+ids.map(i=>'<li>'+esc(title(i))+'</li>').join('')+'</ol>'+para('As escolhas acompanham você nas próximas entregas. Você decide quando avançar.');
         const actions=[...(shift&&shift.receipts.length<3?[opt('Retomar meu turno',resume)]:[]),opt('Começar este turno',()=>introduce('turno')),act('Voltar aos capítulos','capitulos','subtle')];
         present('Três atos · um percurso','Turno de três entregas',h,actions);break;
       }
@@ -413,15 +429,40 @@
         const wins=shift.receipts.filter(r=>r.win).length,awk=shift.receipts.filter(r=>r.awkward).length;
         const elapsed=(shift.receipts[2].at-shift.started)/1000;
         const summary='<div class="receipt"><span class="stamp">'+(wins>=2?'Vitória no turno':'Derrota no turno')+'</span></div><p class="goal">'+wins+' de 3 serviços concluídos · '+awk+' com vergonha.</p><ol>'+shift.receipts.map(r=>'<li><b>'+esc(title(r.id))+'</b> — '+(r.win?'concluída':'pendente')+(r.awkward?' · com vergonha':'')+'</li>').join('')+'</ol><small>Tempo corrido até o último recibo: '+(elapsed/60).toFixed(2).replace('.',',')+' min. Inclui pausas.</small>';
-        present('Recibo · turno completo','Fechamento do turno',summary,[opt('Jogar novo turno',()=>introduce('turno')),act('Ver capítulos e atos','capitulos'),act('Voltar ao menu','menu','subtle')]);break;
+        present('Recibo · turno completo','Fechamento do turno',summary+memoriesHtml(),[opt('Jogar novo turno',()=>introduce('turno')),act('Ver capítulos e atos','capitulos'),act('Voltar ao menu','menu','subtle')]);break;
       }
       case 'encerrar':
-        present('Fim de serviço','Recibo arquivado',scenePlate(cn())+para('Suas escolhas ficaram no caderno desta aba. Você pode voltar e ler cada uma.'),[opt('Recomeçar esta entrega',()=>introduce('entrega',cn())),act('Revisitar escolhas','historico'),...(cn()<12?[act('Resumo deste ato','resumo')]:[]),act('Créditos','creditos','subtle'),act('Voltar ao menu','menu','subtle')]);break;
+        present('Fim de serviço','Recibo arquivado',scenePlate(cn())+para('Suas escolhas ficaram no caderno deste navegador. Você pode voltar e ler cada uma.'),[opt('Recomeçar esta entrega',()=>introduce('entrega',cn())),act('Revisitar escolhas','historico'),...(cn()<12?[act('Resumo deste ato','resumo')]:[]),act('Créditos','creditos','subtle'),act('Voltar ao menu','menu','subtle')]);break;
       case 'creditos':
-        present('Expediente','Créditos','<p><b>FOI VOCÊ QUE ESCOLHEU</b><br>Projeto Inovação Chris · 2026/2. Responsável acadêmico: Christian.</p>'+para('Obra de referência: O Arquivo das Escolhas. Adaptação interativa com o Entregador, três atos e doze capítulos. A visita especial desta edição se chama O nome no recibo.')+para('Identidade visual v03 · Pop em Curto-Circuito. Três rostos, muitas escolhas é a arte-conceito dos personagens-base. O elenco, os crachás complementares e as ilustrações do prólogo foram produzidos para a edição Visual.')+para('Roteiro, programação, composição visual e testes com assistência de IA. Créditos técnicos e registro de produção acompanham o pacote.'),[act('Voltar ao menu','menu'),...(session?[opt('Voltar à entrega',resume,'subtle')]:[])]);break;
+        present('Expediente','Créditos','<p><b>FOI VOCÊ QUE ESCOLHEU</b><br>Projeto Inovação Chris · 2026/2. Responsável acadêmico: Christian Cândia Hollnagel.</p>'+para('Obra de referência: O Arquivo das Escolhas. Adaptação interativa com o Entregador, três atos e doze capítulos. A visita especial desta edição se chama O nome no recibo.')+para('Identidade visual v03 · Pop em Curto-Circuito. Três rostos, muitas escolhas é a arte-conceito dos personagens-base. O elenco, os crachás complementares e as ilustrações do prólogo foram produzidos para a edição Visual.')+para('Base Visual 1.2 preservada. Atualização de roteiro, programação, testes e composição musical por síntese com assistência de IA (Codex). Durante a partida, personagens usam falas escritas e regras locais, sem IA. Música e efeitos originais sintetizados para este projeto, sem samples externos. Créditos e fontes de produção acompanham o projeto.'),[act('Voltar ao menu','menu'),...(session?[opt('Voltar à entrega',resume,'subtle')]:[])]);break;
       default:screen='menu';draw();
     }
   }
+  function exportSave(){try{const raw=localStorage.getItem(storageKey)||sessionStorage.getItem(storageKey)||'';const link=document.createElement('a');link.href=URL.createObjectURL(new Blob([raw],{type:'application/json'}));link.download='progresso-preservado.json';link.click();setTimeout(()=>URL.revokeObjectURL(link.href),1000)}catch{sessionNotice='O navegador não permitiu acessar o registro.';draw()}}
+  function newGame(){
+    if((session||book.length||saveBlocked)&&!confirm('Nova partida substitui o progresso, as escolhas e o crachá. Suas configurações ficam. Quer começar de novo?'))return;
+    if(saveBlocked){try{const raw=localStorage.getItem(storageKey);if(raw)localStorage.setItem(storageKey+'-recuperacao-'+Date.now(),raw)}catch{sessionNotice='Não foi possível preservar o registro. Exporte-o antes de tentar novamente.';draw();return;}}
+    saveBlocked=false;sessionNotice='';world=Continuidade.fresh();session=null;book=[];shift=null;shiftSequence=0;profile={...initialProfile};draft={...profile};introduce('ajuda');
+  }
+  function settingsHtml(){return '<div class="audio-settings"><label><span>Música</span><input type="checkbox" data-sound="music" '+(sound.music?'checked':'')+'></label><label><span>Efeitos sonoros</span><input type="checkbox" data-sound="effects" '+(sound.effects?'checked':'')+'></label><label>Volume<input type="range" min="0" max="1" step=".05" value="'+sound.volume+'" data-sound="volume"></label><label>Vibração<select data-sound="haptics">'+[['off','Desligada'],['results','Somente resultados'],['all','Todos os efeitos']].map(([k,l])=>'<option value="'+k+'" '+(sound.haptics===k?'selected':'')+'>'+l+'</option>').join('')+'</select></label></div>';}
+  function memoriesHtml(){return '<h2>O que ficou pelo caminho</h2>'+world.log.slice(-8).map(e=>para(e.reaction)).join('')+'<h3>Combinados</h3>'+para(Object.entries(world.promises).map(([k,v])=>({sigilo:'Discrição com a carta',comida:'Voltar para comer',referencia:'Referência de Inês',canhoto:'Canhoto do rapaz',marmitas:'Pedido de marmitas',copia:'Cópia para o vizinho'}[k]||'Combinado')+': '+v).join(' · ')||'Nenhuma promessa registrada.')+para(Object.entries(world.favors).map(([k,v])=>(Atelier.cast[k]||k)+': favor '+v).join(' · ')||'Nenhum favor pendente.');}
+  function beginTransport(){if(session.bridgeReturn==='consequencia'){session.bridgeReturn='escolha';phase('consequencia');return;}if([2,8,9].includes(cn())&&!session.cargo){phase('transporte');return;}phase('escolha');}
+  function bridgeView(){
+    const key=session.bridges[session.bridgeIndex],s=Continuidade.scenes[key];if(!s){beginTransport();return;}
+    const response=session.bridgeResponse;
+    present('Encontros · '+title(cn()),s.title,actorImage({actor:cn()===8&&key==='avaria'?'mulher':s.actor,cue:response?'atento':'curioso'})+'<small class="overline">'+esc(Atelier.cast[cn()===8&&key==='avaria'?'mulher':s.actor])+'</small>'+para(response||s.text),response?[opt('Continuar',()=>{session.bridgeResponse=null;session.bridgeIndex++;if(session.bridgeIndex<session.bridges.length){phase('vinculo');if(Continuidade.scenes[session.bridges[session.bridgeIndex]].requires)Feedback.fire('reveal');}else beginTransport();})]:s.choices.map(c=>opt(c.label,()=>{
+      const token=session.uid+':'+key+':'+session.bridgeIndex;
+      const effect=Continuidade.apply(world,key,c.id,token);if(!effect)return;
+      session.support ||= !!effect.support;session.state.awkward ||= !!effect.awkward;session.cargoRisk ||= !!effect.cargoRisk;
+      if(effect.repairCargo)session.cargoRisk=false;
+      session.bridgeResponse=effect.text;if(key==='protocolo'&&c.id==='cumprir')session.bridgeResponse+=' A encarregada carimba o recibo do canhoto.';if(key==='marmita')session.line=effect.text;session.history.push({decisionId:key+':'+c.id,choice:c.label,reaction:session.bridgeResponse,from:'vinculo',at:clock()});draw();if(key==='protocolo'&&c.id==='cumprir')Feedback.fire('stamp');
+    })));
+  }
+  document.addEventListener('cargo-complete',e=>{if(screen!=='transporte'||session.cargo)return;session.cargo=e.detail;Continuidade.remember(world,'carga:'+session.uid,e.detail.condition,[],'transporte');session.history.push({decisionId:'transporte:'+e.detail.strategy,choice:'Transportar: '+({junto:'tudo junto',dividir:'dividir a carga',apoio:'improvisar apoio'}[e.detail.strategy]),reaction:e.detail.impacts?'A carga sofreu '+e.detail.impacts+' impactos.':'A carga chegou preservada.',from:'transporte',at:clock()});
+    // A marmita é explicada depois de identificar as porções, no recibo; avarias das outras cargas exigem decisão.
+    if(e.detail.impacts&&cn()!==2){session.bridges=['avaria'];session.bridgeIndex=0;phase('vinculo')}else phase('escolha');
+  });
+  document.addEventListener('change',e=>{const k=e.target.dataset.sound;if(!k)return;sound[k]=['music','effects'].includes(k)?e.target.checked:k==='volume'?Number(e.target.value):e.target.value;Feedback.configure(sound);save();});
   function handle(e){
     const b=e.target.closest('button[data-action]');if(!b)return;
     const a=b.dataset.action,v=b.dataset.value;
@@ -473,13 +514,15 @@
     addEventListener('popstate',()=>{if(screen==='menu'||screen==='abertura')return;history.pushState({fvqeGuard:true},'',location.href);back()});
   }catch{/* Alguns navegadores restringem history para file://. Esc e Pausa continuam disponíveis. */}
   addEventListener('pagehide',save);
-  if(rehearsal)window.FVQE=Object.freeze({
-    abrir:open,iniciar:start,escolher:choose,avancar:advance,estado:()=>clone(saved()),
+  if(rehearsal||new URLSearchParams(location.search).get('teste')==='1')window.FVQE=Object.freeze({
+    abrir:open,iniciar:start,escolher:choose,avancar:advance,nova:newGame,turno:startShift,proxima:nextShift,estado:()=>clone(saved()),
     perfil(p){profile={...initialProfile,...p};draft={...profile};draw()},
     expressao(key){if(expressionLabels[key]){shownExpression=key;if(session)session.expression=key;draw()}}
   });
+  if(restoreMenu)screen='menu';
   draw();
 })();
+
 
 
 

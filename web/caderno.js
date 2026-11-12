@@ -41,8 +41,8 @@
     }
     if(screen==='historico'){
       let info=choices.length?'<p>Escolhas da '+(record===session?'tentativa atual':'última tentativa')+'.</p>'+choices.map(chain).join(''):'<p>As escolhas aparecem aqui assim que a primeira entrega começa.</p>';
-      const previous=book.length?'<h3>Recibos desta aba</h3><ol>'+book.map(r=>li(esc(cases[r.id]?.title||'A portaria')+' · '+esc(outcome(r)))).join('')+'</ol>':'';
-      return view('MEMÓRIA DA SESSÃO','Histórico de escolhas',info+previous,[...(cur?[go('Revisar a última escolha','revisao')]:[]),...(session&&session.phase!=='desfecho'?[action('Retomar partida',ctx.resume)]:session?[action('Voltar ao recibo',ctx.resume)]:[]),...nav]);
+      const previous=book.length?'<h3>Recibos desta partida</h3><ol>'+book.map(r=>li(esc(cases[r.id]?.title||'A portaria')+' · '+esc(outcome(r)))).join('')+'</ol>':'';
+      return view('MEMÓRIA DA PARTIDA','Histórico de escolhas',info+previous,[...(cur?[go('Revisar a última escolha','revisao')]:[]),...(session&&session.phase!=='desfecho'?[action('Retomar partida',ctx.resume)]:session?[action('Voltar ao recibo',ctx.resume)]:[]),...nav]);
     }
     if(screen==='revisao'){
       const pair=choices.slice(-2);
@@ -54,7 +54,7 @@
     }
     if(screen==='resumo'){
       const recs=book.filter(r=>r.id>=act*4&&r.id<act*4+4);
-      const history=recs.length?recs.map(r=>'<li><b>'+esc(cases[r.id]?.title||'Entrega')+'</b> · '+esc(outcome(r))+'<br>'+esc(r.history?.at(-1)?.reaction||'Recibo fechado.')+'</li>').join(''):'<li>Ainda não há recibos deste ato nesta aba.</li>';
+      const history=recs.length?recs.map(r=>'<li><b>'+esc(cases[r.id]?.title||'Entrega')+'</b> · '+esc(outcome(r))+'<br>'+esc(r.history?.at(-1)?.reaction||'Recibo fechado.')+'</li>').join(''):'<li>Ainda não há recibos deste ato neste navegador.</li>';
       return view('CADERNO · ATO '+Roman(act),'O que ficou registrado','<p>'+esc(atos[act])+'</p><ul>'+history+'</ul>',[...(act<2?[go('Ver o próximo ato','transicao')]:[]),go('Escolher um capítulo','capitulos'),...nav]);
     }
     if(screen==='transicao'){

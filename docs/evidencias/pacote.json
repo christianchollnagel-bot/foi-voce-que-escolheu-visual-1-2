@@ -1,0 +1,12 @@
+{
+  "files": 905,
+  "bytes": 39504317,
+  "roots": [
+    "Entrega/netlify",
+    "Entrega/zip-verificado"
+  ],
+  "hashes": "idênticos à fonte e ao manifesto",
+  "http": "todos os arquivos retornaram conteúdo idêntico; scripts/áudio com MIME correto; inexistente = 404",
+  "browser": "especial aberto no ZIP extraído; migração v1 verificada",
+  "errors": []
+}

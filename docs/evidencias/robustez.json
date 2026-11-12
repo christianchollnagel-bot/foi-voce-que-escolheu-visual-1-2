@@ -1,0 +1,16 @@
+{
+  "out": [
+    "Sensor sem dados oferece controles alternativos",
+    "Recusa de permissão mantém controles",
+    "Orientação simulada calibra e altera entrada",
+    "Teclado produz impacto; perda de foco pausa",
+    "Reabrir transporte reinicia sem aplicar derrota",
+    "Impacto abre decisão de reparo na história",
+    "Conclusão vibra uma vez; carregar recibo não vibra",
+    "Registro corrompido preservado e recuperável após reinício confirmado",
+    "Versão incompatível não é sobrescrita",
+    "Armazenamento bloqueado avisa e permite jogar",
+    "Processo Chrome fechado e reaberto com mesmo perfil preserva decisão e favor"
+  ],
+  "errors": []
+}

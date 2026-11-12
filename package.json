@@ -1,0 +1,15 @@
+{
+  "devDependencies": {
+    "playwright": "1.58.2"
+  },
+  "private": true,
+  "scripts": {
+    "start": "node scripts/servir.cjs",
+    "package": "node scripts/empacotar.cjs",
+    "test": "node tests/motores.cjs",
+    "test:browser": "node tests/navegador.cjs",
+    "test:robustez": "node tests/robustez.cjs",
+    "test:rotas": "node tests/rotas.cjs",
+    "test:pwa": "node tests/pwa.cjs"
+  }
+}
