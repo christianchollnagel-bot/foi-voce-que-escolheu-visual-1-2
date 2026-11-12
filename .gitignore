@@ -6,3 +6,5 @@ Foi_Voce_Que_Escolheu_Netlify.zip
 tests/perfil-browser/
 tests/perfil-atualizacao/
 tests/resultados/
+.env
+.env.*

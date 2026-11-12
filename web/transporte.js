@@ -7,6 +7,8 @@ class Transporte extends HTMLElement {
     for(const b of this.querySelectorAll('[data-cargo="left"],[data-cargo="right"]')){
       const dir=b.dataset.cargo==='left'?-1:1;
       b.addEventListener('pointerdown',e=>{if(!this.running)return;e.preventDefault();b.setPointerCapture(e.pointerId);this.controlInput=dir},{signal});
+      // Enter, Espaço e ativação por leitor de tela geram click sem pointerdown.
+      b.addEventListener('click',e=>{if(!this.running||e.detail!==0)return;clearTimeout(this.inputTimer);this.controlInput=dir;this.inputTimer=setTimeout(()=>this.controlInput=0,250);},{signal});
       for(const event of ['pointerup','pointercancel','lostpointercapture'])b.addEventListener(event,()=>this.controlInput=0,{signal});
     }
     document.addEventListener('keydown',e=>{if(this.running&&!/^(INPUT|SELECT|TEXTAREA)$/.test(e.target.tagName)&&['ArrowLeft','ArrowRight'].includes(e.key)){e.preventDefault();this.controlInput=e.key==='ArrowLeft'?-1:1}},{signal});
@@ -26,7 +28,7 @@ class Transporte extends HTMLElement {
     };
   }
   start(){if(this.running)return;if(!this.started){this.strategy=this.querySelector('select').value;this.duration=this.strategy==='dividir'?12:this.strategy==='apoio'?10:9;this.started=true;this.querySelector('select').disabled=true;}this.running=true;this.last=performance.now();this.querySelector('.cargo-setup').hidden=true;this.querySelector('.cargo-live').hidden=false;this.querySelectorAll('[data-cargo="left"],[data-cargo="right"]').forEach(b=>b.hidden=false);this.querySelector('[data-cargo="start"]').hidden=true;this.querySelector('[data-cargo="pause"]').hidden=false;window.GamePages?.reveal(this.querySelector('.cargo-play'));this.querySelector('[data-cargo="pause"]').focus({preventScroll:true});this.raf=requestAnimationFrame(this.frame);}
-  pause(){if(!this.running)return;this.running=false;cancelAnimationFrame(this.raf);this.controlInput=0;this.tilt=0;this.querySelector('[data-cargo="start"]').hidden=false;this.querySelector('[data-cargo="start"]').textContent='Retomar transporte';this.querySelector('[data-cargo="pause"]').hidden=true;this.querySelector('.cargo-status').textContent='Transporte pausado. Retome quando estiver pronto.';Feedback.cancel();window.GamePages?.reveal(this.querySelector('.cargo-play'));}
+  pause(){if(!this.running)return;this.running=false;cancelAnimationFrame(this.raf);clearTimeout(this.inputTimer);this.controlInput=0;this.tilt=0;this.querySelector('[data-cargo="start"]').hidden=false;this.querySelector('[data-cargo="start"]').textContent='Retomar transporte';this.querySelector('[data-cargo="pause"]').hidden=true;this.querySelector('.cargo-status').textContent='Transporte pausado. Retome quando estiver pronto.';Feedback.cancel();window.GamePages?.reveal(this.querySelector('.cargo-play'));}
   async sensor(){
     const status=this.querySelector('.sensor-status');const api=window.DeviceOrientationEvent;
     if(!api){status.textContent='Inclinação indisponível. Use os botões ou as setas.';return;}
@@ -46,7 +48,7 @@ class Transporte extends HTMLElement {
     },{signal:this.sensorController.signal});
     this.sensorTimer=setTimeout(()=>{if(!this.samples){status.textContent='O sensor não respondeu. Use os botões ou as setas.';this.sensorController.abort();}},2500);
   }
-  disconnectedCallback(){cancelAnimationFrame(this.raf);clearTimeout(this.sensorTimer);this.controller?.abort();this.sensorController?.abort();Feedback.cancel();}
+  disconnectedCallback(){cancelAnimationFrame(this.raf);clearTimeout(this.sensorTimer);clearTimeout(this.inputTimer);this.controller?.abort();this.sensorController?.abort();Feedback.cancel();}
 }
 customElements.define('fvqe-transporte',Transporte);
 

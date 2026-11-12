@@ -2,17 +2,19 @@
 
 Projeto Inovação Chris 2026/2. Responsável acadêmico: **Christian Cândia Hollnagel**.
 
-Atualização da Visual 1.2: doze capítulos, três atos e o especial **O nome no recibo**, com consequências entre entregas, memória por personagem, salvamento local, transporte, música e vibração. As falas são escritas e selecionadas por regras; não há modelo ou API de IA durante a partida.
+**Edição 1.3.0 · portfólio.** Um jogo narrativo sobre o que acompanha uma encomenda: promessas, favores e histórias que voltam no próximo encontro. Doze capítulos, três atos e o especial **O nome no recibo**, com consequências entre entregas, memória por personagem, salvamento local, transporte, música e vibração. As falas são escritas e selecionadas por regras; não há modelo ou API de IA durante a partida.
+
+[Jogar no navegador](https://foivocequeescolheu.netlify.app/) · [Apresentação para portfólio](docs/PORTFOLIO.md) · [Auditoria e evidências da edição](docs/AUDITORIA-1.3.md)
 
 ## Abrir
 
-Na raiz deste projeto, com Node.js instalado:
+Na raiz deste projeto, com Node.js instalado (não precisa instalar dependências para jogar):
 
 ```powershell
-node scripts/servir.cjs Entrega/netlify 4173
+npm start
 ```
 
-Abra http://localhost:4173. Para servir diretamente a fonte, substitua `Entrega/netlify` por `web`. Não abra `index.html` por `file://`: sensores, instalação e cache precisam de HTTPS ou localhost.
+Abra http://localhost:4173. O servidor usa a fonte versionada em `web/`; uma cópia recém-clonada não depende da pasta gerada `Entrega/netlify/`. Não abra `index.html` por `file://`: sensores, instalação e cache precisam de HTTPS ou localhost.
 
 Nova partida começa com uma animação 2D de 15 segundos: receba o pedido, escolha o caminho e acompanhe as consequências. Pode pausar, pular ou usar **Rever introdução** no menu. Depois, prepare seu crachá. Em **Ver capítulos e atos**, escolha qualquer capítulo, o especial ou o turno de três entregas. **Próxima entrega** mantém as escolhas anteriores. **Nova partida** limpa um percurso existente somente após confirmação. **Resetar jogo**, logo após Nova partida no menu, confirma antes de apagar partida, recibos, escolhas e crachá; mantém som e acessibilidade e retorna ao menu. A seleção de capítulo mantém as memórias desta partida; começar uma partida nova e selecionar um capítulo dá um início sem escolhas anteriores inventadas.
 
@@ -37,6 +39,22 @@ O som vem ligado por padrão e começa na primeira interação com o jogo, como 
 - Testes de navegador: `npm ci`, iniciar o servidor e executar os scripts `tests/navegador.cjs`, `tests/robustez.cjs`, `tests/rotas.cjs` e `tests/pwa.cjs`. Usam Chrome instalado no caminho documentado nos scripts. `?teste=1` habilita acesso ao estado para testes; não altera o funcionamento da partida. `?ensaio=1` é o modo legado sem persistência.
 
 O script `scripts/integrar.cjs` registra a transformação inicial da base e **não deve ser reaplicado** à versão atual. A manutenção é feita nos arquivos de `web/`.
+
+## Conferir esta edição
+
+Com Node.js e npm instalados:
+
+```sh
+npm ci
+npx playwright install chromium webkit
+node scripts/servir.cjs web 4180
+```
+
+Em outro terminal: `npm run test:portfolio`, `npm run test:mobile` e `npm run test:botoes`. `npm test` verifica as regras e os caminhos narrativos sem navegador. No Windows, os testes usam o Chrome instalado quando disponível; `CHROME_PATH` permite escolher outro executável. Nos demais ambientes, usam o Chromium do Playwright. A execução desta edição foi validada no Windows, não em todos os sistemas operacionais.
+
+Para gerar a distribuição no Windows: `npm run package`, seguido de `npm run verify:release`. O verificador confere a lista completa de arquivos, os hashes e o manifesto offline. A geração do ZIP usa PowerShell. A publicação via Git/Netlify serve `web/` diretamente e não exige o ZIP.
+
+Para conferir instalação e reabertura sem rede em um endereço publicado: definir `GAME_URL` para esse endereço e executar `npm run test:pwa-publicacao`. Esse teste usa um perfil isolado, prepara o cache completo e confere o menu e a introdução offline. O download inicial completo tem aproximadamente 46 MiB; atualizações reutilizam recursos já verificados.
 
 Consulte `docs/PUBLICACAO.md`, `docs/CONSEQUENCIAS.md`, `docs/AUDIO-E-CREDITOS.md`, `docs/VERIFICACAO.md` e `docs/DEMONSTRACAO.md`. Os documentos HTML antigos em `Entrega/` são evidências históricas da Visual 1.2; não descrevem esta atualização nem entram no pacote publicado. A consolidação aprovada foi preservada sem alterações. O mapa final da jornada permanece uma etapa posterior.
 

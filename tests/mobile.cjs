@@ -2,7 +2,7 @@ const {chromium,webkit}=require('playwright'),fs=require('node:fs'),assert=requi
 const {inspect}=require('./paginas.cjs'),{reach,settle}=require('./paginas-helper.cjs');
 const base=process.env.GAME_URL||'http://localhost:4180',report=[];
 async function run(type){
- const browser=await type.launch(type===chromium?{executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true}:{headless:true});
+ const browser=await type.launch(type===chromium?{executablePath:require('./browser-options.cjs').chromeExecutable,headless:true}:{headless:true});
  try{
   const p=await browser.newPage({viewport:{width:390,height:844},isMobile:true,hasTouch:true,serviceWorkers:'block'}),errors=[];p.on('pageerror',e=>errors.push(e.message));p.on('dialog',d=>d.accept());p.setDefaultTimeout(12000);
   await p.addInitScript(()=>{window.players=[];const AudioOriginal=window.Audio;window.Audio=function(...args){const a=new AudioOriginal(...args);players.push(a);return a;};});

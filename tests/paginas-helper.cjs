@@ -17,4 +17,9 @@ async function reach(page,locator,{touch=false}={}){
 }
 const named=(page,name)=>page.getByRole('button',{name,exact:true,includeHidden:true});
 async function click(page,name){const target=await reach(page,named(page,name));await target.click();await settle(page);}
-module.exports={settle,reach,named,click};
+async function waitForAsync(page,predicate,arg,{timeout=60000}={}){
+ const deadline=Date.now()+timeout;
+ do{const result=await page.evaluate(predicate,arg);if(result)return result;await new Promise(resolve=>setTimeout(resolve,100));}while(Date.now()<deadline);
+ throw Error('A condição assíncrona não foi satisfeita em '+timeout+' ms');
+}
+module.exports={settle,reach,named,click,waitForAsync};

@@ -1,0 +1,268 @@
+{
+  "checks": [
+    {
+      "engine": "webkit",
+      "button": "✓ Contorno da base"
+    },
+    {
+      "engine": "webkit",
+      "button": "Alongado"
+    },
+    {
+      "engine": "webkit",
+      "button": "Largo"
+    },
+    {
+      "engine": "webkit",
+      "button": "Maçãs salientes"
+    },
+    {
+      "engine": "webkit",
+      "button": "✓ Tom da ilustração"
+    },
+    {
+      "engine": "webkit",
+      "button": "Dourado quente"
+    },
+    {
+      "engine": "webkit",
+      "button": "Marrom profundo"
+    },
+    {
+      "engine": "webkit",
+      "button": "✓ Sem moldura"
+    },
+    {
+      "engine": "webkit",
+      "button": "Medalhão"
+    },
+    {
+      "engine": "webkit",
+      "button": "Postal"
+    },
+    {
+      "engine": "webkit",
+      "button": "✓ Papel"
+    },
+    {
+      "engine": "webkit",
+      "button": "Menta"
+    },
+    {
+      "engine": "webkit",
+      "button": "Ultramarino"
+    },
+    {
+      "engine": "webkit",
+      "button": "Vermelhão"
+    },
+    {
+      "engine": "webkit",
+      "button": "✓ Cabelo da ilustração"
+    },
+    {
+      "engine": "webkit",
+      "button": "Acobreado"
+    },
+    {
+      "engine": "webkit",
+      "button": "Mecha caramelo"
+    },
+    {
+      "engine": "webkit",
+      "button": "✓ Sem adereço"
+    },
+    {
+      "engine": "webkit",
+      "button": "Faixa vermelha"
+    },
+    {
+      "engine": "webkit",
+      "button": "Gorro ultramarino"
+    },
+    {
+      "engine": "webkit",
+      "button": "✓ Sem broche"
+    },
+    {
+      "engine": "webkit",
+      "button": "Dominó"
+    },
+    {
+      "engine": "webkit",
+      "button": "Estrela"
+    },
+    {
+      "engine": "webkit",
+      "button": "Selo"
+    },
+    {
+      "engine": "webkit",
+      "button": "✓ Roupa do retrato"
+    },
+    {
+      "engine": "webkit",
+      "button": "Lenço ultramarino"
+    },
+    {
+      "engine": "webkit",
+      "button": "Lenço menta"
+    },
+    {
+      "engine": "webkit",
+      "button": "Enter e Espaço"
+    },
+    {
+      "engine": "webkit",
+      "button": "Próxima entrega e balanço de três entregas"
+    },
+    {
+      "engine": "webkit",
+      "button": "Balanço: capítulos"
+    },
+    {
+      "engine": "webkit",
+      "button": "Balanço: menu"
+    },
+    {
+      "engine": "webkit",
+      "button": "Balanço: novo turno"
+    },
+    {
+      "engine": "webkit",
+      "button": "Retomar meu turno"
+    },
+    {
+      "engine": "chromium",
+      "button": "✓ Contorno da base"
+    },
+    {
+      "engine": "chromium",
+      "button": "Alongado"
+    },
+    {
+      "engine": "chromium",
+      "button": "Largo"
+    },
+    {
+      "engine": "chromium",
+      "button": "Maçãs salientes"
+    },
+    {
+      "engine": "chromium",
+      "button": "✓ Tom da ilustração"
+    },
+    {
+      "engine": "chromium",
+      "button": "Dourado quente"
+    },
+    {
+      "engine": "chromium",
+      "button": "Marrom profundo"
+    },
+    {
+      "engine": "chromium",
+      "button": "✓ Sem moldura"
+    },
+    {
+      "engine": "chromium",
+      "button": "Medalhão"
+    },
+    {
+      "engine": "chromium",
+      "button": "Postal"
+    },
+    {
+      "engine": "chromium",
+      "button": "✓ Papel"
+    },
+    {
+      "engine": "chromium",
+      "button": "Menta"
+    },
+    {
+      "engine": "chromium",
+      "button": "Ultramarino"
+    },
+    {
+      "engine": "chromium",
+      "button": "Vermelhão"
+    },
+    {
+      "engine": "chromium",
+      "button": "✓ Cabelo da ilustração"
+    },
+    {
+      "engine": "chromium",
+      "button": "Acobreado"
+    },
+    {
+      "engine": "chromium",
+      "button": "Mecha caramelo"
+    },
+    {
+      "engine": "chromium",
+      "button": "✓ Sem adereço"
+    },
+    {
+      "engine": "chromium",
+      "button": "Faixa vermelha"
+    },
+    {
+      "engine": "chromium",
+      "button": "Gorro ultramarino"
+    },
+    {
+      "engine": "chromium",
+      "button": "✓ Sem broche"
+    },
+    {
+      "engine": "chromium",
+      "button": "Dominó"
+    },
+    {
+      "engine": "chromium",
+      "button": "Estrela"
+    },
+    {
+      "engine": "chromium",
+      "button": "Selo"
+    },
+    {
+      "engine": "chromium",
+      "button": "✓ Roupa do retrato"
+    },
+    {
+      "engine": "chromium",
+      "button": "Lenço ultramarino"
+    },
+    {
+      "engine": "chromium",
+      "button": "Lenço menta"
+    },
+    {
+      "engine": "chromium",
+      "button": "Enter e Espaço"
+    },
+    {
+      "engine": "chromium",
+      "button": "Próxima entrega e balanço de três entregas"
+    },
+    {
+      "engine": "chromium",
+      "button": "Balanço: capítulos"
+    },
+    {
+      "engine": "chromium",
+      "button": "Balanço: menu"
+    },
+    {
+      "engine": "chromium",
+      "button": "Balanço: novo turno"
+    },
+    {
+      "engine": "chromium",
+      "button": "Retomar meu turno"
+    }
+  ]
+}

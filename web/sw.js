@@ -2,7 +2,7 @@
 const resources = [
   [
     "app.js",
-    "135c3d8e7ea3f139311127421fd583696e87ac0baa9b63e382fd8c3bc71eb2ef"
+    "0e9021e405ee3f23dd8259ff3d3edf4566e170b8560161a6e22328753093e7be"
   ],
   [
     "assets/avatares/01-alegria.webp",
@@ -3570,7 +3570,7 @@ const resources = [
   ],
   [
     "index.html",
-    "f44838e9cb2863b3e8b6345392bde430d71f3bb6e280e5df20a7d46f69dc7cb7"
+    "9d45495bbebea6fa83d7d4d667c150c33b01079acbc4f55e2e40dad4e0a4724f"
   ],
   [
     "introducao.js",
@@ -3594,7 +3594,7 @@ const resources = [
   ],
   [
     "paginas.js",
-    "069d0e5ce0c46b4f4cf3f6bd9a3c2af0b2f36459d9544c366a7eeb05191272a8"
+    "211aefa89071d3ab8f9514c78436e74b175785422decf162c36655ef8867beb5"
   ],
   [
     "portaria.js",
@@ -3606,7 +3606,7 @@ const resources = [
   ],
   [
     "pwa.js",
-    "e3354e62ac0eb54deb4312dee6967a0a7e2bd627a12376160b99f9710da6dcf0"
+    "02d34d4dcde8774f5b27f74ff4b5812f074370f7a704e4f9ace26a9a7f147e94"
   ],
   [
     "rotulos-v1.js",
@@ -3622,11 +3622,11 @@ const resources = [
   ],
   [
     "transporte.js",
-    "cbae0126fe9b7d92ad926208384b0225f617c2663ce3c6e0a2c4d96943e433b6"
+    "ade55ed21710e010e653af90a22dac6e38c3472da62d67309d3f5a516441cb00"
   ]
 ];
 const prefix = 'fvqe-v1|' + self.registration.scope + '|';
-const cacheName = prefix + '382c83db29bc4872323d8df09ed671cd3c58b69e785a0d2b8bdf69b05621bab2';
+const cacheName = prefix + '72d1554710374f475fb503a13a885361b2a039f0499d184e1156c7b1071f2fa0';
 const root = new URL(self.registration.scope);
 const urls = new Map(resources.map(([path, hash]) => [new URL(path, root).href, hash]));
 

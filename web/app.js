@@ -66,12 +66,16 @@
     for(const k of ['firstChoice','firstConsequenceDOM','firstConsequenceFrame','ending'])cleanMetrics[k]=Number.isFinite(s.metrics[k])?s.metrics[k]:null;
     return {...s,schema:2,uid:'migrada-'+s.metrics.started,bridges:[],bridgeIndex:0,bridgeResponse:null,bridgeReturn:'escolha',cargo:null,support:false,completed:s.phase==='desfecho',state:replay,metrics:cleanMetrics,line:s.history.at(-1)?.reaction||'',expression:Object.hasOwn(expressionLabels,s.expression)?s.expression:'neutro',inspections:Array.isArray(s.inspections)?s.inspections.filter(x=>x&&typeof x.key==='string'):[]};
   }
+  let storageReadable=true,restoreRaw=null;
+  const unavailableStorage='O navegador bloqueou o armazenamento. Você pode jogar nesta aba, mas o progresso não será salvo ao fechar.';
+  try{if(!rehearsal)restoreRaw=localStorage.getItem(storageKey)||sessionStorage.getItem(storageKey);}
+  catch{storageReadable=false;sessionNotice=unavailableStorage;}
   try{
-    const raw=!rehearsal&&(localStorage.getItem(storageKey)||sessionStorage.getItem(storageKey));
+    const raw=restoreRaw;
     if(raw){
       const d=JSON.parse(raw);
       if(![1,2].includes(d?.version))throw Error('formato desconhecido');
-      if(d.version===2){if(!d.world||!Array.isArray(d.world.log)||!Array.isArray(d.world.rumors)||['facts','knowledge','relations','favors','promises'].some(k=>!d.world[k]||typeof d.world[k]!=='object'||Array.isArray(d.world[k])))throw Error('memória inválida');world=d.world;sound={...audioDefaults,muted:d.sound?.muted===true,music:d.sound?.music!==false,effects:d.sound?.effects!==false,volume:Number.isFinite(d.sound?.volume)?Math.max(0,Math.min(1,d.sound.volume)):.55,haptics:['off','results','all'].includes(d.sound?.haptics)?d.sound.haptics:'results'};}
+      if(d.version===2){if(!d.world||!Array.isArray(d.world.log)||d.world.log.some(e=>!e||typeof e.choice!=='string'||typeof e.reaction!=='string')||!Array.isArray(d.world.rumors)||['facts','knowledge','relations','favors','promises'].some(k=>!d.world[k]||typeof d.world[k]!=='object'||Array.isArray(d.world[k])))throw Error('memória inválida');world=d.world;sound={...audioDefaults,muted:d.sound?.muted===true,music:d.sound?.music!==false,effects:d.sound?.effects!==false,volume:Number.isFinite(d.sound?.volume)?Math.max(0,Math.min(1,d.sound.volume)):.55,haptics:['off','results','all'].includes(d.sound?.haptics)?d.sound.haptics:'results'};}
       restoreMenu=true;introSeen=d.introSeen===true;
       if(d.intro && [0,1,2].includes(d.intro.page) && ['menu','ajuda','entrega','turno'].includes(d.intro.target))intro=d.intro;
       profile=cleanProfile(d.profile);draft=cleanProfile(d.draft||profile);
@@ -97,7 +101,7 @@
   function save(){
     clearTimeout(saveTimer);
     if(rehearsal)return;
-    try{if(!saveBlocked){localStorage.setItem(storageKey,JSON.stringify(saved()));sessionNotice='';}}
+    try{if(!storageReadable)sessionNotice=unavailableStorage;else if(!saveBlocked){localStorage.setItem(storageKey,JSON.stringify(saved()));sessionNotice='';}}
     catch{sessionNotice='O navegador ficou sem espaço ou não conseguiu salvar. A partida continua nesta página. Se você atualizar, pode perder o progresso.'}
     const status=$('storage-status');
     if(status){status.hidden=!sessionNotice;status.textContent=sessionNotice}
@@ -286,7 +290,7 @@
     open(shift?.receipts.length===3?'turnofim':session?.phase||'menu');
     if(screen==='escolha' && ['observar','perguntar','historico'].includes(from)){
       const tool=$('stage').querySelector('.investigation [data-value="'+from+'"]');
-      tool?.focus?.();
+      if(tool){GamePages.reveal(tool);tool.focus({preventScroll:true});}
     }
   }
   function phase(id){session.phase=id;open(id)}

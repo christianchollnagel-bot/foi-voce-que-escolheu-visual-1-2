@@ -1,4 +1,6 @@
 {
+  "name": "foi-voce-que-escolheu",
+  "version": "1.3.0",
   "devDependencies": {
     "playwright": "1.58.2"
   },
@@ -15,6 +17,9 @@
     "test:paginacao-mobile": "node tests/paginacao-mobile.cjs",
     "test:videos-iphone": "node tests/videos-iphone.cjs",
     "test:cache-atualizacao": "node tests/cache-atualizacao.cjs",
+    "test:portfolio": "node tests/portfolio.cjs",
+    "test:pwa-publicacao": "node tests/pwa-publicacao.cjs",
+    "verify:release": "node scripts/verificar-entrega.cjs",
     "test:fluxos": "node tests/fluxos-paginados.cjs",
     "test:introducao": "node tests/introducao.cjs",
     "test:mobile": "node tests/mobile.cjs",

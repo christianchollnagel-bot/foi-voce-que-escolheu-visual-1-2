@@ -2,7 +2,7 @@ const {click,reach}=require('./paginas-helper.cjs');
 const {chromium}=require('playwright'),assert=require('node:assert/strict'),fs=require('node:fs');
 const base=process.env.GAME_URL||'http://localhost:4176';
 async function main(){
- const b=await chromium.launch({executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true,args:['--autoplay-policy=document-user-activation-required']});
+ const b=await chromium.launch({executablePath:require('./browser-options.cjs').chromeExecutable,headless:true,args:['--autoplay-policy=document-user-activation-required']});
  const report={checks:[],devices:[]};
  try{
   for(const touch of [false,true]){

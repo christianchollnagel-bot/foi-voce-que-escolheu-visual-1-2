@@ -1,7 +1,7 @@
 window.GamePages=(()=>{
   document.body.classList.toggle('hosted-netlify',location.hostname.endsWith('.netlify.app'));
   let stage=null,viewport=null,flow=null,page=0,total=1,pages=[],contentHeight=0,frame=0,observer=null,mutations=null,anchor=null;
-  const revision='12.11-C',originalTab=new WeakMap();
+  const revision='1.3.0',originalTab=new WeakMap();
   const controls='button,input,select,textarea,a[href],summary,[tabindex]';
   function updateViewport(){
     const visual=window.visualViewport;
@@ -18,17 +18,19 @@ window.GamePages=(()=>{
     if(el.closest('[hidden]')||el.checkVisibility?.({visibilityProperty:true})===false)return false;
     const closed=el.closest('details:not([open])');return !closed||closed.querySelector('summary')?.contains(el);
   }
-  function visible(el){
+  function visible(el,box,bottom){
     if(el.checkVisibility?.({visibilityProperty:true})===false)return false;
     const closed=el.closest('details:not([open])');if(closed&&!closed.querySelector('summary')?.contains(el))return false;
-    const box=viewport.getBoundingClientRect();
-    const bottom=box.top+Math.min(box.height,(pages[page]?.end||box.height)-(pages[page]?.start||0));
     return rectangles(el).some(r=>r.width>0&&r.height>0&&r.left>=box.left-1&&r.right<=box.right+1&&r.top>=box.top-1&&r.bottom<=bottom+1);
   }
   function updateControls(){
-    for(const el of flow.querySelectorAll(controls)){
+    const box=viewport.getBoundingClientRect(),current=pages[page];
+    const bottom=box.top+Math.min(box.height,current?current.end-current.start:box.height);
+    // Ler os limites antes de alterar atributos evita invalidar estilos a cada controle.
+    const states=[...flow.querySelectorAll(controls)].map(el=>[el,visible(el,box,bottom)]);
+    for(const [el,shown] of states){
       if(!originalTab.has(el))originalTab.set(el,el.getAttribute('tabindex'));
-      const shown=visible(el);el.inert=!shown;
+      el.inert=!shown;
       if(shown){const old=originalTab.get(el);if(old===null)el.removeAttribute('tabindex');else el.setAttribute('tabindex',old);el.removeAttribute('aria-hidden');}
       else{el.tabIndex=-1;el.setAttribute('aria-hidden','true');}
     }
@@ -83,7 +85,8 @@ window.GamePages=(()=>{
       while(next<lines.length&&lines[next].end<=limit+.5)next++;
       // Um elemento excepcionalmente alto continua paginado por intervalos finitos.
       if(next===i){const end=Math.min(lines[i].end,limit);result.push({start,end});if(end>=lines[i].end-.5)i++;else lines[i].start=end;continue;}
-      const end=next<lines.length?Math.min(limit,lines[next].start):Math.min(limit,contentHeight);
+      // Cortar no espaço entre blocos impede que a borda do próximo retrato apareça solta.
+      const end=next<lines.length?Math.min(limit,(lines[next-1].end+lines[next].start)/2):Math.min(limit,contentHeight);
       result.push({start,end});i=next;
     }
     return result.length?result:[{start:0,end:Math.min(height,contentHeight)}];

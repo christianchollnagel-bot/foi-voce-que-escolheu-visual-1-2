@@ -1,6 +1,6 @@
 const {chromium}=require('playwright'),assert=require('node:assert/strict'),fs=require('node:fs');const {click,reach}=require('./paginas-helper.cjs');
 async function main(){
- const b=await chromium.launch({executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true});
+ const b=await chromium.launch({executablePath:require('./browser-options.cjs').chromeExecutable,headless:true});
  try{
   const p=await b.newPage({viewport:{width:390,height:844},hasTouch:true,isMobile:true,serviceWorkers:'block'}),errors=[];p.on('pageerror',e=>errors.push(e.message));
   await p.addInitScript(()=>{

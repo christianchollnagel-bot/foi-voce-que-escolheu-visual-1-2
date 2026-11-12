@@ -47,7 +47,7 @@ async function inspect(page,label,{wheel=true}={}){
  return {screen:findings.screen,pages:findings.pages,controls:seen.size};
 }
 async function main(){
- const browser=await chromium.launch({executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true});const report=[],errors=[];
+ const browser=await chromium.launch({executablePath:require('./browser-options.cjs').chromeExecutable,headless:true});const report=[],errors=[];
  try{
   const p=await browser.newPage({serviceWorkers:'block'});p.setDefaultTimeout(12000);p.on('pageerror',e=>errors.push(e.message));
   await p.goto(base+'/?teste=1');await p.evaluate(()=>document.body.classList.add('hosted-netlify'));await p.evaluate(()=>document.fonts.ready);

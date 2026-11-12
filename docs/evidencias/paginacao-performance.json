@@ -1,0 +1,14 @@
+{
+  "engine": "157.0.8103.39",
+  "screen": "catalogo",
+  "method": "100 recalculos locais, sem simular telefone",
+  "before": {
+    "median": 0.6,
+    "p95": 1.3
+  },
+  "after": {
+    "samples": 100,
+    "median": 0.6000000014901161,
+    "p95": 1.0999999977648258
+  }
+}

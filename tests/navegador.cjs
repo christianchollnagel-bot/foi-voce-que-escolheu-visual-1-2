@@ -1,7 +1,7 @@
 const {click,reach}=require('./paginas-helper.cjs');
 const {chromium,webkit}=require('playwright'),fs=require('node:fs'),assert=require('node:assert/strict');
 const base=process.env.GAME_URL||'http://localhost:4173',errors=[],results=[];
-const executablePath='C:/Program Files/Google/Chrome/Application/chrome.exe';
+const executablePath=require('./browser-options.cjs').chromeExecutable;
 fs.mkdirSync('tests/resultados',{recursive:true});
 async function main(){
  const browser=await (process.env.GAME_BROWSER==='webkit'?webkit:chromium).launch(process.env.GAME_BROWSER==='webkit'?{headless:true}:{executablePath,headless:true});

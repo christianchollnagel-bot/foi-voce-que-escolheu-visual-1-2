@@ -1,0 +1,25 @@
+{
+  "version": "1.3.0",
+  "report": [
+    {
+      "engine": "chromium",
+      "browser": "157.0.8103.39",
+      "productionFlow": true,
+      "reload": "mesma decisão recuperada",
+      "storageBlocked": "partida jogável, sem sobrescrita",
+      "accessibleTransport": "Enter e ativação sem ponteiro respondem; pausa zera entrada",
+      "noScript": "mensagem visível",
+      "errors": []
+    },
+    {
+      "engine": "webkit",
+      "browser": "26.0",
+      "productionFlow": true,
+      "reload": "mesma decisão recuperada",
+      "storageBlocked": "partida jogável, sem sobrescrita",
+      "accessibleTransport": "Enter e ativação sem ponteiro respondem; pausa zera entrada",
+      "noScript": "mensagem visível",
+      "errors": []
+    }
+  ]
+}

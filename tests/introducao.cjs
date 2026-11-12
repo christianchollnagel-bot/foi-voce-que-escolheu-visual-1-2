@@ -1,7 +1,7 @@
 const {chromium}=require('playwright'),assert=require('node:assert/strict'),fs=require('node:fs');
 const {click,settle}=require('./paginas-helper.cjs');const base=process.env.GAME_URL||'http://localhost:4180';
 async function main(){
- const browser=await chromium.launch({executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true}),out=[],errors=[];
+ const browser=await chromium.launch({executablePath:require('./browser-options.cjs').chromeExecutable,headless:true}),out=[],errors=[];
  try{
   const p=await browser.newPage({viewport:{width:390,height:844},serviceWorkers:'block'});p.on('dialog',d=>d.accept());p.on('pageerror',e=>errors.push(e.message));
   await p.goto(base+'/?teste=1');await p.evaluate(()=>document.body.classList.add('hosted-netlify'));await click(p,'Abrir o arquivo');await click(p,'Entendi · ir para o menu');await click(p,'Nova partida');

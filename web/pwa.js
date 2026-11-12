@@ -11,7 +11,7 @@ if (matchMedia('(display-mode: standalone)').matches && matchMedia('(pointer: fi
   }, {once: true});
 }
 (() => {
-  const version = 'Edição 12.11-C · base Visual 1.2';
+  const version = 'Edição '+(window.GamePages?.revision||'Visual 1.2');
   let status = 'Preparando os arquivos para jogar sem conexão…';
   function announce(message) {
     status = message;

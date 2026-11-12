@@ -1,6 +1,6 @@
 const {click,reach}=require('./paginas-helper.cjs');
 const {chromium}=require('playwright'),fs=require('node:fs'),assert=require('node:assert/strict');
-const executablePath='C:/Program Files/Google/Chrome/Application/chrome.exe',base=process.env.GAME_URL||'http://localhost:4173',out=[];
+const executablePath=require('./browser-options.cjs').chromeExecutable,base=process.env.GAME_URL||'http://localhost:4173',out=[];
 async function main(){
  const browser=await chromium.launch({executablePath,headless:true});const context=await browser.newContext({serviceWorkers:'block'});const page=await context.newPage();let errors=[];page.on('pageerror',e=>errors.push(e.message));page.on('dialog',d=>d.accept());
  await page.addInitScript(()=>{window.vibrations=[];navigator.vibrate=p=>{vibrations.push(p);return true}});
