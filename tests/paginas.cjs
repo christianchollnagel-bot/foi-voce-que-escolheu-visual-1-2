@@ -37,7 +37,7 @@ async function main(){
  const browser=await chromium.launch({executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true});const report=[],errors=[];
  try{
   const p=await browser.newPage({serviceWorkers:'block'});p.setDefaultTimeout(12000);p.on('pageerror',e=>errors.push(e.message));
-  await p.goto(base+'/?teste=1');await p.evaluate(()=>document.fonts.ready);
+  await p.goto(base+'/?teste=1');await p.evaluate(()=>document.body.classList.add('hosted-netlify'));await p.evaluate(()=>document.fonts.ready);
   for(const [width,height] of [[390,844],[320,568],[844,390],[1440,900]]){
    await p.setViewportSize({width,height});
    for(const large of [false,true]){

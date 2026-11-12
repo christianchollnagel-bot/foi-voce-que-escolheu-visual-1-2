@@ -6,7 +6,7 @@ async function main(){
  try{
   const p=await browser.newPage({viewport:{width:320,height:568},serviceWorkers:'block'});p.setDefaultTimeout(12000);p.on('pageerror',e=>errors.push(e.message));
   let accept=true;p.on('dialog',d=>accept?d.accept():d.dismiss());
-  await p.goto(base+'/?teste=1');await p.evaluate(()=>document.fonts.ready);
+  await p.goto(base+'/?teste=1');await p.evaluate(()=>document.body.classList.add('hosted-netlify'));await p.evaluate(()=>document.fonts.ready);
   const state=()=>p.evaluate(()=>FVQE.estado());
   const first=async()=>{await (await reach(p,p.locator('.actions button').first())).click();await settle(p);};
   await p.evaluate(()=>FVQE.iniciar(0));

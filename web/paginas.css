@@ -2,13 +2,15 @@
 html,body{width:100%;height:100%;min-height:0;overflow:hidden;overscroll-behavior:none}
 .desk{height:var(--app-height,100dvh);min-height:0;max-height:var(--app-height,100dvh);width:100%;overflow:clip}
 #stage{height:var(--app-height,100dvh);max-height:var(--app-height,100dvh);overflow:clip;min-height:0}
+/* Espaço para a identificação pública do host, sem cobrir os controles do jogo. */
+body.hosted-netlify .desk,body.hosted-netlify #stage{height:calc(var(--app-height,100dvh) - 48px);max-height:calc(var(--app-height,100dvh) - 48px)}
 .rail{min-width:0}
 #stage>.band,#stage>.sound-bar,#stage>.foot,#stage>.page-nav,#storage-status{flex:none}
 #stage>.sound-bar{position:static}
 .page-viewport{flex:1 1 0;min-height:0;margin:12px;overflow:clip;position:relative;outline:none}
 #stage .inside{height:100%;padding:0;display:block;column-count:1;column-fill:auto;column-gap:24px;transform:translateX(var(--page-offset,0px));overflow:visible}
 #stage .inside>.kicker{margin-bottom:.55em}
-#stage .inside>h1{margin-bottom:.35em;break-after:avoid}
+#stage .inside>h1{margin-bottom:.35em;line-height:1.15;break-after:avoid}
 #stage .bookbody,#stage .cd,#stage .audio-settings,#stage .actions{display:block}
 #stage .bookbody>*{margin-bottom:.65em}
 #stage .bookbody>:last-child{margin-bottom:0}
@@ -59,6 +61,7 @@ html,body{width:100%;height:100%;min-height:0;overflow:hidden;overscroll-behavio
 @media(max-height:520px) and (orientation:landscape){#stage{width:min(100%,900px);max-width:900px}#stage>.band{padding:4px 12px;min-height:30px}#stage .sound-bar{padding-block:3px}#stage>.foot{display:none}.page-viewport{margin:8px 14px}#stage .inside>h1{font-size:1.8rem}#stage .page-nav{padding-block:4px}#stage .plate-art{height:min(100px,calc(var(--page-height,250px)*.4))}}
 body.editing-small #stage>.band,body.editing-small #stage>.sound-bar,body.editing-small #stage>.foot{display:none}
 body.editing-small .page-viewport{margin:8px 12px}
+@media(max-height:520px) and (orientation:landscape){#stage .cargo{padding:4px}#stage .cargo-track{height:42px;margin:3px 0}#stage .cargo-box{top:0;font-size:32px}#stage .cargo-status{font-size:.85em;line-height:1.2;margin:3px 0}#stage .cargo-buttons button{padding:6px}}
 /* O filme ocupa a janela inteira de leitura, com controles sempre visíveis. */
 #stage[data-screen=prologo] .inside{display:flex;flex-direction:column;transform:none;column-count:auto;gap:0}
 #stage[data-screen=prologo] .inside>.kicker,#stage[data-screen=prologo] .inside>h1,#stage[data-screen=prologo] .actions,#stage[data-screen=prologo]>.page-nav{display:none}

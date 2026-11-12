@@ -4,7 +4,7 @@ async function main(){
  const browser=await chromium.launch({executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true}),out=[],errors=[];
  try{
   const p=await browser.newPage({viewport:{width:390,height:844},serviceWorkers:'block'});p.on('dialog',d=>d.accept());p.on('pageerror',e=>errors.push(e.message));
-  await p.goto(base+'/?teste=1');await click(p,'Abrir o arquivo');await click(p,'Entendi · ir para o menu');await click(p,'Nova partida');
+  await p.goto(base+'/?teste=1');await p.evaluate(()=>document.body.classList.add('hosted-netlify'));await click(p,'Abrir o arquivo');await click(p,'Entendi · ir para o menu');await click(p,'Nova partida');
   await p.waitForFunction(()=>document.querySelector('fvqe-introducao')?.elapsed>500);
   await click(p,'Pausar animação');const paused=await p.locator('fvqe-introducao').evaluate(e=>e.elapsed);await p.waitForTimeout(250);assert.equal(await p.locator('fvqe-introducao').evaluate(e=>e.elapsed),paused);
   for(const large of [false,true]){

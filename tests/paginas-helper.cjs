@@ -16,5 +16,5 @@ async function reach(page,locator){
  throw Error('Controle inacessível pelas páginas: '+locator);
 }
 const named=(page,name)=>page.getByRole('button',{name,exact:true,includeHidden:true});
-async function click(page,name){await (await reach(page,named(page,name))).click();await settle(page);}
+async function click(page,name){const target=await reach(page,named(page,name));await page.waitForTimeout(280);await target.click();await settle(page);}
 module.exports={settle,reach,named,click};

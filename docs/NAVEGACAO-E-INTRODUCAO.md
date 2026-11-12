@@ -4,7 +4,7 @@ Atualização de 12/11/2026, sobre a branch `codex/atualizacao-completa`.
 
 ## Comportamento entregue
 
-- A moldura usa a altura disponível da janela. Textos, ações, crachás e histórico são distribuídos em páginas, com **Anterior / Próxima** e indicador de página fixos. Não há rolagem do documento nem da área do jogo.
+- A moldura usa a altura disponível da janela. No Netlify, reserva 48 px inferiores para que a identificação da hospedagem não cubra botões. Textos, ações, crachás e histórico são distribuídos em páginas, com **Anterior / Próxima** e indicador de página fixos. Não há rolagem do documento nem da área do jogo.
 - A paginação recalcula ao redimensionar, abrir um ato, carregar imagens ou mudar a fonte. Não remove texto nem altera escolhas. Controles fora da página ficam fora da navegação por teclado; PageUp / PageDown também mudam páginas. A seleção do crachá preserva o foco no item escolhido.
 - No transporte, configuração e instruções aparecem antes do início. Durante o equilíbrio, carga, setas e pausa permanecem juntos; a paginação fica bloqueada até pausar. O texto informa corretamente 9, 10 ou 12 segundos. As setas não interceptam mais o seletor antes de começar, e o status não é reescrito a cada quadro.
 - **Resetar jogo** aparece logo após **Nova partida** no menu. Sempre pede confirmação. Cancela-se sem alterar o progresso. Ao confirmar, apaga partida, recibos, escolhas, turno e crachá, preserva som e acessibilidade, salva e volta ao menu. Não limpa dados de outros aplicativos. Registro ilegível continua protegido pela recuperação já existente.
@@ -26,7 +26,7 @@ Paleta, tipografia e contornos seguem o jogo existente. Não há nova faixa, voz
 
 ## Evidências
 
-- `tests/paginas.cjs`: 120 combinações de telas, tamanhos 320×568, 390×844, 844×390 e 1440×900, com fontes normal/ampliada. Verifica texto verticalmente íntegro, acesso a todos os controles por páginas e roda do mouse sem mover o documento/moldura. Até oito páginas nas telas testadas.
+- `tests/paginas.cjs`: 120 combinações de telas, tamanhos 320×568, 390×844, 844×390 e 1440×900, com fontes normal/ampliada. Verifica texto verticalmente íntegro, acesso a todos os controles por páginas e roda do mouse sem mover o documento/moldura. Até 14 páginas nas telas testadas, incluindo texto ampliado em paisagem com espaço reservado à identificação do host.
 - `tests/fluxos-paginados.cjs`: percurso, consultas, recibo, histórico, atos expandidos, foco do crachá, janela reduzida durante edição, rotação, transporte em fonte ampliada, reset/cancelamento e persistência.
 - `tests/introducao.cjs`: as três cenas nos quatro tamanhos e duas fontes; pausa, redução de movimento, duração real de aproximadamente 15 s, conclusão automática, replay, pular e persistência.
 - `tests/integridade-host.cjs`: aceita HTML original e HTML com a marcação conhecida do Netlify, preserva a resposta e rejeita alterações no jogo, scripts e marcação desconhecida.
