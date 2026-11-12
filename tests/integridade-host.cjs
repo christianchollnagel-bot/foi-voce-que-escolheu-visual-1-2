@@ -13,10 +13,10 @@ async function install(body,script=app,scope='https://game.netlify.app/'){
  let pending;handlers.install({waitUntil:p=>pending=p});return {pending,stored};
 }
 async function main(){
- for(const body of [html,hosted]){const {pending,stored}=await install(body);await pending;assert.equal(stored.get('https://game.netlify.app/index.html'),body,'conserva HTML original e identificação do host');assert.equal(stored.size,2);}
- for(const [body,script,scope] of [[hosted.replace('Arquivo','CORROMPIDO'),app],[hosted,app+'alterado'],[hosted+'<script>erro()</script>',app],[hosted,app,'http://localhost/']]){
+ for(const body of [html,hosted,hosted.replace('data-account-tier="free"','data-account-tier="personal"')]){const {pending,stored}=await install(body);await pending;assert.equal(stored.get('https://game.netlify.app/index.html'),body,'conserva HTML original e identificação do host');assert.equal(stored.size,2);}
+ for(const [body,script,scope] of [[hosted.replace('Arquivo','CORROMPIDO'),app],[hosted,app+'alterado'],[hosted+'<script>erro()</script>',app],[hosted.replace('data-account-tier="free"','data-account-tier="desconhecido"'),app],[hosted,app,'http://localhost/']]){
   const {pending,stored}=await install(body,script,scope);await assert.rejects(pending,/integridade inválida/i);assert.equal(stored.size,0,'remove cache incompleto');
  }
- console.log('Integridade: HTML original/Netlify aprovados, resposta preservada, alterações no jogo/scripts e marcação desconhecida rejeitadas.');
+ console.log('Integridade: HTML original/Netlify Free e Personal aprovados, resposta preservada, alterações no jogo/scripts e marcação desconhecida rejeitadas.');
 }
 main().catch(e=>{console.error(e);process.exitCode=1});

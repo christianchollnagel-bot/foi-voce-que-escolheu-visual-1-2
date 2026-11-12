@@ -3626,7 +3626,7 @@ const resources = [
   ]
 ];
 const prefix = 'fvqe-v1|' + self.registration.scope + '|';
-const cacheName = prefix + '6e1df5eb9ff23ab3fb10505d260e3435f253370242912c3d32724431831e13cd';
+const cacheName = prefix + '382c83db29bc4872323d8df09ed671cd3c58b69e785a0d2b8bdf69b05621bab2';
 const root = new URL(self.registration.scope);
 const urls = new Map(resources.map(([path, hash]) => [new URL(path, root).href, hash]));
 
@@ -3634,7 +3634,7 @@ const urls = new Map(resources.map(([path, hash]) => [new URL(path, root).href, 
 // A conferência ignora somente esses dois trechos conhecidos; o cache conserva a resposta original.
 function sourceHtml(html) {
   return html.replace(/\n<!-- This site is hosted on Netlify\. Anyone can build and deploy a site\n     like this one for free: https:\/\/netlify\.new\/\?[^\r\n<>]+\n     Netlify hosting facts for this site: static\/SSR served via Netlify Edge\. -->/, '')
-    .replace(/<script async src="\/\.netlify\/scripts\/hud\?variant=public" data-nf-variant="public" data-netlify-site-id="[0-9a-f-]+" data-app-host="app\.netlify\.com" data-account-tier="free"><\/script>\n?$/, '');
+    .replace(/<script async src="\/\.netlify\/scripts\/hud\?variant=public" data-nf-variant="public" data-netlify-site-id="[0-9a-f-]+" data-app-host="app\.netlify\.com" data-account-tier="(?:free|personal)"><\/script>\n?$/, '');
 }
 
 self.addEventListener('install', event => {
