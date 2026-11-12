@@ -1,0 +1,393 @@
+{
+  "navegador": "chrome",
+  "eventos": [
+    "Servidor encerrado, perfil offline e recarga realizada.",
+    "Reinício limpou decisões da tentativa e reteve os 13 recibos da aba.",
+    "Fechamento e nova abertura sem servidor criaram sessão nova."
+  ],
+  "errosJS": [],
+  "externos": [],
+  "capitulos": [
+    {
+      "id": 0,
+      "escolhas": 3,
+      "recibo": "Entregador",
+      "vitoria": false,
+      "constrangimento": true
+    },
+    {
+      "id": 1,
+      "escolhas": 4,
+      "recibo": "Entregador",
+      "vitoria": false,
+      "constrangimento": false
+    },
+    {
+      "id": 2,
+      "escolhas": 3,
+      "recibo": "Entregador",
+      "vitoria": false,
+      "constrangimento": true
+    },
+    {
+      "id": 3,
+      "escolhas": 4,
+      "recibo": "Entregador",
+      "vitoria": false,
+      "constrangimento": false
+    },
+    {
+      "id": 4,
+      "escolhas": 4,
+      "recibo": "Entregador",
+      "vitoria": true,
+      "constrangimento": true
+    },
+    {
+      "id": 5,
+      "escolhas": 3,
+      "recibo": "Entregador",
+      "vitoria": false,
+      "constrangimento": false
+    },
+    {
+      "id": 6,
+      "escolhas": 4,
+      "recibo": "Entregador",
+      "vitoria": true,
+      "constrangimento": true
+    },
+    {
+      "id": 7,
+      "escolhas": 4,
+      "recibo": "Entregador",
+      "vitoria": false,
+      "constrangimento": false
+    },
+    {
+      "id": 8,
+      "escolhas": 3,
+      "recibo": "Entregador",
+      "vitoria": false,
+      "constrangimento": true
+    },
+    {
+      "id": 9,
+      "escolhas": 4,
+      "recibo": "Entregador",
+      "vitoria": false,
+      "constrangimento": false
+    },
+    {
+      "id": 10,
+      "escolhas": 3,
+      "recibo": "Entregador",
+      "vitoria": true,
+      "constrangimento": true
+    },
+    {
+      "id": 11,
+      "escolhas": 3,
+      "recibo": "Entregador",
+      "vitoria": false,
+      "constrangimento": false
+    },
+    {
+      "id": 12,
+      "escolhas": 6,
+      "recibo": "Entregador",
+      "vitoria": true,
+      "constrangimento": false
+    }
+  ],
+  "telas": [
+    {
+      "w": 360,
+      "h": 640,
+      "width": 360,
+      "height": 640,
+      "extraX": 0,
+      "overflowPage": 0,
+      "rola": true,
+      "pausa": {
+        "largura": 63.5625,
+        "altura": 36
+      },
+      "ultimoAlcancavel": true
+    },
+    {
+      "w": 390,
+      "h": 844,
+      "width": 390.3999938964844,
+      "height": 694.0375366210938,
+      "extraX": 0,
+      "overflowPage": 0,
+      "rola": true,
+      "pausa": {
+        "largura": 70.4375,
+        "altura": 36
+      },
+      "ultimoAlcancavel": true
+    },
+    {
+      "w": 768,
+      "h": 1365,
+      "width": 768,
+      "height": 1365.3250732421875,
+      "extraX": 0,
+      "overflowPage": 0,
+      "rola": false,
+      "pausa": {
+        "largura": 71.38750457763672,
+        "altura": 36
+      },
+      "ultimoAlcancavel": true
+    },
+    {
+      "w": 1080,
+      "h": 1920,
+      "width": 1080,
+      "height": 1920,
+      "extraX": 0,
+      "overflowPage": 0,
+      "rola": false,
+      "pausa": {
+        "largura": 71.38750457763672,
+        "altura": 36
+      },
+      "ultimoAlcancavel": true
+    },
+    {
+      "w": 1366,
+      "h": 768,
+      "width": 432,
+      "height": 768,
+      "extraX": 0,
+      "overflowPage": 0,
+      "rola": false,
+      "pausa": {
+        "largura": 65.6875,
+        "altura": 36
+      },
+      "ultimoAlcancavel": true
+    },
+    {
+      "w": 1200,
+      "h": 480,
+      "width": 270,
+      "height": 480,
+      "extraX": 0,
+      "overflowPage": 0,
+      "rola": true,
+      "pausa": {
+        "largura": 63.5625,
+        "altura": 36
+      },
+      "ultimoAlcancavel": true
+    }
+  ],
+  "acessibilidade": {
+    "primeiroFoco": [
+      "Abrir o arquivo",
+      "solid"
+    ],
+    "botoesLidos": [
+      "Ⅱ Pausa",
+      "Examinar a cena",
+      "Perguntar a Dalva",
+      "Caderno",
+      "Perguntar como ela quer ser apresentada",
+      "Pegar a carta pela ponta"
+    ],
+    "ordemTab": [
+      "Examinar a cena",
+      "Perguntar a Dalva",
+      "Caderno",
+      "01Perguntar como ela quer ser apresentada",
+      "02Pegar a carta pela ponta",
+      "\nCOLEÇÃO / FICÇÃO INTERATIVAFoi vocêque escolheuO Arquivo das EscolhasINOVAÇÃO CHRIS · 2026/2\nARQUIVO DAS ESCOLHASⅡ PausaATO I · O balcão　/　01O primeiro gestoQuem entregaEntregadorAtenção01Em cenaDalva PiresAtençãoLevar o pedido de Dalva até Inês sem contar pra fila o que diz a carta.Antes de decidirExamine a cena, faça uma pergunta ou consulte seus registros. A decisão continua aberta.Examinar a cenaPerguntar a DalvaCadernoSua decisão01Perguntar como ela quer ser apresentada02Pegar a carta pela pontaUma voz baixa\nFOLHA DE SERVIÇOAs duas margensLevar o pedido de Dalva até Inês sem contar pra fila o que diz a carta.Consultar histórico\nAtive JavaScript no navegador para abrir o jogo.\n\n\n\n\n\n\n"
+    ],
+    "preferencias": "large contrast motion-off"
+  },
+  "versao": {
+    "protocolVersion": "1.3",
+    "product": "Chrome/156.0.8078.80",
+    "revision": "@fb096c0011f9d50f0a264a9376420cdea9c421e3",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+    "jsVersion": "15.6.75.27"
+  },
+  "manifesto": {
+    "url": "http://127.0.0.1:63927/fvqe-visual-v1-2/manifest.webmanifest",
+    "errors": [],
+    "data": "{\r\n  \"id\":\"./fvqe-visual-v1-2\",\r\n  \"name\":\"Foi Você Que Escolheu · O Arquivo das Escolhas (Visual 1.2)\",\r\n  \"short_name\":\"Escolheu Visual 1.2\",\r\n  \"description\":\"Faça entregas, escolha em quem confiar e confira o que ficou no recibo.\",\r\n  \"lang\":\"pt-BR\",\"start_url\":\"./index.html\",\"scope\":\"./\",\"display\":\"standalone\",\"launch_handler\":{\"client_mode\":\"focus-existing\"},\r\n  \"background_color\":\"#F4EBDD\",\"theme_color\":\"#F4EBDD\",\r\n  \"icons\":[\r\n    {\"src\":\"icons/v1-192.png\",\"sizes\":\"192x192\",\"type\":\"image/png\",\"purpose\":\"any\"},\r\n    {\"src\":\"icons/v1-512.png\",\"sizes\":\"512x512\",\"type\":\"image/png\",\"purpose\":\"any\"}\r\n  ]\r\n}\r\n",
+    "parsed": {
+      "scope": "http://127.0.0.1:63927/fvqe-visual-v1-2/"
+    },
+    "manifest": {
+      "backgroundColor": "rgba(244,235,221,1)",
+      "description": "Faça entregas, escolha em quem confiar e confira o que ficou no recibo.",
+      "display": "kStandalone",
+      "icons": [
+        {
+          "url": "http://127.0.0.1:63927/fvqe-visual-v1-2/icons/v1-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        },
+        {
+          "url": "http://127.0.0.1:63927/fvqe-visual-v1-2/icons/v1-512.png",
+          "sizes": "512x512",
+          "type": "image/png"
+        }
+      ],
+      "id": "http://127.0.0.1:63927/fvqe-visual-v1-2",
+      "launchHandler": {
+        "clientMode": "kFocusExisting"
+      },
+      "name": "Foi Você Que Escolheu · O Arquivo das Escolhas (Visual 1.2)",
+      "orientation": "DEFAULT",
+      "preferRelatedApplications": false,
+      "scope": "http://127.0.0.1:63927/fvqe-visual-v1-2/",
+      "startUrl": "http://127.0.0.1:63927/fvqe-visual-v1-2/index.html",
+      "themeColor": "rgba(244,235,221,1)"
+    }
+  },
+  "instalabilidade": {
+    "installabilityErrors": []
+  },
+  "caches": {
+    "fvqe-v1|http://127.0.0.1:63927/fvqe-visual-v1-2/|a6251dc039fa20497a0ed895c988622a5e85a2b4c79e390e937865605a25aea8": 889
+  },
+  "os": {
+    "badgeCount": 0,
+    "fileHandlers": []
+  },
+  "lancamento": "9BDDFD121611657BFF99174FDA6FD749",
+  "alvos": [
+    {
+      "targetId": "4F9E054CDA16E7F03C350F74981197B8",
+      "type": "service_worker",
+      "title": "Service Worker http://127.0.0.1:63927/fvqe-visual-v1-2/sw.js",
+      "url": "http://127.0.0.1:63927/fvqe-visual-v1-2/sw.js",
+      "attached": false,
+      "canAccessOpener": false,
+      "browserContextId": "411C1D9533E2A776E00AC9EDA489F4B9"
+    },
+    {
+      "targetId": "EE438872DC4235DF8C42FB8D96971EE2",
+      "type": "service_worker",
+      "title": "Service Worker chrome-extension://fignfifoniblkonapihmkfakmlgkbkcf/service_worker.js",
+      "url": "chrome-extension://fignfifoniblkonapihmkfakmlgkbkcf/service_worker.js",
+      "attached": false,
+      "canAccessOpener": false,
+      "browserContextId": "411C1D9533E2A776E00AC9EDA489F4B9"
+    },
+    {
+      "targetId": "C0112D76396BC33A57EA7687A67816E6",
+      "type": "background_page",
+      "title": "Google Hangouts",
+      "url": "chrome-extension://nkeimhogjdpnpccoofpliimaahmaaome/background.html",
+      "attached": false,
+      "canAccessOpener": false,
+      "browserContextId": "411C1D9533E2A776E00AC9EDA489F4B9"
+    },
+    {
+      "targetId": "3AADDF2AB294D6B9F825908A13C8E7ED",
+      "type": "browser_ui",
+      "title": "Omnibox Popup",
+      "url": "chrome://omnibox-popup.top-chrome/",
+      "attached": false,
+      "canAccessOpener": false,
+      "browserContextId": "411C1D9533E2A776E00AC9EDA489F4B9"
+    },
+    {
+      "targetId": "67123EF1189169D1A054EAF280BFCC95",
+      "type": "browser_ui",
+      "title": "Omnibox Popup",
+      "url": "chrome://omnibox-popup.top-chrome/omnibox_popup_aim.html",
+      "attached": false,
+      "canAccessOpener": false,
+      "browserContextId": "411C1D9533E2A776E00AC9EDA489F4B9"
+    },
+    {
+      "targetId": "CA670C47483BC44A9C21284709293AED",
+      "type": "page",
+      "title": "about:blank",
+      "url": "about:blank",
+      "attached": false,
+      "canAccessOpener": false,
+      "browserContextId": "411C1D9533E2A776E00AC9EDA489F4B9"
+    },
+    {
+      "targetId": "0C6BD0993539802DEB623F7DFBDDA766",
+      "type": "page",
+      "title": "FOI VOCÊ QUE ESCOLHEU · O Arquivo das Escolhas",
+      "url": "http://127.0.0.1:63927/fvqe-visual-v1-2/index.html",
+      "attached": false,
+      "canAccessOpener": false,
+      "browserContextId": "411C1D9533E2A776E00AC9EDA489F4B9"
+    },
+    {
+      "targetId": "03FFFC1013853FFEB887B19E881902DB",
+      "type": "page",
+      "title": "FOI VOCÊ QUE ESCOLHEU · O Arquivo das Escolhas",
+      "url": "http://127.0.0.1:63927/fvqe-visual-v1-2/",
+      "attached": true,
+      "canAccessOpener": false,
+      "browserContextId": "411C1D9533E2A776E00AC9EDA489F4B9"
+    },
+    {
+      "targetId": "531719AB691A34C9ECFC062FCC6AD13D",
+      "type": "tab",
+      "title": "Google Hangouts",
+      "url": "chrome-extension://nkeimhogjdpnpccoofpliimaahmaaome/background.html",
+      "attached": false,
+      "canAccessOpener": false,
+      "browserContextId": "411C1D9533E2A776E00AC9EDA489F4B9"
+    },
+    {
+      "targetId": "ED86F259529B6368D08D0EE96AFEA1D2",
+      "type": "tab",
+      "title": "about:blank",
+      "url": "about:blank",
+      "attached": false,
+      "canAccessOpener": false,
+      "browserContextId": "411C1D9533E2A776E00AC9EDA489F4B9",
+      "embedderData": {
+        "tabActive": false,
+        "tabPinned": false,
+        "tabStripIndex": 0
+      }
+    },
+    {
+      "targetId": "9BDDFD121611657BFF99174FDA6FD749",
+      "type": "tab",
+      "title": "FOI VOCÊ QUE ESCOLHEU · O Arquivo das Escolhas",
+      "url": "http://127.0.0.1:63927/fvqe-visual-v1-2/index.html",
+      "attached": false,
+      "canAccessOpener": false,
+      "browserContextId": "411C1D9533E2A776E00AC9EDA489F4B9",
+      "embedderData": {
+        "tabActive": true,
+        "tabPinned": false,
+        "tabStripIndex": 0
+      }
+    },
+    {
+      "targetId": "960027AEC7C830A3E71B8CB454CE9A25",
+      "type": "tab",
+      "title": "FOI VOCÊ QUE ESCOLHEU · O Arquivo das Escolhas",
+      "url": "http://127.0.0.1:63927/fvqe-visual-v1-2/",
+      "attached": false,
+      "canAccessOpener": false,
+      "browserContextId": "411C1D9533E2A776E00AC9EDA489F4B9",
+      "embedderData": {
+        "tabActive": true,
+        "tabPinned": false,
+        "tabStripIndex": 1
+      }
+    }
+  ],
+  "independente": true,
+  "fim": true,
+  "remocaoTeste": true
+}

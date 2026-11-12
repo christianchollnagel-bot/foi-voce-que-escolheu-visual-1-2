@@ -1,0 +1,73 @@
+/* Edição de campo · Visual 1.2 */
+@font-face{font-family:Manchete;src:url("assets/fontes/Manchete.ttf") format("truetype");font-weight:700;font-display:swap}
+@font-face{font-family:Leitura;src:url("assets/fontes/Leitura.ttf") format("truetype");font-weight:100 900;font-display:swap}
+:root{--display:Manchete,"Arial Narrow",sans-serif;--sans:Leitura,Arial,sans-serif;--mono:"Liberation Mono","Courier New",monospace;--reading:clamp(.94rem,2.05svh,1.1rem)}
+#stage{font:400 var(--reading)/1.43 var(--sans);container-type:inline-size}
+#stage .inside{padding:clamp(12px,4.1cqw,24px);gap:.52em}
+#stage h1{font:700 clamp(2rem,9.6cqw,3.65rem)/.98 var(--display);letter-spacing:-.018em;text-wrap:balance;margin-bottom:.08em}
+#stage h3{font:700 1.22em/1.12 var(--display)}
+#stage p,#stage li{line-height:1.48}
+#stage .kicker,#stage .overline,.file-tab,#stage .foot{font:700 max(.67em,10px)/1.35 var(--mono);letter-spacing:.07em}
+#stage .kicker::before{width:1.8em;height:3px}
+#stage .band{padding:.62em 1.05em;font:700 max(.7em,10px)/1.2 var(--mono)}
+#stage .bookbody{gap:.62em}
+#stage .actions{margin-top:.4em;gap:.35em;border-top:2px solid var(--tinta);padding:.55em 0 0}
+#stage .actions button{font:650 1em/1.2 var(--sans);min-height:44px;padding:.62em .8em}
+#stage .actions .subtle{font-weight:520}
+#stage .actions .primary{border-color:var(--ultra)}
+#stage .actions button:not(.primary):not(.choice){background:#fff9ef;border-left:2px solid var(--tinta)}
+#stage button:focus-visible,#stage summary:focus-visible,#stage input:focus-visible{outline:3px solid var(--tinta);outline-offset:2px;box-shadow:0 0 0 5px var(--menta)}
+#stage .actions button:active,.investigation button:active{translate:0 1px}
+#stage .plate{grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);border-width:1px}
+#stage .plate figcaption{border-left:4px solid var(--menta);justify-content:center;gap:.32em;padding:.68em}
+#stage .plate figcaption strong{font:700 1.32em/1.04 var(--display)}
+#stage .plate .folio{overflow-wrap:anywhere}
+#stage .plate-art{height:clamp(112px,24svh,228px)}
+#stage .plate figcaption .portrait{width:clamp(42px,11cqw,72px);height:auto;aspect-ratio:1}
+#stage .dialogue{background:transparent;border-left:0;border-top:1px solid var(--tinta);padding:.55em 0 .1em;grid-template-columns:clamp(56px,17cqw,94px) 1fr}
+#stage .dialogue .actor{box-shadow:2px 2px 0 var(--tinta)}
+#stage .dialogue strong{font:700 1.28em/1.08 var(--display)}
+#stage .dialogue.featured{border-top:none;background:#fff9ef;border-left:3px solid var(--ultra);padding:.65em .8em}
+#stage q,#stage .quote .dialogue p,#stage .answer .dialogue p{font:400 1.08em/1.44 Georgia,"Times New Roman",serif}
+#stage q{font-style:italic}
+#stage[data-screen=escolha] .bookbody{flex:0 0 auto}
+#stage[data-screen=escolha] .plate-art{height:clamp(100px,19svh,182px)}
+#stage[data-screen=escolha] .actions{margin-top:.2em}
+.investigation{border-block:1px solid var(--tinta);padding:.52em 0 .5em;display:grid;gap:.3em}
+.investigation h2,.decision-label{font:700 .74em/1.25 var(--mono);letter-spacing:.09em;text-transform:uppercase}
+#stage .investigation p{font:.85em/1.32 var(--sans)}
+.investigation>div{display:flex;gap:4px;flex-wrap:wrap}
+#stage .investigation button{flex:1 1 5em;display:flex;align-items:center;justify-content:center;gap:.35em;min-height:42px;padding:.28em .32em;background:var(--papel);color:var(--tinta);border:1px solid var(--tinta);border-radius:0;box-shadow:none;font:650 .82em/1.16 var(--sans)}
+.investigation svg,.file-tab svg,.detail-print svg{width:1.4em;height:1.4em;flex:none;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+#stage .investigation button:hover{background:var(--menta)}
+#stage[data-screen=escolha] .actions{border:0;padding-top:0}
+.decision-label{color:var(--ultra);margin:.12em 0 .22em}
+#stage .actions button.choice{display:grid;grid-template-columns:1.65em minmax(0,1fr);gap:.7em;align-items:center;background:var(--ultra);color:white;border:1px solid var(--ultra);font-weight:650}
+#stage .choice b{position:static;transform:none;color:var(--ultra);background:var(--papel);font:bold .83em/1.55 var(--mono);padding:0;text-align:center}
+.detail-print{margin:0;position:relative;border:2px solid var(--tinta);background:var(--tinta);color:var(--papel)}
+.detail-print img{width:100%;height:clamp(128px,30svh,280px);object-fit:cover;object-position:center 62%;display:block}
+.detail-print figcaption,.file-tab{display:flex;gap:.6em;align-items:center;padding:.55em .8em}
+.detail-print figcaption{font:700 1.25em/1.1 var(--display)}
+.finding,.answer,.inquiry{padding:.7em .85em;border-left:4px solid var(--ultra);background:var(--menta)}
+.inquiry{border-color:var(--tinta);background:#fff9ef}.answer .dialogue.featured{background:transparent!important;border:0!important;padding:.35em 0 0!important}
+.file-tab{border-block:1px solid var(--tinta);color:var(--tinta);text-transform:uppercase}.file-tab b{margin-left:auto;text-align:right}
+#stage .cd-chain,#stage .cd-doc,.note,.goal{padding:.75em .9em}
+#stage .cd-chain{border-left:3px solid var(--ultra);background:#fff9ef}
+#stage .cd-act{border:1px solid var(--tinta);padding:.5em .7em}
+#stage summary{min-height:36px;padding:.25em 0}
+#stage .stamp{font:700 1.65em/1.05 var(--display);letter-spacing:.03em}
+#stage .receipt.loss .stamp{background:var(--vermelhao);color:var(--tinta)}
+#stage .portrait-grid span{font:650 .9em/1.2 var(--sans)}
+#stage .chips button{min-height:40px}
+#stage .official-cover img{height:clamp(170px,51svh,610px)}
+#stage[data-screen=abertura] .bookbody{justify-content:flex-start;flex:0 0 auto}
+#stage[data-screen=prologo] .bookbody>p{font:1.22em/1.46 Georgia,serif}
+#stage:is([data-screen=prologo],[data-screen=creditos],[data-screen=conteudo]) .actions{margin-top:clamp(10px,3svh,32px)}
+#stage[data-screen=creditos] .bookbody>p:first-child{background:var(--tinta);color:var(--papel);padding:1.1em;border-bottom:5px solid var(--menta)}
+#stage[data-screen=creditos] .bookbody>p+p{border-top:1px solid var(--tinta);padding-top:.65em}
+#stage .foot{margin-top:auto}
+.large #stage{font-size:max(1.22rem,1.2 * var(--reading))}
+#stage .plate figcaption,#stage .bookbody,#stage nav,#stage button,.file-tab>*{min-width:0;overflow-wrap:anywhere}
+@media(prefers-reduced-motion:no-preference){body:not(.motion-off) #stage:is([data-screen=observar],[data-screen=perguntar],[data-screen=historico]) .bookbody{animation:consulta-abre .15s ease-out}@keyframes consulta-abre{from{translate:0 3px;opacity:.85}to{translate:0 0;opacity:1}}}
+@media(max-height:520px){#stage .inside{padding:12px}#stage .plate-art{height:104px}}
+

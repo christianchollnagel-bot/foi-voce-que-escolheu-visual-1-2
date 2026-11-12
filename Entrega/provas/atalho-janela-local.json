@@ -1,0 +1,282 @@
+[
+  {
+    "ciclo": 1,
+    "capaVisivel": true,
+    "prontoOffline": true,
+    "aberturaMs": 1009,
+    "painel": [
+      null,
+      null
+    ],
+    "terminal": false,
+    "janela": 3347392,
+    "processosRestantes": 0,
+    "portaLivre": true
+  },
+  {
+    "ciclo": 2,
+    "capaVisivel": true,
+    "prontoOffline": true,
+    "aberturaMs": 818,
+    "painel": [
+      null,
+      null
+    ],
+    "terminal": false,
+    "janela": 3346474,
+    "processosRestantes": 0,
+    "portaLivre": true
+  },
+  {
+    "ciclo": 3,
+    "capaVisivel": true,
+    "prontoOffline": true,
+    "aberturaMs": 691,
+    "painel": [
+      null,
+      null
+    ],
+    "terminal": false,
+    "janela": 2757570,
+    "processosRestantes": 0,
+    "portaLivre": true
+  },
+  {
+    "ciclo": 4,
+    "capaVisivel": true,
+    "prontoOffline": true,
+    "aberturaMs": 725,
+    "painel": [
+      null,
+      null
+    ],
+    "terminal": false,
+    "janela": 2167868,
+    "processosRestantes": 0,
+    "portaLivre": true
+  },
+  {
+    "ciclo": 5,
+    "capaVisivel": true,
+    "prontoOffline": true,
+    "aberturaMs": 747,
+    "painel": [
+      null,
+      null
+    ],
+    "terminal": false,
+    "janela": 6755236,
+    "processosRestantes": 0,
+    "portaLivre": true
+  },
+  {
+    "ciclo": 6,
+    "capaVisivel": true,
+    "prontoOffline": true,
+    "aberturaMs": 707,
+    "painel": [
+      null,
+      null
+    ],
+    "terminal": false,
+    "janela": 8196938,
+    "processosRestantes": 0,
+    "portaLivre": true
+  },
+  {
+    "ciclo": 7,
+    "capaVisivel": true,
+    "prontoOffline": true,
+    "aberturaMs": 739,
+    "painel": [
+      null,
+      null
+    ],
+    "terminal": false,
+    "janela": 5706164,
+    "processosRestantes": 0,
+    "portaLivre": true
+  },
+  {
+    "ciclo": 8,
+    "capaVisivel": true,
+    "prontoOffline": true,
+    "aberturaMs": 721,
+    "painel": [
+      null,
+      null
+    ],
+    "terminal": false,
+    "janela": 7606734,
+    "processosRestantes": 0,
+    "portaLivre": true
+  },
+  {
+    "ciclo": 9,
+    "capaVisivel": true,
+    "prontoOffline": true,
+    "aberturaMs": 663,
+    "painel": [
+      null,
+      null
+    ],
+    "terminal": false,
+    "janela": 4658276,
+    "processosRestantes": 0,
+    "portaLivre": true
+  },
+  {
+    "ciclo": 10,
+    "capaVisivel": true,
+    "prontoOffline": true,
+    "aberturaMs": 703,
+    "painel": [
+      null,
+      null
+    ],
+    "terminal": false,
+    "janela": 7737806,
+    "processosRestantes": 0,
+    "portaLivre": true
+  },
+  {
+    "ciclo": 11,
+    "capaVisivel": true,
+    "prontoOffline": true,
+    "aberturaMs": 684,
+    "painel": [
+      null,
+      null
+    ],
+    "terminal": false,
+    "janela": 4658296,
+    "processosRestantes": 0,
+    "portaLivre": true
+  },
+  {
+    "ciclo": 12,
+    "capaVisivel": true,
+    "prontoOffline": true,
+    "aberturaMs": 638,
+    "painel": [
+      null,
+      null
+    ],
+    "terminal": false,
+    "janela": 8524624,
+    "processosRestantes": 0,
+    "portaLivre": true
+  },
+  {
+    "ciclo": 13,
+    "capaVisivel": true,
+    "prontoOffline": true,
+    "aberturaMs": 753,
+    "painel": [
+      null,
+      null
+    ],
+    "terminal": false,
+    "janela": 4658028,
+    "processosRestantes": 0,
+    "portaLivre": true
+  },
+  {
+    "ciclo": 14,
+    "capaVisivel": true,
+    "prontoOffline": true,
+    "aberturaMs": 689,
+    "painel": [
+      null,
+      null
+    ],
+    "terminal": false,
+    "janela": 2035904,
+    "processosRestantes": 0,
+    "portaLivre": true
+  },
+  {
+    "ciclo": 15,
+    "capaVisivel": true,
+    "prontoOffline": true,
+    "aberturaMs": 701,
+    "painel": [
+      null,
+      null
+    ],
+    "terminal": false,
+    "janela": 3805652,
+    "processosRestantes": 0,
+    "portaLivre": true
+  },
+  {
+    "ciclo": 16,
+    "capaVisivel": true,
+    "prontoOffline": true,
+    "aberturaMs": 635,
+    "painel": [
+      null,
+      null
+    ],
+    "terminal": false,
+    "janela": 3871222,
+    "processosRestantes": 0,
+    "portaLivre": true
+  },
+  {
+    "ciclo": 17,
+    "capaVisivel": true,
+    "prontoOffline": true,
+    "aberturaMs": 733,
+    "painel": [
+      null,
+      null
+    ],
+    "terminal": false,
+    "janela": 4002260,
+    "processosRestantes": 0,
+    "portaLivre": true
+  },
+  {
+    "ciclo": 18,
+    "capaVisivel": true,
+    "prontoOffline": true,
+    "aberturaMs": 713,
+    "painel": [
+      null,
+      null
+    ],
+    "terminal": false,
+    "janela": 2888540,
+    "processosRestantes": 0,
+    "portaLivre": true
+  },
+  {
+    "ciclo": 19,
+    "capaVisivel": true,
+    "prontoOffline": true,
+    "aberturaMs": 672,
+    "painel": [
+      null,
+      null
+    ],
+    "terminal": false,
+    "janela": 8327630,
+    "processosRestantes": 0,
+    "portaLivre": true
+  },
+  {
+    "ciclo": 20,
+    "capaVisivel": true,
+    "prontoOffline": true,
+    "aberturaMs": 686,
+    "painel": [
+      null,
+      null
+    ],
+    "terminal": false,
+    "janela": 5444708,
+    "processosRestantes": 0,
+    "portaLivre": true
+  }
+]

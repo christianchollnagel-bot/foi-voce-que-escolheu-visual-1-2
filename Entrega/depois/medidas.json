@@ -1,0 +1,461 @@
+[
+  {
+    "id": "abertura",
+    "heading": "Foi você que escolheu",
+    "screen": "abertura",
+    "gap": 0,
+    "altura": 720,
+    "largura": 405,
+    "viewport": 405
+  },
+  {
+    "id": "conteudo",
+    "heading": "Aviso de conteúdo",
+    "screen": "conteudo",
+    "gap": 0,
+    "altura": 720,
+    "largura": 405,
+    "viewport": 405
+  },
+  {
+    "id": "menu",
+    "heading": "Caderno do entregador",
+    "screen": "menu",
+    "gap": 0,
+    "altura": 721,
+    "largura": 405,
+    "viewport": 405
+  },
+  {
+    "id": "ajuda",
+    "heading": "Como se joga",
+    "screen": "ajuda",
+    "gap": 0,
+    "altura": 720,
+    "largura": 405,
+    "viewport": 405
+  },
+  {
+    "id": "base",
+    "heading": "Personagem-base",
+    "screen": "base",
+    "gap": 0,
+    "altura": 720,
+    "largura": 405,
+    "viewport": 405
+  },
+  {
+    "id": "rosto",
+    "heading": "Rosto e pele",
+    "screen": "rosto",
+    "gap": 0,
+    "altura": 746,
+    "largura": 405,
+    "viewport": 405
+  },
+  {
+    "id": "cabelo",
+    "heading": "Cabelo",
+    "screen": "cabelo",
+    "gap": 0,
+    "altura": 720,
+    "largura": 405,
+    "viewport": 405
+  },
+  {
+    "id": "roupa",
+    "heading": "Roupa e broche",
+    "screen": "roupa",
+    "gap": 0,
+    "altura": 720,
+    "largura": 405,
+    "viewport": 405
+  },
+  {
+    "id": "nome",
+    "heading": "Nome e pronomes",
+    "screen": "nome",
+    "gap": 0,
+    "altura": 720,
+    "largura": 405,
+    "viewport": 405
+  },
+  {
+    "id": "previa",
+    "heading": "Seu crachá",
+    "screen": "previa",
+    "gap": 0,
+    "altura": 720,
+    "largura": 405,
+    "viewport": 405
+  },
+  {
+    "id": "expressoes",
+    "heading": "Vinte expressões",
+    "screen": "expressoes",
+    "gap": 0,
+    "altura": 720,
+    "largura": 405,
+    "viewport": 405
+  },
+  {
+    "id": "capitulos",
+    "heading": "Capítulos e atos",
+    "screen": "capitulos",
+    "gap": 0,
+    "altura": 766,
+    "largura": 405,
+    "viewport": 405
+  },
+  {
+    "id": "universo",
+    "heading": "O Arquivo das Escolhas",
+    "screen": "universo",
+    "gap": 0,
+    "altura": 720,
+    "largura": 405,
+    "viewport": 405
+  },
+  {
+    "id": "turno",
+    "heading": "Turno de três entregas",
+    "screen": "turno",
+    "gap": 0,
+    "altura": 720,
+    "largura": 405,
+    "viewport": 405
+  },
+  {
+    "id": "config",
+    "heading": "Configurações",
+    "screen": "config",
+    "gap": 0,
+    "altura": 720,
+    "largura": 405,
+    "viewport": 405
+  },
+  {
+    "id": "acessibilidade",
+    "heading": "Acessibilidade",
+    "screen": "acessibilidade",
+    "gap": 0,
+    "altura": 720,
+    "largura": 405,
+    "viewport": 405
+  },
+  {
+    "id": "creditos",
+    "heading": "Créditos",
+    "screen": "creditos",
+    "gap": 0,
+    "altura": 720,
+    "largura": 405,
+    "viewport": 405
+  },
+  {
+    "id": "prologo-1",
+    "heading": "O balcão de Porto do Cedro",
+    "screen": "prologo",
+    "gap": 0,
+    "altura": 720,
+    "largura": 405,
+    "viewport": 405
+  },
+  {
+    "id": "prologo-2",
+    "heading": "Vai na sua mão",
+    "screen": "prologo",
+    "gap": 0,
+    "altura": 720,
+    "largura": 405,
+    "viewport": 405
+  },
+  {
+    "id": "prologo-3",
+    "heading": "Quem mais ouviu?",
+    "screen": "prologo",
+    "gap": 0,
+    "altura": 720,
+    "largura": 405,
+    "viewport": 405
+  },
+  {
+    "id": "entrada-01",
+    "heading": "As duas margens",
+    "screen": "entrada",
+    "gap": 0,
+    "altura": 720,
+    "largura": 405,
+    "viewport": 405
+  },
+  {
+    "id": "entrada-02",
+    "heading": "Uma cadeira para o público",
+    "screen": "entrada",
+    "gap": 0,
+    "altura": 720,
+    "largura": 405,
+    "viewport": 405
+  },
+  {
+    "id": "entrada-03",
+    "heading": "A ordem das camas",
+    "screen": "entrada",
+    "gap": 0,
+    "altura": 720,
+    "largura": 405,
+    "viewport": 405
+  },
+  {
+    "id": "entrada-04",
+    "heading": "A oficina de empréstimos",
+    "screen": "entrada",
+    "gap": 0,
+    "altura": 720,
+    "largura": 405,
+    "viewport": 405
+  },
+  {
+    "id": "entrada-05",
+    "heading": "O tamanho da mudança",
+    "screen": "entrada",
+    "gap": 0,
+    "altura": 720,
+    "largura": 405,
+    "viewport": 405
+  },
+  {
+    "id": "entrada-06",
+    "heading": "Sessão das quatro",
+    "screen": "entrada",
+    "gap": 0,
+    "altura": 720,
+    "largura": 405,
+    "viewport": 405
+  },
+  {
+    "id": "entrada-07",
+    "heading": "A tarifa do silêncio",
+    "screen": "entrada",
+    "gap": 0,
+    "altura": 720,
+    "largura": 405,
+    "viewport": 405
+  },
+  {
+    "id": "entrada-08",
+    "heading": "O avesso do recibo",
+    "screen": "entrada",
+    "gap": 0,
+    "altura": 720,
+    "largura": 405,
+    "viewport": 405
+  },
+  {
+    "id": "entrada-09",
+    "heading": "As pessoas na sala",
+    "screen": "entrada",
+    "gap": 0,
+    "altura": 720,
+    "largura": 405,
+    "viewport": 405
+  },
+  {
+    "id": "entrada-10",
+    "heading": "O peso do volume",
+    "screen": "entrada",
+    "gap": 0,
+    "altura": 720,
+    "largura": 405,
+    "viewport": 405
+  },
+  {
+    "id": "entrada-11",
+    "heading": "O sábado do Íris",
+    "screen": "entrada",
+    "gap": 0,
+    "altura": 720,
+    "largura": 405,
+    "viewport": 405
+  },
+  {
+    "id": "entrada-12",
+    "heading": "A casa de botão",
+    "screen": "entrada",
+    "gap": 0,
+    "altura": 720,
+    "largura": 405,
+    "viewport": 405
+  },
+  {
+    "id": "entrada-13",
+    "heading": "O nome no recibo",
+    "screen": "entrada",
+    "gap": 0,
+    "altura": 720,
+    "largura": 405,
+    "viewport": 405
+  },
+  {
+    "id": "primeiro-gesto",
+    "heading": "O primeiro gesto",
+    "screen": "escolha",
+    "gap": 9,
+    "altura": 721,
+    "largura": 405,
+    "viewport": 405
+  },
+  {
+    "id": "observar",
+    "heading": "Examinar a cena",
+    "screen": "observar",
+    "gap": 0,
+    "altura": 726,
+    "largura": 405,
+    "viewport": 405
+  },
+  {
+    "id": "perguntar",
+    "heading": "Perguntar a Dalva",
+    "screen": "perguntar",
+    "gap": 0,
+    "altura": 720,
+    "largura": 405,
+    "viewport": 405
+  },
+  {
+    "id": "historico",
+    "heading": "Histórico de escolhas",
+    "screen": "historico",
+    "gap": 0,
+    "altura": 720,
+    "largura": 405,
+    "viewport": 405
+  },
+  {
+    "id": "documento",
+    "heading": "Pedido de Dalva",
+    "screen": "documento",
+    "gap": 0,
+    "altura": 720,
+    "largura": 405,
+    "viewport": 405
+  },
+  {
+    "id": "pausa",
+    "heading": "Partida pausada",
+    "screen": "pausa",
+    "gap": 0,
+    "altura": 720,
+    "largura": 405,
+    "viewport": 405
+  },
+  {
+    "id": "continuar",
+    "heading": "Continuar partida",
+    "screen": "continuar",
+    "gap": 0,
+    "altura": 720,
+    "largura": 405,
+    "viewport": 405
+  },
+  {
+    "id": "reacao",
+    "heading": "O que aconteceu",
+    "screen": "consequencia",
+    "gap": 0,
+    "altura": 720,
+    "largura": 405,
+    "viewport": 405
+  },
+  {
+    "id": "vitoria",
+    "heading": "Entrega concluída",
+    "screen": "desfecho",
+    "gap": 0,
+    "altura": 777,
+    "largura": 405,
+    "viewport": 405
+  },
+  {
+    "id": "derrota",
+    "heading": "Entrega pendente",
+    "screen": "desfecho",
+    "gap": 0,
+    "altura": 777,
+    "largura": 405,
+    "viewport": 405
+  },
+  {
+    "id": "recibo-historico",
+    "heading": "Histórico de escolhas",
+    "screen": "historico",
+    "gap": 0,
+    "altura": 911,
+    "largura": 405,
+    "viewport": 405
+  },
+  {
+    "id": "recibo-revisao",
+    "heading": "Uma escolha puxa a outra",
+    "screen": "revisao",
+    "gap": 0,
+    "altura": 720,
+    "largura": 405,
+    "viewport": 405
+  },
+  {
+    "id": "recibo-encerrar",
+    "heading": "Recibo arquivado",
+    "screen": "encerrar",
+    "gap": 0,
+    "altura": 720,
+    "largura": 405,
+    "viewport": 405
+  },
+  {
+    "id": "recibo-resumo",
+    "heading": "O que ficou registrado",
+    "screen": "resumo",
+    "gap": 0,
+    "altura": 720,
+    "largura": 405,
+    "viewport": 405
+  },
+  {
+    "id": "recibo-transicao",
+    "heading": "Uma casa para trinta e oito",
+    "screen": "transicao",
+    "gap": 0,
+    "altura": 720,
+    "largura": 405,
+    "viewport": 405
+  },
+  {
+    "id": "portaria",
+    "heading": "Primeira passagem",
+    "screen": "escolha",
+    "gap": 9,
+    "altura": 808,
+    "largura": 405,
+    "viewport": 405
+  },
+  {
+    "id": "portaria-livro",
+    "heading": "O livro do turno",
+    "screen": "escolha",
+    "gap": 9,
+    "altura": 822,
+    "largura": 405,
+    "viewport": 405
+  },
+  {
+    "id": "turnofim",
+    "heading": "Fechamento do turno",
+    "screen": "turnofim",
+    "gap": 0,
+    "altura": 720,
+    "largura": 405,
+    "viewport": 405
+  }
+]

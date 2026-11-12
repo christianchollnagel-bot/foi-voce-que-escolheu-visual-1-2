@@ -1,0 +1,43 @@
+{
+  "browser": "edge",
+  "version": "156.0.4314.58",
+  "pilot": false,
+  "steps": [
+    "Prólogo offline, avanço por teclado e toque, voltar e movimento reduzido.",
+    "24 seleções no editor, roupa, faixa, broche, 20 expressões, restauração de perfil e histórico, prólogo revisto sem interromper a sessão.",
+    "Dalva no guichê e confirmação de Lia pelo interfone verificadas no estado correto.",
+    "Entrada, decisão e reação: As duas margens",
+    "Entrada, decisão e reação: Uma cadeira para o público",
+    "Entrada, decisão e reação: A ordem das camas",
+    "Entrada, decisão e reação: A oficina de empréstimos",
+    "Entrada, decisão e reação: O tamanho da mudança",
+    "Entrada, decisão e reação: Sessão das quatro",
+    "Entrada, decisão e reação: A tarifa do silêncio",
+    "Entrada, decisão e reação: O avesso do recibo",
+    "Entrada, decisão e reação: As pessoas na sala",
+    "Entrada, decisão e reação: O peso do volume",
+    "Entrada, decisão e reação: O sábado do Íris",
+    "Entrada, decisão e reação: A casa de botão",
+    "Entrada, decisão e reação: O nome no recibo"
+  ],
+  "errors": [],
+  "fontesOffline": [
+    [
+      "Manchete",
+      "loaded"
+    ],
+    [
+      "Leitura",
+      "loaded"
+    ]
+  ],
+  "pixelsPersonalizados": 56726,
+  "avatarsJogaveis": 24,
+  "decoded": {
+    "states": 20,
+    "nomes": 16,
+    "retratosElenco": 320,
+    "atuacoesPersonalizadas": 480
+  },
+  "passed": true
+}

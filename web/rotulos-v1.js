@@ -1,0 +1,27 @@
+/* Nomes de botões persistidos na Edição Final original. */
+window.ROTULOS_V1 = Object.freeze({
+  "Pedir uma conferência antes de decidir": "Conferir antes de decidir",
+  "Anunciar que chegou correspondência urgente": "Anunciar que chegou uma carta urgente",
+  "Pedir à senhora que apenas segure a porta": "Pedir à senhora que só segure a porta",
+  "Ditar o teor da carta para acelerar": "Ditar o que diz a carta pra andar mais rápido",
+  "Pedir que mostrem o canhoto, em voz baixa": "Pedir em voz baixa pra ver o canhoto",
+  "Entregar logo qualquer par ao primeiro que levantou a mão": "Dar duas marmitas quaisquer ao primeiro que levantou a mão",
+  "Pôr uma divisória sob a ficha intacta": "Pôr uma divisória debaixo da ficha intacta",
+  "Entregar a contagem discriminada": "Entregar a contagem separada por marca",
+  "Conferir com o rapaz do frete onde apoiar": "Perguntar ao rapaz do frete onde apoiar o armário",
+  "Autorizar levantar só pela largura da porta": "Mandar levantar com base só na largura da porta",
+  "Reter tudo para fazer uma visita amanhã": "Guardar os dois papéis pra levar amanhã",
+  "Gritar que trouxeste o futuro da oficina": "Gritar que o futuro da oficina chegou",
+  "Apoiar as dobras antes de copiar as duas faces": "Apoiar as dobras antes de copiar frente e verso",
+  "Encaminhar as cópias conferidas das duas faces": "Mandar as cópias depois de conferir frente e verso",
+  "Perguntar se alguém ali sabe usar fita": "Perguntar se alguém na oficina sabe usar fita",
+  "Pedir que ela segure a tampa enquanto apoias a caixa": "Pedir que ela segure a tampa pra você apoiar a caixa",
+  "Pedir que sustentem o pano enquanto trabalhas": "Pedir ajuda pra segurar o pano durante o conserto",
+  "Distinguir o endereço visitado da pessoa procurada": "Conferir o endereço e perguntar pela família",
+  "Atribuir a assinatura à guarita": "Dizer que o porteiro assinou",
+  "Pedir só o que o porteiro viu": "Perguntar o que o porteiro viu",
+  "Registrar o testemunho com esse limite": "Registrar só o que o porteiro viu",
+  "Completar por conta própria o que ninguém viu": "Acrescentar o que ele não viu",
+  "Resolver com o documento do meu celular": "Usar a via do meu celular",
+  "Registrar somente o que a via comprova": "Registrar só o que a via comprova"
+});

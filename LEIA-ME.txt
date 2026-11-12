@@ -1,0 +1,8 @@
+﻿Foi Você Que Escolheu — V1 Visual 1.2
+Projeto Inovação Chris · 2026/2 · Responsável acadêmico: Christian
+
+Windows: abra Windows/Instalar Visual 1.2.exe. Depois, use o ícone Foi Você Que Escolheu — Visual 1.2 na Área de Trabalho. Requer Microsoft Edge WebView2 Runtime.
+
+Navegador: sirva web/ via HTTPS ou localhost. Aguarde a preparação offline indicada na capa. A partida pertence à sessão da janela.
+
+Abra Entrega/Indice.html para ver a auditoria, o sistema de componentes, as comparações e as provas de teste.

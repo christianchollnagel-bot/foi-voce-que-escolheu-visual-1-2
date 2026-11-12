@@ -1,0 +1,12 @@
+{
+  "id":"./fvqe-visual-v1-2",
+  "name":"Foi Você Que Escolheu · O Arquivo das Escolhas (Visual 1.2)",
+  "short_name":"Escolheu Visual 1.2",
+  "description":"Faça entregas, escolha em quem confiar e confira o que ficou no recibo.",
+  "lang":"pt-BR","start_url":"./index.html","scope":"./","display":"standalone","launch_handler":{"client_mode":"focus-existing"},
+  "background_color":"#F4EBDD","theme_color":"#F4EBDD",
+  "icons":[
+    {"src":"icons/v1-192.png","sizes":"192x192","type":"image/png","purpose":"any"},
+    {"src":"icons/v1-512.png","sizes":"512x512","type":"image/png","purpose":"any"}
+  ]
+}

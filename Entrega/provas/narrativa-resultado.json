@@ -1,0 +1,137 @@
+{
+  "date": "2026-11-04T10:53:27.692Z",
+  "node": "v24.19.0",
+  "platform": "win32",
+  "oracleSha256": "5775a99b9d19e193689beff5b79eba92945a576e67bfdb5c0f3f0e768d42f5e2",
+  "routes": 404,
+  "uniquePrefixes": 710,
+  "framesPerEdition": 4844,
+  "routeCsvSha256": "fdd0a846c99b0a013d78c8451904d3e6cb0ec4968d366569431b1bd8aa62a627",
+  "counts": [
+    {
+      "chapter": 1,
+      "routes": 20,
+      "wins": 8,
+      "losses": 12
+    },
+    {
+      "chapter": 2,
+      "routes": 18,
+      "wins": 8,
+      "losses": 10
+    },
+    {
+      "chapter": 3,
+      "routes": 19,
+      "wins": 8,
+      "losses": 11
+    },
+    {
+      "chapter": 4,
+      "routes": 18,
+      "wins": 8,
+      "losses": 10
+    },
+    {
+      "chapter": 5,
+      "routes": 20,
+      "wins": 10,
+      "losses": 10
+    },
+    {
+      "chapter": 6,
+      "routes": 20,
+      "wins": 8,
+      "losses": 12
+    },
+    {
+      "chapter": 7,
+      "routes": 18,
+      "wins": 8,
+      "losses": 10
+    },
+    {
+      "chapter": 8,
+      "routes": 18,
+      "wins": 8,
+      "losses": 10
+    },
+    {
+      "chapter": 9,
+      "routes": 18,
+      "wins": 8,
+      "losses": 10
+    },
+    {
+      "chapter": 10,
+      "routes": 19,
+      "wins": 8,
+      "losses": 11
+    },
+    {
+      "chapter": 11,
+      "routes": 18,
+      "wins": 8,
+      "losses": 10
+    },
+    {
+      "chapter": 12,
+      "routes": 20,
+      "wins": 10,
+      "losses": 10
+    },
+    {
+      "chapter": 13,
+      "routes": 178,
+      "wins": 68,
+      "losses": 110
+    }
+  ],
+  "scripts": [
+    {
+      "name": "assets/visual.js",
+      "source": "96a1399876f0cd2dffae26c079a3db2d6ea7cfbafa4671f4a384692827829c23",
+      "pwa": "96a1399876f0cd2dffae26c079a3db2d6ea7cfbafa4671f4a384692827829c23"
+    },
+    {
+      "name": "casos.js",
+      "source": "6dab88509cf92dc9ceaca77980111bb4ec0e0c0ca015ba2b3775bce877bce402",
+      "pwa": "6dab88509cf92dc9ceaca77980111bb4ec0e0c0ca015ba2b3775bce877bce402"
+    },
+    {
+      "name": "motor.js",
+      "source": "071952bea6e824fe00ada25b6ee135bff170141b5b76599792d61bf3d3741819",
+      "pwa": "071952bea6e824fe00ada25b6ee135bff170141b5b76599792d61bf3d3741819"
+    },
+    {
+      "name": "observacoes.js",
+      "source": "0755382969d0f8fa63fad28e7e79305c8ce695e45f1eeb0e9ad8fa2aadd8e18b",
+      "pwa": "0755382969d0f8fa63fad28e7e79305c8ce695e45f1eeb0e9ad8fa2aadd8e18b"
+    },
+    {
+      "name": "portaria.js",
+      "source": "c04acb804f3f655386b8d611c8fc4d542f227b1cdd011bfbc2c5fe70e8327808",
+      "pwa": "c04acb804f3f655386b8d611c8fc4d542f227b1cdd011bfbc2c5fe70e8327808"
+    },
+    {
+      "name": "caderno.js",
+      "source": "92e261c04adc0b99b6ac5ff1b735ffa8c776e01226e8da19b10c8e79a9775c0f",
+      "pwa": "92e261c04adc0b99b6ac5ff1b735ffa8c776e01226e8da19b10c8e79a9775c0f"
+    },
+    {
+      "name": "grafismos.js",
+      "source": "5cc41fee4a9fa8f375f668b4fdde5a18cd49d53a282d8179d1696a0787d81600",
+      "pwa": "5cc41fee4a9fa8f375f668b4fdde5a18cd49d53a282d8179d1696a0787d81600"
+    },
+    {
+      "name": "rotulos-v1.js",
+      "source": "64b704e41b552282589fe3a32330c3547a435f166d6e0de2b96d806f7ad40412",
+      "pwa": "64b704e41b552282589fe3a32330c3547a435f166d6e0de2b96d806f7ad40412"
+    },
+    {
+      "name": "app.js",
+      "source": "429535f4da15f29e52e76bce42d8e61f37126e8514a7c6b41f1326d2ff267dfb",
+      "pwa": "8ba3d31310aaa55746796295155ab08f85834342cdbc8c3515cc470f54a85fbd"
+    }
+  ]
+}

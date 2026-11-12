@@ -1,0 +1,180 @@
+{
+  "chapters": [
+    {
+      "id": 0,
+      "tools": [
+        "observar",
+        "perguntar",
+        "historico"
+      ]
+    },
+    {
+      "id": 1,
+      "tools": [
+        "observar",
+        "perguntar",
+        "historico"
+      ]
+    },
+    {
+      "id": 2,
+      "tools": [
+        "observar",
+        "perguntar",
+        "historico"
+      ]
+    },
+    {
+      "id": 3,
+      "tools": [
+        "observar",
+        "perguntar",
+        "historico"
+      ]
+    },
+    {
+      "id": 4,
+      "tools": [
+        "observar",
+        "perguntar",
+        "historico"
+      ]
+    },
+    {
+      "id": 5,
+      "tools": [
+        "observar",
+        "perguntar",
+        "historico"
+      ]
+    },
+    {
+      "id": 6,
+      "tools": [
+        "observar",
+        "perguntar",
+        "historico"
+      ]
+    },
+    {
+      "id": 7,
+      "tools": [
+        "observar",
+        "perguntar",
+        "historico"
+      ]
+    },
+    {
+      "id": 8,
+      "tools": [
+        "observar",
+        "perguntar",
+        "historico"
+      ]
+    },
+    {
+      "id": 9,
+      "tools": [
+        "observar",
+        "perguntar",
+        "historico"
+      ]
+    },
+    {
+      "id": 10,
+      "tools": [
+        "observar",
+        "perguntar",
+        "historico"
+      ]
+    },
+    {
+      "id": 11,
+      "tools": [
+        "observar",
+        "perguntar",
+        "historico"
+      ]
+    },
+    {
+      "id": 12,
+      "tools": [
+        "historico"
+      ]
+    }
+  ],
+  "cores": {
+    "244,235,221 / 26,29,34": 14.301991811274984,
+    "48,46,212 / 244,235,221": 7.204232117247203,
+    "26,29,34 / 244,235,221": 14.301991811274984,
+    "26,29,34 / 152,215,199": 10.363937816394088,
+    "255,255,255 / 48,46,212": 8.511787241900688,
+    "26,29,34 / 255,249,239": 16.13228542929706,
+    "152,215,199 / 26,29,34": 10.363937816394088,
+    "255,255,255 / 26,29,34": 16.89777750796495,
+    "26,29,34 / 255,249,237": 16.113364690156992,
+    "26,29,34 / 255,250,240": 16.24157803927515,
+    "26,29,34 / 255,251,241": 16.351453718046628,
+    "255,249,240 / 16,16,16": 18.17685342880822,
+    "255,255,255 / 16,16,16": 19.028110547666497,
+    "16,16,16 / 255,249,240": 18.17685342880822,
+    "152,215,199 / 16,16,16": 11.670537997469356,
+    "16,16,16 / 152,215,199": 11.670537997469356,
+    "255,255,255 / 33,29,155": 12.254014471672392,
+    "33,29,155 / 255,249,240": 11.705808856224005,
+    "16,16,16 / 255,249,237": 18.14480540264249,
+    "16,16,16 / 255,249,239": 18.166111513214194,
+    "16,16,16 / 255,250,240": 18.289182838051193,
+    "16,16,16 / 255,251,241": 18.412910740207444
+  },
+  "fontes": [
+    [
+      "Manchete",
+      "loaded"
+    ],
+    [
+      "Leitura",
+      "loaded"
+    ]
+  ],
+  "ampliado": "19.52px",
+  "sizes": [
+    {
+      "w": 320,
+      "h": 568,
+      "horizontal": 0,
+      "controles": 6
+    },
+    {
+      "w": 360,
+      "h": 640,
+      "horizontal": 0,
+      "controles": 6
+    },
+    {
+      "w": 405,
+      "h": 720,
+      "horizontal": 0,
+      "controles": 6
+    },
+    {
+      "w": 768,
+      "h": 1365,
+      "horizontal": 0,
+      "controles": 6
+    },
+    {
+      "w": 1366,
+      "h": 768,
+      "horizontal": 0,
+      "controles": 6
+    },
+    {
+      "w": 1200,
+      "h": 480,
+      "horizontal": 0,
+      "controles": 6
+    }
+  ],
+  "acessibilidade": "- region \"Ferramentas de investigação\":\n  - heading \"Antes de decidir\" [level=2]\n  - paragraph: Examine a cena, faça uma pergunta ou consulte seus registros. A decisão continua aberta.\n  - button \"Examinar a cena\"\n  - button \"Perguntar a Dalva\"\n  - button \"Caderno\""
+}
