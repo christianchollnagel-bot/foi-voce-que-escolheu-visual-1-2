@@ -1,0 +1,56 @@
+{
+  "url": "https://foivocequeescolheu.netlify.app/",
+  "version": "1.3.0",
+  "commit": "a6f04553276e6c23104ea6dde1ea7721fd7fb182",
+  "at": "2026-11-12T09:33:18.965Z",
+  "rows": [
+    {
+      "file": "index.html",
+      "status": 200,
+      "sha256": "9d45495bbebea6fa83d7d4d667c150c33b01079acbc4f55e2e40dad4e0a4724f",
+      "matches": true
+    },
+    {
+      "file": "app.js",
+      "status": 200,
+      "sha256": "0e9021e405ee3f23dd8259ff3d3edf4566e170b8560161a6e22328753093e7be",
+      "matches": true
+    },
+    {
+      "file": "paginas.js",
+      "status": 200,
+      "sha256": "211aefa89071d3ab8f9514c78436e74b175785422decf162c36655ef8867beb5",
+      "matches": true
+    },
+    {
+      "file": "paginas.css",
+      "status": 200,
+      "sha256": "dc603d9fcf0cc1386afdd93ff9d215c0122d7f495f5ae7889d9a8237e08bb32e",
+      "matches": true
+    },
+    {
+      "file": "pwa.js",
+      "status": 200,
+      "sha256": "02d34d4dcde8774f5b27f74ff4b5812f074370f7a704e4f9ace26a9a7f147e94",
+      "matches": true
+    },
+    {
+      "file": "transporte.js",
+      "status": 200,
+      "sha256": "ade55ed21710e010e653af90a22dac6e38c3472da62d67309d3f5a516441cb00",
+      "matches": true
+    },
+    {
+      "file": "sw.js",
+      "status": 200,
+      "sha256": "99e05222aa65d351eac3410a2af94cc171e5f2b3c5908335eb8b1db85e343b7e",
+      "matches": true
+    },
+    {
+      "file": "manifest.webmanifest",
+      "status": 200,
+      "sha256": "8f2bc35a2d1de2080fdc33e834b72e43795c1b2fe337dc296c21c2830f043a14",
+      "matches": true
+    }
+  ]
+}

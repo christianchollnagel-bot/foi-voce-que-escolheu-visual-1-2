@@ -37,6 +37,7 @@ Ambiente: Windows, Node.js, Playwright 1.58.2, Chrome 157.0.8103.39 e WebKit 26.
 | Volume, mudo e suspensão/retomada com ganhos reais Web Audio | `npm run test:audio-mobile` · [audio-mobile.json](evidencias/audio-mobile.json) |
 | Instalação, offline, espera pela atualização e preservação do progresso | `npm run test:pwa` · [pwa.json](evidencias/pwa.json) |
 | Reabertura WebKit com servidor desligado | `npm run test:offline-webkit` · [offline-webkit.json](evidencias/offline-webkit.json) |
+| Site Netlify real: instalação de 906 recursos, reabertura offline, menu, nova partida e introdução | `GAME_URL=https://foivocequeescolheu.netlify.app` com `npm run test:pwa-publicacao` · [pwa-publicacao.json](evidencias/pwa-publicacao.json) |
 | Integridade, reutilização de cache e rejeição de recursos corrompidos | `node tests/integridade-host.cjs` e `npm run test:cache-atualizacao` |
 | Fonte, pasta de distribuição e manifesto idênticos; 908 entradas do ZIP conferidas por SHA-256 | `npm run verify:release` · [entrega-1.3.json](evidencias/entrega-1.3.json) |
 
@@ -46,10 +47,14 @@ Capturas, logs transitórios e vídeos privados não fazem parte da distribuiç�
 
 Branch: `codex/atualizacao-completa`, sem merge na `main`. Destino autorizado: o mesmo site `foivocequeescolheu.netlify.app`. Conferir `1.3.0` no rodapé e comparar os recursos com `docs/manifesto-entrega.json`; commit criado não equivale a deploy concluído. O teste `test:pwa-publicacao` confere um endereço real com `GAME_URL`, incluindo instalação completa e reabertura offline pelo menu normal.
 
+Publicação confirmada: código `a6f04553276e6c23104ea6dde1ea7721fd7fb182`. Os oito arquivos principais conferidos no endereço público corresponderam ao manifesto; a instalação real verificou todos os 906 recursos do cache e a reabertura offline terminou sem erros. [Hashes públicos](evidencias/publicacao-1.3.json). O registro posterior de evidências altera somente documentação; usa `[skip netlify]` para conservar a publicação do código, conforme a [documentação do Netlify](https://docs.netlify.com/deploy/manage-deploys/manage-deploys-overview/#skip-a-deploy).
+
 Não há migração destrutiva do save. Reverter alterações pelo Git ou republicar um deploy anterior preserva os dados locais; não limpar dados do navegador para trocar a edição. Fechar todas as janelas do jogo permite ativar um worker já preparado.
 
-## Pendências de validação física
+## Validação em aparelho e limites
 
-Safari no iPhone e Chrome no Android reais: conferir barras do navegador, teclado, troca de aplicativo, saída de áudio e inclinação. Vibração depende de suporte do aparelho/navegador; sua ausência não bloqueia o jogo. Sem playtest com participantes, não há evidência de diversão ou compreensão. A edição é uma entrega executável de portfólio com limites documentados, não certificação universal de dispositivos.
+Em 12/11/2026, depois da publicação do código `a6f04553276e6c23104ea6dde1ea7721fd7fb182`, o responsável confirmou no iPhone a edição 1.3.0, a resposta dos botões Anterior/Próxima e a seleção do personagem sem precisar rolar. Evidência: [validacao-iphone-1.3.json](evidencias/validacao-iphone-1.3.json). Trata-se de relato direto do responsável, não de controle remoto ou observação instrumental do aparelho; modelo e versão exata do navegador não foram informados.
+
+Ainda conferir em aparelhos reais: teclado, troca de aplicativo, saída de áudio, inclinação e percurso no Android. Vibração depende de suporte do aparelho/navegador; sua ausência não bloqueia o jogo. Sem playtest com participantes, não há evidência de diversão ou compreensão. A edição é uma entrega executável de portfólio com limites documentados, não certificação universal de dispositivos.
 
 Referências consultadas: [comportamento e bloqueios de localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) e [API de Page do Playwright](https://playwright.dev/docs/api/class-page#page-wait-for-function), complementadas pela inspeção do código da versão 1.58.2 instalada.
