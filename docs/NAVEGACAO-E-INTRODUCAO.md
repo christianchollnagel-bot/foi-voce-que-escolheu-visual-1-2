@@ -10,6 +10,7 @@ Atualização de 12/11/2026, sobre a branch `codex/atualizacao-completa`.
 - **Resetar jogo** aparece logo após **Nova partida** no menu. Sempre pede confirmação. Cancela-se sem alterar o progresso. Ao confirmar, apaga partida, recibos, escolhas, turno e crachá, preserva som e acessibilidade, salva e volta ao menu. Não limpa dados de outros aplicativos. Registro ilegível continua protegido pela recuperação já existente.
 - Uma animação 2D de **15 segundos** substitui as três telas do prólogo. São três cenas de cinco segundos: receber o pedido, escolher o caminho e consultar consequências. Avança automaticamente para preparar o crachá na nova partida. Não se repete a cada capítulo depois de vista/pulada; **Rever introdução** permite repetir. Nova partida/reset reinicia essa apresentação.
 - A animação tem texto, progresso, pausa/retomada e pular. Perder foco ou ocultar a página pausa o relógio. Reduzir movimento mantém as ilustrações estáticas. Não exige áudio para entender.
+- Corrigida a instalação offline no site publicado: a marcação acrescentada pelo Netlify é reconhecida na verificação do HTML, sem retirar a identificação do provedor nem deixar de conferir o código do jogo. Detalhes em `PUBLICACAO.md`.
 
 ## Recursos e integração
 
@@ -28,6 +29,7 @@ Paleta, tipografia e contornos seguem o jogo existente. Não há nova faixa, voz
 - `tests/paginas.cjs`: 120 combinações de telas, tamanhos 320×568, 390×844, 844×390 e 1440×900, com fontes normal/ampliada. Verifica texto verticalmente íntegro, acesso a todos os controles por páginas e roda do mouse sem mover o documento/moldura. Até oito páginas nas telas testadas.
 - `tests/fluxos-paginados.cjs`: percurso, consultas, recibo, histórico, atos expandidos, foco do crachá, janela reduzida durante edição, rotação, transporte em fonte ampliada, reset/cancelamento e persistência.
 - `tests/introducao.cjs`: as três cenas nos quatro tamanhos e duas fontes; pausa, redução de movimento, duração real de aproximadamente 15 s, conclusão automática, replay, pular e persistência.
+- `tests/integridade-host.cjs`: aceita HTML original e HTML com a marcação conhecida do Netlify, preserva a resposta e rejeita alterações no jogo, scripts e marcação desconhecida.
 - `tests/navegador.cjs`: os 13 capítulos concluídos, rotas distintas, restauração de progresso e 10 WAV decodificados. Adaptação dos testes de interface para alcançar controles pela paginação.
 - `tests/pwa.cjs` e `tests/pacote.cjs`: 906 recursos em cache offline; atualização preserva progresso; 908 arquivos do pacote/ZIP com hashes idênticos à fonte e ao manifesto, conferidos por HTTP.
 - `tests/robustez.cjs`, `tests/rotas.cjs` e `tests/audio.cjs`: sensores simulados e fallback, transporte real, quatro turnos, recuperação de salvamento, reprodução por clique/toque emulado e botão global de som.

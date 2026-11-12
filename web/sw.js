@@ -3626,9 +3626,16 @@ const resources = [
   ]
 ];
 const prefix = 'fvqe-v1|' + self.registration.scope + '|';
-const cacheName = prefix + 'e73ea7632aca5c48e3951244dfc2e7b260fbf4752991159a84e4e0d00d0b2fc2';
+const cacheName = prefix + '21a2878332c150c3b05dda7c9f1106983f0d9420be3fcb10e3dbab6aebe0d82b';
 const root = new URL(self.registration.scope);
 const urls = new Map(resources.map(([path, hash]) => [new URL(path, root).href, hash]));
+
+// O Netlify acrescenta identificação da hospedagem ao HTML na borda.
+// A conferência ignora somente esses dois trechos conhecidos; o cache conserva a resposta original.
+function sourceHtml(html) {
+  return html.replace(/\n<!-- This site is hosted on Netlify\. Anyone can build and deploy a site\n     like this one for free: https:\/\/netlify\.new\/\?[^\r\n<>]+\n     Netlify hosting facts for this site: static\/SSR served via Netlify Edge\. -->/, '')
+    .replace(/<script async src="\/\.netlify\/scripts\/hud\?variant=public" data-nf-variant="public" data-netlify-site-id="[0-9a-f-]+" data-app-host="app\.netlify\.com" data-account-tier="free"><\/script>\n?$/, '');
+}
 
 self.addEventListener('install', event => {
   event.waitUntil((async () => {
@@ -3639,7 +3646,10 @@ self.addEventListener('install', event => {
         for (const [url, expected] of pending) {
         const response = await fetch(url, {cache:'no-store', redirect:'error', credentials:'same-origin'});
         if (!response.ok) throw Error('Recurso indisponível: ' + url);
-        const digest = await crypto.subtle.digest('SHA-256', await response.clone().arrayBuffer());
+        let bytes = await response.clone().arrayBuffer();
+        if (url === new URL('index.html', root).href && root.hostname.endsWith('.netlify.app'))
+          bytes = new TextEncoder().encode(sourceHtml(new TextDecoder().decode(bytes)));
+        const digest = await crypto.subtle.digest('SHA-256', bytes);
         const actual = Array.from(new Uint8Array(digest), b => b.toString(16).padStart(2, '0')).join('');
         if (actual !== expected) throw Error('Integridade inválida: ' + url);
           await cache.put(url, response);

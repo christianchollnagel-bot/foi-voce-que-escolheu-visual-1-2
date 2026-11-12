@@ -5,7 +5,8 @@ const hash=b=>crypto.createHash('sha256').update(b).digest('hex');
 const files=walk('web').filter(p=>path.basename(p)!=='sw.js'&&path.basename(p)!=='_headers').sort();
 const entries=files.map(p=>[p.slice(4).replaceAll('\\','/'),hash(fs.readFileSync(p))]);
 let sw=fs.readFileSync('web/sw.js','utf8');const tail=sw.slice(sw.indexOf('const prefix ='));
-sw='/* Gerado por scripts/empacotar.cjs. Atualiza apenas após fechar as janelas antigas. */\nconst resources = '+JSON.stringify(entries,null,2)+';\n'+tail.replace(/const cacheName = prefix \+ '[^']+';/,"const cacheName = prefix + '"+hash(JSON.stringify(entries))+"';");
+const cacheSeed=JSON.stringify(entries)+tail.replace(/const cacheName = prefix \+ '[^']+';/,"const cacheName = prefix + '';");
+sw='/* Gerado por scripts/empacotar.cjs. Atualiza apenas após fechar as janelas antigas. */\nconst resources = '+JSON.stringify(entries,null,2)+';\n'+tail.replace(/const cacheName = prefix \+ '[^']+';/,"const cacheName = prefix + '"+hash(cacheSeed)+"';");
 fs.writeFileSync('web/sw.js',sw);
 const dest=path.join(root,'Entrega','netlify');fs.mkdirSync(dest,{recursive:true});
 for(const p of walk('web')){const target=path.join(dest,p.slice(4));fs.mkdirSync(path.dirname(target),{recursive:true});fs.copyFileSync(p,target);}

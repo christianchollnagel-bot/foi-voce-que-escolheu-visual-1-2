@@ -8,7 +8,7 @@
 
 O ZIP não inclui `netlify.toml`: ele já é a raiz pública completa. Não envie a pasta inteira do projeto, `Entrega/` inteira, testes, backups ou `node_modules`.
 
-## Integração Git futura
+## Integração Git
 
 O `netlify.toml` na raiz configura `publish = "web"` e `command = ""`. Diretório-base: raiz do repositório. **Sem comando de build**. Os arquivos estáticos, incluindo áudio e o service worker gerado, já existem em `web/`. O pacote npm contém somente a ferramenta de testes e não é necessário para executar o site.
 
@@ -22,6 +22,10 @@ O cache instala o conjunto completo conferindo seus hashes antes de ativar. Atua
 
 Não troque de origem esperando que `localStorage` acompanhe a mudança. Atualizar o mesmo site conserva o armazenamento; a migração de formato é responsabilidade do jogo. Limpar dados do site apaga também o progresso.
 
-Preparado e testado localmente. Nenhum site de produção foi criado, substituído ou publicado nesta execução; nenhum push foi feito.
+O site atual é https://thunderous-eclair-21ac61.netlify.app/, atualizado pela branch `codex/atualizacao-completa`. A configuração de visibilidade não foi alterada.
+
+Na conferência de produção em 12/11/2026, o Netlify acrescentou ao HTML um comentário da hospedagem e um script de identificação pública. A verificação do service worker reconhece exclusivamente esses dois trechos conhecidos em `index.html`, em origens `.netlify.app`, antes de comparar o SHA-256 com a fonte. Todo o conteúdo do jogo continua verificado; o cache guarda a resposta original com a identificação do provedor. Marcação desconhecida ou alteração em código permanece rejeitada. O identificador do cache inclui também o código do service worker, para que uma correção de instalação não reutilize o cache da versão anterior. Teste específico: `node tests/integridade-host.cjs`.
+
+A documentação do Netlify descreve a [identificação pública e a inserção de conteúdo pela hospedagem](https://docs.netlify.com/manage/security/secure-access-to-sites/project-visibility/). Essa adição explica a diferença de bytes no HTML servido; scripts, estilos e demais recursos devem corresponder diretamente ao manifesto.
 
 Referências consultadas: [configuração oficial do Netlify](https://docs.netlify.com/build/configure-builds/overview/), [orientação de dispositivo — MDN](https://developer.mozilla.org/en-US/docs/Web/API/Device_orientation_events/Detecting_device_orientation) e [vibração — MDN](https://developer.mozilla.org/en-US/docs/Web/API/Navigator/vibrate).
