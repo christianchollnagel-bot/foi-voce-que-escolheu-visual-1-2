@@ -1,0 +1,14 @@
+[
+  {
+    "engine": "chromium",
+    "screens": 16,
+    "control": "Menu no topo direito, 44px ou mais",
+    "save": "sessão e memórias preservadas; retomada confirmada"
+  },
+  {
+    "engine": "webkit",
+    "screens": 16,
+    "control": "Menu no topo direito, 44px ou mais",
+    "save": "sessão e memórias preservadas; retomada confirmada"
+  }
+]

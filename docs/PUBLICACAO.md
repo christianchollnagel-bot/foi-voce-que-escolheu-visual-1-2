@@ -2,6 +2,8 @@
 
 ## Edição atual
 
+A edição **1.3.1** acrescenta o botão **Menu** no canto superior direito das telas, ao lado de Pausa quando há entrega em andamento. O atalho preserva a sessão e as memórias e permanece acessível durante a edição de campos. [Verificação do atalho em Chrome/WebKit](evidencias/menu-topo.json). A validação anterior da edição 1.3.0 está registrada abaixo.
+
 A edição **1.3.0** foi publicada em 12/11/2026 no mesmo endereço, https://foivocequeescolheu.netlify.app/, a partir do código `a6f04553276e6c23104ea6dde1ea7721fd7fb182`. Arquivos públicos conferidos com o manifesto; 906 recursos preparados no teste real, seguido de reabertura offline, menu, nova partida e introdução sem erros. O responsável confirmou no iPhone os botões de paginação e a seleção do personagem sem rolagem. Veja [auditoria da edição](AUDITORIA-1.3.md) para evidências e limites. As notas abaixo sobre bloqueio de créditos e edições anteriores são o histórico da publicação.
 
 ## Envio manual

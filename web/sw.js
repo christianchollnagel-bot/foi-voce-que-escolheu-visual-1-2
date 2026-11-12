@@ -2,7 +2,7 @@
 const resources = [
   [
     "app.js",
-    "0e9021e405ee3f23dd8259ff3d3edf4566e170b8560161a6e22328753093e7be"
+    "f2fe3ffdc1a54c973a13554ef35267da7ac94b73dafdf4cfeef168292e0f7503"
   ],
   [
     "assets/avatares/01-alegria.webp",
@@ -3590,11 +3590,11 @@ const resources = [
   ],
   [
     "paginas.css",
-    "dc603d9fcf0cc1386afdd93ff9d215c0122d7f495f5ae7889d9a8237e08bb32e"
+    "f9e9ff592aa30c080c8049bf62ded7e7d46758761f050cf12f9a8973a5243f54"
   ],
   [
     "paginas.js",
-    "211aefa89071d3ab8f9514c78436e74b175785422decf162c36655ef8867beb5"
+    "e113fa939e76b4b559e0f7ec45042e54c3138dd811d483b96b7c7473ea7e006c"
   ],
   [
     "portaria.js",
@@ -3626,7 +3626,7 @@ const resources = [
   ]
 ];
 const prefix = 'fvqe-v1|' + self.registration.scope + '|';
-const cacheName = prefix + '72d1554710374f475fb503a13a885361b2a039f0499d184e1156c7b1071f2fa0';
+const cacheName = prefix + 'ee0aa9ec14e2f2f147aab5a30a8d9dac31c201b90411d3840653ebe6ca40c8a5';
 const root = new URL(self.registration.scope);
 const urls = new Map(resources.map(([path, hash]) => [new URL(path, root).href, hash]));
 

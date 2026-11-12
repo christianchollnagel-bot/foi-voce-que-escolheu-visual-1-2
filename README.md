@@ -2,7 +2,7 @@
 
 Projeto Inovação Chris 2026/2. Responsável acadêmico: **Christian Cândia Hollnagel**.
 
-**Edição 1.3.0 · portfólio.** Um jogo narrativo sobre o que acompanha uma encomenda: promessas, favores e histórias que voltam no próximo encontro. Doze capítulos, três atos e o especial **O nome no recibo**, com consequências entre entregas, memória por personagem, salvamento local, transporte, música e vibração. As falas são escritas e selecionadas por regras; não há modelo ou API de IA durante a partida.
+**Edição 1.3.1 · portfólio.** Um jogo narrativo sobre o que acompanha uma encomenda: promessas, favores e histórias que voltam no próximo encontro. Doze capítulos, três atos e o especial **O nome no recibo**, com consequências entre entregas, memória por personagem, salvamento local, transporte, música e vibração. As falas são escritas e selecionadas por regras; não há modelo ou API de IA durante a partida.
 
 [Jogar no navegador](https://foivocequeescolheu.netlify.app/) · [Apresentação para portfólio](docs/PORTFOLIO.md) · [Auditoria e evidências da edição](docs/AUDITORIA-1.3.md)
 
@@ -19,6 +19,8 @@ Abra http://localhost:4173. O servidor usa a fonte versionada em `web/`; uma có
 Nova partida começa com uma animação 2D de 15 segundos: receba o pedido, escolha o caminho e acompanhe as consequências. Pode pausar, pular ou usar **Rever introdução** no menu. Depois, prepare seu crachá. Em **Ver capítulos e atos**, escolha qualquer capítulo, o especial ou o turno de três entregas. **Próxima entrega** mantém as escolhas anteriores. **Nova partida** limpa um percurso existente somente após confirmação. **Resetar jogo**, logo após Nova partida no menu, confirma antes de apagar partida, recibos, escolhas e crachá; mantém som e acessibilidade e retorna ao menu. A seleção de capítulo mantém as memórias desta partida; começar uma partida nova e selecionar um capítulo dá um início sem escolhas anteriores inventadas.
 
 O jogo salva automaticamente neste navegador e aparelho. Ao reabrir, use **Continuar partida**. A limpeza dos dados do site, a troca de navegador ou de endereço pode separar ou apagar o acesso ao progresso. Não há conta nem sincronização. Um transporte interrompido reinicia do começo do trecho, sem aplicar derrota.
+
+O botão **Menu**, no canto superior direito, volta diretamente ao menu de qualquer tela. A partida permanece salva; use **Continuar partida** para retomar. Durante uma entrega, o botão **Pausa** fica ao lado. O atalho continua acessível nas páginas seguintes e durante a edição de campos com o teclado aberto.
 
 No transporte, escolha a estratégia e use as setas, os botões de toque ou **Ativar inclinação e calibrar**. A referência é a posição em que você segura o aparelho na ativação. Para recalibrar, pressione o mesmo botão. Os diálogos não têm contagem regressiva. O equilíbrio dura 9–12 segundos conforme a estratégia.
 

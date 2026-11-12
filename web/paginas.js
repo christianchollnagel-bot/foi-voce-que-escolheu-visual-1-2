@@ -1,7 +1,7 @@
 window.GamePages=(()=>{
   document.body.classList.toggle('hosted-netlify',location.hostname.endsWith('.netlify.app'));
   let stage=null,viewport=null,flow=null,page=0,total=1,pages=[],contentHeight=0,frame=0,observer=null,mutations=null,anchor=null;
-  const revision='1.3.0',originalTab=new WeakMap();
+  const revision='1.3.1',originalTab=new WeakMap();
   const controls='button,input,select,textarea,a[href],summary,[tabindex]';
   function updateViewport(){
     const visual=window.visualViewport;

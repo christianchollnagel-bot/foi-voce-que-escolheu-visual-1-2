@@ -1,8 +1,8 @@
 [
   {
     "file": "app.js",
-    "sha256": "0e9021e405ee3f23dd8259ff3d3edf4566e170b8560161a6e22328753093e7be",
-    "bytes": 55519
+    "sha256": "f2fe3ffdc1a54c973a13554ef35267da7ac94b73dafdf4cfeef168292e0f7503",
+    "bytes": 55719
   },
   {
     "file": "assets/avatares/01-alegria.webp",
@@ -4486,12 +4486,12 @@
   },
   {
     "file": "paginas.css",
-    "sha256": "dc603d9fcf0cc1386afdd93ff9d215c0122d7f495f5ae7889d9a8237e08bb32e",
-    "bytes": 8288
+    "sha256": "f9e9ff592aa30c080c8049bf62ded7e7d46758761f050cf12f9a8973a5243f54",
+    "bytes": 8603
   },
   {
     "file": "paginas.js",
-    "sha256": "211aefa89071d3ab8f9514c78436e74b175785422decf162c36655ef8867beb5",
+    "sha256": "e113fa939e76b4b559e0f7ec45042e54c3138dd811d483b96b7c7473ea7e006c",
     "bytes": 8884
   },
   {
@@ -4521,7 +4521,7 @@
   },
   {
     "file": "sw.js",
-    "sha256": "99e05222aa65d351eac3410a2af94cc171e5f2b3c5908335eb8b1db85e343b7e",
+    "sha256": "c875187eba38f3050ca39395bb24d76a19927e3a393d0ebad1711c1e158cedbf",
     "bytes": 112387
   },
   {
